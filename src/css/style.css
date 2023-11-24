@@ -1,0 +1,394 @@
+.wrapper
+{
+    max-width: 1440px;
+    padding: 0 140px;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+}
+
+/* --- link --- */
+.link
+{
+    height: 22px;
+    color: #21344A;
+
+    margin: 0 1px;
+    opacity: 60%;
+    font: 400 20px/22px 'Roboto', sans-serif;
+    letter-spacing: 1%;
+
+    text-align: right;
+    display: flex;
+}
+
+.link_width
+{
+    max-width:  252px;
+}
+
+.img
+{
+    width: 22px;
+    height: 22px;
+
+    margin-right: 6px;
+    filter: opacity(1.0);
+    background: url(/src/img/svg/arrow-up-right.svg);
+}
+
+.link:hover
+{
+    color: #687BE0;
+
+    border-bottom: 2px solid #687BE0;
+    padding-bottom: 1px;
+}
+
+.link:hover .img
+{
+   background: url(/src/img/svg/arrow-up-right-2.svg);
+   filter: opacity(1.0);
+}
+
+/* --- header --- */
+.header
+{
+    max-height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .menu
+{
+    width: 293px;
+    margin: 38px 0px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .title
+{
+    margin: 39.11px 0;
+}
+
+/* --- main --- */
+.main
+{
+    flex: 1 1 auto;
+}
+
+.main section
+{
+    margin-top: 220px;
+}
+
+/* -- 1 section -- */
+.main .greetings
+{
+    max-height: 387px;
+    margin: 120px 0;
+    padding: 67px 0 70px;
+    letter-spacing: 1px;
+}
+
+.main .greetings .hello
+{
+    color: #687BE0;
+    font: 500 16px/24px 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.main .greetings .text
+{
+    height: 210px;
+    width: 865px;
+
+    color: #21344A;
+    font: 500 58px/69.6px 'Manrope', sans-serif;
+}
+
+/* -- section of projects -- */
+.main .project .box
+{
+    height: 408px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* - box_text - */
+.main .project .box .box_text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .project .box .box_text .company_box
+{
+    height: 117px;
+}
+
+.main .project .box .box_text .text
+{
+    width: 373px;
+
+    letter-spacing: 1px;
+    font: 400 27px/37.8px 'Manrope', sans-serif;
+}
+
+.main .project .box .box_text h2
+{
+    font: 500 16px/24px 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    color:#687BE0;
+}
+
+.main .project .box .box_text .year
+{
+    margin-top: 2px;
+    color: #21344A;
+    font: 400 16px/22px 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.main .project .box .box_img
+{
+    width: 668px;
+    height: 407px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.main .project .box .box_img .picture
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: 0.35s;
+}
+
+.main .project .box .box_img:hover .picture
+{ 
+    transform: scale(1.075);
+}
+
+/* - line - */
+.main .project .line
+{
+    height: 28px;
+    margin: 104px 0;
+}
+
+.main .project .line hr
+{
+    border-top: 1px solid rgba(33,52,74, 0.1);
+
+    overflow: visible;
+    text-align: center;
+
+    position: relative;
+    top: 14px
+}
+
+.main .project .line hr:after
+{
+    height: 28px;
+    width: 20px;
+    padding: 0 16px;
+    
+    content: '✨';
+    background: #FFFFFF;
+    
+    position: relative;
+    top: -13px;
+}
+
+/* -- stack section -- */
+.box_section
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box_section .info_box
+{
+    height: 317px;
+    max-width: 768px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box_section .info_box p
+{
+    font: 400 28px/39px 'Manrope', sans-serif;
+    letter-spacing: 1.22px;
+    text-align: left;
+
+    color: #21344A;
+}
+
+.box_section .info_box .list
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.box_section .info_box .list .list_item
+{
+    height: Hug (42px);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 10px;
+
+    color: #242730;
+
+    border: 1px solid rgba(36, 39, 48, 0.2);
+}
+
+.box_section .info_box .list .list_item p
+{
+    font: 400 16px/18px 'Roboto', sans-serif;
+    letter-spacing: 0em;
+    text-align: right;
+
+    color: #21344A99;
+}
+
+/* - date_box - */
+.date_box
+{
+    width: 275px;
+    height: Hug (284px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.date_box h3
+{
+    font: 500 16px/24px 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+    
+    text-transform: uppercase;
+    color: #687BE0;
+}
+
+.box_section .date_box .year
+{
+    margin-bottom: 4px;
+
+    font: 400 16px/18px 'Roboto', sans-serif;
+    letter-spacing: 1%;
+
+    color: #21344A99;
+}
+
+.box_section .date_box .year span
+{
+    color: #687BE0;
+    font-style: italic;
+}
+
+.box_section .date_box .job_title
+{
+    font: 400 14px/21px 'Roboto', sans-serif;
+    letter-spacing: 1%;
+    text-align: left;
+
+    color: #444444;
+}
+
+.box_section .date_box .job_title span
+{
+    color: #21344A99;
+}
+
+/* -- section --*/
+.box_section .info_box p span
+{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #687BE0;
+}
+
+/* -- bottom section --*/
+.bottom_section
+{
+    height: 411px;
+    padding: 148px 0;
+    background-color: #F7F8FD;
+} 
+
+.bottom_section .lets_connect
+{
+    margin-bottom: 16px;
+
+    font: 400 58px/71px 'Manrope', sans-serif;
+    letter-spacing: 1px;
+    text-align: left;
+
+    color: #21344A;
+}
+
+.bottom_section .lets_connect_link
+{
+    height: 28px;
+    font: 400 20px/28px 'Manrope', sans-serif;
+    letter-spacing: 1%;
+    text-align: left;
+
+    color: #222F3E;
+}
+
+.bottom_section .lets_connect_link a
+{
+    color: #687BE0;
+    border-bottom: 2px solid #687BE0;
+}
+
+.bottom_section .lets_connect_link a:hover
+{
+    color: #1D33B3;
+    border-color: #1D33B3;
+}
+
+/* --- footer --- */
+.footer
+{
+    height: 76px;
+
+    border-top: 1px solid rgba(33,52,74,0.1);
+    background-color: #F7F8FD;
+}
+
+.footer p
+{
+    height: 28px;
+    position: relative;
+    top: 24px;
+
+    font: 400 14px/27px 'Manrope', sans-serif;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+    color: #666666;
+}

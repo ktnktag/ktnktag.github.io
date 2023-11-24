@@ -1,0 +1,17 @@
+@media screen and (min-width: 1200) {
+    .wrapper
+    {
+        max-width: 1200px;
+        padding: 0 80px;
+    }
+
+    .main section
+    {
+        margin-bottom: 180px;
+    }
+
+    .main .project .line
+    {
+        margin: 88px 0;
+    }
+}
