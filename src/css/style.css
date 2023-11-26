@@ -44,7 +44,8 @@
 {
     color: #687BE0;
 
-    border-bottom: 2px solid #687BE0;
+    opacity: 100%;
+    border-bottom: 1px solid #687BE0;
     padding-bottom: 1px;
 }
 
