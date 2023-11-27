@@ -106,13 +106,13 @@
     margin-bottom: 16px;
 }
 
-.main .greetings .text
+.main .greetings .presentation
 {
     height: 210px;
     width: 865px;
 
     color: #21344A;
-    font: 500 58px/69.6px 'Manrope', sans-serif;
+    font: 500 58px/120% 'Manrope', sans-serif;
 }
 
 /* -- section of projects -- */
@@ -131,17 +131,22 @@
     justify-content: space-between;
 }
 
-.main .project .box .box_text .company_box
+.main .project .box .box_text .box_project_info
 {
-    height: 117px;
+    height: 100%;
+    margin-top: 89px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main .project .box .box_text .text
 {
     width: 373px;
 
+    font: 400 28px/140% 'Manrope', sans-serif;
     letter-spacing: 1px;
-    font: 400 27px/37.8px 'Manrope', sans-serif;
 }
 
 .main .project .box .box_text h2
@@ -157,7 +162,7 @@
 {
     margin-top: 2px;
     color: #21344A;
-    font: 400 16px/22px 'Roboto', sans-serif;
+    font: 400 16px/140% 'Roboto', sans-serif;
     letter-spacing: 1px;
     text-align: left;
 }
@@ -166,6 +171,7 @@
 {
     width: 668px;
     height: 407px;
+    border-radius: 8px;
 
     position: relative;
     overflow: hidden;
@@ -180,10 +186,28 @@
     transition: 0.35s;
 }
 
+.main .project .box .box_img .mode
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    object-fit: cover;
+    transition: 0.35s;
+}
+
 .main .project .box .box_img:hover .picture
 { 
     transform: scale(1.075);
 }
+
+/*
+.main .project .box .box_img:hover .mode
+{ 
+    transform: scale(130%);
+}
+*/
 
 /* - line - */
 .main .project .line
@@ -236,7 +260,7 @@
 
 .box_section .info_box p
 {
-    font: 400 28px/39px 'Manrope', sans-serif;
+    font: 400 28px/140% 'Manrope', sans-serif;
     letter-spacing: 1.22px;
     text-align: left;
 
@@ -255,7 +279,6 @@
     height: Hug (42px);
     padding: 12px;
     border-radius: 8px;
-    border: 1px;
     gap: 10px;
 
     color: #242730;
@@ -343,7 +366,7 @@
 {
     margin-bottom: 16px;
 
-    font: 400 58px/71px 'Manrope', sans-serif;
+    font: 400 58px/70.983px 'Manrope', sans-serif;
     letter-spacing: 1px;
     text-align: left;
 
@@ -353,8 +376,8 @@
 .bottom_section .lets_connect_link
 {
     height: 28px;
-    font: 400 20px/28px 'Manrope', sans-serif;
-    letter-spacing: 1%;
+    font: 400 20px/140% 'Manrope', sans-serif;
+    letter-spacing: 0.2px;
     text-align: left;
 
     color: #222F3E;
