@@ -354,15 +354,20 @@
     color: #687BE0;
 }
 
-/* -- bottom section --*/
-.bottom_section
+/* --- footer --- */
+.footer
+{
+    margin-top: 180px;
+    background-color: #F7F8FD;
+}
+
+.connect_section
 {
     height: 411px;
     padding: 148px 0;
-    background-color: #F7F8FD;
-} 
+}
 
-.bottom_section .lets_connect
+.connect_section .lets_connect
 {
     margin-bottom: 16px;
 
@@ -373,7 +378,7 @@
     color: #21344A;
 }
 
-.bottom_section .lets_connect_link
+.connect_section .lets_connect_link
 {
     height: 28px;
     font: 400 20px/140% 'Manrope', sans-serif;
@@ -383,28 +388,26 @@
     color: #222F3E;
 }
 
-.bottom_section .lets_connect_link a
+.connect_section .lets_connect_link a
 {
     color: #687BE0;
     border-bottom: 2px solid #687BE0;
 }
 
-.bottom_section .lets_connect_link a:hover
+.connect_section .lets_connect_link a:hover
 {
     color: #1D33B3;
     border-color: #1D33B3;
 }
 
-/* --- footer --- */
-.footer
+.copyright_section
 {
     height: 76px;
 
     border-top: 1px solid rgba(33,52,74,0.1);
-    background-color: #F7F8FD;
 }
 
-.footer p
+.copyright_section p
 {
     height: 28px;
     position: relative;
