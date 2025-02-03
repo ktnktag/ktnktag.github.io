@@ -1,4 +1,8 @@
 .header {
+    position: relative;
+}
+
+.header-box {
     width: 996px;
     height: 52px;
 

@@ -10,10 +10,16 @@ function App() {
   return (
     <>
       <Header active={tab} onChange={setTab}></Header>
+      
+      <main>
+        {tab === 'About' && <p>Abouth</p>}
+        {tab === 'Selected Works' && <p>Selected Works</p>}
+        {tab === 'Side Projects' && <p>Side Projects</p>}
+      </main>
 
-      {tab === 'About' && <p>Abouth</p>}
-      {tab === 'Selected Works' && <p>Selected Works</p>}
-      {tab === 'Side Projects' && <p>Side Projects</p>}
+      <footer className='footer'>
+        <p>© 2025 Valeria Yakovchik</p>
+      </footer>
     </>
   )
 }

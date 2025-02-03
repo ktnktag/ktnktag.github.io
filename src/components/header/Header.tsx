@@ -11,20 +11,22 @@ interface Props
 function Header({ active, onChange} : Props) {
     return (
         <header className='header'>
-            <img src={Logo} alt="logo" className='logo' onClick={() => onChange("About")}/>
+            <div className='header-box'>
+                <img src={Logo} alt="logo" className='logo' onClick={() => onChange("About")}/>
 
-            <nav>
-                <ul className='menu'>
-                    <MenuButton active={active === "About"} onClick={() => onChange("About")}>About</MenuButton>
-                    <MenuButton active={active === "Selected Works"} onClick={() => onChange("Selected Works")}>Selected Works</MenuButton>
-                    <MenuButton active={active === "Side Projects"} onClick={() => onChange("Side Projects")}>Side Projects</MenuButton>
+                <nav>
+                    <ul className='menu'>
+                        <MenuButton active={active === "About"} onClick={() => onChange("About")}>About</MenuButton>
+                        <MenuButton active={active === "Selected Works"} onClick={() => onChange("Selected Works")}>Selected Works</MenuButton>
+                        <MenuButton active={active === "Side Projects"} onClick={() => onChange("Side Projects")}>Side Projects</MenuButton>
 
-                    <hr className='separator' />
+                        <hr className='separator' />
 
-                    <MenuButton active={active === "LinkedIn"}>LinkedIn</MenuButton>
-                    <MenuButton active={active === "CV"}>CV</MenuButton>
-                </ul>
-            </nav>
+                        <MenuButton active={active === "LinkedIn"}>LinkedIn</MenuButton>
+                        <MenuButton active={active === "CV"}>CV</MenuButton>
+                    </ul>
+                </nav>
+            </div>
         </header>
     )
 }
