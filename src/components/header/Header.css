@@ -19,6 +19,7 @@
 
 .logo {
     max-height: 12px;
+    cursor: pointer;
 }
 
 .menu {
