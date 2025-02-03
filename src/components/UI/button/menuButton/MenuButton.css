@@ -1,0 +1,24 @@
+.menu-button {
+    width: max-content;
+    height: 32px;
+
+    cursor: pointer;
+
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.menu-button:hover {
+    background-color: #687BE014;
+}
+
+.menu-button-text {
+    font: 300 13px/16px 'Manrope', 'rom-font';
+    letter-spacing: 0.2px;
+
+    color: #21344A;
+}
+
+.menu-button.active {
+    border-bottom: 1px solid #687BE0;
+}

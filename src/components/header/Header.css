@@ -1,0 +1,36 @@
+.header {
+    width: 996px;
+    height: 52px;
+
+    padding: 10px 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    z-index: 3;
+    top: 40px;
+
+    border-radius: 16px;
+    background-color: #FFF;
+    filter: blur(50%);
+}
+
+.logo {
+    max-height: 12px;
+}
+
+.menu {
+    height: max-content;
+    align-items: center;
+    display: flex;
+    gap: 24px;
+}
+
+.separator {
+    width: 1px;
+    height: 16px;
+
+    background-color: #DEDEDE;
+}
