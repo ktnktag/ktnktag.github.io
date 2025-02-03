@@ -1,0 +1,9 @@
+body {
+  background-color: #F5F5F7;
+}
+
+p {
+  color: #21344A;
+  font: 400 28px/40px 'Manrope', 'rom-font';
+  letter-spacing: 0.005em;
+}
