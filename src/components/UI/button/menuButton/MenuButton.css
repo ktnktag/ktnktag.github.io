@@ -15,6 +15,10 @@
 .menu-button-text {
     font: 300 13px/16px 'Manrope', 'rom-font';
     letter-spacing: 0.2px;
+    
+    display: flex;
+    align-items: center;
+    gap: 4px;
 
     color: #21344A;
 }

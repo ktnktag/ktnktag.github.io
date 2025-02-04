@@ -77,9 +77,17 @@
 }
 
 .socials ul {
+    width: 100%;
+    height: max-content;
     display: grid;
-    grid-template-columns: max-content 100%;
+    grid-template-columns: max-content auto;
     gap: 8px 24px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 .photo {

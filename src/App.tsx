@@ -1,5 +1,7 @@
 import './App.css'
 
+import Arrow from './assets/arrow-up.svg'
+
 import Header from './components/header/Header.tsx'
 import About from './components/about/About.tsx'
 
@@ -17,6 +19,12 @@ function App() {
           {tab === 'About' && <About></About>}
           {tab === 'Selected Works' && <p>Selected Works</p>}
           {tab === 'Side Projects' && <p>Side Projects</p>}
+        </div>
+
+        <div className='arrow-box'>
+          <a className='arrow' href="#top">
+            <img src={Arrow} alt="arrow-up" />
+          </a>
         </div>
       </main>
 

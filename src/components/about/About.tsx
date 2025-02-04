@@ -1,7 +1,7 @@
 import './About.css'
 
 import Photo from '../../assets/Lera.jpg'
-
+import Arrow from '../../assets/arrow-up-right.svg'
 function About() {
     return (
         <>
@@ -53,16 +53,16 @@ function About() {
                         <h3>Socials</h3>
                         <ul>
                             <li>
-                                <p>LinkedIn</p>
+                                <p className='link'>LinkedIn <img src={Arrow} alt="arrow-up-right" /></p>
                             </li>
                             <li>
-                                <p>Dribbble</p>
+                                <p className='link'>Dribbble <img src={Arrow} alt="arrow-up-right" /></p>
                             </li>
                             <li>
-                                <p>Medium</p>
+                                <p className='link'>Medium <img src={Arrow} alt="arrow-up-right" /></p>
                             </li>
                             <li>
-                                <p>Behance</p>
+                                <p className='link'>Behance <img src={Arrow} alt="arrow-up-right" /></p>
                             </li>
 
                             <li className='indent'>
