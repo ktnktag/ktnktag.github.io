@@ -1,7 +1,16 @@
+.main {
+    display: flex;
+    flex-direction: column;
+
+    gap: 140px;
+}
+
 .footer {
     height: 72px;
     padding: 24px 0;
     border-top: 1px solid #21344A1A;
+
+    margin-top: 140px;
 
     display: flex;
     justify-content: center;

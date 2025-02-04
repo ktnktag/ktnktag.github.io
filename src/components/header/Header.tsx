@@ -10,7 +10,7 @@ interface Props
 
 function Header({ active, onChange} : Props) {
     return (
-        <header className='header'>
+        <header id="top" className='header'>
             <div className='header-box'>
                 <img src={Logo} alt="logo" className='logo' onClick={() => onChange("About")}/>
 

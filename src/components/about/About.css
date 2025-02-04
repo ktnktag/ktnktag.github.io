@@ -1,0 +1,122 @@
+.welcome-box {
+    height: max-content;
+    padding: 48px 0;
+}
+
+.welcome {
+    font: 500 16px/24px 'Roboto', 'from-font';
+    letter-spacing: 1px;
+    text-align: left;
+
+    text-transform: uppercase;
+    color: #687BE0;
+
+    margin-bottom: 16px;
+}
+
+.title {
+    font: 500 58px/69.6px 'Manrope', 'from-font';
+    letter-spacing: 1px;
+}
+
+/* --- experience section --- */
+
+.experience {
+    height: max-content;
+    padding: 48px 0;
+
+    display: flex;
+    gap: 24px;
+}
+
+.experience h3,
+.experience .gray {
+    font: 300 16px/24px 'Manrope', 'from-font';
+    letter-spacing: 0.005em;
+    text-align: left;
+
+    color: #9B9B9B;
+}
+
+.experience h3 {
+    margin-bottom: 2px;
+}
+
+.experience p {
+    font: 300 15px/20px 'Manrope', 'from-font';
+    letter-spacing: 0.005em;
+}
+
+.experience-list {
+    width: 25%;
+    height: 100%;
+
+    position: sticky;
+    top: 210px;
+}
+
+.experience-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experience-description {
+    width: 75%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about span {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px
+}
+
+.socials ul {
+    display: grid;
+    grid-template-columns: max-content 100%;
+    gap: 8px 24px;
+}
+
+.photo {
+    max-width: 180px;
+    max-height: 204px;
+    min-height: 204px;
+
+    border-radius: 12px;
+    object-fit: cover;
+    opacity: 0.83;
+}
+
+.email {
+    width: 100%;
+    min-height: 204px;
+    padding: 32px;
+
+    background-color: #FFFFFF33;
+    border: 1px solid #E3E3E3;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.email a,
+.email p {
+    font: 400 16px/24px 'Manrope', 'from-font';
+    letter-spacing: 0.005em;
+}
+
+.email a {
+    color: #687BE0;
+}
+
+.indent {
+    padding-top: 32px;
+    margin-top: 32px;
+}

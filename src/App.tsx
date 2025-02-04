@@ -1,6 +1,7 @@
 import './App.css'
 
 import Header from './components/header/Header.tsx'
+import About from './components/about/About.tsx'
 
 import { useState } from 'react'
 
@@ -12,9 +13,11 @@ function App() {
       <Header active={tab} onChange={setTab}></Header>
       
       <main>
-        {tab === 'About' && <p>Abouth</p>}
-        {tab === 'Selected Works' && <p>Selected Works</p>}
-        {tab === 'Side Projects' && <p>Side Projects</p>}
+        <div className='main'>
+          {tab === 'About' && <About></About>}
+          {tab === 'Selected Works' && <p>Selected Works</p>}
+          {tab === 'Side Projects' && <p>Side Projects</p>}
+        </div>
       </main>
 
       <footer className='footer'>
