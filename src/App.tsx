@@ -1,6 +1,6 @@
 import './App.css'
 
-import Arrow from './assets/arrow-up.svg'
+import ArrowUp from './assets/svg/arrow-up.svg'
 
 import Header from './components/header/Header.tsx'
 import About from './components/about/About.tsx'
@@ -23,7 +23,7 @@ function App() {
 
         <div className='arrow-box'>
           <a className='arrow' href="#top">
-            <img src={Arrow} alt="arrow-up" />
+            <img src={ArrowUp} alt="arrow-up" />
           </a>
         </div>
       </main>

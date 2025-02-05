@@ -1,6 +1,6 @@
 import './Header.css'
-import Logo from '../../assets/Logo.svg'
-import Arrow from '../../assets/arrow-down.svg'
+import Logo from '../../assets/svg/Logo.svg'
+import ArrowDown from '../../assets/svg/arrow-down.svg'
 import MenuButton from '../UI/button/menuButton/MenuButton'
 
 interface Props
@@ -24,7 +24,7 @@ function Header({ active, onChange} : Props) {
                         <hr className='separator' />
 
                         <MenuButton active={active === "LinkedIn"}>LinkedIn</MenuButton>
-                        <MenuButton active={active === "CV"}>CV <img src={Arrow} alt="arrow-down" /></MenuButton>
+                        <MenuButton path='#about' active={active === "CV"}>CV <img src={ArrowDown} alt="arrow-down" /></MenuButton>
                     </ul>
                 </nav>
             </div>

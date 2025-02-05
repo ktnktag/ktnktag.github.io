@@ -6,10 +6,14 @@
 
     padding: 8px;
     border-radius: 8px;
+
+    transition: background-color 0.2s ease-in-out;
 }
 
-.menu-button:hover {
-    background-color: #687BE014;
+@media (hover: hover) {
+    .menu-button:hover {
+        background-color: #687BE014;
+    }
 }
 
 .menu-button-text {

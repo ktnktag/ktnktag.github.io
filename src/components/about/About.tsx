@@ -1,7 +1,7 @@
 import './About.css'
 
-import Photo from '../../assets/Lera.jpg'
-import Arrow from '../../assets/arrow-up-right.svg'
+import Photo from '../../assets/jpg/Lera.jpg'
+import ArrowUpRight from '../../assets/svg/arrow-up-right.svg'
 function About() {
     return (
         <>
@@ -10,7 +10,7 @@ function About() {
                 <h1 className='title'>Experience Designer from Poland, working to create exceptional user experiences.</h1>
             </section>
 
-            <section className='experience'>
+            <section id="about" className='experience'>
 
                 <div className='experience-list'>
                     <ul>
@@ -53,16 +53,16 @@ function About() {
                         <h3>Socials</h3>
                         <ul>
                             <li>
-                                <p className='link'>LinkedIn <img src={Arrow} alt="arrow-up-right" /></p>
+                                <a href='#' className='link'>LinkedIn <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
                             <li>
-                                <p className='link'>Dribbble <img src={Arrow} alt="arrow-up-right" /></p>
+                                <a href='#' className='link'>Dribbble <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
                             <li>
-                                <p className='link'>Medium <img src={Arrow} alt="arrow-up-right" /></p>
+                                <a href='#' className='link'>Medium <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
                             <li>
-                                <p className='link'>Behance <img src={Arrow} alt="arrow-up-right" /></p>
+                                <a href='#' className='link'>Behance <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
 
                             <li className='indent'>

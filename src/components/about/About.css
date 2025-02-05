@@ -85,19 +85,30 @@
 }
 
 .link {
+    width: max-content;
+    
+    transition: color 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
+    border-bottom: 1px solid transparent;
+    color: #21344A;
+
     display: flex;
     align-items: center;
     gap: 4px;
 }
 
-.photo {
-    max-width: 180px;
-    max-height: 204px;
-    min-height: 204px;
+@media (hover: hover) {
+    .email a:hover,
+    .link:hover {
+        color: #687BE0;
+        border-bottom-color: #687BE0;
+    }
+}
 
-    border-radius: 12px;
-    object-fit: cover;
-    opacity: 0.83;
+.email a:active,
+.link:active {
+    color: #17029C;
+    border-bottom-color: #17029C;
 }
 
 .email {
@@ -121,7 +132,20 @@
 }
 
 .email a {
+    transition: color 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
+    border-bottom: 1px solid transparent;
     color: #687BE0;
+}
+
+.photo {
+    max-width: 180px;
+    max-height: 204px;
+    min-height: 204px;
+
+    border-radius: 12px;
+    object-fit: cover;
+    opacity: 0.83;
 }
 
 .indent {
