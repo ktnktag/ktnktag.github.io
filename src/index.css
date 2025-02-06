@@ -42,3 +42,9 @@ main {
     width: 890px;
   }
 }
+
+@media screen and (max-width: 1050px) {
+  main {
+    width: 772px;
+  }
+}

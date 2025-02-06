@@ -74,8 +74,15 @@
 
 @media screen and (max-width: 1320px) {
 
-    header,
-    main {
+    .header,
+    .header-box {
         width: 890px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header,
+    .header-box {
+        width: 772px;
     }
 }

@@ -97,7 +97,7 @@
 
 .link {
     width: max-content;
-    
+
     transition: color 0.2s ease-in-out;
     transition: border 0.2s ease-in-out;
     border-bottom: 1px solid transparent;
@@ -112,6 +112,7 @@
 }
 
 @media (hover: hover) {
+
     .email a:hover,
     .link:hover {
         color: #687BE0;
@@ -176,5 +177,43 @@
 
     .experience {
         grid-template-columns: 342px 524px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .title {
+        font-size: 50px;
+        line-height: 46px;
+    }
+
+    .cursor {
+        right: 70px;
+    }
+
+    .experience {
+        height: max-content;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience-list {
+        position: relative;
+        top: 0;
+    }
+
+    .experience-list ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+        column-gap: 24px;
+    }
+
+    .experience-list ul li:nth-of-type(even) {
+        order: 1;
+    }
+
+    .experience-description {
+        margin-top: 32px;
     }
 }
