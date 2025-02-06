@@ -2,7 +2,7 @@ import './About.css'
 
 import Photo from '../../assets/jpg/Lera.jpg'
 import ArrowUpRight from '../../assets/svg/arrow-up-right.svg'
-import CursorImage from '../../assets/svg/Arrow.svg'
+import CursorImage from '../../assets/svg/Cursor.svg'
 
 function About() {
     return (
@@ -12,7 +12,6 @@ function About() {
                 <h1 className='title'>Experience Designer from Poland, working to create exceptional user experiences.</h1>
                 <span className='cursor'>
                     <img src={CursorImage} alt="cursor" />
-                    <p className='name'>Valeria</p>
                 </span>
             </section>
 
