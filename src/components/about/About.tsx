@@ -2,12 +2,18 @@ import './About.css'
 
 import Photo from '../../assets/jpg/Lera.jpg'
 import ArrowUpRight from '../../assets/svg/arrow-up-right.svg'
+import CursorImage from '../../assets/svg/Arrow.svg'
+
 function About() {
     return (
         <>
             <section className='welcome-box'>
                 <p className='welcome'>Hello there! 👋 I’m valeria yakovchik,</p>
                 <h1 className='title'>Experience Designer from Poland, working to create exceptional user experiences.</h1>
+                <span className='cursor'>
+                    <img src={CursorImage} alt="cursor" />
+                    <p className='name'>Valeria</p>
+                </span>
             </section>
 
             <section id="about" className='experience'>
