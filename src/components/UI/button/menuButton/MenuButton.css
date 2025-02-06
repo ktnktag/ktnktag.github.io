@@ -7,6 +7,7 @@
     padding: 8px;
     border-radius: 8px;
 
+    overflow: hidden;
     position: relative;
     border: 1px solid transparent;
     transition: background-color 0.2s ease-in-out;
@@ -31,17 +32,14 @@
 
 .active::after {
     content: "";
-    height: 2px;
-    width: 90%;
-    
+    height: 1px;
+    width: 100%;
 
     color: #687BE0;
-    border-radius: 0 0 8px 8px;
     background-color: #687BE0;
-    border: 1px solid transparent; 
 
     position: absolute;
-    bottom: -0.5px;
+    bottom: 0;
     left: 50%;
     right: 50%;
     transform: translate(-50%, 0)
