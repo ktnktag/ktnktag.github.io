@@ -166,3 +166,15 @@
     padding-top: 32px;
     margin-top: 32px;
 }
+
+/*  */
+
+@media screen and (max-width: 1320px) {
+    .cursor {
+        right: 70px;
+    }
+
+    .experience {
+        grid-template-columns: 342px 524px;
+    }
+}
