@@ -24,18 +24,21 @@ p {
   letter-spacing: 0.005em;
 }
 
-header,
-main {
-  width: 996px;
-  margin: 0 auto;
+section {
+  margin-bottom: 140px;
 }
 
 main {
+  width: 996px;
+  margin: 0 auto;
+
   flex: 1 1 auto;
   position: relative;
   height: max-content;
 }
 
-section {
-  margin-bottom: 140px;
+@media screen and (max-width: 1320px) {
+  main {
+    width: 890px;
+  }
 }

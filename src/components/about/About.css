@@ -25,7 +25,8 @@
     height: max-content;
     padding: 48px 0;
 
-    display: flex;
+    display: grid;
+    grid-template-columns: 282px 690px;
     gap: 24px;
 }
 
@@ -47,8 +48,9 @@
     letter-spacing: 0.005em;
 }
 
+/* -- list -- */
+
 .experience-list {
-    width: 25%;
     height: 100%;
 
     position: sticky;
@@ -61,9 +63,9 @@
     gap: 20px;
 }
 
-.experience-description {
-    width: 75%;
 
+/* -- description -- */
+.experience-description {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -90,6 +92,9 @@
     transition: color 0.2s ease-in-out;
     transition: border 0.2s ease-in-out;
     border-bottom: 1px solid transparent;
+    font: 300 15px/20px 'Manrope', 'from-font';
+    letter-spacing: 0.005em;
+
     color: #21344A;
 
     display: flex;

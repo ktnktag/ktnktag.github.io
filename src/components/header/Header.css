@@ -1,10 +1,10 @@
 .header {
     height: 232px;
     position: relative;
+    margin: 0 auto;
 }
 
 .header-box {
-    width: 996px;
     height: 52px;
 
     padding: 10px 32px;
@@ -20,6 +20,18 @@
     border-radius: 16px;
 
     backdrop-filter: blur(8px);
+}
+
+.header,
+.header-box {
+    width: 996px;
+}
+
+@media screen and (max-width: 1320px) {
+    .header,
+    .header-box {
+        width: 890px;
+    }
 }
 
 .header-box::before {
@@ -53,10 +65,17 @@
     z-index: 3;
 }
 
-
 .separator {
     width: 1px;
     height: 16px;
 
     background-color: #DEDEDE;
+}
+
+@media screen and (max-width: 1320px) {
+
+    header,
+    main {
+        width: 890px;
+    }
 }
