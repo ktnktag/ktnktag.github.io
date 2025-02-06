@@ -31,16 +31,17 @@
 
 .active::after {
     content: "";
-    height: 1px;
+    height: 2px;
     width: 90%;
     
 
     color: #687BE0;
-    border-radius: 0 0 35px 35px;
-    border-bottom: 1px solid #687BE0;
+    border-radius: 0 0 8px 8px;
+    background-color: #687BE0;
+    border: 1px solid transparent; 
 
     position: absolute;
-    bottom: -1px;
+    bottom: -0.5px;
     left: 50%;
     right: 50%;
     transform: translate(-50%, 0)
