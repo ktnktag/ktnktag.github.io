@@ -77,7 +77,7 @@
         transition: all 0.3s ease 0s;
     }
 
-    .menu.menu-active {
+    .menu.active {
         top: -40px;
         padding-top: 184px;
     }
@@ -104,7 +104,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .menu.menu-active {
+    .menu.active {
         top: -16px;
     }
 }
