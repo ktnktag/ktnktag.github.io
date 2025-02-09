@@ -217,3 +217,57 @@
         margin-top: 32px;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .title {
+        font-size: 32px;
+        line-height: 38px;
+        color: #030712;
+    }
+
+    .cursor {
+        right: -7px;
+    }
+
+    .experience p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cursor {
+        width: 148px;
+        right: 0;
+    }
+
+    .welcome {
+        font-size: 14px;
+        line-height: 20px;
+        text-wrap: nowrap;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .experience-list ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .experience-list ul li:nth-of-type(even) {
+        order: 0;
+    }
+
+    .socials ul li:nth-of-type(5) {
+        display: none;
+    }
+
+    .socials ul li:nth-of-type(6) {
+        grid-column: 1/ span 2;
+        grid-row: 3/4;
+    }
+
+}

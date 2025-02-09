@@ -70,7 +70,7 @@ export default function About() {
                                 <a href='#' className='link'>Behance <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
 
-                            <li className='indent'>
+                            <li className='indent gg'>
                                 <img src={Photo} alt="photo" className='photo' />
                             </li>
 
