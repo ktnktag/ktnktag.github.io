@@ -9,7 +9,7 @@ interface Props {
     onChange: any;
 }
 
-function Menu({ active, onChange }: Props) {
+export default function Menu({ active, onChange }: Props) {
     const [menuActive, isMenuActive] = useState<boolean>(false);
 
     function SwitchScroll(isIncluded : boolean)
@@ -70,5 +70,3 @@ function Menu({ active, onChange }: Props) {
         </nav>
     )
 }
-
-export default Menu

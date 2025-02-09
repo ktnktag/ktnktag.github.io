@@ -6,7 +6,7 @@ import About from './components/about/About.tsx'
 
 import { useState } from 'react'
 
-function App() {
+export default function App() {
   const [tab, setTab] = useState<string>('About')
 
   return (
@@ -29,5 +29,3 @@ function App() {
     </>
   )
 }
-
-export default App

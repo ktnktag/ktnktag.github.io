@@ -4,7 +4,7 @@ import Photo from '../../assets/jpg/Lera.jpg'
 import ArrowUpRight from '../../assets/svg/arrow-up-right.svg'
 import CursorImage from '../../assets/svg/Cursor.svg'
 
-function About() {
+export default function About() {
     return (
         <>
             <section className='welcome-box'>
@@ -94,5 +94,3 @@ function About() {
         </>
     )
 }
-
-export default About

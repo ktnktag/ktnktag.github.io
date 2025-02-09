@@ -8,7 +8,7 @@ interface Props {
     path?: string;
 };
 
-function MenuButton({ children, active, onClick, isChanging = true, path = '#'}: Props) {
+export default function MenuButton({ children, active, onClick, isChanging = true, path = '#'}: Props) {
     return (
         <li 
             className={`${isChanging ? classes.changingButton : classes.button} ${active && classes.active}`} 
@@ -22,5 +22,3 @@ function MenuButton({ children, active, onClick, isChanging = true, path = '#'}:
         </li>
     )
 }
-
-export default MenuButton

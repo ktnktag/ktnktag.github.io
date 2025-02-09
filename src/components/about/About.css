@@ -60,7 +60,7 @@
 /* -- list -- */
 
 .experience-list {
-    height: 100%;
+    height: max-content;
 
     position: sticky;
     top: 210px;

@@ -7,7 +7,7 @@ interface Props {
     onChange: any;
 }
 
-function Header({ active, onChange }: Props) {
+export default function Header({ active, onChange }: Props) {
     return (
         <header id="top" className='header'>
             <div className='header-box'>
@@ -18,5 +18,3 @@ function Header({ active, onChange }: Props) {
         </header>
     )
 }
-
-export default Header
