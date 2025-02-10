@@ -58,16 +58,16 @@ export default function About() {
                         <h3>Socials</h3>
                         <ul>
                             <li>
-                                <a href='#' className='link'>LinkedIn <img src={ArrowUpRight} alt="arrow-up-right" /></a>
+                                <a href='https://www.linkedin.com/in/kto-nekto/' className='link'>LinkedIn <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
                             <li>
-                                <a href='#' className='link'>Dribbble <img src={ArrowUpRight} alt="arrow-up-right" /></a>
+                                <a href='https://dribbble.com/kto_nekto' className='link'>Dribbble <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
                             <li>
-                                <a href='#' className='link'>Medium <img src={ArrowUpRight} alt="arrow-up-right" /></a>
+                                <a href='https://medium.com/@kto.nekto' className='link'>Medium <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
                             <li>
-                                <a href='#' className='link'>Behance <img src={ArrowUpRight} alt="arrow-up-right" /></a>
+                                <a href='https://www.behance.net/kto_nekto' className='link'>Behance <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
 
                             <li className='indent gg'>

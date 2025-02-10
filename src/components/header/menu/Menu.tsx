@@ -49,7 +49,7 @@ export default function Menu({ active, onChange }: Props) {
                     <hr className='separator' />
                 </span>
 
-                <MenuButton active={active === "LinkedIn"}>
+                <MenuButton path="https://www.linkedin.com/in/kto-nekto/" active={active === "LinkedIn"}>
                     <span>LinkedIn</span> <img className="show-arow" src={ArrowUpRight} alt="arrow-up-right" />
                 </MenuButton>
 
