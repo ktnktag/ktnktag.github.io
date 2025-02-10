@@ -10,6 +10,7 @@
     height: 284px;
 
     overflow: hidden;
+    position: relative;
     border-radius: 16px 16px 0 0;
 }
 
@@ -27,8 +28,33 @@
     transform: scale(1.05);
 }
 
+.soon {
+    width: max-content;
+    max-height: 25px;
+    padding: 2px 8px 4px;
+
+    background-color: #F9F9F9;
+    color: #687BE0;
+    border: 1px solid currentColor;
+    border-radius: 8px;
+
+    font: 600 14px/21px 'Manrope', 'from-font'; 
+    letter-spacing: 0px;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.soon p {
+    color: currentColor;
+}
+
 .content {
-    height: 280px;
+    height: max-content;
     padding: 40px 32px;
     border-radius: 0 0 16px 16px;
 
@@ -52,6 +78,7 @@
 }
 
 .text {
+    height: 106px;
     font: 300 14px/21px 'Manrope', 'from-font';
     letter-spacing: 0%;
 }
