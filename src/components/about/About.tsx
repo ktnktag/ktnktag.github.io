@@ -21,15 +21,15 @@ export default function About() {
                     <ul>
                         <li>
                             <h3>2022 — ✦</h3>
-                            <p>Experience Designer<span className='gray'>, EPAM</span></p>
+                            <p>Experience Designer<span className='gray'>, <a href="https://www.epam.com/">EPAM</a></span></p>
                         </li>
                         <li>
                             <h3>2022</h3>
-                            <p>Product Designer<span className='gray'>, Rolling Scopes</span></p>
+                            <p>Product Designer<span className='gray'>, <a href="https://rs.school/">Rolling Scopes</a></span></p>
                         </li>
                         <li>
                             <h3>2022</h3>
-                            <p>User Interface Designer<span className='gray'>, Itexus</span></p>
+                            <p>User Interface Designer<span className='gray'>, <a href="https://itexus.com/">Itexus</a></span></p>
                         </li>
                         <li>
                             <h3>2021 — 2022</h3>
@@ -58,19 +58,19 @@ export default function About() {
                         <h3>Socials</h3>
                         <ul>
                             <li>
-                                <a href='https://www.linkedin.com/in/kto-nekto/' className='link'>LinkedIn <img src={ArrowUpRight} alt="arrow-up-right" /></a>
+                                <a href='https://www.linkedin.com/in/kto-nekto/'>LinkedIn <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
                             <li>
-                                <a href='https://dribbble.com/kto_nekto' className='link'>Dribbble <img src={ArrowUpRight} alt="arrow-up-right" /></a>
+                                <a href='https://dribbble.com/kto_nekto'>Dribbble <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
                             <li>
-                                <a href='https://medium.com/@kto.nekto' className='link'>Medium <img src={ArrowUpRight} alt="arrow-up-right" /></a>
+                                <a href='https://medium.com/@kto.nekto'>Medium <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
                             <li>
-                                <a href='https://www.behance.net/kto_nekto' className='link'>Behance <img src={ArrowUpRight} alt="arrow-up-right" /></a>
+                                <a href='https://www.behance.net/kto_nekto'>Behance <img src={ArrowUpRight} alt="arrow-up-right" /></a>
                             </li>
 
-                            <li className='indent gg'>
+                            <li className='indent'>
                                 <img src={Photo} alt="photo" className='photo' />
                             </li>
 
@@ -83,7 +83,7 @@ export default function About() {
 
                                     <span>
                                         <h3>Location</h3>
-                                        <p>Warszawa, Polska</p>
+                                        <p>Warsaw, Poland</p>
                                     </span>
                                 </div>
                             </li>

@@ -39,17 +39,15 @@
     gap: 24px;
 }
 
-.experience h3,
-.experience .gray {
+.experience h3
+{
+    margin-bottom: 2px;
+
     font: 300 16px/24px 'Manrope', 'from-font';
     letter-spacing: 0.005em;
     text-align: left;
 
     color: #9B9B9B;
-}
-
-.experience h3 {
-    margin-bottom: 2px;
 }
 
 .experience p {
@@ -72,8 +70,12 @@
     gap: 20px;
 }
 
+.experience-list span {
+    color: #9B9B9B;
+}
 
-/* -- description -- */
+/* --- description --- */
+
 .experience-description {
     display: flex;
     flex-direction: column;
@@ -95,35 +97,10 @@
     gap: 8px 24px;
 }
 
-.link {
-    width: max-content;
-
-    transition: color 0.2s ease-in-out;
-    transition: border 0.2s ease-in-out;
-    border-bottom: 1px solid transparent;
-    font: 300 15px/20px 'Manrope', 'from-font';
-    letter-spacing: 0.005em;
-
-    color: #21344A;
-
+.socials a {
     display: flex;
     align-items: center;
     gap: 4px;
-}
-
-@media (hover: hover) {
-
-    .email a:hover,
-    .link:hover {
-        color: #687BE0;
-        border-bottom-color: #687BE0;
-    }
-}
-
-.email a:active,
-.link:active {
-    color: #17029C;
-    border-bottom-color: #17029C;
 }
 
 .email {
@@ -147,9 +124,6 @@
 }
 
 .email a {
-    transition: color 0.2s ease-in-out;
-    transition: border 0.2s ease-in-out;
-    border-bottom: 1px solid transparent;
     color: #687BE0;
 }
 
@@ -229,6 +203,7 @@
         right: -7px;
     }
 
+    .experience h3,
     .experience p {
         font-size: 14px;
         line-height: 18px;
@@ -258,6 +233,7 @@
         flex-direction: column;
         gap: 20px;
     }
+
     .experience-list ul li:nth-of-type(even) {
         order: 0;
     }
