@@ -3,6 +3,7 @@ import './App.css'
 import ArrowUp from './components/UI/button/arrowUp/ArrowUp.tsx'
 import Header from './components/header/Header.tsx'
 import About from './components/about/About.tsx'
+import SelectedWorks from './components/selectedWorks/SelectedWorks.tsx'
 
 import { useState } from 'react'
 
@@ -16,9 +17,7 @@ export default function App() {
       <main>
         <div className='main'>
           {tab === 'About' && <About></About>}
-          {tab === 'Selected Works' && <div>
-            <p>Selected Works</p>
-          </div>}
+          {tab === 'Selected Works' && <SelectedWorks></SelectedWorks>}
           {tab === 'Side Projects' && <p>Side Projects</p>}
         </div>
 

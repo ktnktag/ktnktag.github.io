@@ -1,0 +1,9 @@
+.content-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.content-box-title {
+    margin-bottom: 24px;
+}

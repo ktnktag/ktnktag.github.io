@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+
+    cursor: pointer;
+    
+}
+
+.cover {
+    width: 100%;
+    height: 284px;
+
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+}
+
+.img
+{
+    width: 100%;
+    height: 100%;
+
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.container:hover>.cover>.img{
+    transform: scale(1.05);
+}
+
+.content {
+    height: 280px;
+    padding: 40px 32px;
+    border-radius: 0 0 16px 16px;
+
+    background-color: #FFFFFFA3;
+    color: #181819;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+.title {
+    font: 500 20px/24px 'Manrope', 'from-font';
+    letter-spacing: 0.5%;
+}
+
+.company {
+    font: 300 14px/14px 'Manrope', 'from-font';
+    letter-spacing: 0.5%;
+    color: #9B9B9B;
+}
+
+.text {
+    font: 300 14px/21px 'Manrope', 'from-font';
+    letter-spacing: 0%;
+}
