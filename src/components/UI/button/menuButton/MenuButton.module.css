@@ -10,9 +10,7 @@
 
     overflow: hidden;
     position: relative;
-    border: 1px solid transparent;
     transition: background-color 0.2s ease-in-out;
-    transition: border-color 0.2s ease-in-out;
 }
 
 .text {
@@ -83,6 +81,9 @@
         .changingButton:hover > .text {
             color: #687BE0;
         }
+        .changingButton:hover > .text > svg > path {
+            stroke: #687BE0;
+        }
     }
 
     .changingButton:active {
@@ -90,6 +91,9 @@
     }
     .changingButton:active > .text {
         color: #17029C;
+    }
+    .changingButton:active > .text > svg > path {
+        stroke: #17029C;
     }
 }
 

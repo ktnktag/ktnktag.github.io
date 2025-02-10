@@ -1,9 +1,7 @@
 import "./Menu.css"
-import ArrowDown from '../../../assets/svg/arrow-down.svg'
-import ArrowRight from '../../../assets/svg/arrow-right.svg'
-import ArrowUpRight from '../../../assets/svg/arrow-up-right.svg'
 import MenuButton from '../../UI/button/menuButton/MenuButton'
 
+import { default as Arrow } from '../../../assets/svg/Arrow.svg?react'
 import { useState } from 'react'
 
 interface Props {
@@ -14,15 +12,14 @@ interface Props {
 export default function Menu({ active, onChange }: Props) {
     const [menuActive, isMenuActive] = useState<boolean>(false);
 
-    function SwitchScroll(isIncluded : boolean)
-    {
+    function SwitchScroll(isIncluded: boolean) {
         isMenuActive(isIncluded)
 
         var element = document.getElementById("body");
         element?.classList.toggle("lock");
     }
 
-    function OpenPage(name : string) {
+    function OpenPage(name: string) {
         onChange(name)
         if (menuActive) {
             SwitchScroll(false)
@@ -34,15 +31,15 @@ export default function Menu({ active, onChange }: Props) {
             <ul className={menuActive ? "menu active" : "menu"}>
 
                 <MenuButton active={active === "About"} onClick={() => OpenPage("About")}>
-                    <span>About</span> <img className="show-arow" src={ArrowRight} alt="arrow-right" />
+                    <span>About</span>  <Arrow className="arrow-right show-arrow"></Arrow>
                 </MenuButton>
 
                 <MenuButton active={active === "Selected Works"} onClick={() => OpenPage("Selected Works")}>
-                    <span>Selected Works</span> <img className="show-arow" src={ArrowRight} alt="arrow-right" />
+                    <span>Selected Works</span> <Arrow className="arrow-right show-arrow"></Arrow>
                 </MenuButton>
 
                 <MenuButton active={active === "Side Projects"} onClick={() => OpenPage("Side Projects")}>
-                    <span>Side Projects</span> <img className="show-arow" src={ArrowRight} alt="arrow-right" />
+                    <span>Side Projects</span>  <Arrow className="arrow-right show-arrow"></Arrow>
                 </MenuButton>
 
                 <span className='hidden'>
@@ -50,17 +47,19 @@ export default function Menu({ active, onChange }: Props) {
                 </span>
 
                 <MenuButton path="https://www.linkedin.com/in/kto-nekto/" active={active === "LinkedIn"}>
-                    <span>LinkedIn</span> <img className="show-arow" src={ArrowUpRight} alt="arrow-up-right" />
+                    <span>LinkedIn</span>  <Arrow className="arrow-right-up show-arrow"></Arrow>
                 </MenuButton>
 
                 <MenuButton path='#about' active={active === "CV"}>
-                    <span>CV</span> <img src={ArrowDown} alt="arrow-down" />
+                    <span>CV</span>  <Arrow className="arrow-down"></Arrow>
                 </MenuButton>
             </ul>
 
             <ul className='burger-menu'>
                 <span className={menuActive ? "hidden" : ""}>
-                    <MenuButton isChanging={false} path='#about' active={active === "CV"}>CV <img src={ArrowDown} alt="arrow-down" /></MenuButton>
+                    <MenuButton isChanging={false} path='#about' active={active === "CV"}>
+                        CV  <Arrow className="arrow-down-litle"></Arrow>
+                    </MenuButton>
                 </span>
 
                 <hr className='separator' />

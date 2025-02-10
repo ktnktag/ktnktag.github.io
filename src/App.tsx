@@ -12,11 +12,13 @@ export default function App() {
   return (
     <>
       <Header active={tab} onChange={setTab}></Header>
-      
+
       <main>
         <div className='main'>
           {tab === 'About' && <About></About>}
-          {tab === 'Selected Works' && <p>Selected Works</p>}
+          {tab === 'Selected Works' && <div>
+            <p>Selected Works</p>
+          </div>}
           {tab === 'Side Projects' && <p>Side Projects</p>}
         </div>
 

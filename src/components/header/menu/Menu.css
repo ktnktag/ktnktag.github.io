@@ -53,8 +53,24 @@
     bottom: 6px;
 }
 
-.show-arow {
+.show-arrow {
     display: none;
+}
+
+.arrow-right {
+    width: 14px;
+    transform: rotate(90deg);
+}
+
+.arrow-right-up{
+    width: 14px;
+    transform: rotate(45deg);
+}
+
+.arrow-down,
+.arrow-down-litle {
+    width: 8px;
+    transform: rotate(180deg);
 }
 
 @media screen and (max-width: 800px) {
@@ -66,7 +82,7 @@
         display: none;
     }
 
-    .show-arow {
+    .show-arrow {
         display: block;
     }
 
@@ -108,6 +124,11 @@
 
     .burger.active span {
         transform: scale(0);
+    }
+
+    .arrow-down {
+        width: 14px;
+        transform: rotate(180deg);
     }
 }
 

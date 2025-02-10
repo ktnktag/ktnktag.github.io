@@ -32,8 +32,6 @@
 
 .svg {
     width: 12px;
-    height: 12px;
-    background-image: url('./LongArrow.svg');
 }
 
 @media (hover: hover) {
@@ -46,9 +44,8 @@
         color: #687BE0B2;
     }
 
-    .arrow:hover>.svg {
-        background-image: url('./LongArrowBlue.svg');
-        fill: #687BE0B2;
+    .arrow:hover>.svg>path {
+        stroke: currentColor;
     }
 }
 
@@ -58,8 +55,8 @@
     color: #17029C;
 }
 
-.arrow:active>.svg {
-    background-image: url('./LongArrowDarkBlue.svg');
+.arrow:active>.svg>path {
+    stroke: currentColor;
 }
 
 @media screen and (max-width: 1320px) {
