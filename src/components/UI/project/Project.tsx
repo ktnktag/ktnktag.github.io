@@ -7,11 +7,15 @@ interface Props {
     company?: string;
     soon?: boolean;
     path?: string;
+    OpenPage?: any;
 }
 
-export default function Project({children, image, title, company, soon, path} : Props) {
+export default function Project({children, image, title, company, soon, path, OpenPage} : Props) {
     return(
-        <article className={classes.container}>
+        <article 
+            onClick={() => OpenPage()}
+            className={classes.container}>
+
             <a className={path !== undefined ? classes.link : ''} href={ path === undefined ? '#' : path}>
                 <div className={classes.cover}>
                     <img className={classes.img} src={image} alt={title} />

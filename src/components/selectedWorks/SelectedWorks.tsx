@@ -11,7 +11,11 @@ import Speaking1 from '../../assets/png/Speaking1.png'
 import Speaking2 from '../../assets/png/Speaking2.png'
 import Project from '../UI/project/Project'
 
-export default function SelectedWorks() {
+interface Props {
+    onChange: any;
+}
+
+export default function SelectedWorks({ onChange }: Props) {
     return (
         <>
             <section>
@@ -20,14 +24,16 @@ export default function SelectedWorks() {
                         image={PortalImage}
                         title='Redesign and Developing for Internal CI/CD Platform'
                         company='Hyperspace Portal, SAP Company, 2024'
-                        soon={true}>
+                        soon={true}
+                        OpenPage={() => onChange("Design System")}>
                         Actively participated in the development and removal of legacy systems for the Hyperspace Portal, contributing to modernization efforts and conducting user research and testing to optimize functionality.
                     </Project>
 
                     <Project
                         image={SapImage}
                         title='Design System for the Leading Global Tech Company Web-sites'
-                        company='SAP Company, 2023 - 2025'>
+                        company='SAP Company, 2023 - 2025'
+                        OpenPage={() => onChange("Design System")}>
                         Developing a new comprehensive design system and accompanying documentation for developers, aligning it with SAP Fiori Design System and integrating it with other SAP resources.
                     </Project>
 

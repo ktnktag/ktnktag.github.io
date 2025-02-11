@@ -4,6 +4,7 @@ import ArrowUp from './components/UI/arrowUp/ArrowUp.tsx'
 import Header from './components/header/Header.tsx'
 import About from './components/about/About.tsx'
 import SelectedWorks from './components/selectedWorks/SelectedWorks.tsx'
+import DesignSystem from './components/designSystem/DesignSystem.tsx'
 
 import { useState } from 'react'
 
@@ -17,8 +18,10 @@ export default function App() {
       <main>
         <div className='main'>
           {tab === 'About' && <About></About>}
-          {tab === 'Selected Works' && <SelectedWorks></SelectedWorks>}
+          {tab === 'Selected Works' && <SelectedWorks onChange={setTab}></SelectedWorks>}
           {tab === 'Side Projects' && <p>Side Projects</p>}
+
+          {tab === 'Design System' && <DesignSystem></DesignSystem>}
         </div>
 
         <ArrowUp></ArrowUp>
