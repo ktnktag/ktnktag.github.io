@@ -5,6 +5,10 @@
     
 }
 
+.container a {
+    width: 100%;
+}
+
 .cover {
     width: 100%;
     height: 284px;
@@ -24,7 +28,7 @@
     border-radius: 16px 16px 0 0;
 }
 
-.container:hover>.cover>.img{
+.container:hover>a>.cover>.img{
     transform: scale(1.05);
 }
 
@@ -69,6 +73,17 @@
 .title {
     font: 500 20px/24px 'Manrope', 'from-font';
     letter-spacing: 0.5%;
+    transition: color 0.2s ease-in-out;
+}
+
+.link:hover>.content>.title {
+    color: #687BE0;
+    text-decoration: underline;
+}
+
+.link:active>.content>.title {
+    color: #17029C;
+    text-decoration: underline;
 }
 
 .company {

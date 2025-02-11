@@ -61,13 +61,15 @@ export default function SelectedWorks() {
                 <div className='content-box'>
                     <Project
                         image={IMG1Image}
-                        title='One More Survival Guide for Junior Experience  Designers ↗'>
+                        title='One More Survival Guide for Junior Experience  Designers ↗'
+                        path='https://medium.com/design-bootcamp/survival-guide-for-junior-ux-designers-9f8e5e8b670'>
                         Getting into the world of design — is exciting and sometimes terrified. Not long ago, I was in your shoes and I hope my article help newbies be prepared for a new environment, not lose themselves and not burn out in the first months.
                     </Project>
 
                     <Project
                         image={IMG2Image}
-                        title='6 Lessons that I Learned as a Designer by UX-volunteering ↗'>
+                        title='6 Lessons that I Learned as a Designer by UX-volunteering ↗'
+                        path='https://medium.com/design-bootcamp/6-lessons-that-i-learned-as-a-designer-by-ux-volunteering-d3d005d44e87'>
                         Discover six pivotal lessons learned through UX volunteering that shaped my growth as a designer. Click to explore more!
                     </Project>
                 </div>
