@@ -9,25 +9,20 @@ import DI1 from '../../assets/png/DI1.png'
 import DI2 from '../../assets/png/DI2.png'
 import DI3 from '../../assets/png/DI3.png'
 
+import Note from '../UI/note/Note'
 import Project from '../UI/project/Project'
 
 export default function DesignSystem() {
     return(
         <>
             <section>
-                <h2>Selected Works / Design System for Global Tech Company</h2>
+                <h2>Selected Works / <span>Design System for Global Tech Company</span></h2>
                 <p>Embark on a journey through the development of a brand digital design system tailored for SAP, meticulously aligned with the esteemed SAP Fiori Design System.</p>
                 <p>With a primary focus on crafting a comprehensive design system supplemented by thorough developer documentation, our objective is to instill a unified visual identity seamlessly integrated with SAP's foundational resources. </p>
                 <img src={DesignImage1} alt="DesignSystemImg1" />
             </section>
 
-            <section>
-                <img src="" alt="" />
-                <div>
-                    <h2>Note</h2>
-                    <p>Due to the confidentiality stipulated in a NDA, detailed information about this project's intricacies cannot be disclosed. If you have specific queries, feel free to ask, keeping in mind the confidentiality constraints.</p>
-                </div>
-            </section>
+            <Note></Note>
 
             <section>
                 <h2>Project Overview </h2>
@@ -60,7 +55,7 @@ export default function DesignSystem() {
                 <p>Our work process for this project was designed with organization and efficiency in mind. We divided the project into sprints, each focused on a specific set of components, patterns, and templates. This approach allowed us to maintain clarity and manage the project effectively, even with multiple designers collaborating.</p>
                 <div>
                     <img src={DesignImage2} alt="DesignImage2" />
-                    <h3>Figma environment organisation </h3>
+                    <h4>Figma environment organisation </h4>
                 </div>
                 <p>For each component, we created a dedicated Figma file. This practice ensured that we could closely monitor changes, iterations, and updates for each component individually.The separation of components into distinct files simplified navigation and management for both our design team and other project stakeholders.</p>
                 <p>We initiated the project by focusing on basic components and gradually progressed towards more complex ones. Following this approach allowed us to establish a solid foundation before delving into intricate design work. </p>
@@ -73,7 +68,7 @@ export default function DesignSystem() {
                 <p>While this project showcases some of the components I've developed for the design system, it's essential to recognize that a design system extends far beyond a mere component library. When constructed thoughtfully, it becomes the lifeblood of your products. </p>
                 <p>Dive into the following sections to explore the comprehensive framework I've meticulously crafted.</p>
 
-                <div>
+                <div className='content-box'>
                     <Project 
                         image={DesignImage3} 
                         title="Components and Patterns" >
@@ -108,20 +103,22 @@ export default function DesignSystem() {
                 <p>In the collaborative process, developers examine Figma components and Documentation created by designers.</p>
                 <div>
                     <img src={DI1} alt="DI1" />
-                    <h3>GitHub Board with Tasks</h3>
+                    <h4>GitHub Board with Tasks</h4>
                 </div>
                 <p>My role extends to verifying the consistency and functionality of components using Storybook. Any identified inconsistencies are documented through bug reports on GitHub, which are then addressed by the development team.</p>
                 <p>After fixes are applied, I conduct further testing and validation to ensure the integrity of the components. Once satisfied - I'm approving a pull requests, to merge it for updates and mark components as stable.</p>
                 <div>
                     <img src={DI2} alt="DI2" />
-                    <h3>Bug Report</h3>
+                    <h4>Bug Report</h4>
                 </div>
             </section>
 
             <section>
                 <h2>Result</h2>
                 <p>The implementation of our new modern design system marks a significant transformation from the previous, outdated system, ushering in a host of benefits that elevate our product's user experience and streamline our development process.</p>
-                <p>Live web-site: <a href="https://www.sap.com/index.html">sap.com</a></p>
+                
+                <p className='link'>Live web-site: <a href="https://www.sap.com/index.html">sap.com</a></p>
+
                 <article>
                     <h3>New Modern Design System</h3>
                     <p>This change breathes new life into our product, aligning it with contemporary design standards and user expectations. The modern design system not only enhances visual appeal but also improves usability, making our product more intuitive and engaging for users.</p>
@@ -141,8 +138,8 @@ export default function DesignSystem() {
                 <article>
                     <h3>Enhanced Focus on Accessibility</h3>
                     <p>The new design system places a strong emphasis on accessibility, ensuring that our product is usable by a wider range of people, including those with disabilities. By incorporating best practices for accessibility, we are committed to creating an inclusive product that offers a better experience for all users, regardless of their abilities.</p>
-                    <p>In summary, the new design system not only modernizes our product’s appearance but also enhances its functionality and accessibility, laying the groundwork for a consistent, scalable, and inclusive user experience.</p>
                 </article>
+                    <p>In summary, the new design system not only modernizes our product’s appearance but also enhances its functionality and accessibility, laying the groundwork for a consistent, scalable, and inclusive user experience.</p>
             </section>
         </>
     )

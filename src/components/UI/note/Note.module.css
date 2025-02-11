@@ -1,0 +1,33 @@
+.note {
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+
+    background-color: #FFFFFF99;
+    border: 1px solid #687BE066;
+    border-radius: 16px;
+}
+
+.image {
+    width: 70px;
+    height: 71px;
+}
+
+.content {
+    padding: 12px 8px;
+}
+
+.title {
+    margin-bottom: 4px;
+    font: 500 12px/20px 'Manrope';
+    letter-spacing: 0.5%;
+    color: #687BE0;
+}
+
+.text {
+    font: 300 15px/20px 'Manrope';
+    letter-spacing: 0.5%;
+    color: #21344A;
+}
