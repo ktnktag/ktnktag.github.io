@@ -1,12 +1,8 @@
-.container {
-    width: 100%;
-
-    cursor: pointer;
-    
-}
-
+.container,
 .container a {
     width: 100%;
+    height: max-content;
+    cursor: pointer;
 }
 
 .cover {
@@ -18,18 +14,13 @@
     border-radius: 16px 16px 0 0;
 }
 
-.img
-{
+.img {
     width: 100%;
     height: 100%;
 
     transition: transform 0.3s ease-in-out;
-    object-fit: cover;
     border-radius: 16px 16px 0 0;
-}
-
-.container:hover>a>.cover>.img{
-    transform: scale(1.05);
+    object-fit: cover;
 }
 
 .soon {
@@ -42,7 +33,7 @@
     border: 1px solid currentColor;
     border-radius: 8px;
 
-    font: 600 14px/21px 'Manrope', 'from-font'; 
+    font: 600 14px/21px 'Manrope', 'from-font';
     letter-spacing: 0px;
 
     display: flex;
@@ -76,9 +67,15 @@
     transition: color 0.2s ease-in-out;
 }
 
-.link:hover>.content>.title {
-    color: #687BE0;
-    text-decoration: underline;
+@media (hover: hover) {
+    .link:hover>.content>.title {
+        color: #687BE0;
+        text-decoration: underline;
+    }
+
+    .container:hover>a>.cover>.img {
+        transform: scale(1.05);
+    }    
 }
 
 .link:active>.content>.title {
@@ -96,4 +93,56 @@
     height: 106px;
     font: 300 14px/21px 'Manrope', 'from-font';
     letter-spacing: 0%;
+}
+
+@media screen and (max-width: 1320px) {
+    .cover {
+        height: 254px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .cover {
+        height: 208px;
+    }
+
+    .text {
+        min-height: 126px;
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cover {
+        height: 326px;
+    }
+
+    .content {
+        padding: 16px;
+        gap: 8px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .text {
+        min-height: 54px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cover {
+        height: 240px;
+    }
+
+    .company {
+        font-size: 12px;
+    }
+
+    .text {
+        min-height: 90x;
+    }
 }
