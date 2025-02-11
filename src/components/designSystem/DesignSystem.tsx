@@ -10,6 +10,7 @@ import DI2 from '../../assets/png/DI2.png'
 import DI3 from '../../assets/png/DI3.png'
 
 import Note from '../UI/note/Note'
+import Overview from '../UI/overview/Overview'
 import Project from '../UI/project/Project'
 
 export default function DesignSystem() {
@@ -23,32 +24,13 @@ export default function DesignSystem() {
             </section>
 
             <Note></Note>
-
-            <section>
-                <h2>Project Overview </h2>
-                <ul>
-                    <li>
-                        <h3>Client</h3>
-                        <p>SAP</p>
-                    </li>
-                    <li>
-                        <h3>Expertise</h3>
-                        <p>UX Designer, Lead</p>
-                    </li>
-                    <li>
-                        <h3>Deliverables</h3>
-                        <p>UX, Design System, Documentation</p>
-                    </li>
-                    <li>
-                        <h3>Tools</h3>
-                        <p>Figma, Frontify, GitHub</p>
-                    </li>
-                    <li>
-                        <h3>Year</h3>
-                        <p>2023 - 2025</p>
-                    </li>
-                </ul>
-            </section>
+            <Overview 
+                client='SAP' 
+                expertise='UX Designer, Lead' 
+                deliverables='X, Design System, Documentation'
+                tools='Figma, Frontify, GitHub'
+                year='2023 - 2025'>
+            </Overview>
 
             <section>
                 <h2>Work Process</h2>
