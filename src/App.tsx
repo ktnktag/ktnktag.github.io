@@ -1,6 +1,6 @@
 import './App.css'
 
-import ArrowUp from './components/UI/button/arrowUp/ArrowUp.tsx'
+import ArrowUp from './components/UI/arrowUp/ArrowUp.tsx'
 import Header from './components/header/Header.tsx'
 import About from './components/about/About.tsx'
 import SelectedWorks from './components/selectedWorks/SelectedWorks.tsx'

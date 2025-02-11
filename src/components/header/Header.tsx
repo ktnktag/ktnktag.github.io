@@ -1,6 +1,6 @@
 import './Header.css'
 import Logo from '../../assets/svg/Logo.svg'
-import Menu from './menu/Menu.tsx'
+import Menu from '../UI/menu/Menu.tsx'
 
 interface Props {
     active: string;

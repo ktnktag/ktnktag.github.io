@@ -9,7 +9,7 @@ import IMG1Image from '../../assets/png/IMG1.png'
 import IMG2Image from '../../assets/png/IMG2.png'
 import Speaking1 from '../../assets/png/Speaking1.png'
 import Speaking2 from '../../assets/png/Speaking2.png'
-import Project from './project/Project'
+import Project from '../UI/project/Project'
 
 export default function SelectedWorks() {
     return (

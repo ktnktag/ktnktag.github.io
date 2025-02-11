@@ -1,5 +1,5 @@
 import "./Menu.css"
-import MenuButton from '../../UI/button/menuButton/MenuButton'
+import MenuButton from '../button/menuButton/MenuButton'
 
 import { default as Arrow } from '../../../assets/svg/Arrow.svg?react'
 import { useState } from 'react'
