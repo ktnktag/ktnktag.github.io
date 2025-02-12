@@ -11,7 +11,7 @@ import DI3 from '../../assets/png/DI3.png'
 
 import Note from '../UI/note/Note'
 import Overview from '../UI/overview/Overview'
-import Token from '../UI/token/token'
+import Token from '../UI/token/Token'
 import Project from '../UI/project/Project'
 
 export default function DesignSystem() {
