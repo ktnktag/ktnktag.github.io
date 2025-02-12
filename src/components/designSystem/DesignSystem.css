@@ -21,14 +21,6 @@ main section {
     color: #21344A;
 }
 
-.name-img {
-    margin-top: 12px;
-    text-align: center;
-    font: 300 14px/14px 'Manrope';
-    letter-spacing: 0.5%;
-    color: #9B9B9B;
-}
-
 main p {
     font: 400 28px/40px 'Manrope';
     letter-spacing: 0.5%;
