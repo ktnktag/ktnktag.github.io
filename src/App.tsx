@@ -5,7 +5,6 @@ import Header from './components/header/Header.tsx'
 import About from './components/about/About.tsx'
 import SelectedWorks from './components/selectedWorks/SelectedWorks.tsx'
 import DesignSystem from './components/designSystem/DesignSystem.tsx'
-import Token from './components/UI/token/token.tsx'
 
 import { useState } from 'react'
 
@@ -20,12 +19,7 @@ export default function App() {
         <div className='main'>
           {tab === 'About' && <About></About>}
           {tab === 'Selected Works' && <SelectedWorks onChange={setTab}></SelectedWorks>}
-          {tab === 'Side Projects' && <Token 
-                                        value=' #188918'
-                                        global='Color/Green/7'
-                                        alias='Semantic/Success/Selection'
-                                        specific='ProgressBar/Positive/Bar'>
-                                      </Token>}
+          {tab === 'Side Projects' && <p>Side Projects</p>}
 
           {tab === 'Design System' && <DesignSystem></DesignSystem>}
         </div>
