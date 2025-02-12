@@ -87,3 +87,9 @@ main p {
     letter-spacing: 0.5%;
     color: #21344A;
 }
+
+.token-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
