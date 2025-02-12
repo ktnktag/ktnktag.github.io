@@ -33,9 +33,6 @@
     border: 1px solid currentColor;
     border-radius: 8px;
 
-    font: 600 14px/21px 'Manrope', 'from-font';
-    letter-spacing: 0px;
-
     display: flex;
     align-items: center;
 
@@ -45,6 +42,8 @@
 }
 
 .soon p {
+    font: 600 14px/21px 'Manrope', 'from-font';
+    letter-spacing: 0px;
     color: currentColor;
 }
 
@@ -128,6 +127,11 @@
 
     .text {
         min-height: 54px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .soon {
         font-size: 12px;
         line-height: 18px;
     }

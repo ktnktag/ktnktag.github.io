@@ -4,24 +4,24 @@ main section {
     gap: 40px;
 }
 
-main h2 {
+.name-section {
     font: 500 20px/24px 'Manrope';
     letter-spacing: 0.5%;
     color: #9B9B9B;
 }
 
-main h2 span {
+.name-section span {
     color: #21344A;
 }
 
-main h3 {
+.name-article {
     margin-bottom: 12px;
     font: 600 28px/38px 'Manrope';
     letter-spacing: 0.5%;
     color: #21344A;
 }
 
-main h4 {
+.name-img {
     margin-top: 12px;
     text-align: center;
     font: 300 14px/14px 'Manrope';
@@ -35,7 +35,7 @@ main p {
     color: #21344A;
 }
 
-.content-box {
+.column-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
@@ -50,42 +50,8 @@ main p {
     border-bottom: 1px solid #21344A1A;
 }
 
-
 .link a {
     color: #687BE0;
-}
-
-.note {
-    height: max-content;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0;
-
-    background-color: #FFFFFF99;
-    border: 1px solid #687BE066;
-    border-radius: 16px;
-}
-.note img {
-    width: 70px;
-    height: 71px;
-}
-
-.note div {
-    padding: 12px 8px;
-}
-
-.note div h2 {
-    margin-bottom: 4px;
-    font: 500 12px/20px 'Manrope';
-    letter-spacing: 0.5%;
-    color: #687BE0;
-}
-
-.note div p {
-    font: 300 15px/20px 'Manrope';
-    letter-spacing: 0.5%;
-    color: #21344A;
 }
 
 .token-container {

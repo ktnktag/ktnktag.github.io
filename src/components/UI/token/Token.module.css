@@ -23,6 +23,7 @@
 }
 
 .item {
+    width: max-content;
     padding: 12px;
     background-color: #F5F5F7;
     border: 1px solid #24273033;
@@ -48,4 +49,26 @@
     text-align: center;
     letter-spacing: 1px;
     color: #21344A;
+}
+
+@media screen and (max-width: 800px) {
+    .list {
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(4, max-content);
+        grid-auto-flow: column;
+        gap: 12px 18px;
+        place-items: center;
+    }
+
+    .list::before {
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 16.5%;
+    }
+
+    .name {
+        width: 100%;
+        text-align: left;
+    }
 }
