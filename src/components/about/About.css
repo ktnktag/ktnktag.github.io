@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.welcome {
+.welcome-box .welcome {
     font: 500 16px/24px 'Roboto', 'from-font';
     letter-spacing: 1px;
     text-align: left;
@@ -15,9 +15,10 @@
     margin-bottom: 16px;
 }
 
-.title {
+.welcome-box  .title {
     font: 500 58px/69.6px 'Manrope', 'from-font';
     letter-spacing: 1px;
+    color: #21344A;
 }
 
 .cursor {
@@ -171,7 +172,7 @@
 }
 
 @media screen and (max-width: 1050px) {
-    .title {
+    .welcome-box .title {
         font-size: 50px;
         line-height: 46px;
     }
@@ -209,7 +210,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .title {
+    .welcome-box .title {
         font-size: 32px;
         line-height: 38px;
         color: #030712;
@@ -232,16 +233,20 @@
         right: 0;
     }
 
-    .welcome {
+    .welcome-box .welcome {
         font-size: 14px;
         line-height: 20px;
         margin-bottom: 8px;
         text-wrap: nowrap;
     }
 
-    .title {
+    .welcome-box .title {
         font-size: 20px;
         line-height: 24px;
+    }
+
+    .experience {
+        padding-bottom: 28px;
     }
 
     .experience-list ul {

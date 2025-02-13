@@ -16,14 +16,13 @@ export default function App() {
       <Header active={tab} onChange={setTab}></Header>
 
       <main>
-        <div className='main'>
+        <div className='wrapper'>
           {tab === 'About' && <About></About>}
           {tab === 'Selected Works' && <SelectedWorks onChange={setTab}></SelectedWorks>}
           {tab === 'Side Projects' && <p>Side Projects</p>}
 
           {tab === 'Design System' && <DesignSystem></DesignSystem>}
         </div>
-
         <ArrowUp></ArrowUp>
       </main>
 

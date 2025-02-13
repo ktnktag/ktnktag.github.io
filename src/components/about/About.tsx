@@ -8,15 +8,15 @@ import { default as Arrow } from '../../assets/svg/Arrow.svg?react'
 export default function About() {
     return (
         <>
-            <section className='welcome-box'>
+            <header className='welcome-box'>
                 <p className='welcome'>Hello there! 👋 I’m valeria yakovchik,</p>
                 <h1 className='title'>Experience Designer from Poland, working to create exceptional user experiences.</h1>
                 <span className='cursor'>
                     <img src={CursorImage} alt="cursor" />
                 </span>
-            </section>
+            </header>
 
-            <section id="about" className='experience'>
+            <div id="about" className='experience'>
 
                 <div className='experience-list'>
                     <ul>
@@ -91,7 +91,7 @@ export default function About() {
                         </ul>
                     </footer>
                 </div>
-            </section>
+            </div>
         </>
     )
 }

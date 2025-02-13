@@ -18,8 +18,8 @@ interface Props {
 export default function SelectedWorks({ onChange }: Props) {
     return (
         <>
-            <section>
-                <div className='content-box'>
+            <div>
+                <div className='two-column'>
                     <Project
                         image={PortalImage}
                         title='Redesign and Developing for Internal CI/CD Platform'
@@ -60,11 +60,11 @@ export default function SelectedWorks({ onChange }: Props) {
                         Create an app that facilitates the process of finding and matching people with the right therapist, allowing users to track their mental health  and utilize self-help tools. Simultaneously, the app aimed to assist mental health professionals in connecting with clients and maintaining comprehensive treatment histories.
                     </Project>
                 </div>
-            </section>
+            </div>
 
             <section id='writing'>
-                <h2 className='content-box-title'>Writing</h2>
-                <div className='content-box'>
+                <h2 className='title'>Writing</h2>
+                <div className='two-column'>
                     <Project
                         image={IMG1Image}
                         title='One More Survival Guide for Junior Experience  Designers ↗'
@@ -82,8 +82,8 @@ export default function SelectedWorks({ onChange }: Props) {
             </section>
 
             <section id='speaking'>
-                <h2 className='content-box-title'>Speaking</h2>
-                <div className='content-box'>
+                <h2 className='title'>Speaking</h2>
+                <div className='two-column'>
                     <Project
                         image={Speaking1}
                         title='Website Redesign Workshop'

@@ -12,7 +12,7 @@ interface Props {
 export default function Overview({ client, expertise, deliverables, tools, year }: Props) {
     return (
         <section>
-            <h2 className='name-section'>Project Overview</h2>
+            <h2 className='title'>Project Overview</h2>
 
             <ul>
                 <li className={classes.content}>

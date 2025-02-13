@@ -14,3 +14,142 @@
 
     color: #9B9B9B;
 }
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+    margin-bottom: 140px;
+}
+
+@media screen and (max-width: 1050px) {
+    .wrapper {
+        gap: 80px;
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        gap: 60px;
+    }
+}
+
+
+/* --- Временно здесь будут стили для страниц проектов --- */
+
+.first-title {
+    font: 500 15px/20px 'Manrope';
+    letter-spacing: 0.5%;
+    color: #9B9B9B;
+}
+
+.first-title span {
+    color: #21344A;
+}
+
+.title {
+    margin-bottom: 24px;
+    font: 500 20px/24px 'Manrope', 'from-font';
+    letter-spacing: 0.5%;
+    color: #9B9B9B;
+}
+
+.subtitle {
+    margin-bottom: 12px;
+    font: 600 28px/38px 'Manrope';
+    letter-spacing: 0.5%;
+    color: #21344A;
+}
+
+.paragraph,
+.column-alignment {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.paragraph {
+
+    gap: 32px;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+@media screen and (max-width: 1320px) {
+    .subtitle {
+        margin-bottom: 32px;
+    }
+
+    .n_1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .title {
+        margin-bottom: 16px;
+    }
+
+    .paragraph {
+        gap: 24px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .two-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .paragraph {
+        gap: 18px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 18px;
+    }
+
+    .n_3 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .first-title {
+        font-size: 12px;
+        line-height: 18px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .title {
+        margin-bottom: 8px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .paragraph {
+        gap: 14px;
+    }
+}

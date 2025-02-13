@@ -22,10 +22,11 @@ html {
 
 /* --- global styles --- */
 
-p {
+main p {
   color: #21344A;
-  font: 400 28px/40px 'Manrope', 'rom-font';
-  letter-spacing: 0.005em;
+  font: 400 28px/38px 'Manrope', 'rom-font';
+  letter-spacing: 0.5%;
+  position: relative;
 }
 
 main a {
@@ -54,10 +55,6 @@ main a:active {
 
 /* --- global margins --- */
 
-section {
-  margin-bottom: 140px;
-}
-
 main {
   width: 996px;
   margin: 0 auto;
@@ -78,8 +75,9 @@ main {
     width: 772px;
   }
 
-  section {
-    margin-bottom: 80px;
+  main p {
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
@@ -88,13 +86,18 @@ main {
     width: 559px;
   }
 
-  section {
-    margin-bottom: 60px;
+  main p {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
 @media screen and (max-width: 600px) {
   main {
     width: 312px;
+  }
+  main p {
+    font-size: 14px;
+    line-height: 20px;
   }
 }

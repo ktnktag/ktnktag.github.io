@@ -1,53 +1,11 @@
-main section {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.name-section {
-    font: 500 20px/24px 'Manrope';
-    letter-spacing: 0.5%;
-    color: #9B9B9B;
-}
-
-.name-section span {
-    color: #21344A;
-}
-
-.name-article {
-    margin-bottom: 12px;
-    font: 600 28px/38px 'Manrope';
-    letter-spacing: 0.5%;
-    color: #21344A;
-}
-
-main p {
-    font: 400 28px/40px 'Manrope';
-    letter-spacing: 0.5%;
-    color: #21344A;
-}
-
-.column-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
-}
-
 .link {
     padding: 16px 0;
     font: 500 15px/20px 'Manrope';
     letter-spacing: 0.5%;
     color: #21344A;
-
     border-bottom: 1px solid #21344A1A;
 }
 
 .link a {
     color: #687BE0;
-}
-
-.token-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
 }
