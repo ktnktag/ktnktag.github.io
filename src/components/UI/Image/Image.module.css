@@ -5,3 +5,9 @@
     letter-spacing: 0.5%;
     color: #9B9B9B;
 }
+
+@media screen and (max-width: 600px) {
+    .title {
+        font: 300 10px/14px 'Manrope';
+    }
+}
