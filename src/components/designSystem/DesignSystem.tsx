@@ -16,11 +16,15 @@ import Token from '../UI/token/Token'
 import Image from '../UI/Image/Image'
 import Project from '../UI/project/Project'
 
-export default function DesignSystem() {
+interface Props {
+    onChange: any;
+}
+
+export default function DesignSystem({onChange} : Props) {
     return (
         <>
             <section className='column-alignment'>
-                <h1 className='first-title'>Selected Works / <span>Design System for Global Tech Company</span></h1>
+                <h1 className='first-title'><a href="#" onClick={() => onChange("Selected Works")}>Selected Works</a> / <span>Design System for Global Tech Company</span></h1>
                 <span className='paragraph'>
                     <p>Embark on a journey through the development of a brand digital design system tailored for SAP, meticulously aligned with the esteemed SAP Fiori Design System.</p>
                     <p>With a primary focus on crafting a comprehensive design system supplemented by thorough developer documentation, our objective is to instill a unified visual identity seamlessly integrated with SAP's foundational resources. </p>
@@ -148,9 +152,7 @@ export default function DesignSystem() {
                         <h3 className='subtitle'>Consistency and Coherence</h3>
                         <p>The new design system introduces a suite of predefined design assets and components that are consistently applied across our product. This consistency eliminates the need for creating separate components that vary from page to page, ensuring a polished and user-friendly experience. The adoption of the new design system by other websites within our company has further established a unified design language, reinforcing our brand identity and providing a seamless experience for users across different platforms.</p>
                     </article>
-                    <span className='n_1'>
-                        <Image imgPath={DI3} title='Library analysis'></Image>
-                    </span>
+                    <Image imgPath={DI3} title='Library analysis'></Image>
                     <article>
                         <h3 className='subtitle'>Scalability and Flexibility</h3>
                         <p>Our design system serves as a robust foundation for future growth and adaptability. It facilitates consistent updates and maintenance, making it easier to respond to evolving user needs and business requirements. This scalability ensures that any new features or changes can be integrated smoothly, maintaining coherence across the entire product.</p>

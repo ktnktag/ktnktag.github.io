@@ -25,7 +25,7 @@ export default function SelectedWorks({ onChange }: Props) {
                         title='Redesign and Developing for Internal CI/CD Platform'
                         company='Hyperspace Portal, SAP Company, 2024'
                         soon={true}
-                        OpenPage={() => onChange("Design System")}>
+                        OpenPage={() => onChange("Hyperspace Portal")}>
                         Actively participated in the development and removal of legacy systems for the Hyperspace Portal, contributing to modernization efforts and conducting user research and testing to optimize functionality.
                     </Project>
 

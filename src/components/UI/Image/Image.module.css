@@ -1,6 +1,7 @@
 .img {
     width: max-content;
     height: max-content;
+    border-radius: 16px;
 }
 
 .title {
@@ -12,6 +13,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    .img {
+        border-radius: 8px;
+    }
+
     .title {
         font: 300 10px/14px 'Manrope';
     }

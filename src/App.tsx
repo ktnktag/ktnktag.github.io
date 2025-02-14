@@ -5,6 +5,7 @@ import Header from './components/header/Header.tsx'
 import About from './components/about/About.tsx'
 import SelectedWorks from './components/selectedWorks/SelectedWorks.tsx'
 import DesignSystem from './components/designSystem/DesignSystem.tsx'
+import HyperspacePortal from './components/hyperspacePortal/HyperspacePortal.tsx'
 
 import { useState } from 'react'
 
@@ -21,7 +22,8 @@ export default function App() {
           {tab === 'Selected Works' && <SelectedWorks onChange={setTab}></SelectedWorks>}
           {tab === 'Side Projects' && <p>Side Projects</p>}
 
-          {tab === 'Design System' && <DesignSystem></DesignSystem>}
+          {tab === 'Hyperspace Portal' && <HyperspacePortal></HyperspacePortal>}
+          {tab === 'Design System' && <DesignSystem onChange={setTab}></DesignSystem>}
         </div>
         <ArrowUp></ArrowUp>
       </main>
