@@ -109,6 +109,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    .list {
+        margin: 24px 0;
+    }
+
     .name {
         width: 120px;
     }

@@ -78,16 +78,13 @@
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
     gap: 24px;
 }
 
 @media screen and (max-width: 1320px) {
     .subtitle {
         margin-bottom: 32px;
-    }
-
-    .n_1 {
-        display: none;
     }
 }
 
@@ -128,6 +125,10 @@
         margin-bottom: 18px;
     }
 
+    .column-alignment {
+        gap: 16px;
+    }
+
     .n_3 {
         display: none;
     }
@@ -147,6 +148,10 @@
         margin-bottom: 8px;
         font-size: 12px;
         line-height: 18px;
+    }
+
+    .column-alignment {
+        gap: 8px;
     }
 
     .paragraph {

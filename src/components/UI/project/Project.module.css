@@ -1,9 +1,14 @@
 .container,
 .container a {
     width: 100%;
-    height: max-content;
+    height: 100%;
     cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    border-bottom: transparent;
 }
+
 
 .cover {
     width: 100%;
@@ -48,7 +53,7 @@
 }
 
 .content {
-    height: max-content;
+    flex-grow: 1;
     padding: 40px 32px;
     border-radius: 0 0 16px 16px;
 
@@ -89,7 +94,6 @@
 }
 
 .text {
-    height: 106px;
     font: 300 14px/21px 'Manrope', 'from-font';
     letter-spacing: 0%;
 }
