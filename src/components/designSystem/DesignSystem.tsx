@@ -8,6 +8,7 @@ import DesignImage5 from '../../assets/png/DesignImage5.png'
 import DI1 from '../../assets/png/DI1.png'
 import DI2 from '../../assets/png/DI2.png'
 import DI3 from '../../assets/png/DI3.png'
+import Sap from '../../assets/svg/SAP.svg'
 
 import Note from '../UI/note/Note'
 import Overview from '../UI/overview/Overview'
@@ -29,7 +30,7 @@ export default function DesignSystem() {
 
             <Note></Note>
             <Overview
-                client='SAP'
+                client={Sap}
                 expertise='UX Designer, Lead'
                 deliverables='X, Design System, Documentation'
                 tools='Figma, Frontify, GitHub'

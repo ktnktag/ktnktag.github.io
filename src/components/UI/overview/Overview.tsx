@@ -17,7 +17,7 @@ export default function Overview({ client, expertise, deliverables, tools, year 
             <ul>
                 <li className={classes.content}>
                     <p className={classes.name}>Client</p>
-                    <p className={classes.text}>{client}</p>
+                    <img src={client} alt="client" />
                 </li>
                 <li className={classes.content}>
                     <p className={classes.name}>Expertise</p>
