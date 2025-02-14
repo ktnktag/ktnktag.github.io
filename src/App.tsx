@@ -6,6 +6,7 @@ import About from './components/about/About.tsx'
 import SelectedWorks from './components/selectedWorks/SelectedWorks.tsx'
 import RedesignWorkshop from './components/redesignWorkshop/RedesignWorkshop.tsx'
 import HyperspacePortal from './components/hyperspacePortal/HyperspacePortal.tsx'
+import DocumentationPage from './components/documentationPage/DocumentationPage.tsx'
 
 import { useState } from 'react'
 
@@ -24,6 +25,8 @@ export default function App() {
 
           {tab === 'Hyperspace Portal' && <HyperspacePortal></HyperspacePortal>}
           {tab === 'Redesign Workshop' && <RedesignWorkshop onChange={setTab}></RedesignWorkshop>}
+          {tab === 'Documentation Page' && <DocumentationPage onChange={setTab}></DocumentationPage>}
+
         </div>
         <ArrowUp></ArrowUp>
       </main>

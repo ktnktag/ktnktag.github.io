@@ -74,7 +74,8 @@ export default function RedesignWorkshop({onChange} : Props) {
 
                         <Project
                             image={DesignImage4}
-                            title="Documentation" >
+                            title="Documentation"
+                            OpenPage={() => onChange("Documentation Page")}>
                             Specifications provided an in-depth insight into the purpose, usage guidelines, and technical characteristics of every element.
                         </Project>
                     </div>
