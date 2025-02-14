@@ -1,6 +1,4 @@
 import Note from '../UI/note/Note'
-import Overview from '../UI/overview/Overview'
-import Image from '../UI/Image/Image'
 
 export default function HyperspacePortal() {
     return (
