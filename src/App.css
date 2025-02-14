@@ -40,6 +40,7 @@
 /* --- Временно здесь будут стили для страниц проектов --- */
 
 .first-title {
+    margin-bottom: 40px;
     font: 300 15px/20px 'Manrope';
     letter-spacing: 0.5%;
     color: #9B9B9B;
@@ -138,6 +139,7 @@
     .first-title {
         font-size: 12px;
         line-height: 18px;
+        margin-bottom: 32px;
 
         white-space: nowrap;
         overflow: hidden;

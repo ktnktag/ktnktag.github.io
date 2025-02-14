@@ -1,4 +1,4 @@
-import './DesignSystem.css'
+import './RedesignWorkshop.css'
 
 import DesignImage1 from '../../assets/png/DesignSystemImg1.png'
 import DesignImage2 from '../../assets/png/DesignSystemImg2.png'
@@ -20,17 +20,19 @@ interface Props {
     onChange: any;
 }
 
-export default function DesignSystem({onChange} : Props) {
+export default function RedesignWorkshop({onChange} : Props) {
     return (
         <>
-            <section className='column-alignment'>
+            <header>
                 <h1 className='first-title'><a href="#" onClick={() => onChange("Selected Works")}>Selected Works</a> / <span>Design System for Global Tech Company</span></h1>
-                <span className='paragraph'>
-                    <p>Embark on a journey through the development of a brand digital design system tailored for SAP, meticulously aligned with the esteemed SAP Fiori Design System.</p>
-                    <p>With a primary focus on crafting a comprehensive design system supplemented by thorough developer documentation, our objective is to instill a unified visual identity seamlessly integrated with SAP's foundational resources. </p>
-                </span>
-                <Image imgPath={DesignImage1}></Image>
-            </section>
+                <div className="column-alignment">
+                    <span className='paragraph'>
+                        <p>Embark on a journey through the development of a brand digital design system tailored for SAP, meticulously aligned with the esteemed SAP Fiori Design System.</p>
+                        <p>With a primary focus on crafting a comprehensive design system supplemented by thorough developer documentation, our objective is to instill a unified visual identity seamlessly integrated with SAP's foundational resources. </p>
+                    </span>
+                    <Image imgPath={DesignImage1}></Image>
+                </div>
+            </header>
 
             <Note></Note>
             <Overview
