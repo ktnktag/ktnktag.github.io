@@ -3,10 +3,11 @@ import './App.css'
 import ArrowUp from './components/UI/arrowUp/ArrowUp.tsx'
 import Header from './components/header/Header.tsx'
 import About from './components/about/About.tsx'
-import SelectedWorks from './components/selectedWorks/SelectedWorks.tsx'
-import DesignSystem from './components/designSystem/DesignSystem.tsx'
-import HyperspacePortal from './components/hyperspacePortal/HyperspacePortal.tsx'
-import DocumentationPage from './components/documentationPage/DocumentationPage.tsx'
+import SelectedWorks from './components/SelectedWorks.tsx'
+import DesignSystem from './components/DesignSystem.tsx'
+import HyperspacePortal from './components/HyperspacePortal.tsx'
+import DocumentationPage from './components/DocumentationPage.tsx'
+import ComponentPage from './components/ComponentPage.tsx'
 
 import { useState } from 'react'
 
@@ -26,6 +27,7 @@ export default function App() {
           {tab === 'Hyperspace Portal' && <HyperspacePortal></HyperspacePortal>}
           {tab === 'Design System' && <DesignSystem onChange={setTab}></DesignSystem>}
           {tab === 'Documentation Page' && <DocumentationPage onChange={setTab}></DocumentationPage>}
+          {tab === 'Component Page' && <ComponentPage onChange={setTab}></ComponentPage>}
 
         </div>
         <ArrowUp></ArrowUp>

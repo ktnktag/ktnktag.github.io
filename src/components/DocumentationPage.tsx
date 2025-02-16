@@ -1,15 +1,15 @@
-import DesignImage from '../../assets/png/DesignImage4.png'
-import D1 from '../../assets/png/DP/D1.png'
-import D2 from '../../assets/png/DP/D2.png'
-import D3 from '../../assets/png/DP/D3.png'
-import D4 from '../../assets/png/DP/D4.png'
-import D5 from '../../assets/png/DP/D5.png'
-import D6 from '../../assets/png/DP/D6.png'
-import D7 from '../../assets/png/DP/D7.png'
-import D8 from '../../assets/png/DP/D8.png'
+import DesignImage from '../assets/png/DesignImage4.png'
+import D1 from '../assets/png/DP/D1.png'
+import D2 from '../assets/png/DP/D2.png'
+import D3 from '../assets/png/DP/D3.png'
+import D4 from '../assets/png/DP/D4.png'
+import D5 from '../assets/png/DP/D5.png'
+import D6 from '../assets/png/DP/D6.png'
+import D7 from '../assets/png/DP/D7.png'
+import D8 from '../assets/png/DP/D8.png'
 
-import Note from "../UI/note/Note"
-import Image from "../UI/Image/Image"
+import Note from "./UI/note/Note"
+import Image from "./UI/Image/Image"
 
 interface Props {
     onChange: any;

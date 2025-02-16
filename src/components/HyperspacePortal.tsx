@@ -1,4 +1,4 @@
-import Note from '../UI/note/Note'
+import Note from './UI/note/Note'
 
 export default function HyperspacePortal() {
     return (

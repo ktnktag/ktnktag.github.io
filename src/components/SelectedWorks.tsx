@@ -1,15 +1,13 @@
-import './SelectedWorks.css'
-
-import PortalImage from '../../assets/png/Portal.png'
-import SapImage from '../../assets/png/Content Placeholder.png'
-import AdidasImage from '../../assets/png/Adidas.png'
-import RSSchoolImage from '../../assets/png/RSSchool.png'
-import HealthImage from '../../assets/png/Health.png'
-import IMG1Image from '../../assets/png/IMG1.png'
-import IMG2Image from '../../assets/png/IMG2.png'
-import Speaking1 from '../../assets/png/Speaking1.png'
-import Speaking2 from '../../assets/png/Speaking2.png'
-import Project from '../UI/project/Project'
+import PortalImage from '../assets/png/Portal.png'
+import SapImage from '../assets/png/Content Placeholder.png'
+import AdidasImage from '../assets/png/Adidas.png'
+import RSSchoolImage from '../assets/png/RSSchool.png'
+import HealthImage from '../assets/png/Health.png'
+import IMG1Image from '../assets/png/IMG1.png'
+import IMG2Image from '../assets/png/IMG2.png'
+import Speaking1 from '../assets/png/Speaking1.png'
+import Speaking2 from '../assets/png/Speaking2.png'
+import Project from './UI/project/Project'
 
 interface Props {
     onChange: any;

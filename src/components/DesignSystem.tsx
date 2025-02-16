@@ -1,20 +1,18 @@
-import './DesignSystem.css'
+import DesignImage1 from '../assets/png/DesignSystemImg1.png'
+import DesignImage2 from '../assets/png/DesignSystemImg2.png'
+import DesignImage3 from '../assets/png/DesignImage3.png'
+import DesignImage4 from '../assets/png/DesignImage4.png'
+import DesignImage5 from '../assets/png/DesignImage5.png'
+import DI1 from '../assets/png/DI1.png'
+import DI2 from '../assets/png/DI2.png'
+import DI3 from '../assets/png/DI3.png'
+import Sap from '../assets/svg/SAP.svg'
 
-import DesignImage1 from '../../assets/png/DesignSystemImg1.png'
-import DesignImage2 from '../../assets/png/DesignSystemImg2.png'
-import DesignImage3 from '../../assets/png/DesignImage3.png'
-import DesignImage4 from '../../assets/png/DesignImage4.png'
-import DesignImage5 from '../../assets/png/DesignImage5.png'
-import DI1 from '../../assets/png/DI1.png'
-import DI2 from '../../assets/png/DI2.png'
-import DI3 from '../../assets/png/DI3.png'
-import Sap from '../../assets/svg/SAP.svg'
-
-import Note from '../UI/note/Note'
-import Overview from '../UI/overview/Overview'
-import Token from '../UI/token/Token'
-import Image from '../UI/Image/Image'
-import Project from '../UI/project/Project'
+import Note from './UI/note/Note'
+import Overview from './UI/overview/Overview'
+import Token from './UI/token/Token'
+import Image from './UI/Image/Image'
+import Project from './UI/project/Project'
 
 interface Props {
     onChange: any;
@@ -68,7 +66,8 @@ export default function DesignSystem({onChange} : Props) {
                     <div className='two-column'>
                         <Project
                             image={DesignImage3}
-                            title="Components and Patterns" >
+                            title="Components and Patterns"
+                            OpenPage={() => onChange("Component Page")}>
                             Each component was meticulously designed, adhering strictly to our established design language.
                         </Project>
 

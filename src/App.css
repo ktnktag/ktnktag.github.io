@@ -83,6 +83,27 @@
     gap: 24px;
 }
 
+.triple-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.triple-column div:nth-child(3) {
+    grid-column: 1/3;
+}
+
+.link {
+    padding: 16px 0;
+    font: 500 15px/20px 'Manrope';
+    letter-spacing: 0.5%;
+    color: #21344A;
+    border-bottom: 1px solid #21344A1A;
+}
+.link a {
+    color: #687BE0;
+}
+
 @media screen and (max-width: 1320px) {
     .subtitle {
         margin-bottom: 32px;
@@ -106,6 +127,7 @@
 }
 
 @media screen and (max-width: 800px) {
+    .triple-column,
     .two-column {
         display: flex;
         flex-direction: column;
