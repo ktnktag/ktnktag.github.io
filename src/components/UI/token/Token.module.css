@@ -112,7 +112,10 @@
     .list {
         margin: 24px 0;
     }
-
+    .list::before {
+        height: 95%;
+        left: 28.5%;
+    }
     .name {
         width: 120px;
     }
