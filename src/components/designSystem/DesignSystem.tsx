@@ -1,4 +1,4 @@
-import './RedesignWorkshop.css'
+import './DesignSystem.css'
 
 import DesignImage1 from '../../assets/png/DesignSystemImg1.png'
 import DesignImage2 from '../../assets/png/DesignSystemImg2.png'
@@ -20,7 +20,7 @@ interface Props {
     onChange: any;
 }
 
-export default function RedesignWorkshop({onChange} : Props) {
+export default function DesignSystem({onChange} : Props) {
     return (
         <>
             <header>

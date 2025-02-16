@@ -33,7 +33,7 @@ export default function SelectedWorks({ onChange }: Props) {
                         image={SapImage}
                         title='Design System for the Leading Global Tech Company Web-sites'
                         company='SAP Company, 2023 - 2025'
-                        OpenPage={() => onChange("Redesign Workshop")}>
+                        OpenPage={() => onChange("Design System")}>
                         Developing a new comprehensive design system and accompanying documentation for developers, aligning it with SAP Fiori Design System and integrating it with other SAP resources.
                     </Project>
 

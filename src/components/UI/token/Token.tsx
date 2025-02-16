@@ -19,7 +19,7 @@ export default function Token({ value, global, alias, specific }: Props) {
             </li>
             <li className={classes.item}>
                 <span style={{ background: `${value}` }} className={classes.color}></span>
-                <p  className={classes.text}>{alias}</p>
+                <p  className={classes.penult}>{alias}</p>
             </li>
             <li className={classes.item}>
                 <span style={{ background: `${value}` }} className={classes.color}></span>
