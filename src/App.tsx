@@ -8,6 +8,7 @@ import DesignSystem from './components/DesignSystem.tsx'
 import HyperspacePortal from './components/HyperspacePortal.tsx'
 import DocumentationPage from './components/DocumentationPage.tsx'
 import ComponentPage from './components/ComponentPage.tsx'
+import AdidasPage from './components/AdidasPage.tsx'
 
 import { useState } from 'react'
 
@@ -28,6 +29,7 @@ export default function App() {
           {tab === 'Design System' && <DesignSystem onChange={setTab}></DesignSystem>}
           {tab === 'Documentation Page' && <DocumentationPage onChange={setTab}></DocumentationPage>}
           {tab === 'Component Page' && <ComponentPage onChange={setTab}></ComponentPage>}
+          {tab === 'Adidas Page' && <AdidasPage onChange={setTab}></AdidasPage>}
 
         </div>
         <ArrowUp></ArrowUp>

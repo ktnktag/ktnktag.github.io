@@ -38,7 +38,8 @@ export default function SelectedWorks({ onChange }: Props) {
                     <Project
                         image={AdidasImage}
                         title='Seamless Migration from the Legacy Platform to SAP Fiori and Enhanced Features'
-                        company='adidas, 2023'>
+                        company='adidas, 2023'
+                        OpenPage={() => onChange("Adidas Page")}>
                         Primary objective was to transition all processes for the *NDA* app to SAP Fiori, replacing the previous platform. This transition also included expanding and enhancing some features to deliver a better user experience and meet the evolving requirements and needs of the business.
                     </Project>
 
