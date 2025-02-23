@@ -70,11 +70,14 @@
     letter-spacing: 0.5%;
     transition: color 0.2s ease-in-out;
 }
+.title span {
+    border-bottom: 1px solid transparent;
+}
 
 @media (hover: hover) {
-    .link:hover>.content>.title {
+    .link:hover>.content>.title>span {
         color: #687BE0;
-        text-decoration: underline;
+        border-bottom-color: currentColor;
     }
 
     .container:hover>a>.cover>.img {
@@ -82,9 +85,16 @@
     }    
 }
 
-.link:active>.content>.title {
+.link:active>.content>.title>span {
     color: #17029C;
-    text-decoration: underline;
+    border-bottom-color: currentColor;
+}
+
+.link svg {
+    margin-top: 3px;
+    width: 14px;
+    transform: rotate(45deg);
+    position: relative;
 }
 
 .company {
@@ -139,6 +149,10 @@
         font-size: 12px;
         line-height: 18px;
     }
+
+    .link svg {
+        width: 12px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -152,5 +166,9 @@
 
     .text {
         min-height: 90x;
+    }
+
+    .link svg {
+        width: 12px;
     }
 }

@@ -45,7 +45,7 @@ export default function DesignSystem({onChange} : Props) {
                 <h2 className='title'>Work Process</h2>
                 <div className='column-alignment'>
                     <p>Our work process for this project was designed with organization and efficiency in mind. We divided the project into sprints, each focused on a specific set of components, patterns, and templates. This approach allowed us to maintain clarity and manage the project effectively, even with multiple designers collaborating.</p>
-                    <Image imgPath={DesignImage2} title='Figma environment organisation'></Image>
+                    <Image imgPath={DesignImage2} title='Figma environment organisation' isMultiply={true}></Image>
                     <span className='paragraph'>
                         <p>For each component, we created a dedicated Figma file. This practice ensured that we could closely monitor changes, iterations, and updates for each component individually.The separation of components into distinct files simplified navigation and management for both our design team and other project stakeholders.</p>
                         <p>We initiated the project by focusing on basic components and gradually progressed towards more complex ones. Following this approach allowed us to establish a solid foundation before delving into intricate design work. </p>

@@ -1,4 +1,5 @@
 import classes from './Project.module.css'
+import { default as Arrow } from '../../../assets/svg/Arrow.svg?react'
 
 interface Props {
     children: React.ReactNode;
@@ -22,7 +23,7 @@ export default function Project({children, image, title, company, soon, path, Op
                     {soon !== undefined && <div className={classes.soon}><p>soon</p></div>}
                 </div>
                 <div className={classes.content}>
-                    <h3 className={classes.title}>{title}</h3>
+                    <h3 className={classes.title}> <span> {title} {path !== undefined && <Arrow></Arrow>} </span>  </h3>
                     {company !== undefined && <h4 className={classes.company}>{company}</h4>}
                     <p className={classes.text}>{children}</p>
                 </div>

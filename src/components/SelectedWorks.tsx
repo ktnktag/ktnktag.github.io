@@ -1,13 +1,13 @@
-import PortalImage from '../assets/png/Portal.png'
-import SapImage from '../assets/png/Content Placeholder.png'
-import AdidasImage from '../assets/png/Adidas.png'
-import RSSchoolImage from '../assets/png/RSSchool.png'
-import HealthImage from '../assets/png/Health.png'
-import IMG1Image from '../assets/png/IMG1.png'
-import IMG2Image from '../assets/png/IMG2.png'
-import Speaking1 from '../assets/png/Speaking1.png'
-import Speaking2 from '../assets/png/Speaking2.png'
-import Project from './UI/project/Project'
+import PortalImage from '../assets/png/Portal.png';
+import SapImage from '../assets/png/Content Placeholder.png';
+import AdidasImage from '../assets/png/Adidas.png';
+import RSSchoolImage from '../assets/png/RSSchool.png';
+import HealthImage from '../assets/png/Health.png';
+import IMG1Image from '../assets/png/IMG1.png';
+import IMG2Image from '../assets/png/IMG2.png';
+import Speaking1 from '../assets/png/Speaking1.png';
+import Speaking2 from '../assets/png/Speaking2.png';
+import Project from './UI/project/Project';
 
 interface Props {
     onChange: any;
@@ -66,14 +66,14 @@ export default function SelectedWorks({ onChange }: Props) {
                 <div className='two-column'>
                     <Project
                         image={IMG1Image}
-                        title='One More Survival Guide for Junior Experience  Designers ↗'
+                        title='One More Survival Guide for Junior Experience  Designers'
                         path='https://medium.com/design-bootcamp/survival-guide-for-junior-ux-designers-9f8e5e8b670'>
                         Getting into the world of design — is exciting and sometimes terrified. Not long ago, I was in your shoes and I hope my article help newbies be prepared for a new environment, not lose themselves and not burn out in the first months.
                     </Project>
 
                     <Project
                         image={IMG2Image}
-                        title='6 Lessons that I Learned as a Designer by UX-volunteering ↗'
+                        title='6 Lessons that I Learned as a Designer by UX-volunteering'
                         path='https://medium.com/design-bootcamp/6-lessons-that-i-learned-as-a-designer-by-ux-volunteering-d3d005d44e87'>
                         Discover six pivotal lessons learned through UX volunteering that shaped my growth as a designer. Click to explore more!
                     </Project>

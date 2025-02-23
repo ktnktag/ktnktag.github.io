@@ -10,12 +10,10 @@ interface Props {
 
 export default function MenuButton({ children, active, onClick, isChanging = true, path = '#'}: Props) {
     return (
-        <li 
-            className={`${isChanging ? classes.changingButton : classes.button} ${active && classes.active}`} 
+        <li className={`${isChanging ? classes.changingButton : classes.button} ${active && classes.active}`} 
             onClick={() => onClick()}>
 
-            <a 
-                href={path}
+            <a  href={path}
                 className={classes.text}>
                 {children}
             </a>
