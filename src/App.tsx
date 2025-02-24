@@ -4,6 +4,7 @@ import ArrowUp from './components/UI/arrowUp/ArrowUp.tsx'
 import Header from './components/header/Header.tsx'
 import About from './components/about/About.tsx'
 import SelectedWorks from './components/SelectedWorks.tsx'
+import SideProjects from './components/SideProjects.tsx'
 import DesignSystem from './components/DesignSystem.tsx'
 import HyperspacePortal from './components/HyperspacePortal.tsx'
 import DocumentationPage from './components/DocumentationPage.tsx'
@@ -23,7 +24,7 @@ export default function App() {
         <div className='wrapper'>
           {tab === 'About' && <About></About>}
           {tab === 'Selected Works' && <SelectedWorks onChange={setTab}></SelectedWorks>}
-          {tab === 'Side Projects' && <p>Side Projects</p>}
+          {tab === 'Side Projects' && <SideProjects></SideProjects>}
 
           {tab === 'Hyperspace Portal' && <HyperspacePortal></HyperspacePortal>}
           {tab === 'Design System' && <DesignSystem onChange={setTab}></DesignSystem>}
