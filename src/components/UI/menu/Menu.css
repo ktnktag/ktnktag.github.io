@@ -75,6 +75,7 @@
 .arrow-down-litle {
     width: 8px;
     transform: rotate(180deg);
+    color: #9B9B9B;
 }
 
 @media screen and (max-width: 800px) {
@@ -114,6 +115,10 @@
         display: flex;
     }
 
+    .arrow-none {
+        display: none;
+    }
+
     .burger.active::before {
         transform: rotate(45deg);
         top: 11px;
@@ -133,6 +138,7 @@
     .arrow-down {
         width: 14px;
         transform: rotate(180deg);
+        color: #9B9B9B;
     }
 }
 

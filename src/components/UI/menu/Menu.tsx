@@ -47,7 +47,7 @@ export default function Menu({ active, onChange }: Props) {
                 </span>
 
                 <MenuButton path="https://www.linkedin.com/in/kto-nekto/" active={active === "LinkedIn"}>
-                    <span>LinkedIn</span>  <Arrow className="arrow-right-up show-arrow"></Arrow>
+                    <span>LinkedIn</span>   <Arrow className="arrow-down arrow-none"></Arrow> <Arrow className="arrow-right-up show-arrow"></Arrow>
                 </MenuButton>
 
                 <MenuButton path='#about' active={active === "CV"}>
