@@ -9,7 +9,6 @@
 
     position: absolute;
     bottom: 0;
-    z-index: -1;
     right: -300px;
 }
 
@@ -30,7 +29,7 @@
     position: sticky;
     bottom: 24px;
     right: 24px;
-
+    z-index: 2;
     transition: background-color 0.2s ease-in-out;
 }
 
@@ -62,11 +61,6 @@
 
 @media screen and (max-width: 920px) {
     .box {
-        right: 0;
-    }
-    .arrow {
-        position: relative;
-        bottom: 0;
-        right: 0;
+        right: -100px;
     }
 }
