@@ -6,8 +6,8 @@
 }
 
 .img {
-    width: max-content;
-    height: max-content;
+    min-height: 400px;
+    max-height: max-content;
     border-radius: 16px;
 }
 
@@ -19,9 +19,21 @@
     color: #9B9B9B;
 }
 
+@media screen and (max-width: 1320px) {
+    .img {
+        min-height: 350px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .img {
+        min-height: 250px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .img {
-        border-radius: 8px;
+        min-height: 150px;
     }
 
     .title {

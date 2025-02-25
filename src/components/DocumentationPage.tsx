@@ -1,4 +1,4 @@
-import DesignImage from '../assets/png/DesignImage4.png'
+import DS4 from '../assets/png/DSP/DS4.png'
 import D1 from '../assets/png/DP/D1.png'
 import D2 from '../assets/png/DP/D2.png'
 import D3 from '../assets/png/DP/D3.png'
@@ -22,7 +22,7 @@ export default function DocumentationPage({ onChange }: Props) {
                 <h1 className='first-title'><a href="#" onClick={() => onChange("Selected Works")}>Selected Works</a> / <a href="#" onClick={() => onChange("Design System")}>Design System for Global Tech Company</a> / <span> Documentation </span></h1>
                 <div className="column-alignment">
                     <p>In our pursuit of developing a robust design system, we adhered to a fundamental principle: "Documentation, documentation, documentation." Our goal was to meticulously capture the life cycle of every reusable element featured across SAP websites, mobile screens, and large stand-alone displays. This entailed comprehensive record-keeping for all components and patterns, ranging from breadcrumbs and headers to inputs and buttons.</p>
-                    <Image imgPath={DesignImage}></Image>
+                    <Image imgPath={DS4}></Image>
                 </div>
             </header>
 
