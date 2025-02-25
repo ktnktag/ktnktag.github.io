@@ -1,73 +1,73 @@
 import "./Menu.css"
-import MenuButton from '../button/menuButton/MenuButton'
 
 import { default as Arrow } from '../../../assets/svg/Arrow.svg?react'
+import { NavLink } from "react-router-dom"
 import { useState } from 'react'
 
-interface Props {
-    active: string;
-    onChange: any;
-}
-
-export default function Menu({ active, onChange }: Props) {
-    const [menuActive, isMenuActive] = useState<boolean>(false);
+export default function Menu() {
+    const [menuActive, setMenuActive] = useState<boolean>(false);
 
     function SwitchScroll(isIncluded: boolean) {
-        isMenuActive(isIncluded)
+        if (!isIncluded && !menuActive) {
+            return
+        }
 
+        setMenuActive(isIncluded)
         var element = document.getElementById("body");
         element?.classList.toggle("lock");
     }
 
-    function OpenPage(name: string) {
-        onChange(name)
-        if (menuActive) {
-            SwitchScroll(false)
-        }
-    }
-
     return (
         <nav>
-            <ul className={menuActive ? "menu active" : "menu"}>
+            <ul className={menuActive ? "menu burger-active" : "menu"}>
+                <NavLink onClick={() => SwitchScroll(false)} to="/" className="changingButton">
+                    <p className="text">
+                        <span>About</span>  <Arrow className="arrow-right show-arrow"></Arrow>
+                    </p>
+                </NavLink>
 
-                <MenuButton active={active === "About"} onClick={() => OpenPage("About")}>
-                    <span>About</span>  <Arrow className="arrow-right show-arrow"></Arrow>
-                </MenuButton>
+                <NavLink onClick={() => SwitchScroll(false)} to="/SelectedWorks" className="changingButton">
+                    <p className="text">
+                        <span>Selected Works</span> <Arrow className="arrow-right show-arrow"></Arrow>
+                    </p>
+                </NavLink>
 
-                <MenuButton active={active === "Selected Works"} onClick={() => OpenPage("Selected Works")}>
-                    <span>Selected Works</span> <Arrow className="arrow-right show-arrow"></Arrow>
-                </MenuButton>
+                <NavLink onClick={() => SwitchScroll(false)} to="/SideProjects" className="changingButton">
+                    <p className="text">
+                        <span>Side Projects</span> <Arrow className="arrow-right show-arrow"></Arrow>
+                    </p>
+                </NavLink>
 
-                <MenuButton active={active === "Side Projects"} onClick={() => OpenPage("Side Projects")}>
-                    <span>Side Projects</span>  <Arrow className="arrow-right show-arrow"></Arrow>
-                </MenuButton>
+                <hr className='separator hidden' />
 
-                <span className='hidden'>
-                    <hr className='separator' />
-                </span>
+                <a href="https://www.linkedin.com/in/kto-nekto/" className="changingButton">
+                    <p className="text">
+                        <span>LinkedIn</span> <Arrow className="arrow-down arrow-none"></Arrow> <Arrow className="arrow-right-up show-arrow"></Arrow>
+                    </p>
+                </a>
 
-                <MenuButton path="https://www.linkedin.com/in/kto-nekto/" active={active === "LinkedIn"}>
-                    <span>LinkedIn</span>   <Arrow className="arrow-down arrow-none"></Arrow> <Arrow className="arrow-right-up show-arrow"></Arrow>
-                </MenuButton>
-
-                <MenuButton path='#about' active={active === "CV"}>
-                    <span>CV</span>  <Arrow className="arrow-down"></Arrow>
-                </MenuButton>
+                <a href="#" className="changingButton">
+                    <p className="text">
+                        <span>CV</span>  <Arrow className="arrow-down"></Arrow>
+                    </p>
+                </a>
             </ul>
 
-            <ul className='burger-menu'>
+            <div className='burger-menu'>
                 <span className={menuActive ? "hidden" : ""}>
-                    <MenuButton isChanging={false} path='#about' active={active === "CV"}>
-                        CV  <Arrow className="arrow-down-litle"></Arrow>
-                    </MenuButton>
+                    <a href="#" className="button">
+                        <p className="text">
+                            <span>CV</span>  <Arrow className="arrow-down-litle"></Arrow>
+                        </p>
+                    </a>
                 </span>
 
                 <hr className='separator' />
 
-                <div className={menuActive ? "burger active" : "burger"} onClick={() => SwitchScroll(!menuActive)}>
+                <div className={menuActive ? "burger burger-active" : "burger"} onClick={() => SwitchScroll(!menuActive)}>
                     <span></span>
                 </div>
-            </ul>
+            </div>
         </nav>
     )
 }

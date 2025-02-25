@@ -23,15 +23,11 @@ import C21 from '../assets/png/CP/C21.png'
 import Note from "./UI/note/Note"
 import Image from './UI/Image/Image'
 
-interface Props {
-    onChange: any;
-}
-
-export default function ComponentPage({ onChange }: Props) {
+export default function ComponentPage() {
     return (
         <>
             <header>
-                <h1 className='first-title'><a href="#" onClick={() => onChange("Selected Works")}>Selected Works</a> / <a href="#" onClick={() => onChange("Design System")}>Design System for Global Tech Company</a> / <span> Components and Patterns  </span></h1>
+                <h1 className='first-title'><a href="#/SelectedWorks">Selected Works</a> / <a href="#/SelectedWorks/DesignSystem">Design System for Global Tech Company</a> / <span> Components and Patterns  </span></h1>
                 <div className="column-alignment">
                     <p>A design system is a collection of reusable UI elements that product teams use and build on to create a consistent user experience across digital products.</p>
                     <Image imgPath={C1}></Image>

@@ -10,15 +10,11 @@ import Image from './UI/Image/Image';
 import Note from './UI/note/Note'
 import Overview from './UI/overview/Overview'
 
-interface Props {
-    onChange: any;
-}
-
-export default function AdidasPage({ onChange }: Props) {
+export default function AdidasPage() {
     return (
         <>
             <header>
-                <h1 className='first-title'><a href="#" onClick={() => onChange("Selected Works")}>Selected Works</a> / <span> Seamless Migration to SAP Fiori </span></h1>
+                <h1 className='first-title'><a href="#/SelectedWorks">Selected Works</a> / <span> Seamless Migration to SAP Fiori </span></h1>
                 <div className="column-alignment">
                     <span className="paragraph">
                         <p>Completed in six weeks, our interdisciplinary team, comprising a Business Analyst (BA), Software Architect, and a UX designer, orchestrated a pivotal transition.</p>

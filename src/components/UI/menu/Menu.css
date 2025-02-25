@@ -4,16 +4,12 @@
     align-items: center;
     display: flex;
     gap: 24px;
+    position: relative;
+    z-index: 5;
 }
 
 .burger-menu {
     display: none;
-}
-
-.menu,
-.burger-menu {
-    position: relative;
-    z-index: 5;
 }
 
 .menu svg {
@@ -66,7 +62,7 @@
     transform: rotate(90deg);
 }
 
-.arrow-right-up{
+.arrow-right-up {
     width: 14px;
     transform: rotate(45deg);
 }
@@ -106,7 +102,7 @@
         transition: all 0.3s ease 0s;
     }
 
-    .menu.active {
+    .menu.burger-active {
         top: -40px;
         padding-top: 184px;
     }
@@ -119,19 +115,19 @@
         display: none;
     }
 
-    .burger.active::before {
+    .burger.burger-active::before {
         transform: rotate(45deg);
         top: 11px;
         left: 3px;
     }
 
-    .burger.active::after {
+    .burger.burger-active::after {
         transform: rotate(-45deg);
         bottom: 11px;
         left: 3px;
     }
 
-    .burger.active span {
+    .burger.burger-active span {
         transform: scale(0);
     }
 
@@ -143,7 +139,122 @@
 }
 
 @media screen and (max-width: 600px) {
-    .menu.active {
+    .menu.burger-active {
         top: -16px;
+    }
+}
+
+
+.changingButton,
+.button {
+    width: max-content;
+    height: 32px;
+
+    cursor: pointer;
+
+    padding: 8px;
+    border-radius: 8px;
+
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.text {
+    font: 300 13px/16px 'Manrope', 'rom-font';
+    letter-spacing: 0.2px;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    color: #21344A;
+    transition: color 0.2s ease-in-out;
+}
+
+.active::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+
+    color: #687BE0;
+    background-color: #687BE0;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0)
+}
+
+@media (hover: hover) {
+
+    .changingButton:hover,
+    .button:hover {
+        background-color: #687BE014;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .active::after {
+        color: transparent;
+        background-color: transparent;
+    }
+
+    .changingButton {
+        width: 560px;
+        height: 36px;
+
+        padding: 0 0 8px 0;
+
+        border-radius: 0;
+        border-bottom: 1px solid #E3E3E3;
+    }
+
+    .changingButton .text {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.5%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (hover: hover) {
+        .changingButton:hover {
+            background-color: transparent;
+            border-bottom-color: #687BE0;
+        }
+
+        .changingButton:hover>.text {
+            color: #687BE0;
+        }
+
+        .changingButton:hover>.text>svg>path {
+            stroke: #687BE0;
+        }
+    }
+
+    .changingButton:active {
+        border-bottom-color: #17029C;
+    }
+
+    .changingButton:active>.text {
+        color: #17029C;
+    }
+
+    .changingButton:active>.text>svg>path {
+        stroke: #17029C;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .changingButton {
+        width: 312px;
+    }
+
+    .changingButton .text {
+        font-size: 20px;
+        line-height: 24px;
     }
 }
