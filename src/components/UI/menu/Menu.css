@@ -67,10 +67,21 @@
     transform: rotate(45deg);
 }
 
+.small-arrow-right-up {
+    width: 9px;
+    height: 9px;
+    margin-left: 4px;
+    transform: rotate(45deg);
+    vertical-align: middle;
+    color: #9B9B9B;
+}
+
 .arrow-down,
 .arrow-down-litle {
     width: 8px;
+    margin-left: 4px;
     transform: rotate(180deg);
+    vertical-align: middle;
     color: #9B9B9B;
 }
 
@@ -163,10 +174,6 @@
 .text {
     font: 300 13px/16px 'Manrope', 'rom-font';
     letter-spacing: 0.2px;
-
-    display: flex;
-    align-items: center;
-    gap: 4px;
 
     color: #21344A;
     transition: color 0.2s ease-in-out;

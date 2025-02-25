@@ -42,7 +42,7 @@ export default function Menu() {
 
                 <a href="https://www.linkedin.com/in/kto-nekto/" className="changingButton">
                     <p className="text">
-                        <span>LinkedIn</span> <Arrow className="arrow-down arrow-none"></Arrow> <Arrow className="arrow-right-up show-arrow"></Arrow>
+                        <span>LinkedIn</span> <Arrow className="small-arrow-right-up arrow-none"></Arrow> <Arrow className="arrow-right-up show-arrow"></Arrow>
                     </p>
                 </a>
 
