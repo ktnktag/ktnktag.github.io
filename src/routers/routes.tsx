@@ -10,10 +10,12 @@ import DocumentationPage from '../components/DocumentationPage.tsx'
 import ComponentPage from '../components/ComponentPage.tsx'
 import AdidasPage from '../components/AdidasPage.tsx'
 
+import Error404 from "../Error404.tsx";
+
 const router = createHashRouter(
     createRoutesFromElements(
-        <Route path='/' element={<App />}>
-            <Route index={true} path="/" element={<About />} />
+        <Route path='/' element={<App />} errorElement={<Error404 />}>
+            <Route index={true} path="/" element={<About />}/>
 
             <Route path="/SelectedWorks" element={<SelectedWorks/>} />
             <Route path="/SelectedWorks/DesignSystem" element={<DesignSystem />} />

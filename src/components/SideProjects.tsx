@@ -1,4 +1,5 @@
-import SP1 from '../assets/png/SP1.png'
+import SP1 from '../assets/png/SP/SP1.png'
+import SP2 from '../assets/png/SP/SP2.png'
 import Project from './UI/project/Project';
 
 export default function SideProjects() {
@@ -15,7 +16,7 @@ export default function SideProjects() {
                 </Project>
 
                 <Project
-                    image={SP1}
+                    image={SP2}
                     title='Daily Horoscope App'
                     company='Pet project, 2022'
                     soon={true}
