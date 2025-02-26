@@ -8,10 +8,16 @@ import SW7 from '../assets/png/SW/SW7.png';
 import SW8 from '../assets/png/SW/SW8.png';
 
 import Project from './UI/project/Project';
+import Modal from './UI/modal/Modal';
+import { useState } from 'react';
 
 export default function SelectedWorks() {
+    const [isModalOpen, setIsModalOpen] = useState(true);
+
+
     return (
         <>
+            <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen}></Modal>
             <div>
                 <div className='two-column'>
                     <Project

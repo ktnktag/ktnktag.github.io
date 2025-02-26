@@ -195,7 +195,6 @@
 }
 
 @media (hover: hover) {
-
     .changingButton:hover,
     .button:hover {
         background-color: #687BE014;
