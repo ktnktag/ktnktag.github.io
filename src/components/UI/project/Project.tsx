@@ -9,12 +9,19 @@ interface Props {
     company?: string;
     soon?: boolean;
     isLink?: boolean;
+    checkPrivate?: Function
 }
 
-export default function Project({children, image, title, path, company, soon, isLink} : Props) {
+export default function Project({children, image, title, path, company, soon, isLink, checkPrivate} : Props) {
+    const checkCode = () => {
+        if (checkPrivate) {
+            checkPrivate(path);
+        }
+    }
+
     return(
-        <article className={classes.container}>
-            <a className={isLink ? classes.link : ''} href={path}>
+        <article onClick={() => checkCode()} className={classes.container}>
+            <a className={isLink ? classes.link : ''} href={checkPrivate ? '#/SelectedWorks' : path}>
                 <div className={classes.cover}>
                     <img className={classes.img} src={image} alt={title} />
                     {soon && <div className={classes.soon}><p>soon</p></div>}

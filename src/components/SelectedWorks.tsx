@@ -9,23 +9,58 @@ import SW8 from '../assets/png/SW/SW8.png';
 
 import Project from './UI/project/Project';
 import Modal from './UI/modal/Modal';
+import { sha256 } from 'js-sha256';
 import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 export default function SelectedWorks() {
-    const [isModalOpen, setIsModalOpen] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+    const [isPrivate, setIsPrivate] = useState<boolean>(true);
+    const [path, setPath] = useState<string>('')
+    const navigate = useNavigate();
 
+    const cript = (code: string) => {
+        const hash = sha256.create();
+        hash.update(code);
+        hash.hex();
+        const REACT_APP_CODE_KEY = "31e28b8090e57e6d25d73562ff25448f4436130a996da649dab3798b7bc7ba7f"
+
+        return hash.toString() === REACT_APP_CODE_KEY;
+    };
+
+    const checkPrivate = (path: string) => {
+        if (isPrivate) {
+            setIsModalOpen(true);
+            setPath(path);
+        }
+        else {
+            navigate(path);
+        }
+    }
+
+    const checkCode = (code: string, error: Function) => {
+        if (cript(code)) {
+            setIsPrivate(true);
+            setIsModalOpen(false);
+            navigate(path);
+        }
+        else {
+            error("Неверный пароль");
+        }
+    }
 
     return (
         <>
-            <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen}></Modal>
-            <div>
+            <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen} checkCode={checkCode}></Modal>
+            <div onClick={() => cript("Sap123")}>
                 <div className='two-column'>
                     <Project
                         image={SW1}
                         title='Redesign and Developing for Internal CI/CD Platform'
                         company='Hyperspace Portal, SAP Company, 2024'
                         soon={true}
-                        path='#/SelectedWorks/HyperspacePortal'>
+                        path='/SelectedWorks/HyperspacePortal'
+                        checkPrivate={checkPrivate}>
                         Actively participated in the development and removal of legacy systems for the Hyperspace Portal, contributing to modernization efforts and conducting user research and testing to optimize functionality.
                     </Project>
 
@@ -33,7 +68,8 @@ export default function SelectedWorks() {
                         image={SW2}
                         title='Design System for the Leading Global Tech Company Web-sites'
                         company='SAP Company, 2023 - 2025'
-                        path='#/SelectedWorks/DesignSystem'>
+                        path='/SelectedWorks/DesignSystem'
+                        checkPrivate={checkPrivate}>
                         Developing a new comprehensive design system and accompanying documentation for developers, aligning it with SAP Fiori Design System and integrating it with other SAP resources.
                     </Project>
 
