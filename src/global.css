@@ -21,6 +21,10 @@ html {
   justify-content: space-between;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 /* --- global styles --- */
 
 main p {
