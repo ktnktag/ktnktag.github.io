@@ -25,7 +25,7 @@ export default function Modal({ setIsOpen, isOpen, checkCode }: Props) {
         }
         else {
             dialogRef.current?.close();
-            element?.classList.toggle("lock");
+            element?.classList.remove("lock");
         }
     }, [isOpen])
 
