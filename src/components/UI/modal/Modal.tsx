@@ -14,22 +14,18 @@ export default function Modal({ setIsOpen, isOpen, checkCode }: Props) {
     const [code, setCode] = useState<string>('');
     const [errorCode, setErrorCode] = useState<string>('');
     const dialogRef = useRef<HTMLDialogElement>(null);
-
-    const lock = () => {
-        var element = document.getElementById("body");
-        element?.classList.toggle("lock");
-    }
+    const element = document.getElementById("body");
 
     useEffect(() => {
         if (isOpen) {
             dialogRef.current?.showModal();
             setCode('');
             setErrorCode('');
-            lock();
+            element?.classList.add("lock");
         }
         else {
             dialogRef.current?.close();
-            lock();
+            element?.classList.toggle("lock");
         }
     }, [isOpen])
 
