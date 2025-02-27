@@ -10,21 +10,33 @@ import DocumentationPage from '../components/DocumentationPage.tsx'
 import ComponentPage from '../components/ComponentPage.tsx'
 import AdidasPage from '../components/AdidasPage.tsx'
 
-import Error404 from "../Error404.tsx";
+import Error404 from "./Error404.tsx";
+import { RequireAuth } from "./RequireAuth.tsx";
 
 const router = createHashRouter(
     createRoutesFromElements(
         <Route path='/' element={<App />} errorElement={<Error404 />}>
-            <Route index={true} path="/" element={<About />}/>
+            <Route index={true} path="/" element={<About />} />
 
             <Route path="/SelectedWorks" element={<SelectedWorks />} />
-            <Route path="/SelectedWorks/DesignSystem" element={<DesignSystem />} />
-            <Route path="/SelectedWorks/DesignSystem/Documentation" element={<DocumentationPage/>} />
-            <Route path="/SelectedWorks/DesignSystem/Component" element={<ComponentPage/>} />
+            <Route path="/SelectedWorks/DesignSystem" element={
+                <RequireAuth>
+                    <DesignSystem />
+                </RequireAuth>} />
+            <Route path="/SelectedWorks/DesignSystem/Documentation" element={
+                <RequireAuth>
+                    <DocumentationPage />
+                </RequireAuth>} />
+            <Route path="/SelectedWorks/DesignSystem/Component" element={
+                <RequireAuth>
+                    <ComponentPage />
+                </RequireAuth>} />
 
-            <Route path="/SelectedWorks/HyperspacePortal" element={<HyperspacePortal />} />
-            <Route path="/SelectedWorks/Adidas" element={<AdidasPage/>} />
-            
+            <Route path="/SelectedWorks/HyperspacePortal" element={
+                <RequireAuth>
+                    <HyperspacePortal />
+                </RequireAuth>} />
+            <Route path="/SelectedWorks/Adidas" element={<AdidasPage />} />
 
             <Route path="/SideProjects" element={<SideProjects />} />
         </Route>
