@@ -127,3 +127,19 @@
     border-color: #17029C;
     background-color: transparent;
 }
+
+@media screen and (max-width: 800px) {
+    .title {
+        font-size: 20px;
+    }
+    
+    .input input,
+    .text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .input input::placeholder {
+        font-size: 16px;
+    }
+}
