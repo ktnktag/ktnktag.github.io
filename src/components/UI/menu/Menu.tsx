@@ -26,13 +26,13 @@ export default function Menu() {
                     </p>
                 </NavLink>
 
-                <NavLink onClick={() => SwitchScroll(false)} to="/SelectedWorks" className="changingButton">
+                <NavLink onClick={() => SwitchScroll(false)} to="/Selected_Works" className="changingButton">
                     <p className="text">
                         <span>Selected Works</span> <Arrow className="arrow-right show-arrow"></Arrow>
                     </p>
                 </NavLink>
 
-                <NavLink onClick={() => SwitchScroll(false)} to="/SideProjects" className="changingButton">
+                <NavLink onClick={() => SwitchScroll(false)} to="/Side_Projects" className="changingButton">
                     <p className="text">
                         <span>Side Projects</span> <Arrow className="arrow-right show-arrow"></Arrow>
                     </p>

@@ -9,12 +9,13 @@ import adidas from '../assets/svg/Adidas.svg'
 import Image from './UI/Image/Image';
 import Note from './UI/note/Note'
 import Overview from './UI/overview/Overview'
+import Breadcrumbs from './UI/breadcrumbs/Breadcrumbs'
 
 export default function AdidasPage() {
     return (
         <>
+            <Breadcrumbs></Breadcrumbs>
             <header>
-                <h1 className='first-title'><a href="#/SelectedWorks">Selected Works</a> / <span> Seamless Migration to SAP Fiori </span></h1>
                 <div className="column-alignment">
                     <span className="paragraph">
                         <p>Completed in six weeks, our interdisciplinary team, comprising a Business Analyst (BA), Software Architect, and a UX designer, orchestrated a pivotal transition.</p>

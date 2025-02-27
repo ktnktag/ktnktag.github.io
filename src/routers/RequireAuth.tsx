@@ -9,7 +9,7 @@ const RequireAuth = ({children} : Props) => {
     const location = useLocation();
 
     if (IsAuth()) {
-        return <Navigate to="/SelectedWorks" state={{open: true, from: location}}/>
+        return <Navigate to="/Selected_Works" state={{open: true, from: location}}/>
     }
 
     return children

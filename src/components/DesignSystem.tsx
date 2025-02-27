@@ -13,12 +13,13 @@ import Overview from './UI/overview/Overview'
 import Token from './UI/token/Token'
 import Image from './UI/Image/Image'
 import Project from './UI/project/Project'
+import Breadcrumbs from './UI/breadcrumbs/Breadcrumbs'
 
 export default function DesignSystem() {
     return (
-        <>
+        <>  
+            <Breadcrumbs></Breadcrumbs>
             <header>
-                <h1 className='first-title'><a href="#/SelectedWorks">Selected Works</a> / <span>Design System for Global Tech Company</span></h1>
                 <div className="column-alignment">
                     <span className='paragraph'>
                         <p>Embark on a journey through the development of a brand digital design system tailored for SAP, meticulously aligned with the esteemed SAP Fiori Design System.</p>
@@ -63,14 +64,14 @@ export default function DesignSystem() {
                         <Project
                             image={DS3}
                             title="Components and Patterns"
-                            path='#/SelectedWorks/DesignSystem/Component'>
+                            path='#/Selected_Works/Design_System/Components_and_Patterns'>
                             Each component was meticulously designed, adhering strictly to our established design language.
                         </Project>
 
                         <Project
                             image={DS4}
                             title="Documentation"
-                            path='#/SelectedWorks/DesignSystem/Documentation'>
+                            path='#/Selected_Works/Design_System/Documentation'>
                             Specifications provided an in-depth insight into the purpose, usage guidelines, and technical characteristics of every element.
                         </Project>
                     </div>

@@ -22,12 +22,13 @@ import C21 from '../assets/png/CP/C21.png'
 
 import Note from "./UI/note/Note"
 import Image from './UI/Image/Image'
+import Breadcrumbs from './UI/breadcrumbs/Breadcrumbs'
 
 export default function ComponentPage() {
     return (
         <>
+            <Breadcrumbs></Breadcrumbs>
             <header>
-                <h1 className='first-title'><a href="#/SelectedWorks">Selected Works</a> / <a href="#/SelectedWorks/DesignSystem">Design System for Global Tech Company</a> / <span> Components and Patterns  </span></h1>
                 <div className="column-alignment">
                     <p>A design system is a collection of reusable UI elements that product teams use and build on to create a consistent user experience across digital products.</p>
                     <Image imgPath={C1}></Image>

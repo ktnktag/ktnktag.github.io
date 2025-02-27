@@ -39,7 +39,7 @@ export default function SelectedWorks() {
                         title='Redesign and Developing for Internal CI/CD Platform'
                         company='Hyperspace Portal, SAP Company, 2024'
                         soon={true}
-                        path='#/SelectedWorks/HyperspacePortal'>
+                        path='#/Selected_Works/Internal_CI_CD_Platform'>
                         Actively participated in the development and removal of legacy systems for the Hyperspace Portal, contributing to modernization efforts and conducting user research and testing to optimize functionality.
                     </Project>
 
@@ -47,7 +47,7 @@ export default function SelectedWorks() {
                         image={SW2}
                         title='Design System for the Leading Global Tech Company Web-sites'
                         company='SAP Company, 2023 - 2025'
-                        path='#/SelectedWorks/DesignSystem'>
+                        path='#/Selected_Works/Design_System'>
                         Developing a new comprehensive design system and accompanying documentation for developers, aligning it with SAP Fiori Design System and integrating it with other SAP resources.
                     </Project>
 
@@ -55,7 +55,7 @@ export default function SelectedWorks() {
                         image={SW3}
                         title='Seamless Migration from the Legacy Platform to SAP Fiori and Enhanced Features'
                         company='adidas, 2023'
-                        path='#/SelectedWorks/Adidas'>
+                        path='#/Selected_Works/Seamless_Migration_to_SAP_Fiori'>
                         Primary objective was to transition all processes for the *NDA* app to SAP Fiori, replacing the previous platform. This transition also included expanding and enhancing some features to deliver a better user experience and meet the evolving requirements and needs of the business.
                     </Project>
 
@@ -64,7 +64,7 @@ export default function SelectedWorks() {
                         title='Redesign and New Feature Development for Educational Platform'
                         company='Rolling Scope School, 2022'
                         soon={true}
-                        path='#/SelectedWorks/Adidas'>
+                        path='#/Selected_Works/Adidas'>
                         Developing a new comprehensive design system and accompanying documentation for developers, aligning it with SAP Fiori Design System and integrating it with other SAP resources.
                     </Project>
                 </div>

@@ -18,27 +18,27 @@ const router = createHashRouter(
         <Route path='/' element={<App />} errorElement={<Error404 />}>
             <Route index={true} path="/" element={<About />} />
 
-            <Route path="/SelectedWorks" element={<SelectedWorks />} />
-            <Route path="/SelectedWorks/DesignSystem" element={
+            <Route path="/Selected_Works" element={<SelectedWorks />} />
+            <Route path="/Selected_Works/Design_System" element={
                 <RequireAuth>
                     <DesignSystem />
                 </RequireAuth>} />
-            <Route path="/SelectedWorks/DesignSystem/Documentation" element={
+            <Route path="/Selected_Works/Design_System/Documentation" element={
                 <RequireAuth>
                     <DocumentationPage />
                 </RequireAuth>} />
-            <Route path="/SelectedWorks/DesignSystem/Component" element={
+            <Route path="/Selected_Works/Design_System/Components_and_Patterns" element={
                 <RequireAuth>
                     <ComponentPage />
                 </RequireAuth>} />
 
-            <Route path="/SelectedWorks/HyperspacePortal" element={
+            <Route path="/Selected_Works/Internal_CI_CD_Platform" element={
                 <RequireAuth>
                     <HyperspacePortal />
                 </RequireAuth>} />
-            <Route path="/SelectedWorks/Adidas" element={<AdidasPage />} />
+            <Route path="/Selected_Works/Seamless_Migration_to_SAP_Fiori" element={<AdidasPage />} />
 
-            <Route path="/SideProjects" element={<SideProjects />} />
+            <Route path="/Side_Projects" element={<SideProjects />} />
         </Route>
     )
 )

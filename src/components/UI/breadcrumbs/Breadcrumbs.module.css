@@ -1,0 +1,26 @@
+.box {
+    height: 100%;
+    padding-top: 5px;
+    position: absolute;
+    top: 0;
+    left: -160px;
+}
+
+.container {
+    width: 140px;
+    height: max-content;
+    text-align: left;
+    position: sticky;
+    top: 235px;
+}
+
+.container a,
+.container p {
+    margin-bottom: 40px;
+    font: 300 15px/20px 'Manrope';
+    letter-spacing: 0.5%;
+}
+
+.link {
+    color: #9B9B9B;
+}

@@ -10,12 +10,13 @@ import D8 from '../assets/png/DP/D8.png'
 
 import Note from "./UI/note/Note"
 import Image from "./UI/Image/Image"
+import Breadcrumbs from './UI/breadcrumbs/Breadcrumbs'
 
 export default function DocumentationPage() {
     return (
-        <>
+        <>  
+            <Breadcrumbs></Breadcrumbs>
             <header>
-                <h1 className='first-title'><a href="#/SelectedWorks">Selected Works</a> / <a href="#/SelectedWorks/DesignSystem">Design System for Global Tech Company</a> / <span> Documentation </span></h1>
                 <div className="column-alignment">
                     <p>In our pursuit of developing a robust design system, we adhered to a fundamental principle: "Documentation, documentation, documentation." Our goal was to meticulously capture the life cycle of every reusable element featured across SAP websites, mobile screens, and large stand-alone displays. This entailed comprehensive record-keeping for all components and patterns, ranging from breadcrumbs and headers to inputs and buttons.</p>
                     <Image imgPath={DS4}></Image>
