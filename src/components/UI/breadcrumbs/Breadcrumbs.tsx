@@ -20,9 +20,9 @@ export default function Breadcrumbs() {
         <ul className={classes.container}>
             {
                 list?.map((item: string) =>
-                    <li key={item} className={item !== list[list.length - 1] ? classes.link : ''}>
+                    <li key={item} className={item !== list[list.length - 1] ? classes.link : classes.text}>
                         {item !== list[list.length - 1] && <Link to={pathRef.current += '/' + item}>{item.replace(/_/gi, ' ')}</Link>}
-                        {item === list[list.length - 1] && <p>{item.replace(/_/gi, ' ')}</p>}
+                        {item === list[list.length - 1] && <span>{item.replace(/_/gi, ' ')}</span>}
                     </li>
                 )
             }
