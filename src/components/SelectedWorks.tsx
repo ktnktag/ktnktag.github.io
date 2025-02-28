@@ -31,7 +31,7 @@ export default function SelectedWorks() {
 
     return (
         <>
-            <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen} checkCode={checkCode}></Modal>
+            <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen} checkCode={checkCode} />
             <div>
                 <div className='two-column'>
                     <Project
@@ -39,7 +39,7 @@ export default function SelectedWorks() {
                         title='Redesign and Developing for Internal CI/CD Platform'
                         company='Hyperspace Portal, SAP Company, 2024'
                         soon={true}
-                        path='#/Selected_Works/Internal_CI_CD_Platform'>
+                        path='/Selected_Works/Internal_CI_CD_Platform'>
                         Actively participated in the development and removal of legacy systems for the Hyperspace Portal, contributing to modernization efforts and conducting user research and testing to optimize functionality.
                     </Project>
 
@@ -47,7 +47,7 @@ export default function SelectedWorks() {
                         image={SW2}
                         title='Design System for the Leading Global Tech Company Web-sites'
                         company='SAP Company, 2023 - 2025'
-                        path='#/Selected_Works/Design_System'>
+                        path='/Selected_Works/Design_System'>
                         Developing a new comprehensive design system and accompanying documentation for developers, aligning it with SAP Fiori Design System and integrating it with other SAP resources.
                     </Project>
 
@@ -55,7 +55,7 @@ export default function SelectedWorks() {
                         image={SW3}
                         title='Seamless Migration from the Legacy Platform to SAP Fiori and Enhanced Features'
                         company='adidas, 2023'
-                        path='#/Selected_Works/Seamless_Migration_to_SAP_Fiori'>
+                        path='/Selected_Works/Seamless_Migration_to_SAP_Fiori'>
                         Primary objective was to transition all processes for the *NDA* app to SAP Fiori, replacing the previous platform. This transition also included expanding and enhancing some features to deliver a better user experience and meet the evolving requirements and needs of the business.
                     </Project>
 
@@ -64,7 +64,7 @@ export default function SelectedWorks() {
                         title='Redesign and New Feature Development for Educational Platform'
                         company='Rolling Scope School, 2022'
                         soon={true}
-                        path='#/Selected_Works/Adidas'>
+                        path='/Selected_Works/Adidas'>
                         Developing a new comprehensive design system and accompanying documentation for developers, aligning it with SAP Fiori Design System and integrating it with other SAP resources.
                     </Project>
                 </div>
@@ -96,7 +96,7 @@ export default function SelectedWorks() {
                         image={SW7}
                         title='Website Redesign Workshop'
                         company='Minsk, Belarus, 2023'
-                        path='#'>
+                        path=''>
                         The goal is to rethink and redesign the current design of the main page of the art exhibition website, enhance visual appeal, improve user interaction with the site and overall user experience.
                     </Project>
 
@@ -104,7 +104,7 @@ export default function SelectedWorks() {
                         image={SW8}
                         title='Not POV, but REAL: you got into a real project'
                         company='Minsk, Belarus, 2024'
-                        path='#'>
+                        path=''>
                         Goals, first: to give newbies in ux design to feel what it’s like to work on a real project; the second is to create a visually attractive and intuitive multi-screen design for a mobile application designed to control a smart home.
                     </Project>
                 </div>

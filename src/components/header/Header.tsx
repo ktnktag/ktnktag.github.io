@@ -10,7 +10,7 @@ export default function Header() {
                     <img src={Logo} alt="logo" className='logo'/>
                 </a>
 
-                <Menu></Menu>
+                <Menu />
             </div>
         </header>
     )

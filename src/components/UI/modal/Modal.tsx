@@ -33,7 +33,7 @@ export default function Modal({ setIsOpen, isOpen, checkCode }: Props) {
         <dialog ref={dialogRef} className={classes.container}>
             <div className={classes.boxTitle}>
                 <h3 className={classes.title}>Access Restricted</h3>
-                <X onClick={() => { setIsOpen(false) }}></X>
+                <X onClick={() => { setIsOpen(false) }} />
             </div>
             <label>
                 <p className={classes.text}>Some parts or the entire project work are protected by an NDA. Please enter the code to view the details.</p>

@@ -27,15 +27,15 @@ import Breadcrumbs from './UI/breadcrumbs/Breadcrumbs'
 export default function ComponentPage() {
     return (
         <>
-            <Breadcrumbs></Breadcrumbs>
+            <Breadcrumbs />
             <header>
                 <div className="column-alignment">
                     <p>A design system is a collection of reusable UI elements that product teams use and build on to create a consistent user experience across digital products.</p>
-                    <Image imgPath={C1}></Image>
+                    <Image imgPath={C1} />
                 </div>
             </header>
 
-            <Note></Note>
+            <Note />
 
             <section>
                 <h2 className='title'>The foundation</h2>
@@ -46,9 +46,9 @@ export default function ComponentPage() {
                     </span>
 
                     <div className="triple-column">
-                        <Image imgPath={C2}></Image>
-                        <Image imgPath={C3}></Image>
-                        <Image imgPath={C4}></Image>
+                        <Image imgPath={C2} />
+                        <Image imgPath={C3} />
+                        <Image imgPath={C4} />
                     </div>
                 </div>
             </section>
@@ -58,9 +58,9 @@ export default function ComponentPage() {
                 <h2 className='title'>Components</h2>
                 <div className='column-alignment'>
                     <div className="triple-column">
-                        <Image imgPath={C5}></Image>
-                        <Image imgPath={C6}></Image>
-                        <Image imgPath={C7}></Image>
+                        <Image imgPath={C5} />
+                        <Image imgPath={C6} />
+                        <Image imgPath={C7} />
                     </div>
 
                     <span className='paragraph'>
@@ -69,9 +69,9 @@ export default function ComponentPage() {
                     </span>
 
                     <div className="triple-column">
-                        <Image imgPath={C8}></Image>
-                        <Image imgPath={C9}></Image>
-                        <Image imgPath={C10}></Image>
+                        <Image imgPath={C8} />
+                        <Image imgPath={C9} />
+                        <Image imgPath={C10} />
                     </div>
 
                     <span className='paragraph'>
@@ -80,9 +80,9 @@ export default function ComponentPage() {
                     </span>
 
                     <div className="triple-column">
-                        <Image imgPath={C11}></Image>
-                        <Image imgPath={C12}></Image>
-                        <Image imgPath={C13}></Image>
+                        <Image imgPath={C11} />
+                        <Image imgPath={C12} />
+                        <Image imgPath={C13} />
                     </div>
                 </div>
             </section>
@@ -92,13 +92,13 @@ export default function ComponentPage() {
                 <div className='column-alignment'>
                     <p>But no one canceled the phrase “I am a designer, I know what is best and I want it differently.” Therefore, the Brand Digital Design System is made as flexible as possible, with the ability to adapt components and patterns, but it also continues to evolve and develop, including based on feedback from other designers from other projects (who use our design system), marketing and developers.</p>
 
-                    <Image imgPath={C14}></Image>
-                    <Image imgPath={C15}></Image>
-                    <Image imgPath={C16}></Image>
+                    <Image imgPath={C14} />
+                    <Image imgPath={C15} />
+                    <Image imgPath={C16} />
 
                     <p>You can check out the live demo on our website for Filters, Contact etc.</p>
 
-                    <Image imgPath={C17}></Image>
+                    <Image imgPath={C17} />
                 </div>
             </section>
 
@@ -110,7 +110,7 @@ export default function ComponentPage() {
                         <p>We utilized design plugins to verify compliance with AA contrast minimums during the design phase. Additionally, components underwent thorough testing in a test environment to ensure they met accessibility requirements before being released. This multi-layered approach ensured that accessibility considerations were integral to the design and development process, rather than an afterthought.</p>
                     </span>
 
-                    <Image imgPath={C18}></Image>
+                    <Image imgPath={C18} />
                 </div>
             </section>
 
@@ -122,9 +122,9 @@ export default function ComponentPage() {
                         <p>Creating accessible themes involves more than just selecting colors; it requires evaluating the contrast ratio between color pairs to ensure they meet accessibility standards. No single color is inherently accessible; it’s the combination of colors that determines accessibility. By checking contrast ratios and incorporating them into Figma variables, we ensured that each theme adheres to accessibility guidelines.</p>
                     </span>
 
-                    <Image imgPath={C19}></Image>
-                    <Image imgPath={C20}></Image>
-                    <Image imgPath={C21}></Image>
+                    <Image imgPath={C19} />
+                    <Image imgPath={C20} />
+                    <Image imgPath={C21} />
                 </div>
             </section>
         </>

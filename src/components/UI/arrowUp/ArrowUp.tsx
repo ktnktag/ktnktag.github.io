@@ -5,7 +5,7 @@ export default function ArrowUp() {
     return (
         <div className={classes.box}>
             <a className={classes.arrow} onClick={() => {window.scrollTo(0,0)}}>
-                <Arrow  className={classes.svg}></Arrow>
+                <Arrow  className={classes.svg} />
             </a>
         </div>
     )

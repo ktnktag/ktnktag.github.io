@@ -17,7 +17,6 @@ export default function About() {
             </header>
 
             <div id="about" className='experience'>
-
                 <div className='experience-list'>
                     <ul>
                         <li>
@@ -59,16 +58,16 @@ export default function About() {
                         <h3>Socials</h3>
                         <ul>
                             <li>
-                                <a href='https://www.linkedin.com/in/kto-nekto/'>LinkedIn <Arrow></Arrow></a>
+                                <a href='https://www.linkedin.com/in/kto-nekto/'>LinkedIn <Arrow /></a>
                             </li>
                             <li>
-                                <a href='https://dribbble.com/kto_nekto'>Dribbble <Arrow></Arrow></a>
+                                <a href='https://dribbble.com/kto_nekto'>Dribbble <Arrow /></a>
                             </li>
                             <li>
-                                <a href='https://medium.com/@kto.nekto'>Medium <Arrow></Arrow></a>
+                                <a href='https://medium.com/@kto.nekto'>Medium <Arrow /></a>
                             </li>
                             <li>
-                                <a href='https://www.behance.net/kto_nekto'>Behance <Arrow></Arrow></a>
+                                <a href='https://www.behance.net/kto_nekto'>Behance <Arrow /></a>
                             </li>
 
                             <li className='indent'>

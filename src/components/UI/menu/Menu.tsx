@@ -22,19 +22,19 @@ export default function Menu() {
             <ul className={menuActive ? "menu burger-active" : "menu"}>
                 <NavLink onClick={() => SwitchScroll(false)} to="/" className="changingButton">
                     <p className="text">
-                        <span>About</span>  <Arrow className="arrow-right show-arrow"></Arrow>
+                        <span>About</span>  <Arrow className="arrow-right show-arrow" />
                     </p>
                 </NavLink>
 
                 <NavLink onClick={() => SwitchScroll(false)} to="/Selected_Works" className="changingButton">
                     <p className="text">
-                        <span>Selected Works</span> <Arrow className="arrow-right show-arrow"></Arrow>
+                        <span>Selected Works</span> <Arrow className="arrow-right show-arrow" />
                     </p>
                 </NavLink>
 
                 <NavLink onClick={() => SwitchScroll(false)} to="/Side_Projects" className="changingButton">
                     <p className="text">
-                        <span>Side Projects</span> <Arrow className="arrow-right show-arrow"></Arrow>
+                        <span>Side Projects</span> <Arrow className="arrow-right show-arrow" />
                     </p>
                 </NavLink>
 
@@ -42,13 +42,13 @@ export default function Menu() {
 
                 <a href="https://www.linkedin.com/in/kto-nekto/" className="changingButton">
                     <p className="text">
-                        <span>LinkedIn</span> <Arrow className="small-arrow-right-up arrow-none"></Arrow> <Arrow className="arrow-right-up show-arrow"></Arrow>
+                        <span>LinkedIn</span> <Arrow className="small-arrow-right-up arrow-none" /> <Arrow className="arrow-right-up show-arrow" />
                     </p>
                 </a>
 
                 <a href="#" className="changingButton">
                     <p className="text">
-                        <span>CV</span>  <Arrow className="arrow-down"></Arrow>
+                        <span>CV</span>  <Arrow className="arrow-down" />
                     </p>
                 </a>
             </ul>
@@ -57,7 +57,7 @@ export default function Menu() {
                 <span className={menuActive ? "hidden" : ""}>
                     <a href="#" className="button">
                         <p className="text">
-                            <span>CV</span>  <Arrow className="arrow-down-litle"></Arrow>
+                            <span>CV</span>  <Arrow className="arrow-down-litle" />
                         </p>
                     </a>
                 </span>

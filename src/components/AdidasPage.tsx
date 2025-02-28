@@ -14,7 +14,7 @@ import Breadcrumbs from './UI/breadcrumbs/Breadcrumbs'
 export default function AdidasPage() {
     return (
         <>
-            <Breadcrumbs></Breadcrumbs>
+            <Breadcrumbs />
             <header>
                 <div className="column-alignment">
                     <span className="paragraph">
@@ -22,13 +22,13 @@ export default function AdidasPage() {
                         <p>The primary focus was migrating the *NDA* app processes to SAP Fiori, a shift that involved the comprehensive replacement of the former platform.</p>
                         <p>Our mission extended beyond a mere migration, encompassing the expansion and enhancement of features to align with evolving business demands.</p>
                     </span>
-                    <Image imgPath={A1}></Image>
+                    <Image imgPath={A1} />
                 </div>
             </header>
 
-            <Note></Note>
+            <Note />
 
-            <Overview client={adidas} expertise='UX Designer' tools='Figma, FigJam, Confluence' year='2023'></Overview>
+            <Overview client={adidas} expertise='UX Designer' tools='Figma, FigJam, Confluence' year='2023'/>
 
             <section>
                 <h2 className='title'>Work Process</h2>
@@ -38,7 +38,7 @@ export default function AdidasPage() {
                         <p>Daily meetings with the client followed, each session focusing on a specific process, facilitating detailed discussions and requirement exploration. Post-meeting, a comprehensive list of required actions from each team member was compiled, creating a clear understanding and area of ​​responsibility for project. </p>
                     </span>
 
-                    <Image imgPath={A2} title='Meeting minutes Confluence page'></Image>
+                    <Image imgPath={A2} title='Meeting minutes Confluence page' />
 
                     <span className="paragraph">
                         <p>Rapid design solutions were then promptly developed after each meeting, with the following day dedicated to refining and adjusting proposed solutions based on collected feedback. Then we moved on to the next process.</p>
@@ -60,7 +60,7 @@ export default function AdidasPage() {
                         <br />
                         <p>This included identifying features for update and expansion while scrutinizing elements that could be streamlined or removed. Through this collaborative process, we attained a holistic understanding of the project landscape, ensuring a robust foundation for the journey ahead.</p>
                     </article>
-                    <Image imgPath={A3} title='Analysis of an existing platform for one process'></Image>
+                    <Image imgPath={A3} title='Analysis of an existing platform for one process' />
                     <span className='paragraph'>
                         <p>Rapid design solutions were then promptly developed after each meeting, with the following day dedicated to refining and adjusting proposed solutions based on collected feedback. Then we moved on to the next process.</p>
                         <p>This iterative approach ensured continuous refinement of the design solution, addressing restrictions and accommodating feedback throughout the process. The result was a streamlined and collaborative workflow that not only adhered to tight timelines but also contributed to the overall success of the project.</p>
@@ -78,7 +78,7 @@ export default function AdidasPage() {
                         <br />
                         <p>Efficiently translated new business requirements into a refined and updated set of process flows, aligning seamlessly with the evolving needs of the bussiness.</p>
                     </article>
-                    <Image imgPath={A4} title='Part of the process flow for one process'></Image>
+                    <Image imgPath={A4} title='Part of the process flow for one process' />
 
                     <article>
                         <h3 className='subtitle'>Mock-up Creation</h3>
@@ -88,7 +88,7 @@ export default function AdidasPage() {
                         <br />
                         <p>The daily discussions served as a platform for comprehensive reviews, where the team collectively identified areas for improvement and made informed decisions on refining the mock-ups. This iterative process played a crucial role in fine-tuning the proposed solutions, resulting in a more polished and effective end product.</p>
                     </article>
-                    <Image imgPath={A5} title='Rapid mock-ups for one process'></Image>
+                    <Image imgPath={A5} title='Rapid mock-ups for one process' />
                 </div>
             </section>
 
@@ -96,7 +96,7 @@ export default function AdidasPage() {
                 <h2 className="title">Polishing for Perfection</h2>
                 <div className='column-alignment'>
                     <p>Upon securing approvals for the design processes, the focus shifted to refining mock-ups. Each detail was meticulously examined and adjusted based on feedback, guaranteeing a polished and cohesive visual representation. The final touch involved translating refined mock-ups into interactive prototypes for a tangible, hands-on client experience.</p>
-                    <Image imgPath={A6} title='Interactive Prototype for one process'></Image>
+                    <Image imgPath={A6} title='Interactive Prototype for one process' />
                 </div>
             </section>
 
