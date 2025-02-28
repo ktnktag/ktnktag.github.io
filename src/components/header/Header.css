@@ -24,11 +24,6 @@
     backdrop-filter: blur(8px);
 }
 
-.header,
-.header-box {
-    width: 996px;
-}
-
 .header-box::before {
     content: '';
     width: 100%;
@@ -42,30 +37,9 @@
     left: 0;
 }
 
-@media screen and (max-width: 1320px) {
-
-    .header,
-    .header-box {
-        width: 890px;
-    }
-}
-
-@media screen and (max-width: 1050px) {
-
-    .header,
-    .header-box {
-        width: 772px;
-    }
-}
-
 @media screen and (max-width: 800px) {
     .header {
         height: 166px;
-    }
-
-    .header,
-    .header-box {
-        width: 559px;
     }
 }
 
@@ -76,11 +50,6 @@
 
     .header-box {
         top: 16px;
-    }
-
-    .header,
-    .header-box {
-        width: 312px;
     }
 }
 

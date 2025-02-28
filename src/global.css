@@ -51,6 +51,10 @@ main a {
     color: #687BE0;
     border-bottom-color: currentColor;
   }
+  main a:hover path {
+    stroke: #687BE0;
+  }
+  
 }
 
 main a:active {
@@ -58,25 +62,31 @@ main a:active {
   border-bottom-color: currentColor;
 }
 
+main a:active path {
+  stroke: #17029C;
+}
+
 /* --- global margins --- */
 
-main {
+.container {
   width: 996px;
-  margin: 0 auto;
+}
 
+main {
+  margin: 0 auto;
   flex: 1 1 auto;
   position: relative;
   height: max-content;
 }
 
 @media screen and (max-width: 1320px) {
-  main {
+  .container {
     width: 890px;
   }
 }
 
 @media screen and (max-width: 1050px) {
-  main {
+  .container {
     width: 772px;
   }
 
@@ -87,7 +97,7 @@ main {
 }
 
 @media screen and (max-width: 800px) {
-  main {
+  .container {
     width: 559px;
   }
 
@@ -98,7 +108,7 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-  main {
+  .container {
     width: 312px;
   }
   main p {

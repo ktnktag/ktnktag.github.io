@@ -111,14 +111,6 @@
     vertical-align: middle;
 }
 
-.socials a:hover path {
-    stroke: #687BE0;
-}
-
-.socials a:active path {
-    stroke: #17029C;
-}
-
 .email {
     width: 100%;
     min-height: 204px;

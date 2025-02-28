@@ -8,13 +8,13 @@ import { Outlet } from 'react-router-dom'
 export default function App() {
   return (
     <>
-      <Header></Header>
+      <Header />
 
-      <main>
+      <main className='container'>
         <div className='wrapper'>
           <Outlet/>
         </div>
-        <ArrowUp></ArrowUp>
+        <ArrowUp />
       </main>
 
       <footer className='footer'>
