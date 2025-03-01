@@ -12,9 +12,7 @@ export default function Breadcrumbs() {
         pathList.splice(0, 1);
         return pathList
     }
-
     const list = getListPath()
-    console.log(list);
 
     return <nav className={classes.box}>
         <ul className={classes.container}>

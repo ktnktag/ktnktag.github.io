@@ -42,7 +42,6 @@
     }
 }
 
-
 /* --- Временно здесь будут стили для страниц проектов --- */
 .title {
     margin-bottom: 24px;
@@ -56,6 +55,19 @@
     font: 600 28px/38px 'Manrope';
     letter-spacing: 0.5%;
     color: #21344A;
+}
+
+.markers {
+    padding-left: 40px;
+}
+
+.markers li::before {
+    content: "•";
+    margin-top: 4px;
+    font-size: 28px;
+    color: #21344A;
+    position: absolute;
+    left: 15px;
 }
 
 .paragraph,
@@ -117,6 +129,12 @@
         line-height: 32px;
         margin-bottom: 24px;
     }
+
+    .markers li::before {
+        font-size: 24px;
+        margin-top: 4px;
+        left: 15px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -148,6 +166,15 @@
     .n_3 {
         display: none;
     }
+
+    .markers {
+        padding-left: 30px;
+    }
+
+    .markers li::before {
+        font-size: 18px;
+        left: 10px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -163,5 +190,15 @@
 
     .paragraph {
         gap: 14px;
+    }
+
+    .markers {
+        padding-left: 20px;
+    }
+
+    .markers li::before {
+        font-size: 14px;
+        left: 7px;
+        margin-top: 2px;
     }
 }

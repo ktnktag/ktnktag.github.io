@@ -6,7 +6,7 @@
 }
 
 .img {
-    min-height: 400px;
+    min-height: max-content;
     max-height: max-content;
     border-radius: 16px;
     object-fit: contain;
@@ -20,23 +20,7 @@
     color: #9B9B9B;
 }
 
-@media screen and (max-width: 1320px) {
-    .img {
-        min-height: 350px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .img {
-        min-height: 250px;
-    }
-}
-
 @media screen and (max-width: 600px) {
-    .img {
-        min-height: 150px;
-    }
-
     .title {
         font: 300 10px/14px 'Manrope';
     }
