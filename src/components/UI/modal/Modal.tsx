@@ -30,7 +30,10 @@ export default function Modal({ setIsOpen, isOpen, checkCode }: Props) {
     }, [isOpen])
 
     return createPortal(
-        <dialog ref={dialogRef} className={classes.container}>
+        <dialog ref={dialogRef} 
+                className={classes.container}
+                onKeyDown={(e) => {e.code === 'Enter' ? checkCode(code, setErrorCode) : null } }>
+                    
             <div className={classes.boxTitle}>
                 <h3 className={classes.title}>Access Restricted</h3>
                 <X onClick={() => { setIsOpen(false) }} />
@@ -38,7 +41,11 @@ export default function Modal({ setIsOpen, isOpen, checkCode }: Props) {
             <label>
                 <p className={classes.text}>Some parts or the entire project work are protected by an NDA. Please enter the code to view the details.</p>
                 <div className={`${classes.input} ${errorCode ? classes.error : ''}`}>
-                    <input type="text" value={code} onChange={e => setCode(e.target.value)} placeholder='Please enter the code here' />
+                    <input  type="text" 
+                            value={code} 
+                            onChange={e => setCode(e.target.value)} 
+                            onKeyDown={(e) => {e.code === 'Enter' ? checkCode(code, setErrorCode) : null } } 
+                            placeholder='Please enter the code here' />
                 </div>
             </label>
             <div className={classes.boxButton}>
