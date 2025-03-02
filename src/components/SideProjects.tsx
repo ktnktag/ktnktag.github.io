@@ -1,5 +1,5 @@
-import SP1 from '../assets/png/SP/SP1.png'
-import SP2 from '../assets/png/SP/SP2.png'
+import SP1 from '../assets/png/SP/SP1.webp'
+import SP2 from '../assets/png/SP/SP2.webp'
 import Project from './UI/project/Project';
 
 export default function SideProjects() {

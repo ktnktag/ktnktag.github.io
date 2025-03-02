@@ -1,9 +1,9 @@
-import A1 from '../assets/png/AP/A1.png'
-import A2 from '../assets/png/AP/A2.png'
-import A3 from '../assets/png/AP/A3.png'
-import A4 from '../assets/png/AP/A4.png'
-import A5 from '../assets/png/AP/A5.png'
-import A6 from '../assets/png/AP/A6.png'
+import A1 from '../assets/png/AP/A1.webp'
+import A2 from '../assets/png/AP/A2.webp'
+import A3 from '../assets/png/AP/A3.webp'
+import A4 from '../assets/png/AP/A4.webp'
+import A5 from '../assets/png/AP/A5.webp'
+import A6 from '../assets/png/AP/A6.webp'
 import adidas from '../assets/svg/Adidas.svg'
 
 import Image from './UI/Image/Image';
