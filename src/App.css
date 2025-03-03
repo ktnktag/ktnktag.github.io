@@ -1,48 +1,3 @@
-.footer {
-    height: 72px;
-    padding: 24px 0;
-    border-top: 1px solid #21344A1A;
-
-    display: flex;
-    justify-content: center;
-}
-
-.footer p {
-    max-width: 0 auto;
-    font: 300 12px/24px 'Manrope', 'from-font';
-    letter-spacing: 0.005em;
-
-    color: #9B9B9B;
-}
-
-.wrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 140px;
-    margin-bottom: 140px;
-}
-
-@media screen and (max-width: 1050px) {
-    .wrapper {
-        gap: 80px;
-        margin-bottom: 80px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .wrapper {
-        gap: 60px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .wrapper {
-        gap: 32px;
-    }
-}
-
-/* --- Временно здесь будут стили для страниц проектов --- */
 .title {
     margin-bottom: 24px;
     font: 500 20px/24px 'Manrope', 'from-font';
@@ -81,6 +36,14 @@
     gap: 32px;
 }
 
+.paragraph .subtitle {
+    margin-bottom: 0;
+}
+
+.weight-text {
+    font-weight: 600;
+}
+
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -105,6 +68,7 @@
     color: #21344A;
     border-bottom: 1px solid #21344A1A;
 }
+
 .link a {
     color: #687BE0;
 }
@@ -115,6 +79,37 @@
     gap: 24px;
 
     justify-content: center;
+}
+
+.banner {
+    width: 790px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.banner .title {
+    margin-bottom: 0;
+    font: 500 58px/69.6px 'Manrope';
+    letter-spacing: 1px;
+    text-align: center;
+    color: #21344A;
+}
+
+.banner .description {
+    font: 300 22px/28px 'Manrope';
+    letter-spacing: 0.5%;
+    text-align: center;
+    color: #21344A;
+}
+
+.banner .year {
+    font: 300 14px/14px 'Manrope';
+    letter-spacing: 0.5%;
+    text-align: center;
+    color: #9B9B9B;
 }
 
 @media screen and (max-width: 1320px) {
@@ -146,6 +141,26 @@
         font-size: 24px;
         margin-top: 4px;
         left: 15px;
+    }
+
+    .weight-text {
+        font-weight: 500;
+    }
+
+    .banner {
+        width: 650px;
+        gap: 16px;
+    }
+
+    .banner .title {
+        font-size: 40px;
+        line-height: 46px;
+        color: #030712;
+    }
+    
+    .banner .description {
+        font-size: 20px;
+        line-height: 24px;
     }
 }
 
@@ -191,6 +206,19 @@
     .flex-wrap {
         gap: 16px;
     }
+
+    .banner {
+        width: 500px;
+    }
+
+    .banner .title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    
+    .banner .description {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -220,5 +248,24 @@
 
     .flex-wrap {
         justify-content: start;
+    }
+
+    .banner {
+        width: 312px;
+        gap: 8px;
+    }
+
+    .banner .title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    .banner .description {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .banner .year {
+        font-size: 12px;
     }
 }

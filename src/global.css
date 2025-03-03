@@ -27,6 +27,31 @@ body.lock {
 
 /* --- global styles --- */
 
+.footer {
+  height: 72px;
+  padding: 24px 0;
+  border-top: 1px solid #21344A1A;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  max-width: 0 auto;
+  font: 300 12px/24px 'Manrope', 'from-font';
+  letter-spacing: 0.005em;
+
+  color: #9B9B9B;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 140px;
+  margin-bottom: 140px;
+}
+
 main p {
   color: #21344A;
   font: 400 28px/38px 'Manrope', 'rom-font';
@@ -41,7 +66,7 @@ main a {
   letter-spacing: 0.005em;
   font: 300 15px/20px 'Manrope', 'from-font';
   color: currentColor;
-  
+
   transition: color 0.2s ease-in-out;
   transition: border 0.2s ease-in-out;
 }
@@ -51,10 +76,11 @@ main a {
     color: #687BE0;
     border-bottom-color: currentColor;
   }
+
   main a:hover path {
     stroke: #687BE0;
   }
-  
+
 }
 
 main a:active {
@@ -90,6 +116,11 @@ main {
     width: 772px;
   }
 
+  .wrapper {
+    gap: 80px;
+    margin-bottom: 80px;
+  }
+
   main p {
     font-size: 24px;
     line-height: 32px;
@@ -99,6 +130,10 @@ main {
 @media screen and (max-width: 800px) {
   .container {
     width: 559px;
+  }
+
+  .wrapper {
+    gap: 60px;
   }
 
   main p {
@@ -111,6 +146,11 @@ main {
   .container {
     width: 312px;
   }
+
+  .wrapper {
+    gap: 32px;
+  }
+
   main p {
     font-size: 14px;
     line-height: 20px;

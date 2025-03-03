@@ -97,7 +97,7 @@ export default function SelectedWorks() {
                         image={SW7}
                         title='Website Redesign Workshop'
                         company='Minsk, Belarus, 2023'
-                        path=''>
+                        path='/Selected_Works/Website_Redesign_Workshop'>
                         The goal is to rethink and redesign the current design of the main page of the art exhibition website, enhance visual appeal, improve user interaction with the site and overall user experience.
                     </Project>
 
