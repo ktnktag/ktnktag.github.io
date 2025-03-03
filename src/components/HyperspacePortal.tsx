@@ -12,6 +12,7 @@ import Note from './UI/note/Note'
 import Overview from './UI/overview/Overview'
 import Breadcrumbs from './UI/breadcrumbs/Breadcrumbs'
 import Image from './UI/Image/Image'
+import Step from './UI/Step/Step'
 
 export default function HyperspacePortal() {
     return (
@@ -35,24 +36,30 @@ export default function HyperspacePortal() {
             <section>
                 <h2 className='title'>Project Overview</h2>
 
-                <span className='paragraph'>
-                    <p>
-                        For most enhancements and interface updates, we followed a standard approach based on the design system guidelines. This meant:
-                    </p>
-                    <ul className='markers'>
-                        <li>
-                            <p>Mockups and designs were created by closely adhering to the established design system and best practices from previous projects.</p>
-                        </li>
-                        <li>
-                            <p>After the design was finalized, it was handed off to the development team for implementation and release.</p>
-                        </li>
-                    </ul>
-                    <p>
-                        However, for more complex new features that required in-depth research and user-centered design, we followed the design sprint approach.
-                    </p>
-                </span>
-                <div>
-
+                <div className="column-alignment">
+                    <span className='paragraph'>
+                        <p>
+                            For most enhancements and interface updates, we followed a standard approach based on the design system guidelines. This meant:
+                        </p>
+                        <ul className='markers'>
+                            <li>
+                                <p>Mockups and designs were created by closely adhering to the established design system and best practices from previous projects.</p>
+                            </li>
+                            <li>
+                                <p>After the design was finalized, it was handed off to the development team for implementation and release.</p>
+                            </li>
+                        </ul>
+                        <p>
+                            However, for more complex new features that required in-depth research and user-centered design, we followed the design sprint approach.
+                        </p>
+                    </span>
+                    <div className='flex-wrap'>
+                        <Step number='1' name='Map' />
+                        <Step number='2' name='Sketch' />
+                        <Step number='3' name='Decide' />
+                        <Step number='4' name='Prototype' />
+                        <Step number='5' name='Test' />
+                    </div>
                 </div>
             </section>
 

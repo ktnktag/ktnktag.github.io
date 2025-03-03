@@ -1,0 +1,60 @@
+.step {
+    font: 700 15px/16px 'Manrope';
+    letter-spacing: 0.5%;
+    color: #687BE099;
+}
+
+.box {
+    width: 180px;
+    height: 184px;
+
+    padding: 14px 16px 16px;
+    background-color: #687BE033;
+    color: #202A60;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.number {
+    font: 700 48px/65.57px 'Manrope';
+    white-space: nowrap;
+    flex-grow: 1;
+}
+
+.name {
+    height: 28px;
+    text-transform: uppercase;
+    font: 700 15px/16px 'Manrope';
+    letter-spacing: 0.5%;
+}
+
+
+@media screen and (max-width: 1320px) {
+    .box {
+        width: 159px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .box {
+        width: 135px;
+    }
+
+    .name {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .box {
+        width: 175px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .box {
+        width: 148px;
+    }
+}

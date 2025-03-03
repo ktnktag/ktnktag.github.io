@@ -109,9 +109,21 @@
     color: #687BE0;
 }
 
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    justify-content: center;
+}
+
 @media screen and (max-width: 1320px) {
     .subtitle {
         margin-bottom: 32px;
+    }
+
+    .flex-wrap {
+        gap: 23px;
     }
 }
 
@@ -175,6 +187,10 @@
         font-size: 18px;
         left: 10px;
     }
+
+    .flex-wrap {
+        gap: 16px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -200,5 +216,9 @@
         font-size: 14px;
         left: 7px;
         margin-top: 2px;
+    }
+
+    .flex-wrap {
+        justify-content: start;
     }
 }
