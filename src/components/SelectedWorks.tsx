@@ -105,7 +105,7 @@ export default function SelectedWorks() {
                         image={SW8}
                         title='Not POV, but REAL: you got into a real project'
                         company='Minsk, Belarus, 2024'
-                        path=''>
+                        path='/Selected_Works/Workshop_for_Smart_Home'>
                         Goals, first: to give newbies in ux design to feel what it’s like to work on a real project; the second is to create a visually attractive and intuitive multi-screen design for a mobile application designed to control a smart home.
                     </Project>
                 </div>

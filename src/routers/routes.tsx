@@ -10,6 +10,7 @@ import DocumentationPage from '../components/DocumentationPage.tsx'
 import ComponentPage from '../components/ComponentPage.tsx'
 import AdidasPage from '../components/AdidasPage.tsx'
 import RedesignWorkshop from "../components/RedesignWorkshop.tsx";
+import SmartHome from "../components/SmartHome.tsx";
 
 import Error404 from "./Error404.tsx";
 import { RequireAuth } from "./RequireAuth.tsx";
@@ -43,7 +44,7 @@ const router = createHashRouter(
             
             
             <Route path="/Selected_Works/Website_Redesign_Workshop" element={<RedesignWorkshop />} />
-            <Route path="/Selected_Works/Workshop_for_Smart_Home" element={<RedesignWorkshop />} />
+            <Route path="/Selected_Works/Workshop_for_Smart_Home" element={<SmartHome />} />
         </Route>
     )
 )
