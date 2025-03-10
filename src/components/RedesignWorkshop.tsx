@@ -3,14 +3,11 @@ import RW2 from '../assets/png/RW/RW2.webp'
 import RW3 from '../assets/png/RW/RW3.webp'
 import SW7 from '../assets/png/SW/SW7.webp'
 
-import Breadcrumbs from "./UI/breadcrumbs/Breadcrumbs"
 import Image from "./UI/Image/Image"
 import Project from "./UI/project/Project"
 
 export default function RedesignWorkshop() {
     return (<>
-        <Breadcrumbs />
-
         <header>
             <div className='banner'>
                 <h1 className='title'>Community workshop in Minsk: let's see how it was</h1>
@@ -83,7 +80,7 @@ export default function RedesignWorkshop() {
                 <p>Despite the challenges encountered, each team successfully navigated their tasks, showcasing the power of teamwork, creativity, and effective design principles. Stay tuned for the upcoming presentations where we'll unveil the results of our collective efforts!</p>
 
                 <div className='two-column'>
-                    <Project 
+                    <Project
                         image={SW7}
                         isLink={true}
                         title='Video of the redesign process on YouTube'
@@ -91,7 +88,7 @@ export default function RedesignWorkshop() {
                         Watch the redesigning process and drop your thoughts in the comments about which version you fancy the most!
                     </Project>
 
-                    <Project 
+                    <Project
                         image={RW1}
                         isLink={true}
                         title='Short article About Event on LinkedIn'

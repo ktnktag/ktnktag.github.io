@@ -6,12 +6,9 @@ import SH5 from '../assets/png/SH/SH5.webp'
 import SH6 from '../assets/png/SH/SH6.webp'
 
 import Image from './UI/Image/Image'
-import Breadcrumbs from './UI/breadcrumbs/Breadcrumbs'
 
 export default function SmartHome() {
     return (<>
-        <Breadcrumbs />
-
         <header>
             <div className='banner'>
                 <h1 className='title'>Not POV, but REAL: you got into a real project</h1>

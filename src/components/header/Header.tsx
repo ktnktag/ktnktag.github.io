@@ -1,17 +1,31 @@
 import './Header.css'
-import Logo from '../../assets/svg/Logo.svg'
-import Menu from '../UI/menu/Menu.tsx'
+import Menu from './Menu'
+import Breadcrumbs from './Breadcrumbs'
+
+
+import { useEffect, useState, useRef } from 'react'
+import { useLocation } from 'react-router-dom'
 
 export default function Header() {
-    return (
-        <header id="top" className='header container'>
-            <div className='header-box container'>
-                <a href="#">
-                    <img src={Logo} alt="logo" className='logo'/>
-                </a>
+    const location = useLocation();
+    const pathRef = useRef<string>('');
+    const [path, setPath] = useState<string>(location.pathname);
 
-                <Menu />
-            </div>
+    const getListPath = () => {
+        let pathList = location.pathname?.split('/');
+        pathList.splice(0, 1);
+        return pathList
+    }
+
+    useEffect(() => {
+        setPath(location.pathname);
+        pathRef.current = '';
+    }, [location.pathname])
+
+    return (
+        <header id="top" className='header'>
+           <Menu />
+           {path?.indexOf('/', 5) !== -1  && <Breadcrumbs list={getListPath()} path={pathRef.current}/>}
         </header>
     )
 }

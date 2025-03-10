@@ -13,7 +13,7 @@
     background-color: #2427304D;
     position: absolute;
     top: 32.5%;
-    z-index: 2;
+    z-index: 1;
 }
 
 .color {
@@ -34,7 +34,7 @@
     gap: 8px;
 
     position: relative;
-    z-index: 3;
+    z-index: 2;
 }
 
 .text {

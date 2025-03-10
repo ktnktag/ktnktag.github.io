@@ -17,12 +17,12 @@
 }
 
 .markers li::before {
-    content: "•";
-    margin-top: 4px;
+    content: "✨";
+
     font-size: 28px;
     color: #21344A;
     position: absolute;
-    left: 15px;
+    left: 0;
 }
 
 .paragraph,

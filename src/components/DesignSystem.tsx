@@ -13,12 +13,10 @@ import Overview from './UI/overview/Overview'
 import Token from './UI/token/Token'
 import Image from './UI/Image/Image'
 import Project from './UI/project/Project'
-import Breadcrumbs from './UI/breadcrumbs/Breadcrumbs'
 
 export default function DesignSystem() {
     return (
         <>  
-            <Breadcrumbs />
             <header>
                 <div className="column-alignment">
                     <span className='paragraph'>

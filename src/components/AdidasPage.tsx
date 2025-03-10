@@ -9,12 +9,10 @@ import adidas from '../assets/svg/Adidas.svg'
 import Image from './UI/Image/Image';
 import Note from './UI/note/Note'
 import Overview from './UI/overview/Overview'
-import Breadcrumbs from './UI/breadcrumbs/Breadcrumbs'
 
 export default function AdidasPage() {
     return (
         <>
-            <Breadcrumbs />
             <header>
                 <div className="column-alignment">
                     <span className="paragraph">

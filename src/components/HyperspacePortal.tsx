@@ -10,14 +10,12 @@ import HP7 from '../assets/png/HP/HP7.webp'
 
 import Note from './UI/note/Note'
 import Overview from './UI/overview/Overview'
-import Breadcrumbs from './UI/breadcrumbs/Breadcrumbs'
 import Image from './UI/Image/Image'
 import Step from './UI/Step/Step'
 
 export default function HyperspacePortal() {
     return (
         <>
-            <Breadcrumbs />
             <header>
                 <div className="column-alignment">
                     <p>SAP’s internal CI/CD platform empowers over 50,000 engineers to efficiently deliver value to customers, supporting the shift from on-premise to cloud-native solutions. The Hyperspace Portal, the central entry point for developers, offers unified access to platform services, APIs, and tooling. It enables the efficient creation of cloud-native services and applications aligned with SAP’s global architecture standards, covering the entire development lifecycle—from setup to delivery and operations.</p>
@@ -34,7 +32,7 @@ export default function HyperspacePortal() {
             </Overview>
 
             <section>
-                <h2 className='title'>Project Overview</h2>
+                <h2 className='title'>Work Process</h2>
 
                 <div className="column-alignment">
                     <span className='paragraph'>
@@ -64,7 +62,7 @@ export default function HyperspacePortal() {
             </section>
 
             <section>
-                <h2 className='title'>Project Overview</h2>
+                <h2 className='title'>Design Sprint Approach</h2>
                 <div className="column-alignment">
                     <p>The design sprint was used for new features that required more exploration and attention. It is a structured, time-constrained process designed to accelerate decision-making and design development</p>
                     <br />

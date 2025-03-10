@@ -1,0 +1,110 @@
+.box {
+    height: 65px;
+    border: 1px solid #E7E7E7;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    padding-top: 12px;
+}
+
+.separator {
+    width: 1px;
+    height: 22px;
+    background-color: #DEDEDE;
+}
+
+/* --- BREADCRUMBS --- */
+
+.breadcrumbs {
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.breadcrumbs a,
+.breadcrumbs .text {
+    font: 400 12px/14px 'Manrope';
+    letter-spacing: 0%;
+}
+
+.breadcrumbs a {
+    color: #5B738B;
+}
+
+.breadcrumbs:hover a {
+    color: #687BE0;
+}
+
+.breadcrumbs:active a {
+    color: #17029C;
+}
+
+.link::after {
+    content: " / ";
+}
+
+/* --- TABS --- */
+
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.tabs h1 {
+    font: 500 16px/20px 'Manrope';
+    letter-spacing: 0%;
+}
+
+.radio {
+    height: 100%;
+    display: inline-block;
+}
+
+.radio input[type=radio] {
+	display: none;
+}
+
+.radio label {
+    height: 100%;
+    font: 400 14px/24px 'Manrope';
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid transparent;
+}
+
+/* Checked */
+.radio input[type=radio]:checked + label {
+    border-bottom-color: #687BE0;
+}
+ 
+/* Hover */
+.radio label:hover {
+	color: #687BE0;
+}
+
+.radio label:active {
+	color: #17029C;
+}
+ 
+/* Disabled */
+.radio input[type=radio]:disabled + label {
+	color: #9B9B9B;
+}
+
+@media screen and (max-width: 1320px) {
+    
+}
+
+@media screen and (max-width: 1050px) {
+    
+}
+
+@media screen and (max-width: 800px) {}
+
+@media screen and (max-width: 600px) {}

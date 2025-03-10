@@ -8,7 +8,7 @@ import SW7 from '../assets/png/SW/SW7.webp';
 import SW8 from '../assets/png/SW/SW8.webp';
 
 import Project from './UI/project/Project';
-import Modal from './UI/modal/Modal';
+import Modal from './UI/Modal/Modal';
 import { IsCorrectCode, SetIsAuth } from '../api';
 import { useState } from 'react';
 import { useNavigate, useLocation} from "react-router-dom";

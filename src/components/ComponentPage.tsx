@@ -22,12 +22,10 @@ import C21 from '../assets/png/CP/C21.webp'
 
 import Note from "./UI/note/Note"
 import Image from './UI/Image/Image'
-import Breadcrumbs from './UI/breadcrumbs/Breadcrumbs'
 
 export default function ComponentPage() {
     return (
         <>
-            <Breadcrumbs />
             <header>
                 <div className="column-alignment">
                     <p>A design system is a collection of reusable UI elements that product teams use and build on to create a consistent user experience across digital products.</p>

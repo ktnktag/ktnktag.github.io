@@ -95,7 +95,7 @@ main a:active path {
 /* --- global margins --- */
 
 .container {
-  width: 996px;
+  width: 1146px;
 }
 
 main {
@@ -107,13 +107,13 @@ main {
 
 @media screen and (max-width: 1320px) {
   .container {
-    width: 890px;
+    width: 956px;
   }
 }
 
 @media screen and (max-width: 1050px) {
   .container {
-    width: 772px;
+    width: 836px;
   }
 
   .wrapper {
@@ -129,7 +129,7 @@ main {
 
 @media screen and (max-width: 800px) {
   .container {
-    width: 559px;
+    width: 544px;
   }
 
   .wrapper {

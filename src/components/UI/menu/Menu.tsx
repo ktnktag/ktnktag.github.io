@@ -4,7 +4,7 @@ import { default as Arrow } from '../../../assets/svg/Arrow.svg?react'
 import { NavLink } from "react-router-dom"
 import { useState } from 'react'
 
-export default function Menu() {
+export default function Menu2() {
     const [menuActive, setMenuActive] = useState<boolean>(false);
 
     function SwitchScroll(isIncluded: boolean) {
