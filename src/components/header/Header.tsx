@@ -21,12 +21,7 @@ export default function Header() {
     const [path, setPath] = useState<string>(location.pathname);
 
 
-    function SwitchScroll(isIncluded: boolean) {
-        if (!isIncluded && !isMenuActive) {
-            return
-        }
-
-        setIsMenuActive(isIncluded)
+    function SwitchScroll() {
         var element = document.getElementById("body");
         element?.classList.toggle("lock");
     }
@@ -53,12 +48,20 @@ export default function Header() {
         setTitle(GetListTabs())
     }, [location.pathname])
 
+    useEffect(() => {
+        if (isMenuActive) {
+            SwitchScroll()
+        }
+        else {
+            SwitchScroll()
+        }
+    }, [isMenuActive])
 
     return (
         <header id="top" className='header'>
-           <Menu SwitchScroll={SwitchScroll} isActive={isMenuActive}/>
+           <Menu SwitchScroll={setIsMenuActive} isActive={isMenuActive}/>
            {path?.indexOf('/', 5) !== -1  && <Breadcrumbs list={getListPath()} path={pathRef.current} title={title}/>}
-           {isMenuActive && <BurgerMenu SwitchScroll={SwitchScroll}/>}
+           {isMenuActive && <BurgerMenu setActive={setIsMenuActive}/>}
         </header>
     )
 }
