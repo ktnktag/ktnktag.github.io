@@ -2,6 +2,7 @@ import './Header.css'
 import Menu from './Menu'
 import Breadcrumbs from './Breadcrumbs'
 
+import BurgerMenu from './BurgerMenu'
 
 import { useEffect, useState, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
@@ -13,17 +14,24 @@ interface ITitle {
 
 export default function Header() {
     const location = useLocation();
-    const [title, setTitle] = useState<ITitle[]>(getListTabs());
+    const [isMenuActive, setIsMenuActive] = useState<boolean>(false);
+    const [title, setTitle] = useState<ITitle[]>(GetListTabs());
+
     const pathRef = useRef<string>('');
     const [path, setPath] = useState<string>(location.pathname);
 
-    const getListPath = () => {
-        let pathList = location.pathname?.split('/');
-        pathList.splice(0, 1);
-        return pathList
+
+    function SwitchScroll(isIncluded: boolean) {
+        if (!isIncluded && !isMenuActive) {
+            return
+        }
+
+        setIsMenuActive(isIncluded)
+        var element = document.getElementById("body");
+        element?.classList.toggle("lock");
     }
 
-    function getListTabs() {
+    function GetListTabs() {
         const tabs = document.querySelectorAll('h2');
         const str: ITitle[] = [];
         tabs.forEach(element => {
@@ -33,18 +41,24 @@ export default function Header() {
         return str;
     }
 
+    const getListPath = () => {
+        let pathList = location.pathname?.split('/');
+        pathList.splice(0, 1);
+        return pathList
+    }
+
     useEffect(() => {
         setPath(location.pathname);
         pathRef.current = '';
-        setTitle(getListTabs())
+        setTitle(GetListTabs())
     }, [location.pathname])
-
 
 
     return (
         <header id="top" className='header'>
-           <Menu />
+           <Menu SwitchScroll={SwitchScroll} isActive={isMenuActive}/>
            {path?.indexOf('/', 5) !== -1  && <Breadcrumbs list={getListPath()} path={pathRef.current} title={title}/>}
+           {isMenuActive && <BurgerMenu SwitchScroll={SwitchScroll}/>}
         </header>
     )
 }

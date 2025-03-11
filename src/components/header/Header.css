@@ -4,7 +4,7 @@
     margin-bottom: 126px;
     background-color: #FFF;
     position: sticky;
-    top: -54px;
+    top: 0;
     z-index: 3;
 }
 
@@ -125,17 +125,50 @@ header nav:last-child .active .text {
     border-bottom-color: #687BE0;
 }
 
+@media screen and (max-width: 800px) {
+    .button {
+        width: 560px;
+        height: 36px;
+
+        padding: 0 0 8px 0;
+
+        border-radius: 0;
+        border-bottom: 1px solid #E3E3E3;
+    }
+
+    .button .text {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.5%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (hover: hover) {
+        .button:hover {
+            background-color: transparent;
+            border-bottom-color: #687BE0;
+        }
+
+        .button:hover>.text {
+            color: #687BE0;
+        }
+    }
+
+    .button:active {
+        border-bottom-color: #17029C;
+    }
+
+    .button:active>.text {
+        color: #17029C;
+    }
+}
 
 /* --- ARROW --- */
 
 .menu svg {
     color: #9B9B9B;
-}
-
-.arrow-right {
-    width: 14px;
-    display: none;
-    transform: rotate(90deg);
 }
 
 .arrow-right-up {
