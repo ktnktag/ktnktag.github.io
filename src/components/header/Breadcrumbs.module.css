@@ -50,50 +50,50 @@
 /* --- TABS --- */
 
 .tabs {
+    height: 32px;
     display: flex;
-    align-items: center;
+
     gap: 24px;
 }
 
 .tabs h1 {
+    height: 100%;
     font: 500 16px/20px 'Manrope';
     letter-spacing: 0%;
 }
 
 .radio {
     height: 100%;
-    display: inline-block;
+    cursor: pointer;
 }
 
 .radio input[type=radio] {
 	display: none;
 }
 
-.radio label {
+.radio p {
     height: 100%;
     font: 400 14px/24px 'Manrope';
     letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
 /* Checked */
-.radio input[type=radio]:checked + label {
+.radio input[type=radio]:checked + p {
     border-bottom-color: #687BE0;
 }
  
 /* Hover */
-.radio label:hover {
+.radio p:hover {
 	color: #687BE0;
 }
 
-.radio label:active {
+.radio p:active {
 	color: #17029C;
 }
  
 /* Disabled */
-.radio input[type=radio]:disabled + label {
+.radio input[type=radio]:disabled + p {
 	color: #9B9B9B;
 }
 
