@@ -1,7 +1,7 @@
 import './App.css'
 
 import ArrowUp from './components/UI/arrowUp/ArrowUp.tsx'
-import Header from './components/header/Header.tsx'
+import Header from './components/Header/Header.tsx'
 
 import { Outlet } from 'react-router-dom'
 

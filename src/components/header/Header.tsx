@@ -1,8 +1,8 @@
-import './Header.css'
-import Menu from './Menu'
-import Breadcrumbs from './Breadcrumbs'
+import './Style/Header.css'
 
-import BurgerMenu from './BurgerMenu'
+import Menu from './Menu.tsx'
+import Breadcrumbs from './Breadcrumbs.tsx'
+import BurgerMenu from './BurgerMenu.tsx'
 
 import { useEffect, useState, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
