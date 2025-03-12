@@ -1,4 +1,4 @@
-import classes from './style/Breadcrumbs.module.css'
+import classes from './Breadcrumbs.module.css'
 
 import { Link } from "react-router-dom"
 

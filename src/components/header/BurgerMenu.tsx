@@ -1,4 +1,4 @@
-import classes from './style/BurgerMenu.module.css'
+import classes from './BurgerMenu.module.css'
 
 import { default as Arrow } from '../../assets/svg/Arrow.svg?react'
 import { NavLink } from "react-router-dom"
