@@ -30,7 +30,7 @@ export default function Header() {
         const tabs = document.querySelectorAll('h2');
         const str: ITitle[] = [];
         tabs.forEach(element => {
-            const test: ITitle = {name: element.textContent as string, y: element.offsetTop};
+            const test: ITitle = { name: element.textContent as string, y: element.offsetTop };
             str.push(test);
         });
         return str;
@@ -49,19 +49,21 @@ export default function Header() {
     }, [location.pathname])
 
     useEffect(() => {
+        var element = document.getElementById("body");
+
         if (isMenuActive) {
-            SwitchScroll()
+            element?.classList.add("lock");
         }
         else {
-            SwitchScroll()
+            element?.classList.remove("lock");
         }
     }, [isMenuActive])
 
     return (
         <header id="top" className='header'>
-           <Menu SwitchScroll={setIsMenuActive} isActive={isMenuActive}/>
-           {path?.indexOf('/', 5) !== -1  && <Breadcrumbs list={getListPath()} path={pathRef.current} title={title}/>}
-           {isMenuActive && <BurgerMenu setActive={setIsMenuActive}/>}
+            <Menu SwitchScroll={setIsMenuActive} isActive={isMenuActive} />
+            {path?.indexOf('/', 5) !== -1 && <Breadcrumbs list={getListPath()} path={pathRef.current} title={title} />}
+            {isMenuActive && <BurgerMenu setActive={setIsMenuActive} />}
         </header>
     )
 }
