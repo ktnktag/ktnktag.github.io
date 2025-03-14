@@ -6,6 +6,12 @@
     position: sticky;
     top: 0;
     z-index: 3;
+
+    transition: top 0.3s linear;
+}
+
+.hide {
+    top: -54px;
 }
 
 .menu {
