@@ -37,6 +37,16 @@ export default function Breadcrumbs({ list, path, title }: { list: string[], pat
                         })
                     }
                 </div>
+
+                <div className={classes.dropList}>
+                    <select name="drop" id="drop">
+                        {
+                            title.map((item: ITitle) => {
+                                return <option value={item.name} onClick={() => {window.scrollTo(0, item.y)}}>{item.name}</option>
+                            })
+                        }
+                    </select>
+                </div>
             </ul>
         </nav>
     )
