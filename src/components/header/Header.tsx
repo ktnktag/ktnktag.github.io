@@ -20,12 +20,6 @@ export default function Header() {
     const pathRef = useRef<string>('');
     const [path, setPath] = useState<string>(location.pathname);
 
-
-    function SwitchScroll() {
-        var element = document.getElementById("body");
-        element?.classList.toggle("lock");
-    }
-
     function GetListTabs() {
         const tabs = document.querySelectorAll('h2');
         const str: ITitle[] = [];
@@ -62,7 +56,7 @@ export default function Header() {
     return (
         <header id="top" className='header'>
             <Menu SwitchScroll={setIsMenuActive} isActive={isMenuActive} />
-            {path?.indexOf('/', 5) !== -1 && <Breadcrumbs list={getListPath()} path={pathRef.current} title={title} />}
+            {(path?.indexOf('/', 5) !== -1 && !isMenuActive) && <Breadcrumbs list={getListPath()} path={pathRef.current} title={title} />}
             {isMenuActive && <BurgerMenu setActive={setIsMenuActive} />}
         </header>
     )

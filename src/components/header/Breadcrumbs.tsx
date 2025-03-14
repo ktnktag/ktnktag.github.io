@@ -30,8 +30,8 @@ export default function Breadcrumbs({ list, path, title }: { list: string[], pat
 
                     {
                         title.map((item: ITitle) => {
-                            return <label key={item.name} className={classes.radio} onClick={() => {window.scrollTo(0, item.y)}}>
-                                <input type="radio" name="radio"/>
+                            return <label key={item.name} className={classes.radio} onClick={() => { window.scrollTo(0, item.y) }}>
+                                <input type="radio" name="radio" />
                                 <p>{item.name}</p>
                             </label>
                         })
@@ -39,10 +39,11 @@ export default function Breadcrumbs({ list, path, title }: { list: string[], pat
                 </div>
 
                 <div className={classes.dropList}>
+                    <h1>{list[list?.length - 1]?.replace(/_/gi, ' ')}</h1>
                     <select name="drop" id="drop">
                         {
                             title.map((item: ITitle) => {
-                                return <option value={item.name} onClick={() => {window.scrollTo(0, item.y)}}>{item.name}</option>
+                                return <option value={item.name} onClick={() => { window.scrollTo(0, item.y) }}>{item.name}</option>
                             })
                         }
                     </select>

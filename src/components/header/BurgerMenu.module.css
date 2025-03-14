@@ -5,6 +5,10 @@
     background-color: #F5F5F7;
     overflow: hidden;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     position: fixed;
     z-index: 2;
 }
@@ -12,9 +16,11 @@
 .container {
     width: 544px;
     height: 40px;
-    margin: 60px auto;
+    margin: 60px auto 0;
+
     display: flex;
     flex-direction: column;
+
     gap: 24px;
     z-index: 2;
 }
@@ -33,7 +39,6 @@
 }
 
 @media (hover: hover) {
-
     .button a:hover>.text>.name,
     .button a:hover>.text>svg,
     .button:hover {
@@ -104,8 +109,6 @@
 
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 50px;
 }
 
 .footer p {
