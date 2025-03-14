@@ -1,8 +1,7 @@
 .container {
-    width: 470px;
+    width: 608px;
     height: max-content;
-    padding: 0 32px;
-    border-radius: 16px;
+    border-radius: 8px;
     border: 1px solid #DEDEDE;
     background-color: #FFFFFF;
 
@@ -13,44 +12,55 @@
     z-index: 5;
 }
 
+.container:focus {
+    outline: none;
+}
+
+/* --- BOX TITLE --- */
 .boxTitle {
     height: 72px;
+    padding: 0 32px;
+    border-bottom: 1px solid #687BE052;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .boxTitle svg {
-    color: #6D6B6B;
+    color: #263AA7;
     cursor: pointer;
 }
+
 .boxTitle svg:hover {
     color: #687BE0;
 }
+
 .boxTitle svg:active {
     color: #17029C;
 }
 
-.boxButton {
-    height: 100px;
-    display: flex;
-    align-items: center;
-}
-
 .title {
-    font: 500 24px/26px 'Manrope';
+    font: 500 24px/32px 'Inter';
     letter-spacing: 0px;
     color: #000;
 }
 
+/* --- BOX INPUT --- */
+.boxInput {
+    padding: 24px 32px;
+}
+
 .text {
-    font: 300 20px/28px 'Manrope';
+    margin-bottom: 24px;
+
+    font: 400 16px/24px 'Manrope';
     letter-spacing: 0.5%;
     color: #21344A;
 }
 
 .input {
     height: max-content;
-    margin: 16px 0;
     border-radius: 8px;
 
     overflow: hidden;
@@ -59,69 +69,80 @@
 
 .input input {
     width: 100%;
-    padding: 8px;
+    height: 40px;
+    padding: 12px;
 
-    font: 300 20px/28px 'Manrope';
+    font: 400 16px/24px 'Manrope';
     color: #21344A;
-}
-
-.input::after {
-    content: "";
-    height: 1px;
-    width: 100%;
-
-    color: #687BE0;
-    background-color: #687BE0;
-
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, 0)
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #687BE052;
 }
 
 .input input::placeholder {
-    font: 300 13px/16px 'Manrope';
-    letter-spacing: 0.2px;
-    color: #9B9B9B;
+    font: 400 italic 14px/16px 'Inter';
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #ABABAB;
 }
 
+.input p {
+    height: 15px;
+    margin: 8px 0 0 12px;
+    font: 400 12px/100% 'Inter';
+    letter-spacing: 0%;
+    color: #7E8294;
+}
+
+/* --- BOX BUTTON --- */
+.boxButton {
+    height: 92px;
+    padding: 0 32px;
+    border-top: 1px solid #687BE052;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
 
 .continue,
 .cancel {
-    padding: 12px;
+    height: 44px;
+    padding: 12px 14px;
     border-radius: 8px;
-    font: 500 20px/28px 'Manrope';
-    letter-spacing: 0.5%;
 
-    transition: background-color 0.3s ease-in-out;
-    transition: color 0.3s ease-in-out;
-    transition: border 0.3s ease-in-out;
+    font: 500 16px/20px 'Inter';
+    text-align: center;
+    letter-spacing: 0%;
+
+    transition: all 0.3s ease-in-out;
 }
 
 .continue {
     margin-right: 16px;
-    color: #687BE0;
-    border: 1px solid #687BE066;
+    color: #FFF;
+    background-color: #687BE0;
 }
 
 .cancel {
-    border: 1px solid transparent;
-    color: #6D6B6B;
+    border: 1px solid #687BE066;
+    color: #263AA7;
 }
 
 @media (hover: hover) {
     .continue:hover {
-        background-color: #687BE01A;
+        background-color: #4053BB;
     }
 
     .cancel:hover {
-        background-color: #687BE00A;
-        border-color: #687BE066;
+        background-color: #687BE01A;
     }
 }
 
-.continue:active,
+.continue:active {
+    background-color: #3E4A86;
+
+}
+
 .cancel:active {
     color: #17029C;
     border-color: #17029C;
@@ -132,7 +153,7 @@
     .title {
         font-size: 20px;
     }
-    
+
     .input input,
     .text {
         font-size: 16px;
