@@ -39,7 +39,8 @@ export default function Header() {
     useEffect(() => {
         setPath(location.pathname);
         pathRef.current = '';
-        setTitle(GetListTabs())
+        setTitle(GetListTabs());
+        window.scrollTo(0, 0);
     }, [location.pathname])
 
     useEffect(() => {

@@ -48,7 +48,8 @@ export default function Modal({ setIsOpen, isOpen, checkCode }: Props) {
                             onKeyDown={(e) => {e.code === 'Enter' ? checkCode(code, setErrorCode) : null } } 
                             placeholder='Please enter the code here' />
 
-                    <p>Contact me if you need access to the project</p>
+                    {!errorCode && <p className={classes.hintText}>Contact me if you need access to the project</p>}
+                    {errorCode && <p className={classes.errorText}>{errorCode}</p>}
                 </label>
             </div>
 

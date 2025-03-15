@@ -25,7 +25,7 @@ export default function SelectedWorks() {
             navigate(location.state?.from?.pathname || '/SelectedWorks');
         }
         else {
-            error("Неверный пароль");
+            error("Incorrect password. Please try again.");
         }
     }
 

@@ -76,6 +76,22 @@
     color: #21344A;
     background-color: #F2F2F2;
     border-bottom: 1px solid #687BE052;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.input input:hover {
+    background-color: #687BE03D;
+    border-bottom-color: #687BE0;
+}
+
+.input input:focus {
+    background-color: #FFF;
+    border-bottom-color: #17029C;
+}
+
+.error input {
+    border-bottom-color: #C60E0E;
 }
 
 .input input::placeholder {
@@ -90,7 +106,14 @@
     margin: 8px 0 0 12px;
     font: 400 12px/100% 'Inter';
     letter-spacing: 0%;
+}
+
+.hintText {
     color: #7E8294;
+}
+
+.errorText {
+    color: #C60E0E;
 }
 
 /* --- BOX BUTTON --- */
