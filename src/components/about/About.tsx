@@ -51,7 +51,38 @@ export default function About() {
 
                     <article className='skills'>
                         <h3>Skills</h3>
-                        <p>UX Research, Prototyping, Wireframing, Quick Iterations, Interaction Design, Interviewing, Remote User Testing, User Flows, Mobile Design, Web Design, SAP Fiori UX, Design Systems, Design Tokens, Functional Specifications</p>
+
+                        <div>
+                        <ul className='list'>
+                            <p>👨‍💻 Design & UX</p>
+                            <li>UX research, prototyping, wireframing, user flows, usability testing</li>
+                            <li>Interaction design, accessibility, quick iterations, mobile & web design</li>
+                            <li>Information architecture, remote user testing, heuristics & cognitive principles</li>
+                        </ul>
+
+                        <ul className='list'>
+                            <p>📐 Design Systems & Tokens</p>
+                            <li>Creating and maintaining design systems for scalable products</li>
+                            <li>Design tokens implementation and standardization</li>
+                            <li>Component libraries, UI consistency, multi-platform design (web, mobile, enterprise)</li>
+                            <li>Working with Fiori UI5, Ant Design, and custom design systems</li>
+                        </ul>
+
+                        <ul className='list'>
+                            <p>🤝 Collaboration & Processes</p>
+                            <li>Stakeholder collaboration: working with product managers, engineers, and business teams</li>
+                            <li>Developer handoff: preparing design specifications, optimizing workflows</li>
+                            <li>Cross-functional teamwork: bridging design and development, ensuring feasibility</li>
+                            <li>Documentation & guidelines: writing functional specifications, improving design ops</li>
+                        </ul>
+
+                        <ul className='list'>
+                            <p>🛠 Tools & Platforms</p>
+                            <li>Figma (auto-layout, components, variables, prototyping, design tokens)</li>
+                            <li>Design handoff tools (Figma Dev Mode, Storybook)</li>
+                            <li>Collaboration & tracking (Jira, Confluence, Notion)</li>
+                        </ul>
+                        </div>
                     </article>
 
                     <footer className='socials'>
@@ -90,7 +121,7 @@ export default function About() {
                         </ul>
                     </footer>
                 </div>
-            </div>
+            </div >
         </>
     )
 }
