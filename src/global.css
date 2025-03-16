@@ -134,6 +134,7 @@ main {
 
   .wrapper {
     gap: 60px;
+    margin-bottom: 60px;
   }
 
   main p {
@@ -145,10 +146,6 @@ main {
 @media screen and (max-width: 600px) {
   .container {
     width: 312px;
-  }
-
-  .wrapper {
-    gap: 32px;
   }
 
   main p {

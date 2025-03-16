@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 interface ITitle {
     name: string;
-    y: number;
+    element: Element;
 }
 
 export default function Breadcrumbs({ list, path, title }: { list: string[], path: string, title: any }) {
@@ -30,7 +30,12 @@ export default function Breadcrumbs({ list, path, title }: { list: string[], pat
 
                     {
                         title.map((item: ITitle) => {
-                            return <label key={item.name} className={classes.radio} onClick={() => { window.scrollTo(0, item.y) }}>
+                            return <label key={item.name} className={classes.radio} onClick={() => {
+                                item.element.scrollIntoView();
+                                setTimeout(() => {
+                                    window.scrollBy(0, -150);
+                                }, 1000)
+                            }}>
                                 <input type="radio" name="radio" />
                                 <p>{item.name}</p>
                             </label>
@@ -43,7 +48,7 @@ export default function Breadcrumbs({ list, path, title }: { list: string[], pat
                     <select name="drop" id="drop">
                         {
                             title.map((item: ITitle) => {
-                                return <option key={item.name} value={item.name} onClick={() => { window.scrollTo(0, item.y) }}>{item.name}</option>
+                                return <option key={item.name} value={item.name}>{item.name}</option>
                             })
                         }
                     </select>

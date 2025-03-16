@@ -9,7 +9,7 @@ import { useLocation } from 'react-router-dom'
 
 interface ITitle {
     name: string;
-    y: number;
+    element: Element;
 }
 
 export default function Header() {
@@ -24,7 +24,8 @@ export default function Header() {
         const tabs = document.querySelectorAll('h2');
         const str: ITitle[] = [];
         tabs.forEach(element => {
-            const test: ITitle = { name: element.textContent as string, y: element.offsetTop };
+            const test: ITitle = { name: element.textContent as string, element: element};
+            console.log(element.getBoundingClientRect().y)
             str.push(test);
         });
         return str;
