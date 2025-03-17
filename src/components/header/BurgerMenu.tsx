@@ -49,7 +49,7 @@ export default function BurgerMenu({ setActive }: { setActive: Function }) {
             </ul>
 
             <footer className={classes.footer}>
-                <p>© 2025 Valeria Yakovchik</p>
+                <p>© 2025 Valeria Yakovchik. All right reserved.</p>
             </footer>
         </div>
     )

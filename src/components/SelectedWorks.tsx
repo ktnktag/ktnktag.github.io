@@ -46,7 +46,7 @@ export default function SelectedWorks() {
                         image={SW2}
                         title='Design System for the Leading Global Tech Company Web-sites'
                         company='SAP Company, 2023 - 2025'
-                        path='/Selected_Works/Design_System'>
+                        path='/Selected_Works/Design_System_development'>
                         Developed a comprehensive design system for web platforms, incorporating best practices inspired by SAP Fiori while ensuring flexibility and brand consistency. Created developer-friendly documentation to streamline adoption and implementation.
                     </Project>
 

@@ -21,15 +21,15 @@ const router = createHashRouter(
             <Route index={true} path="/" element={<About />} />
 
             <Route path="/Selected_Works" element={<SelectedWorks />} />
-            <Route path="/Selected_Works/Design_System" element={
+            <Route path="/Selected_Works/Design_System_development" element={
                 <RequireAuth>
                     <DesignSystem />
                 </RequireAuth>} />
-            <Route path="/Selected_Works/Design_System/Documentation" element={
+            <Route path="/Selected_Works/Design_System_development/Documentation" element={
                 <RequireAuth>
                     <DocumentationPage />
                 </RequireAuth>} />
-            <Route path="/Selected_Works/Design_System/Components_and_Patterns" element={
+            <Route path="/Selected_Works/Design_System_development/Components_and_Patterns" element={
                 <RequireAuth>
                     <ComponentPage />
                 </RequireAuth>} />

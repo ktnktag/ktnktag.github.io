@@ -33,7 +33,7 @@
 
 .breadcrumbs a,
 .breadcrumbs .text {
-    font: 400 12px/14px 'Manrope';
+    font: 400 12px/14px 'Inter';
     letter-spacing: 0%;
 }
 
@@ -41,11 +41,11 @@
     color: #5B738B;
 }
 
-.breadcrumbs:hover a {
+.breadcrumbs a:hover {
     color: #687BE0;
 }
 
-.breadcrumbs:active a {
+.breadcrumbs a:active {
     color: #17029C;
 }
 

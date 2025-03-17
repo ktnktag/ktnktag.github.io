@@ -62,14 +62,14 @@ export default function DesignSystem() {
                         <Project
                             image={DS3}
                             title="Components and Patterns"
-                            path='/Selected_Works/Design_System/Components_and_Patterns'>
+                            path='/Selected_Works/Design_System_development/Components_and_Patterns'>
                             Each component was meticulously designed, adhering strictly to our established design language.
                         </Project>
 
                         <Project
                             image={DS4}
                             title="Documentation"
-                            path='/Selected_Works/Design_System/Documentation'>
+                            path='/Selected_Works/Design_System_development/Documentation'>
                             Specifications provided an in-depth insight into the purpose, usage guidelines, and technical characteristics of every element.
                         </Project>
                     </div>

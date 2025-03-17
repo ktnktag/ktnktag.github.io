@@ -57,7 +57,7 @@ export default function App() {
       </main>
 
       <footer className='footer'>
-        <p>© 2025 Valeria Yakovchik</p>
+        <p>© 2025 Valeria Yakovchik. All right reserved.</p>
       </footer>
     </>
   )
