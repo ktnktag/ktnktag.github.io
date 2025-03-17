@@ -1,4 +1,3 @@
-.container,
 .container a {
     width: 100%;
     height: 100%;
@@ -55,6 +54,7 @@
 }
 
 .content {
+    max-height: 270px;
     flex-grow: 1;
     padding: 40px 32px;
     border-radius: 0 0 16px 16px;
@@ -68,8 +68,8 @@
 }
 
 .title {
-    font: 500 20px/24px 'Manrope', 'from-font';
-    letter-spacing: 0.5%;
+    font: 500 20px/24px 'Inter';
+    letter-spacing: 0%;
     transition: color 0.2s ease-in-out;
 }
 .title span {
@@ -106,8 +106,8 @@
 }
 
 .text {
-    font: 300 14px/21px 'Manrope', 'from-font';
-    letter-spacing: 0%;
+    font: 400 16px/24px 'Manrope', 'from-font';
+    letter-spacing: 0.5%;
 }
 
 @media screen and (max-width: 1320px) {

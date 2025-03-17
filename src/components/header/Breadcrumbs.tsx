@@ -34,7 +34,7 @@ export default function Breadcrumbs({ list, path, title }: { list: string[], pat
                                 item.element.scrollIntoView();
                                 setTimeout(() => {
                                     window.scrollBy(0, -150);
-                                }, 1000)
+                                }, 700)
                             }}>
                                 <input type="radio" name="radio" />
                                 <p>{item.name}</p>
