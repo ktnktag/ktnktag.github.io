@@ -9,30 +9,32 @@ export default function About() {
     return (
         <>
             <header className='welcome-box'>
-                <p className='welcome'>Hello there! 👋 I’m valeria yakovchik,</p>
+                <p className='welcome'>Hello there! 👋 I'm valeria yakovchik,</p>
                 <h1 className='title'>Experience Designer from Poland, working to create exceptional user experiences.</h1>
-                <span className='cursor'>
-                    <img src={CursorImage} alt="cursor" />
-                </span>
+                <div className='cursor_box'>
+                    <span className='cursor'>
+                        <img src={CursorImage} alt="cursor" />
+                    </span>
+                </div>
             </header>
 
             <div id="about" className='experience'>
                 <div className='experience-list'>
                     <ul>
                         <li>
-                            <h3>2022 — ✦</h3>
+                            <h3 style={{marginBottom: 2}}>2022 — ✦</h3>
                             <p>Experience Designer<span className='gray'>, <a href="https://www.epam.com/">EPAM</a></span></p>
                         </li>
                         <li>
-                            <h3>2022</h3>
+                            <h3 style={{marginBottom: 2}}>2022</h3>
                             <p>Product Designer<span className='gray'>, <a href="https://rs.school/">Rolling Scopes</a></span></p>
                         </li>
                         <li>
-                            <h3>2022</h3>
+                            <h3 style={{marginBottom: 2}}>2022</h3>
                             <p>User Interface Designer<span className='gray'>, <a href="https://itexus.com/">Itexus</a></span></p>
                         </li>
                         <li>
-                            <h3>2021 — 2022</h3>
+                            <h3 style={{marginBottom: 2}}>2021 — 2022</h3>
                             <p>Experience Designer<span className='gray'>, Freelance</span></p>
                         </li>
                     </ul>
@@ -41,7 +43,7 @@ export default function About() {
                 <div className='experience-description'>
 
                     <article className='about'>
-                        <h3>About</h3>
+                        <h3 style={{marginBottom: 4}}>About</h3>
                         <span>
                             <p>Focused on UX design, prototyping and design systems; at the same time, my experience span across all stages of the product lifecycle.</p>
                             <p>Enthusiastic about assisting early-stage startups in establishing efficient processes, enhancing their products, and successfully launching. Simultaneously, I'm equally passionate about contributing to large-scale, long-standing products.</p>
@@ -50,7 +52,7 @@ export default function About() {
                     </article>
 
                     <article className='skills'>
-                        <h3>Skills</h3>
+                        <h3 style={{marginBottom: 16}}>Skills</h3>
 
                         <div>
                         <ul className='list'>
@@ -86,7 +88,7 @@ export default function About() {
                     </article>
 
                     <footer className='socials'>
-                        <h3>Socials</h3>
+                        <h3 style={{marginBottom: 16}}>Socials</h3>
                         <ul>
                             <li>
                                 <a href='https://www.linkedin.com/in/kto-nekto/'>LinkedIn <Arrow /></a>
@@ -101,11 +103,11 @@ export default function About() {
                                 <a href='https://www.behance.net/kto_nekto'>Behance <Arrow /></a>
                             </li>
 
-                            <li className='indent'>
+                            <li className='indent-photo'>
                                 <img src={Photo} alt="photo" className='photo' />
                             </li>
 
-                            <li className='indent'>
+                            <li className='indent-email'>
                                 <div className='email'>
                                     <span>
                                         <h3>Email</h3>

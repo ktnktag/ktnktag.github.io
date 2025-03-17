@@ -1,7 +1,6 @@
 .welcome-box {
     height: max-content;
-    padding: 48px 0;
-    position: relative;
+    padding: 80px 0;
 }
 
 .welcome-box .welcome {
@@ -16,24 +15,28 @@
 }
 
 .welcome-box .title {
-    font: 500 58px/69.6px 'Manrope', 'from-font';
+    margin: 0;
+    font: 500 58px/120% 'Manrope', 'from-font';
     letter-spacing: 1px;
     color: #21344A;
 }
 
-.cursor {
-    width: 180px;
+.cursor_box {
+    width: 100%;
+    height: max-content;
 
-    position: absolute;
-    right: 0;
-    bottom: 2px;
+    display: flex;
+    justify-content: end;
+}
+
+.cursor {
+    width: 310px;
 }
 
 /* --- experience section --- */
 
 .experience {
     height: max-content;
-    padding: 48px 0;
 
     display: grid;
     grid-template-columns: 282px 690px;
@@ -41,8 +44,6 @@
 }
 
 .experience h3 {
-    margin-bottom: 16px;
-
     font: 300 16px/18px 'Manrope', 'from-font';
     letter-spacing: 0.005em;
     text-align: left;
@@ -62,7 +63,7 @@
     height: max-content;
 
     position: sticky;
-    top: 210px;
+    top: 280px;
 }
 
 .experience-list ul {
@@ -173,7 +174,7 @@
     opacity: 0.83;
 }
 
-.indent {
+.indent-photo, .indent-email {
     padding-top: 32px;
     margin-top: 32px;
 }
@@ -182,7 +183,7 @@
 
 @media screen and (max-width: 1320px) {
     .cursor {
-        right: 70px;
+        width: 250px;
     }
 
     .experience {
@@ -192,12 +193,12 @@
 
 @media screen and (max-width: 1050px) {
     .welcome-box .title {
-        font-size: 50px;
+        font-size: 40px;
         line-height: 46px;
     }
 
     .cursor {
-        right: 70px;
+        width: 240px;
     }
 
     .experience {
@@ -232,11 +233,10 @@
     .welcome-box .title {
         font-size: 32px;
         line-height: 38px;
-        color: #030712;
     }
 
     .cursor {
-        right: -7px;
+        width: 160px;
     }
 
     .experience h3,
@@ -247,14 +247,9 @@
 }
 
 @media screen and (max-width: 600px) {
-    .cursor {
-        width: 148px;
-        right: 0;
-    }
-
     .welcome-box .welcome {
         font-size: 14px;
-        line-height: 20px;
+        line-height: 16px;
         margin-bottom: 8px;
         text-wrap: nowrap;
     }
@@ -279,12 +274,33 @@
     }
 
     .socials ul li:nth-of-type(5) {
-        display: none;
+        grid-column: 1/ span 2;
+        grid-row: 3/4;
+    }
+
+    .indent-photo {
+        width: 312px;
+        height: 266px;
+        border-radius: 12px;
+    }
+
+    .indent-photo .photo {
+        min-width: 312px;
+        min-height: 266px;
+
+        max-width: 312px;
+        max-height: 266px;
+        object-fit: cover;
     }
 
     .socials ul li:nth-of-type(6) {
         grid-column: 1/ span 2;
-        grid-row: 3/4;
+        grid-row: 5/6;
+    }
+
+    .indent-email {
+        margin-top: 48px;
+        padding-top: 0;
     }
 
 }
