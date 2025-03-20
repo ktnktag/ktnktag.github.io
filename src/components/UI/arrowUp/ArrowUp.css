@@ -28,13 +28,13 @@
 
     position: sticky;
     bottom: -2400px;
-    right: 32px;
+    right: 120px;
     z-index: 2;
     transition: all 0.5s ease-in-out;
 }
 
 .arrow-up.show {
-    bottom: 24px;
+    bottom: 32px;
 }
 
 .arrow_svg {
@@ -65,14 +65,36 @@
     color: #17029C;
 }
 
+@media screen and (max-width: 1320px) {
+    .arrow-up {
+        right: 84px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .arrow-up {
+        right: 16px;
+    }
+}
+
 @media screen and (max-width: 920px) {
     .arrow_box {
         right: -100px;
     }
 }
 
+@media screen and (max-width: 800px) {
+    .arrow-up {
+        right: 8px;
+    }
+
+    .arrow-up.show {
+        bottom: 16px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .arrow_box {
-        right: 0;
+        right: -75px;
     }
 }

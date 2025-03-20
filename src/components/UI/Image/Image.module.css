@@ -6,6 +6,7 @@
 }
 
 .img {
+    width: 100%;
     max-height: max-content;
     border-radius: 16px;
     object-fit: contain;

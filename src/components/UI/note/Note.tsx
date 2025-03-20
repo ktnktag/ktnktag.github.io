@@ -4,7 +4,7 @@ import Smile from '../../../assets/png/Smile.png'
 
 export default function Note() {
     return (
-        <section className={classes.note}>
+        <article className={classes.note}>
             <img className={classes.image} src={Smile} alt="Smile" />
             <div className={classes.content}>
                 <h3 className={classes.title}>Note</h3>
@@ -12,6 +12,6 @@ export default function Note() {
                 Due to the confidentiality stipulated in a NDA, detailed information about this project's intricacies cannot be disclosed. If you have specific queries, feel free to ask, keeping in mind the confidentiality constraints.
                 </p>
             </div>
-        </section>
+        </article>
     )
 }

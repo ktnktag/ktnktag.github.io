@@ -21,13 +21,14 @@
 
 .title {
     margin-bottom: 4px;
-    font: 500 12px/20px 'Manrope';
-    letter-spacing: 0.5%;
+    font: 500 16px/24px 'Roboto';
+    letter-spacing: 1px;
+    text-transform: uppercase;
     color: #687BE0;
 }
 
 .text {
-    font: 300 15px/20px 'Manrope';
+    font: 400 16px/24px 'Manrope';
     letter-spacing: 0.5%;
     color: #21344A;
 }

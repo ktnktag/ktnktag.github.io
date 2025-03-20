@@ -11,7 +11,7 @@ interface Props {
 
 export default function Overview({ client, expertise, deliverables, tools, year }: Props) {
     return (
-        <section>
+        <article>
             <h3 className='title'>Project Overview</h3>
 
             <ul>
@@ -39,6 +39,6 @@ export default function Overview({ client, expertise, deliverables, tools, year 
                     <p className={classes.text}>{year}</p>
                 </li>
             </ul>
-        </section>
+        </article>
     )
 }

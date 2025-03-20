@@ -54,8 +54,8 @@ body.lock {
 
 main p {
   color: #21344A;
-  font: 400 28px/38px 'Manrope', 'rom-font';
-  letter-spacing: 0.5%;
+  font: 400 26px/40px 'Manrope', 'rom-font';
+  letter-spacing: 0%;
   position: relative;
 }
 
