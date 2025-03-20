@@ -9,7 +9,7 @@ import Image from './UI/Image/Image'
 
 export default function SmartHome() {
     return (<>
-        <header>
+        <section id='Overview'>
             <div className='banner'>
                 <h1 className='title'>Not POV, but REAL: you got into a real project</h1>
                 <p className='description'>We met at on the offline workshop, work in small groups and created a design for the smart home management application.</p>
@@ -17,9 +17,9 @@ export default function SmartHome() {
             </div>
 
             <Image imgPath={SH1} />
-        </header>
+        </section>
 
-        <section>
+        <section id='Process'>
             <h2 className='title'>Process</h2>
             <div className='column-alignment'>
                 <span className='paragraph'>
@@ -33,7 +33,7 @@ export default function SmartHome() {
             </div>
         </section>
 
-        <section>
+        <section id='Task'>
             <h2 className='title'>Task</h2>
             <div className='column-alignment'>
                 <span className='paragraph'>
@@ -48,12 +48,12 @@ export default function SmartHome() {
             </div>
         </section>
 
-        <section>
+        <section id='Result'>
             <h2 className='title'>Result</h2>
             <p>The event yielded the creation of 5 distinct and innovative mobile applications, each reflecting the unique perspectives and creative prowess of its respective team.</p>
         </section>
 
-        <section>
+        <section id='Insights'>
             <h2 className='title'>Insights</h2>
             <p>Key insights gleaned from the event underscored the importance of establishing a clear structure and adhering to time boundaries. Some participants delved too deeply into intricate details, while others veered off track, creating unnecessary artifacts or attempting to outshine their peers. Without a stringent structure, achieving consensus among designers proved challenging. Moving forward, structuring similar events with defined timelines and objectives will be pivotal in optimizing productivity and fostering effective collaboration.</p>
         </section>

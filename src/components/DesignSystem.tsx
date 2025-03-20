@@ -17,7 +17,7 @@ import Project from './UI/project/Project'
 export default function DesignSystem() {
     return (
         <>  
-            <header>
+            <section id='Overview'>
                 <div className="column-alignment">
                     <span className='paragraph'>
                         <p>Embark on a journey through the development of a brand digital design system tailored for SAP, meticulously aligned with the esteemed SAP Fiori Design System.</p>
@@ -25,7 +25,7 @@ export default function DesignSystem() {
                     </span>
                     <Image imgPath={DS1} />
                 </div>
-            </header>
+            </section>
 
             <Note />
             <Overview
@@ -36,7 +36,7 @@ export default function DesignSystem() {
                 year='2023 - 2025'>
             </Overview>
 
-            <section>
+            <section id="Work Process">
                 <h2 className='title'>Work Process</h2>
                 <div className='column-alignment'>
                     <p>Our work process for this project was designed with organization and efficiency in mind. We divided the project into sprints, each focused on a specific set of components, patterns, and templates. This approach allowed us to maintain clarity and manage the project effectively, even with multiple designers collaborating.</p>
@@ -49,7 +49,7 @@ export default function DesignSystem() {
                 </div>
             </section>
 
-            <section>
+            <section id="Design System">
                 <h2 className='title'>Design System</h2>
                 <div className='column-alignment'>
                     <span className='paragraph'>
@@ -76,7 +76,7 @@ export default function DesignSystem() {
                 </div>
             </section>
 
-            <section>
+            <section id="Tokenization">
                 <h2 className='title'>Tokenization</h2>
                 <div className="column-alignment">
                     <p>Design Tokens serve as the centralized repository for design decisions, housing essential elements distributed across design tools and coding languages. They encompass crucial aspects such as colors, typography, shadows, border radius, spacing, borders, animation, and icon sizing. These tokens act as the single source of truth, ensuring consistency and coherence throughout the design and development process.</p>
@@ -118,8 +118,8 @@ export default function DesignSystem() {
                 </div>
             </section>
 
-            <section>
-                <h2 className='title'>Design Review </h2>
+            <section id="Design Review">
+                <h2 className='title'>Design Review</h2>
                 <div className="column-alignment">
                     <span className='paragraph'>
                         <p>A Design Review serves as a critical evaluation to ensure that the final product aligns with the creative vision and user experience crafted by the design team. It involves scrutinizing the developed project to verify that all graphic and technical components are displayed and function correctly.</p>
@@ -134,7 +134,7 @@ export default function DesignSystem() {
                 </div>
             </section>
 
-            <section>
+            <section id="Result">
                 <h2 className='title'>Result</h2>
                 <div className="column-alignment">
                     <p>The implementation of our new modern design system marks a significant transformation from the previous, outdated system, ushering in a host of benefits that elevate our product's user experience and streamline our development process.</p>

@@ -7,7 +7,15 @@ interface ITitle {
     element: Element;
 }
 
-export default function Breadcrumbs({ list, path, title }: { list: string[], path: string, title: any }) {
+interface IProps {
+    list: string[];
+    path: string;
+    title: ITitle[];
+    tab: string;
+    setTab: Function;
+}
+
+export default function Breadcrumbs({ list, path, title, tab, setTab }: IProps) {
     return (
         <nav className={classes.box}>
             <ul className={classes.container}>
@@ -29,14 +37,14 @@ export default function Breadcrumbs({ list, path, title }: { list: string[], pat
                     <hr className={classes.separator} />
 
                     {
-                        title.map((item: ITitle) => {
+                        title.map((item) => {
                             return <label key={item.name} className={classes.radio} onClick={() => {
                                 item.element.scrollIntoView();
                                 setTimeout(() => {
                                     window.scrollBy(0, -150);
                                 }, 700)
                             }}>
-                                <input type="radio" name="radio" />
+                                <input type="radio" name="radio" onClick={() => {setTab(item.name)}} defaultChecked={item.name === tab}/>
                                 <p>{item.name}</p>
                             </label>
                         })
@@ -47,7 +55,7 @@ export default function Breadcrumbs({ list, path, title }: { list: string[], pat
                     <h1>{list[list?.length - 1]?.replace(/_/gi, ' ')}</h1>
                     <select name="drop" id="drop">
                         {
-                            title.map((item: ITitle) => {
+                            title.map((item) => {
                                 return <option key={item.name} value={item.name}>{item.name}</option>
                             })
                         }

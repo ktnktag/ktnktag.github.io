@@ -16,11 +16,11 @@ import Step from './UI/step/Step'
 export default function HyperspacePortal() {
     return (
         <>
-            <header>
+            <section id='Overview'>
                 <div className="column-alignment">
                     <p>SAP's internal CI/CD platform empowers over 50,000 engineers to efficiently deliver value to customers, supporting the shift from on-premise to cloud-native solutions. The Hyperspace Portal, the central entry point for developers, offers unified access to platform services, APIs, and tooling. It enables the efficient creation of cloud-native services and applications aligned with SAP’s global architecture standards, covering the entire development lifecycle—from setup to delivery and operations.</p>
                 </div>
-            </header>
+            </section>
 
             <Note />
 
@@ -31,7 +31,7 @@ export default function HyperspacePortal() {
                 year='2024'>
             </Overview>
 
-            <section>
+            <section id='Work Process'>
                 <h2 className='title'>Work Process</h2>
 
                 <div className="column-alignment">
@@ -61,7 +61,7 @@ export default function HyperspacePortal() {
                 </div>
             </section>
 
-            <section>
+            <section id='Design Sprint Approach'>
                 <h2 className='title'>Design Sprint Approach</h2>
                 <div className="column-alignment">
                     <p>The design sprint was used for new features that required more exploration and attention. It is a structured, time-constrained process designed to accelerate decision-making and design development</p>
@@ -122,7 +122,7 @@ export default function HyperspacePortal() {
                 </div>
             </section>
 
-            <section>
+            <section id='Post-Sprint Activities'>
                 <h2 className='title'>Post-Sprint Activities</h2>
 
                 <div className="column-alignment">

@@ -38,11 +38,12 @@ export default function Modal({ setIsOpen, isOpen, checkCode }: Props) {
                 <X onClick={() => { setIsOpen(false) }} />
             </div>
 
-            <div className={classes.boxInput}>
+            <div id='inputCode' className={classes.boxInput}>
                 <p className={classes.text}>Some parts or the entire project work are protected by an NDA. Please enter the code to view the details.</p>
                 
                 <label className={`${classes.input} ${errorCode ? classes.error : ''}`}>
-                    <input  type="text" 
+                    <input  type="text"
+                            id='code'
                             value={code} 
                             onChange={e => setCode(e.target.value)} 
                             onKeyDown={(e) => {e.code === 'Enter' ? checkCode(code, setErrorCode) : null } } 

@@ -13,7 +13,7 @@ import Overview from './UI/overview/Overview'
 export default function AdidasPage() {
     return (
         <>
-            <header>
+            <section id='Overview'>
                 <div className="column-alignment">
                     <span className="paragraph">
                         <p>Completed in six weeks, our interdisciplinary team, comprising a Business Analyst (BA), Software Architect, and a UX designer, orchestrated a pivotal transition.</p>
@@ -22,13 +22,13 @@ export default function AdidasPage() {
                     </span>
                     <Image imgPath={A1} />
                 </div>
-            </header>
+            </section>
 
             <Note />
 
             <Overview client={adidas} expertise='UX Designer' tools='Figma, FigJam, Confluence' year='2023'/>
 
-            <section>
+            <section id='Work Process'>
                 <h2 className='title'>Work Process</h2>
                 <div className='column-alignment'>
                     <span className="paragraph">
@@ -45,7 +45,7 @@ export default function AdidasPage() {
                 </div>
             </section>
 
-            <section>
+            <section id='Understanding the Landscape'>
                 <h2 className="title">Understanding the Landscape</h2>
                 <div className='column-alignment'>
                     <article>
@@ -66,7 +66,7 @@ export default function AdidasPage() {
                 </div>
             </section>
 
-            <section>
+            <section id='Rapid Mock-up Development'>
                 <h2 className="title">Rapid Mock-up Development</h2>
                 <div className='column-alignment'>
                     <p>In the pursuit of nimble and effective solutions, our approach to iterative rapid mock-up development was carefully structured</p>
@@ -90,7 +90,7 @@ export default function AdidasPage() {
                 </div>
             </section>
 
-            <section>
+            <section id='Polishing for Perfection'>
                 <h2 className="title">Polishing for Perfection</h2>
                 <div className='column-alignment'>
                     <p>Upon securing approvals for the design processes, the focus shifted to refining mock-ups. Each detail was meticulously examined and adjusted based on feedback, guaranteeing a polished and cohesive visual representation. The final touch involved translating refined mock-ups into interactive prototypes for a tangible, hands-on client experience.</p>
@@ -98,7 +98,7 @@ export default function AdidasPage() {
                 </div>
             </section>
 
-            <section>
+            <section id='Result'>
                 <h2 className="title">Result</h2>
                 <div className='column-alignment'>
                     <p>The culmination of our strategic and efficient work process yielded exceptional outcomes for the project. The successful migration of the NDA app processes to SAP Fiori was marked by several key achievements</p>

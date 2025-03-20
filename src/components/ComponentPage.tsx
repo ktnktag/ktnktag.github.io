@@ -26,16 +26,16 @@ import Image from './UI/Image/Image'
 export default function ComponentPage() {
     return (
         <>
-            <header>
+            <section id='Overview'>
                 <div className="column-alignment">
                     <p>A design system is a collection of reusable UI elements that product teams use and build on to create a consistent user experience across digital products.</p>
                     <Image imgPath={C1} />
                 </div>
-            </header>
+            </section>
 
             <Note />
 
-            <section>
+            <section id='The foundation'>
                 <h2 className='title'>The foundation</h2>
                 <div className='column-alignment'>
                     <span className='paragraph'>
@@ -52,7 +52,7 @@ export default function ComponentPage() {
             </section>
 
 
-            <section>
+            <section id='Components'>
                 <h2 className='title'>Components</h2>
                 <div className='column-alignment'>
                     <div className="triple-column">
@@ -85,7 +85,7 @@ export default function ComponentPage() {
                 </div>
             </section>
 
-            <section>
+            <section id='Patterns'>
                 <h2 className='title'>Patterns</h2>
                 <div className='column-alignment'>
                     <p>But no one canceled the phrase “I am a designer, I know what is best and I want it differently.” Therefore, the Brand Digital Design System is made as flexible as possible, with the ability to adapt components and patterns, but it also continues to evolve and develop, including based on feedback from other designers from other projects (who use our design system), marketing and developers.</p>
@@ -100,7 +100,7 @@ export default function ComponentPage() {
                 </div>
             </section>
 
-            <section>
+            <section id='Implementation of Accessibility Standards'>
                 <h2 className='title'>Implementation of Accessibility Standards</h2>
                 <div className='column-alignment'>
                     <span className='paragraph'>
@@ -112,7 +112,7 @@ export default function ComponentPage() {
                 </div>
             </section>
 
-            <section>
+            <section id='Theming in the Design System'>
                 <h2 className='title'>Theming in the Design System</h2>
                 <div className='column-alignment'>
                     <span className='paragraph'>

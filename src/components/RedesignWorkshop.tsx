@@ -8,7 +8,7 @@ import Project from "./UI/project/Project"
 
 export default function RedesignWorkshop() {
     return (<>
-        <header>
+        <section id='Overview'>
             <div className='banner'>
                 <h1 className='title'>Community workshop in Minsk: let's see how it was</h1>
                 <p className='description'>The main goal of our meeting was to transform the main page of the art exhibition site and discuss the resulting work.</p>
@@ -16,10 +16,10 @@ export default function RedesignWorkshop() {
             </div>
 
             <Image imgPath={RW1} />
-        </header>
+        </section>
 
-        <section>
-            <h2 className='title'>Process </h2>
+        <section id='Process'>
+            <h2 className='title'>Process</h2>
             <div className='column-alignment'>
                 <span className='paragraph'>
                     <p>The 13 participants were organized into 4 teams, carefully curated to include a mix of senior or mid-level designers alongside less experienced juniors. Collaborating seamlessly, each team spent 2 hours immersed in a shared Figma space, diligently redesigning a pre-prepared page for art exhibition home page.</p>
@@ -32,8 +32,8 @@ export default function RedesignWorkshop() {
             </div>
         </section>
 
-        <section>
-            <h2 className='title'>Task </h2>
+        <section id='Task'>
+            <h2 className='title'>Task</h2>
             <div className='paragraph'>
                 <p className='weight-text'>Task 1: Research and Analysis</p>
                 <ul className='markers'>
@@ -69,12 +69,12 @@ export default function RedesignWorkshop() {
             </div>
         </section>
 
-        <section>
+        <section id='As a Speaker'>
             <h2 className='title'>As a Speaker</h2>
             <p>As a speaker, my role is to provide guidance and support without imposing my own vision on the team. It's crucial to facilitate productive discussions and encourage creativity while ensuring that any inconsistencies or gaps in the design process are addressed. My participation aims to enhance collaboration and align the team's efforts towards achieving the project goals effectively.</p>
         </section>
 
-        <section>
+        <section id='Result'>
             <h2 className="title">Result</h2>
             <div className='column-alignment'>
                 <p>Despite the challenges encountered, each team successfully navigated their tasks, showcasing the power of teamwork, creativity, and effective design principles. Stay tuned for the upcoming presentations where we'll unveil the results of our collective efforts!</p>
