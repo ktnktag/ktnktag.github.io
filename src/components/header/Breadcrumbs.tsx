@@ -1,6 +1,8 @@
 import classes from './Breadcrumbs.module.css'
 
 import { Link } from "react-router-dom"
+import { useState } from 'react';
+import ChevronDown from '../../assets/svg/ChevronDown.svg'
 
 interface IProps {
     list: string[];
@@ -11,6 +13,8 @@ interface IProps {
 }
 
 export default function Breadcrumbs({ list, path, title, tab, setTab }: IProps) {
+    const [isActiveDropMenu, setIsActiveDropMenu] = useState<boolean>(false);
+
     return (
         <nav className={classes.box}>
             <ul className={classes.container}>
@@ -34,12 +38,8 @@ export default function Breadcrumbs({ list, path, title, tab, setTab }: IProps) 
                     {
                         title.map((item) => {
                             return <div key={item.id} className={classes.radio} onClick={() => {
-                                item.scrollIntoView();
+                                window.scrollBy(0, item.getBoundingClientRect().top - 120);
                                 setTab(item.id);
-
-                                setTimeout(() => {
-                                    window.scrollBy(0, -150);
-                                }, 700)
                             }}>
                                 <p className={item.id === tab ? `${classes.radioText} ${classes.checked}` : classes.radioText}>{item.id}</p>
                             </div>
@@ -47,16 +47,29 @@ export default function Breadcrumbs({ list, path, title, tab, setTab }: IProps) 
                     }
                 </div>
 
-                <div className={classes.dropList}>
-                    <h1>{list[list?.length - 1]?.replace(/_/gi, ' ')}</h1>
-                    <select name="drop" id="drop">
-                        {
-                            title.map((item) => {
-                                return <option key={item.id} value={item.id}>{item.id}</option>
-                            })
-                        }
-                    </select>
+                <div className={classes.dropList} onClick={() => setIsActiveDropMenu(!isActiveDropMenu)}>
+                    <div>
+                        <h1>{list[list?.length - 1]?.replace(/_/gi, ' ')}</h1>
+                        <p className={classes.radioText}>{tab}</p>
+                    </div>
+
+                    <div>
+                        <img src={ChevronDown} alt="ChevronDown" />
+                    </div>
                 </div>
+
+                <ul className={isActiveDropMenu ? `${classes.dropListMenu} ${classes.active}` : classes.dropListMenu}>
+                    {
+                        title.map((item) => {
+                            return <li className={classes.radioText} onClick={() => {
+                                window.scrollBy(0, item.getBoundingClientRect().top - 120);
+                                setIsActiveDropMenu(false);
+                                setTab(item.id);
+                            }}>{item.id}</li>
+                        })
+                    }
+                </ul>
+
             </ul>
         </nav>
     )
