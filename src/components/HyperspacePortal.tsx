@@ -11,7 +11,7 @@ import HP7 from '../assets/png/HP/HP7.webp'
 import Note from './UI/note/Note'
 import Overview from './UI/overview/Overview'
 import Image from './UI/Image/Image'
-import Step from './UI/step/Step'
+import Step from './UI/Step/Step'
 
 export default function HyperspacePortal() {
     return (
