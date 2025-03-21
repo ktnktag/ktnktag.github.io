@@ -39,8 +39,8 @@
     height: max-content;
 
     display: grid;
-    grid-template-columns: 282px 690px;
-    gap: 24px;
+    grid-template-columns: 312px 792px;
+    gap: 48px;
 }
 
 .experience h3 {
@@ -187,7 +187,7 @@
     }
 
     .experience {
-        grid-template-columns: 342px 524px;
+        grid-template-columns: 353px 555px;
     }
 }
 

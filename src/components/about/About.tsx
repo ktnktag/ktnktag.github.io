@@ -45,9 +45,9 @@ export default function About() {
                     <article className='about'>
                         <h3 style={{marginBottom: 4}}>About</h3>
                         <span>
-                            <p>Focused on UX design, prototyping and design systems; at the same time, my experience span across all stages of the product lifecycle.</p>
-                            <p>Enthusiastic about assisting early-stage startups in establishing efficient processes, enhancing their products, and successfully launching. Simultaneously, I'm equally passionate about contributing to large-scale, long-standing products.</p>
-                            <p>Experienced in independently leading design projects, whether as a solo designer or collaboratively within a team.</p>
+                            <p>User experience designer with a strong focus on design systems, UX/UI design, and prototyping, ensuring consistency, scalability, and accessibility across digital products. I specialize in creating and maintaining design systems and tokens, working with both custom solutions and established frameworks like Fiori UI5 and Ant Design.</p>
+                            <p>I have experience supporting early-stage startups in setting up efficient design processes and helping large-scale enterprise products maintain design integrity and usability. My approach is data-driven and iterative, combining UX research, prototyping, and close collaboration with developers and stakeholders to deliver user-centered, high-quality solutions.</p>
+                            <p>I thrive in cross-functional teams, aligning design with business objectives, improving workflows, and optimizing handoff processes to streamline development. Whether working as a solo designer or within a team, I ensure that every design decision enhances the user experience and contributes to the product's success.</p>
                         </span>
                     </article>
 
