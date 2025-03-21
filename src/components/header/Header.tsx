@@ -11,7 +11,7 @@ export default function Header() {
     const location = useLocation();
     const [isMenuActive, setIsMenuActive] = useState<boolean>(false);
     const [secondTab, setSecondTab] = useState<string>('');
-    const [title, setTitle] = useState<Element[]>(GetListTabs());
+    const [anchor, setAnchor] = useState<Element[]>(GetListTabs());
     
     const pathRef = useRef<string>('');
     const [path, setPath] = useState<string>(location.pathname);
@@ -48,7 +48,7 @@ export default function Header() {
         pathRef.current = '';
 
         setPath(location.pathname);
-        setTitle(GetListTabs());
+        setAnchor(GetListTabs());
         setSecondTab('Overview');
     }, [location.pathname])
 
@@ -65,8 +65,8 @@ export default function Header() {
     }, [isMenuActive])
 
     useEffect(() => {
-        title.map( item => sectionObserver.observe(item));
-    }, [title])
+        anchor.map( item => sectionObserver.observe(item));
+    }, [anchor])
 
     return (
         <header id="top" className='header'>
@@ -74,7 +74,7 @@ export default function Header() {
             {(path?.indexOf('/', 5) !== -1 && !isMenuActive) && <Breadcrumbs
                 list={getListPath()}
                 path={pathRef.current}
-                title={title}
+                anchor={anchor}
                 tab={secondTab}
                 setTab={setSecondTab} />}
             {isMenuActive && <BurgerMenu setActive={setIsMenuActive} />}

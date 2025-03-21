@@ -7,12 +7,12 @@ import ChevronDown from '../../assets/svg/ChevronDown.svg'
 interface IProps {
     list: string[];
     path: string;
-    title: Element[];
+    anchor: Element[];
     tab: string;
     setTab: Function;
 }
 
-export default function Breadcrumbs({ list, path, title, tab, setTab }: IProps) {
+export default function Breadcrumbs({ list, path, anchor, tab, setTab }: IProps) {
     const [isActiveDropMenu, setIsActiveDropMenu] = useState<boolean>(false);
 
     return (
@@ -36,7 +36,7 @@ export default function Breadcrumbs({ list, path, title, tab, setTab }: IProps) 
                     <hr className={classes.separator} />
 
                     {
-                        title.map((item) => {
+                        anchor.map((item) => {
                             return <div key={item.id} className={classes.radio} onClick={() => {
                                 window.scrollBy(0, item.getBoundingClientRect().top - 120);
                                 setTab(item.id);
@@ -60,7 +60,7 @@ export default function Breadcrumbs({ list, path, title, tab, setTab }: IProps) 
 
                 <ul className={isActiveDropMenu ? `${classes.dropListMenu} ${classes.active}` : classes.dropListMenu}>
                     {
-                        title.map((item) => {
+                        anchor.map((item) => {
                             return <li className={classes.radioText} onClick={() => {
                                 window.scrollBy(0, item.getBoundingClientRect().top - 120);
                                 setIsActiveDropMenu(false);

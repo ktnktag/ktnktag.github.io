@@ -12,7 +12,7 @@ interface Props {
 export default function Overview({ client, expertise, deliverables, tools, year }: Props) {
     return (
         <article>
-            <h3 className='title'>Project Overview</h3>
+            <h3 className='subtitle'>Summary</h3>
 
             <ul>
                 <li className={classes.content}>

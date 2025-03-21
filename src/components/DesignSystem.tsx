@@ -16,7 +16,7 @@ import Project from './UI/project/Project'
 
 export default function DesignSystem() {
     return (
-        <>  
+        <>
             <section id='Overview'>
                 <div className="column-alignment">
                     <span className='paragraph'>
@@ -24,6 +24,10 @@ export default function DesignSystem() {
                         <p>With a primary focus on crafting a comprehensive design system supplemented by thorough developer documentation, our objective is to instill a unified visual identity seamlessly integrated with SAP's foundational resources. </p>
                     </span>
                     <Image imgPath={DS1} />
+                    <span className='paragraph'>
+                        <p>Embark on a journey through the development of a brand digital design system tailored for SAP, meticulously aligned with the esteemed SAP Fiori Design System.</p>
+                        <p>With a primary focus on crafting a comprehensive design system supplemented by thorough developer documentation, our objective is to instill a unified visual identity seamlessly integrated with SAP's foundational resources.</p>
+                    </span>
                 </div>
             </section>
 
@@ -35,6 +39,29 @@ export default function DesignSystem() {
                 tools='Figma, Frontify, GitHub'
                 year='2023 - 2025'>
             </Overview>
+
+            <div className="column-alignment">
+                <article>
+                    <h3 className='subtitle'>Problem</h3>
+                    <p>Different pages, accountable to different teams but within the same domain, had varying styles and components, which created an impression of inconsistency and lack of a unified design system. The design was outdated, as it was created a long time ago, and it did not align with SAP's own enterprise design system, raising questions about the lack of integration with the company's own standards. Additionally, one of the priority tasks was to address accessibility (a11y) issues.</p>
+                </article>
+                <article>
+                    <h3 className='subtitle'>Challenges</h3>
+                    <p>The main task was to create a flexible design system that could be adapted to various needs without significant revisions in the future. It was necessary to retain elements of Fiori so that the system would look familiar and align with SAP's general direction, while also taking into account the unique tasks and use cases that differed from standard ones. Another challenge was to develop and structure a token system for the design system, taking Fiori as a reference but adapting it to the project's specific requirements.</p>
+                </article>
+                <article>
+                    <h3 className="subtitle">Responsibilities</h3>
+                    <ul className='markers'>
+                        <li><p>Coordinating the work of other designers, reviewing and refining their components, setting tasks for revision and improvement</p></li>
+                        <li><p>Developing several versions of components for discussion and approval.</p></li>
+                        <li><p>Writing specifications and overseeing the work of designers responsible for creating other specifications.</p></li>
+                        <li><p>Interacting with stakeholders, approving and aligning components with them.</p></li>
+                        <li><p>Collecting requirements and feedback on existing components for further refinement.</p></li>
+                        <li><p>Creating a component library in Figma and developing a token library.</p></li>
+                        <li><p>Setting tasks for developers and conducting design reviews of implemented components to ensure they align with the design.</p></li>
+                    </ul>
+                </article>
+            </div>
 
             <section id="Work Process">
                 <h2 className='title'>Work Process</h2>
@@ -147,20 +174,20 @@ export default function DesignSystem() {
                     </div>
 
                     <article>
-                        <h3 className='subtitle'>New Modern Design System</h3>
+                        <h3 className='article-name'>New Modern Design System</h3>
                         <p>This change breathes new life into our product, aligning it with contemporary design standards and user expectations. The modern design system not only enhances visual appeal but also improves usability, making our product more intuitive and engaging for users.</p>
                     </article>
                     <article>
-                        <h3 className='subtitle'>Consistency and Coherence</h3>
+                        <h3 className='article-name'>Consistency and Coherence</h3>
                         <p>The new design system introduces a suite of predefined design assets and components that are consistently applied across our product. This consistency eliminates the need for creating separate components that vary from page to page, ensuring a polished and user-friendly experience. The adoption of the new design system by other websites within our company has further established a unified design language, reinforcing our brand identity and providing a seamless experience for users across different platforms.</p>
                     </article>
                     <Image imgPath={DS8} title='Library analysis' />
                     <article>
-                        <h3 className='subtitle'>Scalability and Flexibility</h3>
+                        <h3 className='article-name'>Scalability and Flexibility</h3>
                         <p>Our design system serves as a robust foundation for future growth and adaptability. It facilitates consistent updates and maintenance, making it easier to respond to evolving user needs and business requirements. This scalability ensures that any new features or changes can be integrated smoothly, maintaining coherence across the entire product.</p>
                     </article>
                     <article>
-                        <h3 className='subtitle'>Enhanced Focus on Accessibility</h3>
+                        <h3 className='article-name'>Enhanced Focus on Accessibility</h3>
                         <p>The new design system places a strong emphasis on accessibility, ensuring that our product is usable by a wider range of people, including those with disabilities. By incorporating best practices for accessibility, we are committed to creating an inclusive product that offers a better experience for all users, regardless of their abilities.</p>
                     </article>
                     <p>In summary, the new design system not only modernizes our product’s appearance but also enhances its functionality and accessibility, laying the groundwork for a consistent, scalable, and inclusive user experience.</p>
