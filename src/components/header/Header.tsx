@@ -7,27 +7,30 @@ import BurgerMenu from './BurgerMenu.tsx'
 import { useEffect, useState, useRef } from 'react'
 import { useLocation } from 'react-router-dom'
 
-interface ITitle {
-    name: string;
-    element: Element;
-}
-
 export default function Header() {
     const location = useLocation();
     const [isMenuActive, setIsMenuActive] = useState<boolean>(false);
-    const [title, setTitle] = useState<ITitle[]>(GetListTabs());
     const [secondTab, setSecondTab] = useState<string>('');
-
+    const [title, setTitle] = useState<Element[]>(GetListTabs());
+    
     const pathRef = useRef<string>('');
     const [path, setPath] = useState<string>(location.pathname);
+    
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                setSecondTab(entry.target.id);
+            }
+        })
+    })
+
 
     // we get a list of sections for the second menu, their id and position
     function GetListTabs() {
         const tabs = document.querySelectorAll('section');
-        const str: ITitle[] = [];
-        tabs.forEach(element => {
-            const test: ITitle = { name: element.id as string, element: element};
-            str.push(test);
+        const str: Element[] = [];
+        tabs.forEach(element => { 
+            str.push(element); 
         });
         return str;
     }
@@ -61,15 +64,19 @@ export default function Header() {
         }
     }, [isMenuActive])
 
+    useEffect(() => {
+        title.map( item => sectionObserver.observe(item));
+    }, [title])
+
     return (
         <header id="top" className='header'>
             <Menu SwitchScroll={setIsMenuActive} isActive={isMenuActive} />
-            {(path?.indexOf('/', 5) !== -1 && !isMenuActive) && <Breadcrumbs 
-                                                                    list={getListPath()} 
-                                                                    path={pathRef.current} 
-                                                                    title={title} 
-                                                                    tab={secondTab}
-                                                                    setTab={setSecondTab}/>}
+            {(path?.indexOf('/', 5) !== -1 && !isMenuActive) && <Breadcrumbs
+                list={getListPath()}
+                path={pathRef.current}
+                title={title}
+                tab={secondTab}
+                setTab={setSecondTab} />}
             {isMenuActive && <BurgerMenu setActive={setIsMenuActive} />}
         </header>
     )

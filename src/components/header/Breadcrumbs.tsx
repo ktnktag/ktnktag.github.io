@@ -2,15 +2,10 @@ import classes from './Breadcrumbs.module.css'
 
 import { Link } from "react-router-dom"
 
-interface ITitle {
-    name: string;
-    element: Element;
-}
-
 interface IProps {
     list: string[];
     path: string;
-    title: ITitle[];
+    title: Element[];
     tab: string;
     setTab: Function;
 }
@@ -38,15 +33,16 @@ export default function Breadcrumbs({ list, path, title, tab, setTab }: IProps) 
 
                     {
                         title.map((item) => {
-                            return <label key={item.name} className={classes.radio} onClick={() => {
-                                item.element.scrollIntoView();
+                            return <div key={item.id} className={classes.radio} onClick={() => {
+                                item.scrollIntoView();
+                                setTab(item.id);
+
                                 setTimeout(() => {
                                     window.scrollBy(0, -150);
                                 }, 700)
                             }}>
-                                <input type="radio" name="radio" onClick={() => {setTab(item.name)}} defaultChecked={item.name === tab}/>
-                                <p>{item.name}</p>
-                            </label>
+                                <p className={item.id === tab ? `${classes.radioText} ${classes.checked}` : classes.radioText}>{item.id}</p>
+                            </div>
                         })
                     }
                 </div>
@@ -56,7 +52,7 @@ export default function Breadcrumbs({ list, path, title, tab, setTab }: IProps) 
                     <select name="drop" id="drop">
                         {
                             title.map((item) => {
-                                return <option key={item.name} value={item.name}>{item.name}</option>
+                                return <option key={item.id} value={item.id}>{item.id}</option>
                             })
                         }
                     </select>
