@@ -41,7 +41,7 @@ export default function Menu({ SwitchScroll, isActive }: {SwitchScroll: Function
             <ul className='anchor'>
                 <hr className='separator' />
                 <li>
-                    <a href="https://www.linkedin.com/in/kto-nekto/" className="button">
+                    <a href="https://www.linkedin.com/in/kto-nekto/" target="_blank" className="button">
                         <p className="text">
                             <span>LinkedIn</span> <Arrow className="arrow-right-up" />
                         </p>

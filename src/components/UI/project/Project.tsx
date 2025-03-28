@@ -16,7 +16,7 @@ interface Props {
 export default function Project({children, image, title, path, company, soon, isLink} : Props) {
     return(
         <article className={classes.container}>
-            <Link className={isLink ? classes.link : ''} to={path}>
+            <Link className={isLink ? classes.link : ''} to={path} target={isLink ? "_blank" : ''}>
                 <div className={classes.cover}>
                     <img className={classes.img} src={image} alt={title} />
                     {soon && <div className={classes.soon}><p>soon</p></div>}

@@ -32,7 +32,7 @@ export default function BurgerMenu({ setActive }: { setActive: Function }) {
                 </li>
 
                 <li className={classes.button}>
-                    <a href="https://www.linkedin.com/in/kto-nekto/">
+                    <a href="https://www.linkedin.com/in/kto-nekto/" target="_blank">
                         <p className={classes.text}>
                             <span className={classes.name}>LinkedIn</span> <Arrow className={classes.arrowRightUp} />
                         </p>
