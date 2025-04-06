@@ -92,38 +92,40 @@
 }
 
 .banner {
-    width: 790px;
+    width: 900px;
     margin: 0 auto 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
 }
 
 .banner .title {
     margin-bottom: 0;
     font: 500 58px/69.6px 'Manrope';
-    letter-spacing: 1px;
+    letter-spacing: 0.5%;
     text-align: center;
     color: #21344A;
 }
 
 .banner .description {
-    font: 300 22px/28px 'Manrope';
+    width: 792px;
+    font: 300 16px/18px 'Manrope';
     letter-spacing: 0.5%;
     text-align: center;
     color: #21344A;
 }
 
 .banner .year {
-    font: 300 14px/14px 'Manrope';
-    letter-spacing: 0.5%;
+    font: 300 14px/16px 'Manrope';
+    letter-spacing: 0%;
     text-align: center;
-    color: #9B9B9B;
+    color: #7E8294;
 }
 
 @media screen and (max-width: 1320px) {
-    .subtitle {
+    .subtitle,
+    .article-name {
         margin-bottom: 32px;
     }
 
@@ -136,15 +138,16 @@
     .title {
         margin-bottom: 16px;
     }
-
-    .paragraph {
-        gap: 24px;
-    }
-
-    .subtitle {
+    
+    .subtitle,
+    .article-name {
         font-size: 24px;
         line-height: 32px;
         margin-bottom: 24px;
+    }
+    
+    .paragraph {
+        gap: 24px;
     }
 
     .markers li::before {
@@ -158,50 +161,34 @@
     }
 
     .banner {
-        width: 650px;
-        gap: 16px;
+        max-width: 650px;
     }
 
     .banner .title {
         font-size: 40px;
         line-height: 46px;
-        color: #030712;
     }
-    
+
     .banner .description {
-        font-size: 20px;
-        line-height: 24px;
+        max-width: 100%;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .triple-column,
-    .two-column {
-        display: flex;
-        flex-direction: column;
-    }
-
     .title {
         font-size: 16px;
         line-height: 18px;
     }
 
-    .paragraph {
-        gap: 18px;
-    }
-
-    .subtitle {
+    .subtitle,
+    .article-name {
         font-size: 18px;
         line-height: 28px;
         margin-bottom: 18px;
     }
 
-    .column-alignment {
-        gap: 16px;
-    }
-
-    .n_3 {
-        display: none;
+    .paragraph {
+        gap: 18px;
     }
 
     .markers {
@@ -211,6 +198,20 @@
     .markers li::before {
         font-size: 18px;
         left: 2px;
+    }
+
+    .triple-column,
+    .two-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column-alignment {
+        gap: 16px;
+    }
+
+    .n_3 {
+        display: none;
     }
 
     .flex-wrap {
@@ -238,10 +239,6 @@
         line-height: 18px;
     }
 
-    .column-alignment {
-        gap: 8px;
-    }
-
     .paragraph {
         gap: 14px;
     }
@@ -254,6 +251,10 @@
         font-size: 14px;
         left: 0;
         margin-top: 2px;
+    }
+
+    .column-alignment {
+        gap: 8px;
     }
 
     .flex-wrap {

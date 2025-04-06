@@ -61,7 +61,7 @@ export default function Breadcrumbs({ list, path, anchor, tab, setTab }: IProps)
                 <ul className={isActiveDropMenu ? `${classes.dropListMenu} ${classes.active}` : classes.dropListMenu}>
                     {
                         anchor.map((item) => {
-                            return <li className={classes.radioText} onClick={() => {
+                            return <li className={classes.radioButton} onClick={() => {
                                 window.scrollBy(0, item.getBoundingClientRect().top - 120);
                                 setIsActiveDropMenu(false);
                                 setTab(item.id);

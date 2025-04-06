@@ -105,6 +105,7 @@
 }
 
 .skills .list p {
+    margin-bottom: 8px;
     font: 500 16px/20px 'Inter';
     letter-spacing: 0%;
     color: #21344A;
