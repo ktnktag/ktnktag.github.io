@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    height: max-content;
+
+    padding: 24px 40px;
+    border-radius: 8px;
+    border: 1px solid #E5E5E5;
+    background-color: #FFFFFF3D;
+}
+
+.title {
+    font: 500 26px/140% 'Manrope';
+    
+    color: var(--main-color-title);
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.arrow {
+    width: 12px;
+    vertical-align: middle;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease-in;
+}
+
+.title:hover>.arrow{
+    transform: rotate(90deg);
+}
+
+.date {
+    font: 500 13px/160% 'Manrope';
+    margin: 2px 0 12px;
+
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+}
+
+.text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}

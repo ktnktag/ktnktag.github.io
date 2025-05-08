@@ -47,9 +47,9 @@ export default function App() {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
 
-      <main className='container'>
+      <main className=''>
         <div className='wrapper'>
           <Outlet />
         </div>

@@ -1,7 +1,7 @@
 /* --- global positioning --- */
 
 body {
-  background-color: #F5F5F7;
+  background-color: #F3F3F2;
 }
 
 body,
@@ -19,83 +19,12 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
 
-body.lock {
-  overflow: hidden;
-}
+  --main-color-title: #2A2A28;
+  --main-color-text: #474A59;
 
-/* --- global styles --- */
-
-.footer {
-  height: 72px;
-  padding: 24px 0;
-  border-top: 1px solid #21344A1A;
-
-  display: flex;
-  justify-content: center;
-}
-
-.footer p {
-  max-width: 0 auto;
-  font: 300 12px/24px 'Manrope', 'from-font';
-  letter-spacing: 0.005em;
-
-  color: #9B9B9B;
-}
-
-.wrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 140px;
-  margin-bottom: 140px;
-}
-
-main p {
-  color: #21344A;
-  font: 400 26px/40px 'Manrope', 'rom-font';
-  letter-spacing: 0%;
-  position: relative;
-}
-
-main a {
-  width: max-content;
-
-  border-bottom: 1px solid transparent;
-  letter-spacing: 0.005em;
-  font: 300 15px/20px 'Manrope', 'from-font';
-  color: currentColor;
-
-  transition: color 0.2s ease-in-out;
-  transition: border 0.2s ease-in-out;
-}
-
-@media (hover: hover) {
-  main a:hover {
-    color: #687BE0;
-    border-bottom-color: currentColor;
-  }
-
-  main a:hover path {
-    stroke: #687BE0;
-  }
-
-}
-
-main a:active {
-  color: #17029C;
-  border-bottom-color: currentColor;
-}
-
-main a:active path {
-  stroke: #17029C;
-}
-
-/* --- global margins --- */
-
-.container {
-  width: 1146px;
+  --main-color-link: #687BE0;
+  --main-color-link-active: #17029C;
 }
 
 main {
@@ -105,6 +34,34 @@ main {
   height: max-content;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
+/* --- global styles --- */
+
+@media (hover: hover) {
+  main a:hover {
+    color: var(--main-color-link);
+    border-bottom-color: currentColor;
+  }
+
+  main a:hover path {
+    stroke: var(--main-color-link);
+  }
+
+}
+
+main a:active {
+  color: var(--main-color-link-active);
+  border-bottom-color: currentColor;
+}
+
+main a:active path {
+  stroke: var(--main-color-link-active);
+}
+
+/* --- global margins --- */
 @media screen and (max-width: 1320px) {
   .container {
     width: 956px;

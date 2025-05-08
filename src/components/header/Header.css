@@ -1,6 +1,6 @@
 /* --- HEADER CONTAINER --- */
 
-.header {
+/* .header {
     margin-bottom: 126px;
     background-color: #FFF;
     position: sticky;
@@ -8,7 +8,7 @@
     z-index: 3;
 
     transition: top 0.3s linear;
-}
+} */
 
 .hide {
     top: -54px;
