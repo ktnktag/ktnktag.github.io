@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom"
+import P1 from '../../assets/webp/About/Photo1.webp'
+import P2 from '../../assets/webp/About/Photo2.webp'
+import P3 from '../../assets/webp/About/Photo4.webp'
+import P4 from '../../assets/webp/About/Photo3.webp'
 
 import WritingItem from "../../components/WritingItem/WritingItem"
-import Project from "../../components/UI/project/Project"
+import LinkButton from "../../components/UI/LinkButton/LinkButton"
+import Banner from '../../components/Banner/Banner'
 
 export default function About() {
     return <>
@@ -12,9 +16,9 @@ export default function About() {
                     <p>I’m a UX designer passionate about building thoughtful product experiences — and equally passionate about sharing what I learn along the way. I write articles, speak at design events, and mentor growing designers. I believe that good design doesn’t stop at the screen — it also shapes teams, conversations, and communities.</p>
                 </div>
 
-                <div className="row-box">
-                    <img className="custom-img" src="" alt="" />
-                    <img className="custom-img" src="" alt="" />
+                <div className="row-flex">
+                    <img className="custom-img" src={P1} alt="" />
+                    <img className="custom-img" src={P2} alt="" />
                     <img className="custom-img" src="" alt="" />
                 </div>
             </div>
@@ -26,7 +30,7 @@ export default function About() {
                 <p>Here I share lessons, thoughts, and observations from my personal experience as a designer. These texts reflect how I approach problems, learn through practice, and navigate the realities of building products and working in teams.</p>
             </div>
 
-            <ul className="column-box">
+            <ul className="column-flex">
                 <li>
                     <WritingItem
                         title="I hate my portfolio"
@@ -54,7 +58,8 @@ export default function About() {
                 </li>
             </ul>
 
-            <Link to="/">Read More on Medium</Link>
+            
+            <LinkButton path="/">Read More on Medium</LinkButton>
         </section>
 
         <section className="section">
@@ -63,20 +68,24 @@ export default function About() {
                 <p>I run talks and workshops where I share practical insights from design and product work. My goal is to make complex topics approachable and offer perspective grounded in real experience — whether for beginners or seasoned professionals.</p>
             </div>
 
-            <div className="row-box">
-                <Project
-                    image={'/'}
+            <div className="column-grid">
+                <Banner
+                    image={P3}
                     title='Revamping the First Impression: Art Exhibition Website Redesign'
-                    path='/Selected_Works/Website_Redesign_Workshop'>
+                    path='/Selected_Works/Website_Redesign_Workshop'
+                    imgName='Workshop'
+                    company='Design spot, 2023'>
                     I led a redesign workshop dedicated to rethinking the main page of an art exhibition website. The focus was on improving visual hierarchy, refining layout structure, and enhancing user interaction to better reflect the artistic vision of the exhibition. The session combined design critique and collaborative discussion.
-                </Project>
+                </Banner>
 
-                <Project
-                    image={'/'}
+                <Banner
+                    image={P4}
                     title='Simulating Real-world Design Process: Smart Home Mobile Application'
-                    path='/Selected_Works/Workshop_for_Smart_Home'>
+                    path='/Selected_Works/Workshop_for_Smart_Home'
+                    imgName='Workshop'
+                    company='Design spot, 2024'>
                     Led a 4-hour workshop simulating a real product design workflow. Participants worked on a mobile app for smart home control, navigating typical constraints, collaboration dynamics, and fast-paced decision-making—while focusing on usability and visual clarity.
-                </Project>
+                </Banner>
             </div>
         </section>
     </>

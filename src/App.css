@@ -47,14 +47,21 @@
     max-width: 816px;
 }
 
-.row-box {
+.row-flex {
     display: flex;
     gap: 32px;
 }
 
-.column-box {
+.column-flex {
     display: flex;
     flex-direction: column;
+    gap: 32px;
+}
+
+.column-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
     gap: 32px;
 }
 
