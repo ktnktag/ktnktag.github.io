@@ -1,26 +1,28 @@
-.wrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 140px;
-    margin-bottom: 140px;
-}
-
 .header {
     width: 100vw;
     height: max-content;
 
     padding: 130px 0 120px;
+    margin-bottom: 20px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
 
     background-color: #FFF;
 }
 
-.section {
+.box {
     width: 1240px;
     margin: 0 auto;
 
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.section {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 100px 0 50px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -91,4 +93,25 @@ main a {
 
     transition: color 0.2s ease-in-out;
     transition: border 0.2s ease-in-out;
+}
+
+@media (hover: hover) {
+    main a:hover {
+        color: var(--main-color-link);
+        border-bottom-color: currentColor;
+    }
+
+    main a:hover path {
+        stroke: var(--main-color-link);
+    }
+
+}
+
+main a:active {
+    color: var(--main-color-link-active);
+    border-bottom-color: currentColor;
+}
+
+main a:active path {
+    stroke: var(--main-color-link-active);
 }

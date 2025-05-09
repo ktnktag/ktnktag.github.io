@@ -4,7 +4,7 @@ import RW3 from '../assets/png/RW/RW3.webp'
 import SW7 from '../assets/png/SW/SW7.webp'
 
 import Image from "./UI/Image/Image"
-import Project from "./UI/project/Project"
+import Banner from "./Banner/Banner"
 
 export default function RedesignWorkshop() {
     return (<>
@@ -80,21 +80,21 @@ export default function RedesignWorkshop() {
                 <p>Despite the challenges encountered, each team successfully navigated their tasks, showcasing the power of teamwork, creativity, and effective design principles. Stay tuned for the upcoming presentations where we'll unveil the results of our collective efforts!</p>
 
                 <div className='two-column'>
-                    <Project
+                    <Banner
                         image={SW7}
                         isLink={true}
                         title='Video of the redesign process on YouTube'
                         path='https://www.youtube.com/watch?v=0hOSCefcnLI&ab_channel=DesignSpot'>
                         Watch the redesigning process and drop your thoughts in the comments about which version you fancy the most!
-                    </Project>
+                    </Banner>
 
-                    <Project
+                    <Banner
                         image={RW1}
                         isLink={true}
                         title='Short article About Event on LinkedIn'
                         path='https://www.linkedin.com/pulse/community-workshop-minsk-lets-see-how-designspot-community/?trackingId=2EvERWy4QeWCvzo6dUfrTw%3D%3D'>
                         On Wednesday, October 12, we tried a new community event format: Website Redesign Workshop!
-                    </Project>
+                    </Banner>
                 </div>
             </div>
         </section>

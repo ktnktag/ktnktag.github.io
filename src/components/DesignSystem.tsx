@@ -12,7 +12,7 @@ import Note from './UI/note/Note'
 import Overview from './UI/overview/Overview'
 import Token from './UI/token/Token'
 import Image from './UI/Image/Image'
-import Project from './UI/project/Project'
+import Banner from './Banner/Banner'
 
 export default function DesignSystem() {
     return (
@@ -86,19 +86,19 @@ export default function DesignSystem() {
                     </span>
 
                     <div className='two-column'>
-                        <Project
+                        <Banner
                             image={DS3}
                             title="Components and Patterns"
                             path='/Selected_Works/Design_System_development/Components_and_Patterns'>
                             Each component was meticulously designed, adhering strictly to our established design language.
-                        </Project>
+                        </Banner>
 
-                        <Project
+                        <Banner
                             image={DS4}
                             title="Documentation"
                             path='/Selected_Works/Design_System_development/Documentation'>
                             Specifications provided an in-depth insight into the purpose, usage guidelines, and technical characteristics of every element.
-                        </Project>
+                        </Banner>
                     </div>
                 </div>
             </section>

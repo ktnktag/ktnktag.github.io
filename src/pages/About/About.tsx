@@ -10,7 +10,7 @@ import Banner from '../../components/Banner/Banner'
 export default function About() {
     return <>
         <header className="header">
-            <div className="section">
+            <div className="box">
                 <div className="text-box">
                     <h1 className="title">About me</h1>
                     <p>I'm a UX designer passionate about building thoughtful product experiences — and equally passionate about sharing what I learn along the way. I write articles, speak at design events, and mentor growing designers. I believe that good design doesn't stop at the screen — it also shapes teams, conversations, and communities.</p>

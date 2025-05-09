@@ -19,6 +19,7 @@ const router = createHashRouter(
     createRoutesFromElements(
         <Route path='/' element={<App />} errorElement={<Error404 />}>
             <Route index={true} path="/" element={<About />} />
+            <Route path="about" element={<About />} />
 
             <Route path="/Selected_Works" element={<SelectedWorks />} />
             <Route path="/Selected_Works/Design_System_development" loader={RequireAuth} element={<DesignSystem />}/>

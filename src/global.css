@@ -30,7 +30,6 @@ html {
 }
 
 main {
-  margin: 0 auto;
   flex: 1 1 auto;
   position: relative;
   height: max-content;
@@ -38,29 +37,6 @@ main {
 
 body.lock {
   overflow: hidden;
-}
-
-/* --- global styles --- */
-
-@media (hover: hover) {
-  main a:hover {
-    color: var(--main-color-link);
-    border-bottom-color: currentColor;
-  }
-
-  main a:hover path {
-    stroke: var(--main-color-link);
-  }
-
-}
-
-main a:active {
-  color: var(--main-color-link-active);
-  border-bottom-color: currentColor;
-}
-
-main a:active path {
-  stroke: var(--main-color-link-active);
 }
 
 /* --- global margins --- */

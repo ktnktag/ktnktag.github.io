@@ -67,7 +67,7 @@
 }
 
 .content {
-    max-height: 270px;
+    max-height: max-content;
     flex-grow: 1;
 }
 
