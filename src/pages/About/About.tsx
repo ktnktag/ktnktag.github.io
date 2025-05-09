@@ -4,7 +4,7 @@ import P3 from '../../assets/webp/About/Photo4.webp'
 import P4 from '../../assets/webp/About/Photo3.webp'
 
 import WritingItem from "../../components/WritingItem/WritingItem"
-import LinkButton from "../../components/UI/LinkButton/LinkButton"
+import LinkButton from "../../components/UI/button/LinkButton/LinkButton"
 import Banner from '../../components/Banner/Banner'
 
 export default function About() {
@@ -13,7 +13,7 @@ export default function About() {
             <div className="section">
                 <div className="text-box">
                     <h1 className="title">About me</h1>
-                    <p>I’m a UX designer passionate about building thoughtful product experiences — and equally passionate about sharing what I learn along the way. I write articles, speak at design events, and mentor growing designers. I believe that good design doesn’t stop at the screen — it also shapes teams, conversations, and communities.</p>
+                    <p>I'm a UX designer passionate about building thoughtful product experiences — and equally passionate about sharing what I learn along the way. I write articles, speak at design events, and mentor growing designers. I believe that good design doesn't stop at the screen — it also shapes teams, conversations, and communities.</p>
                 </div>
 
                 <div className="row-flex">
@@ -53,11 +53,10 @@ export default function About() {
                         path="/"
                         date="Sep 6, 2022">
                         As a Junior UX designer, you may be wondering how you can get “real experience”. Volunteering is a great way to practice your UX skills, build your portfolio, and do something useful in the process.
-                        Reflecting on my own journey, I found myself fortunate to join a volunteer project within the realm of free open-source initiatives at the outset of my career. Yet, the rewards of UX volunteering extend far beyond padding one’s resume. Through this enriching experience, I’ve gleaned invaluable lessons that have shaped my growth as a designer.
+                        Reflecting on my own journey, I found myself fortunate to join a volunteer project within the realm of free open-source initiatives at the outset of my career. Yet, the rewards of UX volunteering extend far beyond padding one's resume. Through this enriching experience, I've gleaned invaluable lessons that have shaped my growth as a designer.
                     </WritingItem>
                 </li>
             </ul>
-
             
             <LinkButton path="/">Read More on Medium</LinkButton>
         </section>

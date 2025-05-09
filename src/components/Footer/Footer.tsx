@@ -2,6 +2,13 @@ import classes from './Footer.module.css'
 
 import Logo from '../../assets/svg/Logo.svg'
 import { Link } from 'react-router-dom'
+import LinkButton from '../UI/button/LinkButton/LinkButton'
+
+import In from '../../assets/svg/In.svg'
+import Medium from '../../assets/svg/Medium.svg'
+import Vec from '../../assets/svg/Vec.svg'
+import Be from '../../assets/svg/Be.svg'
+import Figma from '../../assets/svg/Figma.svg'
 
 export default function Footer() {
     return <footer className={classes.footer}>
@@ -16,11 +23,11 @@ export default function Footer() {
                     <li><Link to='/'>Contact</Link></li>
                 </ul>
                 <ul className={classes.messeger}>
-                    <li><Link to='/'></Link>web1</li>
-                    <li><Link to='/'></Link>web2</li>
-                    <li><Link to='/'></Link>web3</li>
-                    <li><Link to='/'></Link>web4</li>
-                    <li><Link to='/'></Link>web5</li>
+                    <li><LinkButton small={true} path='/'><img src={In} alt='In' /></LinkButton></li>
+                    <li><LinkButton small={true} path='/'><img src={Medium} alt='Medium' /></LinkButton></li>
+                    <li><LinkButton small={true} path='/'><img src={Vec} alt="Vec" /></LinkButton></li>
+                    <li><LinkButton small={true} path='/'><img src={Be} alt='Be' /></LinkButton></li>
+                    <li><LinkButton small={true} path='/'><img src={Figma} alt='Figma' /></LinkButton></li>
                 </ul>
             </div>
 
