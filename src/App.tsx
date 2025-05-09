@@ -2,6 +2,7 @@ import './App.css'
 
 import ArrowUp from './components/UI/arrowUp/ArrowUp.tsx'
 import Header from './components/header/Header.tsx'
+import Footer from './components/Footer/Footer.tsx'
 
 import { Outlet } from 'react-router-dom'
 import { useRef, useEffect } from 'react'
@@ -56,9 +57,7 @@ export default function App() {
         <ArrowUp />
       </main>
 
-      <footer className='footer'>
-        <p>© 2025 Valeria Yakovchik. All right reserved.</p>
-      </footer>
+      <Footer />
     </>
   )
 }
