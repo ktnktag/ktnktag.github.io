@@ -32,8 +32,8 @@ export default function SelectedWorks() {
     return (
         <>
             <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen} checkCode={checkCode} />
-            <div>
-                <div className='two-column'>
+            <div className='section'>
+                <div className='column-grid g-32'>
                     <Banner
                         image={SW1}
                         title='Redesign and Developing for Internal CI/CD Platform'
@@ -69,9 +69,9 @@ export default function SelectedWorks() {
                 </div>
             </div>
 
-            <section id='writing'>
+            <section className='section' id='writing'>
                 <h2 className='title'>Writing</h2>
-                <div className='two-column'>
+                <div className='column-grid g-32'>
                     <Banner
                         image={SW5}
                         title='One More Survival Guide for Junior Experience  Designers'
@@ -90,9 +90,9 @@ export default function SelectedWorks() {
                 </div>
             </section>
 
-            <section id='speaking'>
+            <section className='section' id='speaking'>
                 <h2 className='title'>Speaking</h2>
-                <div className='two-column'>
+                <div className='column-grid g-32'>
                     <Banner
                         image={SW7}
                         title='Website Redesign Workshop'

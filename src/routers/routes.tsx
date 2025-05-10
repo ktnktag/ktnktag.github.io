@@ -3,6 +3,8 @@ import { RequireAuth } from "../api.ts";
 
 import App from "../App";
 import About from "../pages/About/About.tsx";
+import Home from "../pages/Home/Home.tsx";
+
 import SelectedWorks from '../components/SelectedWorks.tsx'
 import SideProjects from '../components/SideProjects.tsx'
 import DesignSystem from '../components/DesignSystem.tsx'
@@ -18,7 +20,7 @@ import Error404 from "./Error404.tsx";
 const router = createHashRouter(
     createRoutesFromElements(
         <Route path='/' element={<App />} errorElement={<Error404 />}>
-            <Route index={true} path="/" element={<About />} />
+            <Route index={true} path="/" element={<Home />} />
             <Route path="about" element={<About />} />
 
             <Route path="/Selected_Works" element={<SelectedWorks />} />

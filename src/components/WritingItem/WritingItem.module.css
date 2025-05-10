@@ -4,8 +4,8 @@
 
     padding: 24px 40px;
     border-radius: 12px;
-    border: 1px solid #E5E5E5;
-    background-color: #FFFFFF3D;
+    border: 1px solid var(--main-color-border);
+    background-color: var(--main-color-card-bg);
 }
 
 .title {

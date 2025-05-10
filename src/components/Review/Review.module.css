@@ -1,0 +1,44 @@
+.container {
+    width: 605px;
+    height: 320px;
+
+    padding: 40px;
+
+    border-radius: 12px;
+    background-color: var(--main-color-card-bg);
+    border: 1px solid var(--main-color-border);
+}
+
+.header {
+    height: max-content;
+    margin-bottom: 12px;
+
+    display: flex;
+    gap: 12px;
+}
+
+.img {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 42px;
+    background-color: var(--main-color-border);
+}
+
+.prof {
+    margin-top: 2px;
+    text-transform: uppercase;
+    font: 500 13px/160% 'Manrope';
+}
+
+.text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+}
