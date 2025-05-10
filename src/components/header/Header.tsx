@@ -13,9 +13,9 @@ export default function Header() {
 
             <ul className={classes.menu}>
                 <li><NavLink to='/Selected_Works' className={({ isActive }) => isActive ? classes.active : ""}>Projects</NavLink></li>
-                <li><NavLink to='/' className={({ isActive }) => isActive ? classes.active : ""}>Side activity</NavLink></li>
+                <li><NavLink to='/Side_Projects' className={({ isActive }) => isActive ? classes.active : ""}>Side activity</NavLink></li>
                 <li><NavLink to='/about' className={({ isActive }) => isActive ? classes.active : ""}>About</NavLink></li>
-                <li><NavLink to='/' className={({ isActive }) => isActive ? classes.active : ""}>Resume</NavLink></li>
+                <li><NavLink to='/Side_Projects' className={({ isActive }) => isActive ? classes.active : ""}>Resume</NavLink></li>
             </ul>
 
             <div className={classes.logo}></div>

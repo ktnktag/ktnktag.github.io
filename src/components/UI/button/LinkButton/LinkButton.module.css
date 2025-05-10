@@ -2,7 +2,7 @@
     padding: 16px 20px;
     border-radius: 40px;
     background-color: #FFFFFF80;
-    border: 1px solid var(--main-color-sup);
+    border: 1px solid var(--main-color-border);
 
     font: 500 18px/160% 'Manrope';
     letter-spacing: 0%;
@@ -18,7 +18,7 @@
 
     border-radius: 26px;
     background-color: #FFFFFF80;
-    border: 1px solid var(--main-color-sup);
+    border: 1px solid var(--main-color-border);
 
     display: flex;
     align-items: center;

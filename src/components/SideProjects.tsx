@@ -4,8 +4,8 @@ import Banner from './Banner/Banner';
 
 export default function SideProjects() {
     return (
-        <section>
-            <div className='two-column'>
+        <section className='section'>
+            <div className='column-grid g-32'>
                 <Banner
                     image={SP1}
                     title='Fostering mental well-being through a single, all-in-one mobile app'
