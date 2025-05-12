@@ -1,5 +1,3 @@
-/* --- global positioning --- */
-
 body {
   background-color: #F3F3F2;
 }
@@ -38,54 +36,4 @@ main {
 
 body.lock {
   overflow: hidden;
-}
-
-/* --- global margins --- */
-@media screen and (max-width: 1320px) {
-  .container {
-    width: 956px;
-  }
-}
-
-@media screen and (max-width: 1050px) {
-  .container {
-    width: 836px;
-  }
-
-  .wrapper {
-    gap: 80px;
-    margin-bottom: 80px;
-  }
-
-  main p {
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .container {
-    width: 544px;
-  }
-
-  .wrapper {
-    gap: 60px;
-    margin-bottom: 60px;
-  }
-
-  main p {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    width: 312px;
-  }
-
-  main p {
-    font-size: 14px;
-    line-height: 20px;
-  }
 }

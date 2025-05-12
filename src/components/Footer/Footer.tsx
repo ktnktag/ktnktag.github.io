@@ -19,7 +19,7 @@ export default function Footer() {
                     <li><Link to='/'>Projects</Link></li>
                     <li><Link to='/'>Side activity</Link></li>
                     <li><Link to='/about'>About</Link></li>
-                    <li><Link to='/'>Resume</Link></li>
+                    <li><Link to='/resume'>Resume</Link></li>
                     <li><Link to='/'>Contact</Link></li>
                 </ul>
                 <ul className={classes.messeger}>

@@ -12,13 +12,15 @@ import PersonalPhoto from '../../assets/webp/Home/PersonalPhoto.webp'
 import Im1 from '../../assets/webp/Home/BannerImg1.webp'
 import Im2 from '../../assets/webp/Home/BannerImg2.webp'
 
+import Cursor from '../../assets/svg/Cursor.svg'
+
 export default function Home() {
     return <>
         <header className="header">
             <div className="box g-32">
                 <img src={PersonalPhoto} alt="round-img" className="round-img" />
 
-                <h1 className="title">I'm Valeria, Experience Designer from Poland, working to create exceptional user experiences.</h1>
+                <h1 className="title">I'm Valeria, Experience Designer from Poland, working to create exceptional user experiences. <img src={Cursor} alt='cursor' className='cursor'/></h1>
                 <p className='text-box'>From freelance projects to B2C and B2B product design, I've found my passion in user research, designing solutions, and testing them with real users. Ensuring that my designs solve problems and enhance lives is what truly drives me.</p>
 
                 <ul className='row-flex g-16'>

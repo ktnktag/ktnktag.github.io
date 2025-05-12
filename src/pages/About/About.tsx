@@ -7,12 +7,14 @@ import WritingItem from "../../components/WritingItem/WritingItem"
 import LinkButton from "../../components/UI/button/LinkButton/LinkButton"
 import Banner from '../../components/Banner/Banner'
 
+import Cursor from '../../assets/svg/Cursor.svg'
+
 export default function About() {
     return <>
         <header className="header">
             <div className="box">
-                <div className="text-box column-box g-32">
-                    <h1>About me</h1>
+                <div className="text-box column-flex g-32">
+                    <h1>About me <img src={Cursor} alt='cursor' className='cursor'/></h1>
                     <p>I'm a UX designer passionate about building thoughtful product experiences — and equally passionate about sharing what I learn along the way. I write articles, speak at design events, and mentor growing designers. I believe that good design doesn't stop at the screen — it also shapes teams, conversations, and communities.</p>
                 </div>
 
@@ -34,7 +36,7 @@ export default function About() {
                 <li>
                     <WritingItem
                         title="I hate my portfolio"
-                        path="/"
+                        path="https://medium.com/design-bootcamp/i-hate-my-portfolio-d9f6f1d18574"
                         date="Apr 23, 2025">
                         Today, I would like to talk about a common challenge that many designers face — creating and updating design portfolio. Portfolio is essential thing that presents your work to potential employers, and also to demonstrate your design process and how you approach different tasks. It is, in many ways, proof of your skills and professional level. This is understandable, expected, and absolutely fair.
                     </WritingItem>
@@ -42,7 +44,7 @@ export default function About() {
                 <li>
                     <WritingItem
                         title="Survival guide for Junior UX designers"
-                        path="/"
+                        path="https://medium.com/design-bootcamp/survival-guide-for-junior-ux-designers-9f8e5e8b670"
                         date="Apr 2, 2023">
                         Getting into the world of design — is exciting and sometimes terrifide. And, of course, there are already a lot of articles on the Internet which goal to help you on your journey as a designers, but I writed another one.Not long ago, I was in your shoes and these are things that I learned as a junior designer. I hope it help newbies be prepared for a new environment, not lose themselves and not burn out in the first months.
                     </WritingItem>
@@ -50,7 +52,7 @@ export default function About() {
                 <li>
                     <WritingItem
                         title="6 lessons that I learned as a designer by UX-volunteering"
-                        path="/"
+                        path="https://medium.com/design-bootcamp/survival-guide-for-junior-ux-designers-9f8e5e8b670"
                         date="Sep 6, 2022">
                         As a Junior UX designer, you may be wondering how you can get “real experience”. Volunteering is a great way to practice your UX skills, build your portfolio, and do something useful in the process.
                         Reflecting on my own journey, I found myself fortunate to join a volunteer project within the realm of free open-source initiatives at the outset of my career. Yet, the rewards of UX volunteering extend far beyond padding one's resume. Through this enriching experience, I've gleaned invaluable lessons that have shaped my growth as a designer.
@@ -58,7 +60,7 @@ export default function About() {
                 </li>
             </ul>
             
-            <LinkButton path="/">Read More on Medium</LinkButton>
+            <LinkButton path="https://medium.com/@kto.nekto">Read More on Medium</LinkButton>
         </section>
 
         <section className="section">
