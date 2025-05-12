@@ -27,11 +27,14 @@
 
     display: flex;
     flex-direction: column;
-    gap: 40px;
 }
 
 .text-box {
     max-width: 816px;
+}
+
+.text-box-large {
+    max-width: 922px;
 }
 
 .row-flex {
@@ -53,8 +56,16 @@
     gap: 32px;
 }
 
+.g-20 {
+    gap: 20px;
+}
+
 .g-16 {
     gap: 16px;
+}
+
+.g-40 {
+    gap: 40px;
 }
 
 .custom-img {
@@ -91,8 +102,6 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 20px;
-
     color: var(--main-color-title);
     font: 500 40px/140% 'Manrope';
     letter-spacing: -0.5px;
@@ -118,18 +127,6 @@ main p {
     letter-spacing: 0%;
 }
 
-main a {
-    width: max-content;
-
-    border-bottom: 1px solid transparent;
-    letter-spacing: 0.005em;
-    font: 300 15px/20px 'Manrope', 'from-font';
-    color: currentColor;
-
-    transition: color 0.2s ease-in-out;
-    transition: border 0.2s ease-in-out;
-}
-
 .list .head {
     height: max-content;
     margin-bottom: 20px;
@@ -137,6 +134,11 @@ main a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.list .head>p {
+    text-transform: uppercase;
+    font: 500 13px/160% 'Manrope';
 }
 
 .list li {
@@ -153,25 +155,65 @@ main a {
     left: -20px;
 }
 
+/* --- LINK --- */
+
+main a {
+    width: max-content;
+    border-bottom: 1px solid transparent;
+
+    display: flex;
+
+    font: 300 15px/20px 'Manrope', 'from-font';
+    color: currentColor;
+    letter-spacing: 0.005em;
+
+    transition: color 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out;
+}
+
+main a .arrow {
+    width: 12px;
+    margin-left: 4px;
+
+    vertical-align: middle;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease-in;
+}
+
 @media (hover: hover) {
-    main a:hover {
+    main a:hover,
+    main a:hover>h3,
+    main a:hover>h4 {
         color: var(--main-color-link);
         border-bottom-color: currentColor;
+    }
+
+    main a:hover>.arrow {
+        transform: rotate(90deg);
     }
 
     main a:hover path {
         stroke: var(--main-color-link);
     }
-
 }
 
-main a:active {
+main a:active,
+main a:active>h3,
+main a:active>h4 {
     color: var(--main-color-link-active);
     border-bottom-color: currentColor;
 }
 
 main a:active path {
     stroke: var(--main-color-link-active);
+}
+
+@media screen and (max-width: 1320px) {
+
+    .text-box,
+    .text-box-large {
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 1050px) {

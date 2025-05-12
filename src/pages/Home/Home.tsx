@@ -2,11 +2,11 @@ import LinkButton from '../../components/UI/button/LinkButton/LinkButton'
 import Banner from '../../components/Banner/Banner'
 import Review from '../../components/Review/Review'
 
-import In from '../../assets/svg/In.svg'
-import Medium from '../../assets/svg/Medium.svg'
-import Vec from '../../assets/svg/Vec.svg'
-import Be from '../../assets/svg/Be.svg'
-import Figma from '../../assets/svg/Figma.svg'
+import { default as In } from '../../assets/svg/In.svg?react'
+import { default as Medium } from '../../assets/svg/Medium.svg?react'
+import { default as Vec } from '../../assets/svg/Vec.svg?react'
+import { default as Be } from '../../assets/svg/Be.svg?react'
+import { default as Figma } from '../../assets/svg/Figma.svg?react'
 
 import PersonalPhoto from '../../assets/webp/Home/PersonalPhoto.webp'
 import Im1 from '../../assets/webp/Home/BannerImg1.webp'
@@ -20,21 +20,21 @@ export default function Home() {
             <div className="box g-32">
                 <img src={PersonalPhoto} alt="round-img" className="round-img" />
 
-                <h1 className="title">I'm Valeria, Experience Designer from Poland, working to create exceptional user experiences. <img src={Cursor} alt='cursor' className='cursor'/></h1>
-                <p className='text-box'>From freelance projects to B2C and B2B product design, I've found my passion in user research, designing solutions, and testing them with real users. Ensuring that my designs solve problems and enhance lives is what truly drives me.</p>
+                <h1 className="title">I'm Valeria, Experience Designer from Poland, working to create exceptional user experiences. <img src={Cursor} alt='cursor' className='cursor' /></h1>
+                <p className='text-box-large'>From freelance projects to B2C and B2B product design, I've found my passion in user research, designing solutions, and testing them with real users. Ensuring that my designs solve problems and enhance lives is what truly drives me.</p>
 
                 <ul className='row-flex g-16'>
-                    <li><LinkButton small={true} path='https://www.linkedin.com/in/kto-nekto/'><img src={In} alt='In' /></LinkButton></li>
-                    <li><LinkButton small={true} path='https://medium.com/@kto.nekto'><img src={Medium} alt='Medium' /></LinkButton></li>
-                    <li><LinkButton small={true} path='https://dribbble.com/kto_nekto'><img src={Vec} alt="Vec" /></LinkButton></li>
-                    <li><LinkButton small={true} path='https://www.behance.net/kto_nekto'><img src={Be} alt='Be' /></LinkButton></li>
-                    <li><LinkButton small={true} path='https://www.figma.com/@kto_nekto'><img src={Figma} alt='Figma' /></LinkButton></li>
+                    <li><LinkButton small={true} path='https://www.linkedin.com/in/kto-nekto/'><In /></LinkButton></li>
+                    <li><LinkButton small={true} path='https://medium.com/@kto.nekto'><Medium /></LinkButton></li>
+                    <li><LinkButton small={true} path='https://dribbble.com/kto_nekto'><Vec /></LinkButton></li>
+                    <li><LinkButton small={true} path='https://www.behance.net/kto_nekto'><Be /></LinkButton></li>
+                    <li><LinkButton small={true} path='https://www.figma.com/@kto_nekto'><Figma /></LinkButton></li>
                 </ul>
             </div>
         </header>
 
-        <section className="section">
-            <div className="text-box">
+        <section className="section g-40">
+            <div className="text-boxc column-flex g-20">
                 <h2 className="subtitle">Selected projects</h2>
                 <p>Selected works representing a range of projects I've contributed to across different contexts and teams. This selection reflects diverse problem spaces and collaborative processes, with a consistent focus on clarity, usability, and meaningful outcomes.</p>
             </div>
@@ -60,10 +60,10 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="section">
-            <div className="text-box">
+        <section className="section g-40">
+            <div className="text-box column-flex g-20">
                 <h2 className="subtitle">Testimonials</h2>
-                <p>Discover what it’s like to work together — through the eyes of designers, product managers, and engineers I’ve collaborated with. Their words reflect not just the outcomes we achieved, but the relationships we built along the way.</p>
+                <p>Discover what it's like to work together — through the eyes of designers, product managers, and engineers I’ve collaborated with. Their words reflect not just the outcomes we achieved, but the relationships we built along the way.</p>
             </div>
 
             <div className='row-flex g-32'>

@@ -12,8 +12,8 @@ type Props = {
 
 export default function WritingItem({ title, path, date, children }: Props) {
     return <article className={classes.container}>
-        <Link to={path} className={classes.title}>
-            {title} <Arrow className={classes.arrow} />
+        <Link to={path}>
+            <h3>{title}</h3> <Arrow className='arrow' />
         </Link>
         <p className={classes.date}>{date}</p>
 

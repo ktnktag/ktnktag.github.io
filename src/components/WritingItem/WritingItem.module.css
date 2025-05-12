@@ -8,25 +8,6 @@
     background-color: var(--main-color-card-bg);
 }
 
-.title {
-    font: 500 26px/140% 'Manrope';
-    
-    color: var(--main-color-title);
-    letter-spacing: 0%;
-    vertical-align: middle;
-}
-
-.arrow {
-    width: 12px;
-    vertical-align: middle;
-    transform: rotate(45deg);
-    transition: transform 0.2s ease-in;
-}
-
-.title:hover>.arrow{
-    transform: rotate(90deg);
-}
-
 .date {
     font: 500 13px/160% 'Manrope';
     margin: 2px 0 12px;

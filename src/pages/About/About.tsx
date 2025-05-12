@@ -26,8 +26,8 @@ export default function About() {
             </div>
         </header>
 
-        <section className="section">
-            <div className="text-box">
+        <section className="section g-40">
+            <div className="text-box column-flex g-20">
                 <h2>Writing</h2>
                 <p>Here I share lessons, thoughts, and observations from my personal experience as a designer. These texts reflect how I approach problems, learn through practice, and navigate the realities of building products and working in teams.</p>
             </div>
@@ -63,8 +63,8 @@ export default function About() {
             <LinkButton path="https://medium.com/@kto.nekto">Read More on Medium</LinkButton>
         </section>
 
-        <section className="section">
-            <div className="text-box">
+        <section className="section g-40">
+            <div className="text-box column-flex g-20">
                 <h2>Speaking</h2>
                 <p>I run talks and workshops where I share practical insights from design and product work. My goal is to make complex topics approachable and offer perspective grounded in real experience — whether for beginners or seasoned professionals.</p>
             </div>

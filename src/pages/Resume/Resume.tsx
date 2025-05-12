@@ -3,6 +3,7 @@ import LinkButton from '../../components/UI/button/LinkButton/LinkButton'
 import { Link } from 'react-router-dom'
 
 import Cursor from '../../assets/svg/Cursor.svg'
+import { default as Arrow } from '../../assets/svg/Arrow.svg?react'
 
 export default function Resume() {
     return <>
@@ -19,13 +20,13 @@ export default function Resume() {
             </div>
         </header>
 
-        <section className="section">
+        <section className="section g-32">
             <h2>Experience</h2>
 
-            <ul className='list'>
+            <ul className='list text-box-large'>
                 <div className='head'>
                     <div>
-                        <Link to={'/'}><h4>EPAM Systems</h4></Link>
+                        <Link to={'/'}><h4>EPAM Systems</h4><Arrow className='arrow'/></Link>
                         <p>Experience Designer</p>
                     </div>
 
@@ -43,10 +44,10 @@ export default function Resume() {
                 <li><p>Worked on adaptive interface designs for mobile and desktop devices, ensuring a consistent user experience across platforms.</p></li>
             </ul>
 
-            <ul className='list'>
+            <ul className='list text-box-large'>
                 <div className='head'>
                     <div>
-                        <Link to={'/'}><h4>The Rolling Scopes School</h4></Link>
+                        <Link to={'/'}><h4>The Rolling Scopes School</h4><Arrow className='arrow'/></Link>
                         <p>Product Designer</p>
                     </div>
 
@@ -60,10 +61,10 @@ export default function Resume() {
                 <li><p>Collaborated closely with developers to ensure accurate implementation of designs and maintain consistency across the platform.</p></li>
             </ul>
 
-            <ul className='list'>
+            <ul className='list text-box-large'>
                 <div className='head'>
                     <div>
-                        <Link to={'/'}><h4>Itexus</h4></Link>
+                        <Link to={'/'}><h4>Itexus</h4><Arrow className='arrow'/></Link>
                         <p>UX/UI Designer</p>
                     </div>
 
@@ -78,10 +79,10 @@ export default function Resume() {
                 </ul>
             </ul>
 
-            <ul className='list'>
+            <ul className='list text-box-large'>
                 <div className='head'>
                     <div>
-                        <Link to={'/'}><h4>Freelance</h4></Link>
+                        <Link to={'/'}><h4>Freelance</h4><Arrow className='arrow'/></Link>
                         <p>UX/UI Designer</p>
                     </div>
 
@@ -95,9 +96,9 @@ export default function Resume() {
             </ul>
         </section>
 
-        <section className="section">
+        <section className="section g-32">
             <h2>Technical skills</h2>
-            <ul className='list'>
+            <ul className='list text-box-large'>
                 <li><p>Design Tools: Figma, FigJam, Sketch, Adobe XD, Zeplin</p></li>
                 <li><p>Prototyping: Figma</p></li>
                 <li><p>User Research: UX interviews, usability testing, surveys, domain research, competitor analysis</p></li>
@@ -108,9 +109,9 @@ export default function Resume() {
             </ul>
         </section>
 
-        <section className="section">
+        <section className="section g-32">
             <h2>Core competencies</h2>
-            <p className='text-box'>User-Centered Design | UX Strategy | Cross-Functional Collaboration | Design Systems Thinking | Rapid Prototyping | Problem Framing | Design Communication | Stakeholder Alignment | Research Synthesis | Design Decision-Making | Information Architecture | Rapid Ideation | Visual Consistency | Accessibility Awareness | Product Thinking | Attention to Detail | Continuous Improvement | Emotional Intelligence | Adaptability</p>
+            <p className='text-box-large'>User-Centered Design | UX Strategy | Cross-Functional Collaboration | Design Systems Thinking | Rapid Prototyping | Problem Framing | Design Communication | Stakeholder Alignment | Research Synthesis | Design Decision-Making | Information Architecture | Rapid Ideation | Visual Consistency | Accessibility Awareness | Product Thinking | Attention to Detail | Continuous Improvement | Emotional Intelligence | Adaptability</p>
         </section>
     </>
 }
