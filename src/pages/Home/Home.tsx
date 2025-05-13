@@ -9,8 +9,8 @@ import { default as Be } from '../../assets/svg/Be.svg?react'
 import { default as Figma } from '../../assets/svg/Figma.svg?react'
 
 import PersonalPhoto from '../../assets/webp/Home/PersonalPhoto.webp'
-import Im1 from '../../assets/webp/Home/BannerImg1.webp'
-import Im2 from '../../assets/webp/Home/BannerImg2.webp'
+import Im1 from '../../assets/webp/Projects/Projects-1.webp'
+import Im2 from '../../assets/webp/Projects/Projects-4.webp'
 
 import Cursor from '../../assets/svg/Cursor.svg'
 

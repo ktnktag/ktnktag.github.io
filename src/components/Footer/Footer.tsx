@@ -16,7 +16,7 @@ export default function Footer() {
             <div className={classes.menu}>
                 <ul className={classes.link}>
                     <li><Link to='/'><img src={Logo} alt="Logo" className={classes.logo}/></Link></li>
-                    <li><Link to='/'>Projects</Link></li>
+                    <li><Link to='/projects'>Projects</Link></li>
                     <li><Link to='/'>Side activity</Link></li>
                     <li><Link to='/about'>About</Link></li>
                     <li><Link to='/resume'>Resume</Link></li>
