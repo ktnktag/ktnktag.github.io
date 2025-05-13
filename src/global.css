@@ -37,3 +37,35 @@ main {
 body.lock {
   overflow: hidden;
 }
+
+.header-abs {
+  position: absolute;
+}
+
+.header-fix {
+  position: fixed;
+}
+
+.header-menu {
+  width: 100%;
+  height: 75px;
+
+  z-index: 4;
+  top: 0;
+
+  backdrop-filter: blur(4px);
+}
+
+.header-menu::before {
+  content: '';
+  width: 100%;
+  height: 75px;
+
+  position: absolute;
+  z-index: 2;
+  top: 0;
+
+  background-color: #FFF;
+  opacity: 60%;
+  backdrop-filter: blur(10px);
+}

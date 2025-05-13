@@ -1,7 +1,7 @@
 import classes from './Banner.module.css'
 
 import { Link } from 'react-router-dom';
-import { default as Arrow } from '../../assets/svg/Arrow.svg?react'
+import { default as Arrow } from '../../assets/svg/Arrow-r.svg?react'
 
 interface Props {
     children: React.ReactNode;
@@ -30,7 +30,7 @@ export default function Banner({children, image, title, path, imgName, company, 
                 <div className={classes.content}>
                     <h3 className={classes.title}> {title} </h3>
                     <p className={classes.text}>{children}</p>
-                    <p className={classes.link}>See the project <Arrow /></p>
+                    <p className={`${classes.link}`}>See the project <Arrow  className={classes.moveRight}/></p>
                 </div>
             </Link>
         </article>

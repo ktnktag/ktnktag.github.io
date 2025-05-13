@@ -90,19 +90,30 @@
     margin-top: 12px;
     color: transparent;
     font: 500 18px/160% 'Manrope', 'from-font';
+    
+    display: flex;
+    align-items: center;
 
     transition: color 0.3s ease-in-out;
 }
 
 .link svg {
-    color: transparent;
-    transform: rotate(90deg);
+    stroke: transparent;
+    transition: transform 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
     .container a:hover>.content>.link,
-    .container a:hover>.content>.link svg {
+    .container a:hover>.content>.link path {
         color: var(--main-color-text);
+        stroke: var(--main-color-text);
+    }
+
+    .container a:hover>.content>.link .moveRight {
+        transform: translate(10px, 0);
+        -webkit-transform: translate(10px, 0);
+        -o-transform: translate(10px, 0);
+        -moz-transform: translate(10px, 0);
     }
 
     .container:hover>a>.cover>.img {

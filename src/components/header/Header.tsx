@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/svg/Logo.svg'
 
 export default function Header() {
-    return <header className={classes.header}>
+    return <header className='header-menu  header-fix'>
         <div className={classes.container}>
             <div className={classes.logo}>
                 <NavLink to='/'><img src={Logo} alt="Logo" /></NavLink>
