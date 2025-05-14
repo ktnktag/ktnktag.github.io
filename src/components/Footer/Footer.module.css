@@ -8,11 +8,6 @@
     justify-content: center;
 }
 
-.box {
-    width: 1240px;
-    margin: 0 auto;
-}
-
 .menu {
     display: flex;
     justify-content: space-between;

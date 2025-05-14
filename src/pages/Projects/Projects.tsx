@@ -10,7 +10,7 @@ import Cursor from '../../assets/svg/Cursor.svg'
 export default function Projects() {
     return <>
         <header className="header">
-            <div className="box g-32">
+            <div className="box alignment g-32">
 
                 <h1 className="title">Past projects <img src={Cursor} alt='cursor' className='cursor' /></h1>
                 <p className='text-box'>See how turned ideas into reality. Dive into the stories of successful product designs that make a difference.</p>
@@ -18,7 +18,7 @@ export default function Projects() {
             </div>
         </header>
 
-        <section className="section">
+        <section className="section alignment">
             <div className='column-grid g-32'>
                 <Banner
                     image={Im1}

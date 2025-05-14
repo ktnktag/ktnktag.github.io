@@ -17,7 +17,7 @@ import Cursor from '../../assets/svg/Cursor.svg'
 export default function Home() {
     return <>
         <header className="header">
-            <div className="box g-32">
+            <div className="box alignment g-32">
                 <img src={PersonalPhoto} alt="round-img" className="round-img" />
 
                 <h1 className="title">I'm Valeria, Experience Designer from Poland, working to create exceptional user experiences. <img src={Cursor} alt='cursor' className='cursor' /></h1>
@@ -33,7 +33,7 @@ export default function Home() {
             </div>
         </header>
 
-        <section className="section g-40">
+        <section className="section alignment g-40">
             <div className="text-boxc column-flex g-20">
                 <h2 className="subtitle">Selected projects</h2>
                 <p>Selected works representing a range of projects I've contributed to across different contexts and teams. This selection reflects diverse problem spaces and collaborative processes, with a consistent focus on clarity, usability, and meaningful outcomes.</p>
@@ -60,7 +60,7 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="section g-40">
+        <section className="section alignment g-40">
             <div className="text-box column-flex g-20">
                 <h2 className="subtitle">Testimonials</h2>
                 <p>Discover what it's like to work together — through the eyes of designers, product managers, and engineers I’ve collaborated with. Their words reflect not just the outcomes we achieved, but the relationships we built along the way.</p>

@@ -1,5 +1,5 @@
 .header {
-    width: 100vw;
+    width: 100%;
     height: max-content;
 
     padding: 130px 0 120px;
@@ -11,22 +11,21 @@
 }
 
 .box {
-    width: 1240px;
-    margin: 0 auto;
-
     display: flex;
     flex-direction: column;
     gap: 60px;
 }
 
 .section {
-    width: 1240px;
-
-    margin: 0 auto;
     padding: 100px 0 50px;
 
     display: flex;
     flex-direction: column;
+}
+
+.alignment {
+    width: 1240px;
+    margin: 0 auto;
 }
 
 .text-box {
@@ -181,6 +180,7 @@ main a .arrow {
 }
 
 @media (hover: hover) {
+
     main a:hover,
     main a:hover>h3,
     main a:hover>h4 {
@@ -208,15 +208,12 @@ main a:active path {
     stroke: var(--main-color-link-active);
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1150px) {
 
-    .text-box,
-    .text-box-large {
-        max-width: 100%;
+    .alignment {
+        width: 944px;
     }
-}
 
-@media screen and (max-width: 1050px) {
     h1 {
         font-size: 40px;
     }
@@ -232,10 +229,19 @@ main a:active path {
     h4 {
         font-size: 18px;
     }
+
+    .text-box,
+    .text-box-large {
+        max-width: 100%;
+    }
 }
 
+@media screen and (max-width: 900px) {
 
-@media screen and (max-width: 800px) {
+    .alignment {
+        width: 688px;
+    }
+
     h1 {
         font-size: 36px;
     }
@@ -245,7 +251,12 @@ main a:active path {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
+
+    .alignment {
+        width: 358px;
+    }
+
     h1 {
         font-size: 24px;
     }

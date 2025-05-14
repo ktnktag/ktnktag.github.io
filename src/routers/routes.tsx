@@ -5,6 +5,7 @@ import Projects from "../pages/Projects/Projects.tsx";
 import About from "../pages/About/About.tsx";
 import Home from "../pages/Home/Home.tsx";
 import Resume from "../pages/Resume/Resume.tsx";
+import SideActivity from "../pages/SideActivity/SideActivity.tsx";
 
 import Error404 from "./Error404.tsx";
 
@@ -15,6 +16,7 @@ const router = createHashRouter(
             <Route path="projects" element={<Projects />} />
             <Route path="about" element={<About />} />
             <Route path="resume" element={<Resume />}/>
+            <Route path="side-activity" element={<SideActivity />}/>
         </Route>
     )
 )

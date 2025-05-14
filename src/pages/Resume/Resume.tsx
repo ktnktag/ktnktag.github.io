@@ -8,7 +8,7 @@ import { default as Arrow } from '../../assets/svg/Arrow.svg?react'
 export default function Resume() {
     return <>
         <header className="header">
-            <div className="box g-32">
+            <div className="box alignment g-32">
 
                 <h1 className="title">Resume <img src={Cursor} alt='cursor' className='cursor' /></h1>
                 <p className='text-box'>As a UX designer with over 4 years of experience, I specialize in creating user-centered digital experiences that are grounded in research and designed for impact. I’ve worked across cross-functional teams to deliver intuitive interfaces, optimize user journeys, and implement scalable design systems that support long-term product growth.</p>
@@ -20,7 +20,7 @@ export default function Resume() {
             </div>
         </header>
 
-        <section className="section g-32">
+        <section className="section alignment g-32">
             <h2>Experience</h2>
 
             <ul className='list text-box-large'>
@@ -96,7 +96,7 @@ export default function Resume() {
             </ul>
         </section>
 
-        <section className="section g-32">
+        <section className="section alignment g-32">
             <h2>Technical skills</h2>
             <ul className='list text-box-large'>
                 <li><p>Design Tools: Figma, FigJam, Sketch, Adobe XD, Zeplin</p></li>
@@ -109,7 +109,7 @@ export default function Resume() {
             </ul>
         </section>
 
-        <section className="section g-32">
+        <section className="section alignment g-32">
             <h2>Core competencies</h2>
             <p className='text-box-large'>User-Centered Design | UX Strategy | Cross-Functional Collaboration | Design Systems Thinking | Rapid Prototyping | Problem Framing | Design Communication | Stakeholder Alignment | Research Synthesis | Design Decision-Making | Information Architecture | Rapid Ideation | Visual Consistency | Accessibility Awareness | Product Thinking | Attention to Detail | Continuous Improvement | Emotional Intelligence | Adaptability</p>
         </section>

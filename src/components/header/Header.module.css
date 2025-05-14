@@ -1,7 +1,5 @@
 .container {
-    width: 1240px;
     height: 100%;
-    margin: 0 auto;
 
     position: relative;
     z-index: 3;
@@ -23,6 +21,7 @@
     display: block;
 
     font: 400 15px/160% 'Manrope';
+    letter-spacing: 0%;
     color: var(--main-color-text);
 }
 
