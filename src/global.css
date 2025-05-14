@@ -26,6 +26,12 @@ html {
 
   --main-color-card-bg: #FFFFFF3D;
   --main-color-border: #E5E5E5;
+
+  --main-color-input-bg: #FFF;
+  --main-color-input-border: #CED0DB;
+  --main-color-input-placeholder: #ACAFBF;
+
+  --main-color-button: #22262F;
 }
 
 main {
