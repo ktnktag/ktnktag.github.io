@@ -42,55 +42,19 @@
     object-fit: cover;
 }
 
-.soon {
-    width: max-content;
-    max-height: 25px;
-    padding: 2px 8px 4px;
-
-    background-color: #F9F9F9;
-    color: #687BE0;
-    border: 1px solid currentColor;
-    border-radius: 8px;
-
-    display: flex;
-    align-items: center;
-
-    position: absolute;
-    right: 16px;
-    top: 16px;
-}
-
-.soon p {
-    font: 600 14px/21px 'Manrope', 'from-font';
-    letter-spacing: 0px;
-    color: currentColor;
-}
-
 .content {
     max-height: max-content;
+    padding-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     flex-grow: 1;
 }
 
-.title {
-    margin: 20px 0 12px;
-    letter-spacing: 0%;
-    font: 500 26px/140% 'Inter';
-    color: var(--main-color-title);
-
-    transition: color 0.2s ease-in-out;
-}
-
-.text {
-    color: var(--main-color-text);
-    font: 400 18px/160% 'Manrope', 'from-font';
-    letter-spacing: 0.5%;
-}
-
 .link {
-    margin-top: 12px;
     color: transparent;
-    font: 500 18px/160% 'Manrope', 'from-font';
-    
+
     display: flex;
     align-items: center;
 
@@ -103,20 +67,43 @@
 }
 
 @media (hover: hover) {
-    .container a:hover>.content>.link,
-    .container a:hover>.content>.link path {
-        color: var(--main-color-text);
-        stroke: var(--main-color-text);
+
+    a:hover>.content>.link,
+    a:hover>.content>.link path {
+        color: var(--main-color-title);
+        stroke: var(--main-color-title);
     }
 
-    .container a:hover>.content>.link .moveRight {
+    a:hover>.content>.link .moveRight {
         transform: translate(10px, 0);
         -webkit-transform: translate(10px, 0);
         -o-transform: translate(10px, 0);
         -moz-transform: translate(10px, 0);
     }
 
-    .container:hover>a>.cover>.img {
+    a:hover>.cover>.img {
         transform: scale(1.05);
+    }
+}
+
+
+@media screen and (max-width: 1150px) {
+
+    .cover {
+        height: 302px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .cover {
+        height: 385px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .cover {
+        height: 180px;
     }
 }

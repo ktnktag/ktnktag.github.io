@@ -8,6 +8,10 @@
     background-color: var(--main-color-card-bg);
 }
 
+.container a {
+    max-width: 325px;
+}
+
 .date {
     font: 500 13px/160% 'Manrope';
     margin: 2px 0 12px;
@@ -28,4 +32,11 @@
     box-orient: vertical;
     -webkit-line-clamp: 2;
     line-clamp: 2;
+}
+
+@media screen and (max-width: 650px) {
+    .text {
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+    }
 }

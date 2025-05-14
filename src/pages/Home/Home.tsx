@@ -66,7 +66,7 @@ export default function Home() {
                 <p>Discover what it's like to work together — through the eyes of designers, product managers, and engineers I’ve collaborated with. Their words reflect not just the outcomes we achieved, but the relationships we built along the way.</p>
             </div>
 
-            <div className='row-flex g-32'>
+            <div className='column-grid g-32'>
                 <Review name='Palina Sachak'
                     profession='UX Designer'>
                     I have been working closely with Valeria, we were working with a big design team and we were customer-faacing designers. I was deeply impressed while working with Valeria, I can confidently say that she is an exceptionally responsible and detail-oriented professional, she is perfect at both hard skills and soft skills.Valeria is very dedicated to her work, ensuring that every task is completed with precision and care. Her attention to detail is remarkable, allowing her to catch potential issues before they arise and ensuring high-quality outcomes in all her projects. I can say that Valeria has high understanding of design rules and principles, which makes her pixel perfect designs look stunning. She has very diverse experince
