@@ -1,9 +1,10 @@
-import LinkButton from '../../components/UI/button/LinkButton/LinkButton'
+import LinkButton from '../../components/UI/button/LinkButton/LinkButton';
 
-import { Link } from 'react-router-dom'
+import classes from "./Reasume.module.css";
+import { Link } from 'react-router-dom';
 
-import Cursor from '../../assets/svg/Cursor.svg'
-import { default as Arrow } from '../../assets/svg/Arrow.svg?react'
+import Cursor from '../../assets/svg/Cursor.svg';
+import { default as Arrow } from '../../assets/svg/Arrow.svg?react';
 
 export default function Resume() {
     return <>
@@ -13,7 +14,7 @@ export default function Resume() {
                 <h1 className="title">Resume <img src={Cursor} alt='cursor' className='cursor' /></h1>
                 <p className='text-box'>As a UX designer with over 4 years of experience, I specialize in creating user-centered digital experiences that are grounded in research and designed for impact. I’ve worked across cross-functional teams to deliver intuitive interfaces, optimize user journeys, and implement scalable design systems that support long-term product growth.</p>
                 <p className='text-box'>I focus on turning user insights into actionable design solutions through UX research, usability testing, wireframing, and prototyping. I’ve collaborated with developers, product managers, and stakeholders to align business goals with user needs — from MVPs to iterative improvements.</p>
-                <ul className='row-flex g-16'>
+                <ul className={classes.buttonBox}>
                     <LinkButton path='/'>Download Resume as PDF</LinkButton>
                     <LinkButton path='/'>Download Resume as DOC</LinkButton>
                 </ul>

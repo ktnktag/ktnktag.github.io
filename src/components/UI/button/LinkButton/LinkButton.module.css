@@ -41,3 +41,16 @@
     background-color: #FFF;
     border: 1px solid #4454AE80;
 }
+
+@media screen and (max-width: 1150px) {
+    .bigButton {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .bigButton {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+}

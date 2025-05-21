@@ -1,0 +1,17 @@
+.buttonBox {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .buttonBox {
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .buttonBox {
+        flex-direction: column;
+        font-size: 12px;
+    }
+}
