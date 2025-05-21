@@ -75,3 +75,12 @@ body.lock {
   opacity: 60%;
   backdrop-filter: blur(10px);
 }
+
+@media screen and (max-width: 900px) {
+
+  .header-menu,
+  .header-menu::before {
+    opacity: 0;
+    backdrop-filter: none;
+  }
+}
