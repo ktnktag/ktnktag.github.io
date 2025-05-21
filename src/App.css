@@ -126,6 +126,13 @@ main p {
     letter-spacing: 0%;
 }
 
+.eyebrow {
+    text-transform: uppercase;
+
+    font: 500 13px/160% 'Manrope';
+    color: var(--main-color-text);
+}
+
 .list .head {
     height: max-content;
     margin-bottom: 20px;
@@ -154,7 +161,19 @@ main p {
     left: -20px;
 }
 
-/* --- LINK --- */
+/* --- LINK AND BUTTON --- */
+.return {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    border-bottom: 1px solid transparent;
+
+    font: 500 18px/150% 'Manrope';
+    color: var(--main-color-button);
+}
 
 main a {
     width: max-content;
@@ -162,12 +181,14 @@ main a {
 
     display: flex;
 
-    font: 300 15px/20px 'Manrope', 'from-font';
     color: currentColor;
-    letter-spacing: 0.005em;
-
     transition: color 0.2s ease-in-out;
     transition: border 0.2s ease-in-out;
+}
+
+.return path,
+main a path {
+    color: currentColor;
 }
 
 main a .arrow {
@@ -183,29 +204,23 @@ main a .arrow {
 
     main a:hover,
     main a:hover>h3,
-    main a:hover>h4 {
+    main a:hover>h4,
+    .return:hover {
         color: var(--main-color-link);
         border-bottom-color: currentColor;
     }
 
-    main a:hover>.arrow {
+    main a:hover .arrow {
         transform: rotate(90deg);
-    }
-
-    main a:hover path {
-        stroke: var(--main-color-link);
     }
 }
 
 main a:active,
 main a:active>h3,
-main a:active>h4 {
+main a:active>h4,
+.return:active {
     color: var(--main-color-link-active);
     border-bottom-color: currentColor;
-}
-
-main a:active path {
-    stroke: var(--main-color-link-active);
 }
 
 @media screen and (max-width: 1150px) {

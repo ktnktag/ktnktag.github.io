@@ -8,10 +8,6 @@
     background-color: var(--main-color-card-bg);
 }
 
-.container a {
-    max-width: 325px;
-}
-
 .date {
     font: 500 13px/160% 'Manrope';
     margin: 2px 0 12px;

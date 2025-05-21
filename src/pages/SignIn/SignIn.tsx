@@ -1,14 +1,15 @@
-import classes from './SignIn.module.css'
+import classes from './SignIn.module.css';
 
-import Eye from '../../assets/svg/Eye.svg'
-import EyeOff from '../../assets/svg/Eye-off.svg'
-import {default as Lock} from '../../assets/svg/lock.svg?react'
-import {default as Return} from '../../assets/svg/return.svg?react'
+import Eye from '../../assets/svg/Eye.svg';
+import EyeOff from '../../assets/svg/Eye-off.svg';
+import {default as Lock} from '../../assets/svg/lock.svg?react';
+import {default as Return} from '../../assets/svg/return.svg?react';
 
-import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useNavigate } from "react-router-dom";
+import { useState } from 'react';
 
 export default function SignIn() {
+    const navigate = useNavigate();
     const [password, setPassword] = useState('');
     const [isShow, setIsShow] = useState('password');
 
@@ -34,6 +35,6 @@ export default function SignIn() {
             </label>
         </form>
 
-        <Link to='/' className={classes.return}> <Return />Return to Projects</Link>
+        <p onClick={() => navigate(-1)} className="return"> <Return />Return to Projects</p>
     </section>
 }

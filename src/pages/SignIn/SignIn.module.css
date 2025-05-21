@@ -84,12 +84,3 @@
     color: #FFF;
     background-color: var(--main-color-button);
 }
-
-.return {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    font: 500 18px/150% 'Manrope';
-    color: var(--main-color-button);
-}

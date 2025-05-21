@@ -1,6 +1,6 @@
 import { createHashRouter, createRoutesFromElements, Route } from "react-router-dom";
 
-import App from "../App";
+import App from "../App.tsx";
 import Shell from "../Shell.tsx";
 
 import Projects from "../pages/Projects/Projects.tsx";
@@ -11,7 +11,7 @@ import SideActivity from "../pages/SideActivity/SideActivity.tsx";
 
 import SignIn from "../pages/SignIn/SignIn.tsx";
 
-import Error404 from "./Error404.tsx";
+import Error404 from "../pages/Eror404/Error404.tsx";
 
 const router = createHashRouter(
     createRoutesFromElements(
