@@ -1,6 +1,6 @@
 import classes from './SignIn.module.css';
 
-import Eye from '../../assets/svg/ui/eye.svg';
+import Eye from '../../assets/svg/ui/Eye.svg';
 import EyeOff from '../../assets/svg/ui/Eye-off.svg';
 import {default as Lock} from '../../assets/svg/ui/lock.svg?react';
 import {default as Return} from '../../assets/svg/ui/return.svg?react';
