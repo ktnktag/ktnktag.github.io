@@ -1,7 +1,7 @@
 import classes from './Banner.module.css'
 
 import { Link } from 'react-router-dom';
-import { default as Arrow } from '../../assets/svg/Arrow-r.svg?react'
+import { default as Arrow } from '../../assets/svg/ui/Arrow-r.svg?react'
 
 interface Props {
     children: React.ReactNode;

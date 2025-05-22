@@ -3,8 +3,8 @@ import LinkButton from '../../components/UI/button/LinkButton/LinkButton';
 import classes from "./Reasume.module.css";
 import { Link } from 'react-router-dom';
 
-import Cursor from '../../assets/svg/Cursor.svg';
-import { default as Arrow } from '../../assets/svg/Arrow.svg?react';
+import Cursor from '../../assets/svg/logos/Cursor.svg';
+import { default as Arrow } from '../../assets/svg/ui/Arrow.svg?react';
 
 export default function Resume() {
     return <>

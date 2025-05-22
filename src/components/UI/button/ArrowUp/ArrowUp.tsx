@@ -1,5 +1,5 @@
 import './ArrowUp.css'
-import { default as Arrow } from '../../../../assets/svg/Arrow.svg?react'
+import { default as Arrow } from '../../../../assets/svg/ui/Arrow.svg?react'
 
 export default function ArrowUp() {
     return (

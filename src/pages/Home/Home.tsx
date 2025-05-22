@@ -2,17 +2,17 @@ import LinkButton from '../../components/UI/button/LinkButton/LinkButton'
 import Banner from '../../components/Banner/Banner'
 import Review from '../../components/Review/Review'
 
-import { default as In } from '../../assets/svg/In.svg?react'
-import { default as Medium } from '../../assets/svg/Medium.svg?react'
-import { default as Vec } from '../../assets/svg/Vec.svg?react'
-import { default as Be } from '../../assets/svg/Be.svg?react'
-import { default as Figma } from '../../assets/svg/Figma.svg?react'
+import { default as In } from '../../assets/svg/socials/In.svg?react'
+import { default as Medium } from '../../assets/svg/socials/Medium.svg?react'
+import { default as Vec } from '../../assets/svg/socials/Vec.svg?react'
+import { default as Be } from '../../assets/svg/socials/Be.svg?react'
+import { default as Figma } from '../../assets/svg/socials/Figma.svg?react'
 
 import PersonalPhoto from '../../assets/webp/Home/PersonalPhoto.webp'
 import Im1 from '../../assets/webp/Projects/Projects-1.webp'
 import Im2 from '../../assets/webp/Projects/Projects-4.webp'
 
-import Cursor from '../../assets/svg/Cursor.svg'
+import Cursor from '../../assets/svg/logos/Cursor.svg'
 
 export default function Home() {
     return <>

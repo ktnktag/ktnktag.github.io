@@ -2,7 +2,7 @@ import classes from './Header.module.css'
 
 import { NavLink } from 'react-router-dom'
 
-import Logo from '../../assets/svg/Logo.svg'
+import Logo from '../../assets/svg/logos/Logo.svg'
 
 export default function Header() {
     return <header className='header-menu  header-fix'>

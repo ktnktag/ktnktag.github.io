@@ -7,7 +7,7 @@ import WritingItem from "../../components/WritingItem/WritingItem"
 import LinkButton from "../../components/UI/button/LinkButton/LinkButton"
 import Banner from '../../components/Banner/Banner'
 
-import Cursor from '../../assets/svg/Cursor.svg'
+import Cursor from '../../assets/svg/logos/Cursor.svg'
 
 export default function About() {
     return <>

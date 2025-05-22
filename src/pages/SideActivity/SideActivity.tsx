@@ -1,9 +1,7 @@
 import Banner from '../../components/Banner/Banner'
 
 import Im1 from '../../assets/webp/SideActivity/SideImg1.webp'
-
-
-import Cursor from '../../assets/svg/Cursor.svg'
+import Cursor from '../../assets/svg/logos/Cursor.svg'
 
 export default function SideActivity() {
     return <>

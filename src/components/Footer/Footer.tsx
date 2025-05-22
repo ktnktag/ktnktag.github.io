@@ -1,14 +1,14 @@
 import classes from './Footer.module.css'
 
-import Logo from '../../assets/svg/Logo.svg'
+import Logo from '../../assets/svg/logos/Logo.svg'
 import { Link } from 'react-router-dom'
 import LinkButton from '../UI/button/LinkButton/LinkButton'
 
-import { default as In } from '../../assets/svg/In.svg?react'
-import { default as Medium } from '../../assets/svg/Medium.svg?react'
-import { default as Vec } from '../../assets/svg/Vec.svg?react'
-import { default as Be } from '../../assets/svg/Be.svg?react'
-import { default as Figma } from '../../assets/svg/Figma.svg?react'
+import { default as In } from '../../assets/svg/socials/In.svg?react'
+import { default as Medium } from '../../assets/svg/socials/Medium.svg?react'
+import { default as Vec } from '../../assets/svg/socials/Vec.svg?react'
+import { default as Be } from '../../assets/svg/socials/Be.svg?react'
+import { default as Figma } from '../../assets/svg/socials/Figma.svg?react'
 
 export default function Footer() {
     return <footer className={classes.footer}>

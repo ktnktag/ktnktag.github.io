@@ -5,7 +5,7 @@ import Im2 from '../../assets/webp/Projects/Projects-2.webp'
 import Im3 from '../../assets/webp/Projects/Projects-3.webp'
 import Im4 from '../../assets/webp/Projects/Projects-4.webp'
 
-import Cursor from '../../assets/svg/Cursor.svg'
+import Cursor from '../../assets/svg/logos/Cursor.svg'
 
 export default function Projects() {
     return <>
