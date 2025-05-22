@@ -192,6 +192,7 @@ main a {
 
 .return path,
 main a path {
+    stroke: currentColor;
     color: currentColor;
 }
 

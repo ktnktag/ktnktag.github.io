@@ -1,6 +1,7 @@
 import LinkButton from '../../components/UI/button/LinkButton/LinkButton'
 import Card from '../../components/card/Card'
 import Testimonial from '../../components/testimonial/Testimonial'
+// import Banner from '../../components/banner/Banner'
 
 import { default as In } from '../../assets/svg/socials/In.svg?react'
 import { default as Medium } from '../../assets/svg/socials/Medium.svg?react'
@@ -11,6 +12,7 @@ import { default as Figma } from '../../assets/svg/socials/Figma.svg?react'
 import PersonalPhoto from '../../assets/webp/Home/PersonalPhoto.webp'
 import Im1 from '../../assets/webp/Projects/Projects-1.webp'
 import Im2 from '../../assets/webp/Projects/Projects-4.webp'
+// import BannerImg from '../../assets/webp/Home/BannerImg.webp'
 
 import Cursor from '../../assets/svg/logos/Cursor.svg'
 
@@ -59,6 +61,8 @@ export default function Home() {
                 </Card>
             </div>
         </section>
+
+        {/* <Banner name='Build It Better: A Step-by-Step Guide to Creating Your First Product' path='/' img={BannerImg}>This hands-on workbook walks you through every stage of product creation — from shaping your first concept to launching a functional MVP. Rooted in real-world experience, it’s designed to help you build not just faster, but smarter.</Banner> */}
 
         <section className="section alignment g-40">
             <div className="text-box column-flex g-20">

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../../components/header/Header";
 import erorImage from "../../assets/webp/Eror404/Eror404.webp";
 
-import {default as Return} from '../../assets/svg/ui/return.svg';
+import {default as Return} from '../../assets/svg/ui/return.svg?react';
 
 export default function Error404() {
     const navigate = useNavigate();
