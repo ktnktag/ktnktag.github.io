@@ -1,6 +1,6 @@
 import LinkButton from '../../components/UI/button/LinkButton/LinkButton'
-import Banner from '../../components/Banner/Banner'
-import Review from '../../components/Review/Review'
+import Card from '../../components/card/Card'
+import Testimonial from '../../components/testimonial/Testimonial'
 
 import { default as In } from '../../assets/svg/socials/In.svg?react'
 import { default as Medium } from '../../assets/svg/socials/Medium.svg?react'
@@ -40,23 +40,23 @@ export default function Home() {
             </div>
 
             <div className="column-grid g-32">
-                <Banner
+                <Card
                     image={Im1}
                     title='Design System for the Leading Global Tech Company'
                     path='/Selected_Works/Website_Redesign_Workshop'
                     imgName='Design system'
                     company='SAP Company, 2023 - 2025'>
                     Developed a new comprehensive design system and developer documentation, designed to align with the existing product design system (used externally) without duplicating it — ensuring consistency while addressing distinct needs and integrations.
-                </Banner>
+                </Card>
 
-                <Banner
+                <Card
                     image={Im2}
                     title='Redesign and new Feature Development for Educational Platform'
                     path='/Selected_Works/Workshop_for_Smart_Home'
                     imgName='Product design'
                     company='Rolling Scope School, 2022'>
                     Redesigned the UX of an educational platform using an iterative approach to minimize disruption. Focused on enhancing usability while ensuring the learning process continued smoothly for users and developers.
-                </Banner>
+                </Card>
             </div>
         </section>
 
@@ -67,16 +67,16 @@ export default function Home() {
             </div>
 
             <div className='column-grid g-32'>
-                <Review name='Palina Sachak'
+                <Testimonial name='Palina Sachak'
                     profession='UX Designer'>
                     I have been working closely with Valeria, we were working with a big design team and we were customer-faacing designers. I was deeply impressed while working with Valeria, I can confidently say that she is an exceptionally responsible and detail-oriented professional, she is perfect at both hard skills and soft skills.Valeria is very dedicated to her work, ensuring that every task is completed with precision and care. Her attention to detail is remarkable, allowing her to catch potential issues before they arise and ensuring high-quality outcomes in all her projects. I can say that Valeria has high understanding of design rules and principles, which makes her pixel perfect designs look stunning. She has very diverse experince
-                </Review>
+                </Testimonial>
 
-                <Review name='Tatiana Rudzko'
+                <Testimonial name='Tatiana Rudzko'
                     profession='Product Designer | UX/UI design | 4+ years of experience'>
                     With Valery we worked during few months.
                     I can say that she is the most hardworking person I've ever me, it was a pleasure to work with her.
-                </Review>
+                </Testimonial>
             </div>
 
             <LinkButton path='https://www.linkedin.com/in/kto-nekto/'>Read More on LinkedIn</LinkButton>

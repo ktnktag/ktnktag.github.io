@@ -1,4 +1,4 @@
-import classes from './Review.module.css'
+import classes from './Testimonial.module.css'
 
 type Props = {
     children: React.ReactNode;
@@ -7,7 +7,7 @@ type Props = {
     profession: string;
 }
 
-export default function Review({children, img, name, profession} : Props) {
+export default function Testimonial({children, img, name, profession} : Props) {
     return <article className={classes.container}>
         <div className={classes.header}>
             <img src={img} alt={name} className={classes.img}/>

@@ -1,4 +1,4 @@
-import classes from './WritingItem.module.css'
+import classes from './BlogPost.module.css'
 
 import { default as Arrow } from '../../assets/svg/ui/Arrow.svg?react'
 import { Link } from 'react-router-dom'
@@ -10,7 +10,7 @@ type Props = {
     children: React.ReactNode;
 }
 
-export default function WritingItem({ title, path, date, children }: Props) {
+export default function BlogPost({ title, path, date, children }: Props) {
     return <article className={classes.container}>
         <Link to={path}>
             <h3>{title}</h3> <Arrow className='arrow' />

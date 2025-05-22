@@ -3,9 +3,9 @@ import P2 from '../../assets/webp/About/Photo2.webp'
 import P3 from '../../assets/webp/About/Photo4.webp'
 import P4 from '../../assets/webp/About/Photo3.webp'
 
-import WritingItem from "../../components/WritingItem/WritingItem"
+import BlogPost from "../../components/blogPost/BlogPost"
 import LinkButton from "../../components/UI/button/LinkButton/LinkButton"
-import Banner from '../../components/Banner/Banner'
+import Card from '../../components/card/Card'
 
 import Cursor from '../../assets/svg/logos/Cursor.svg'
 
@@ -34,29 +34,29 @@ export default function About() {
 
             <ul className="column-flex g-32">
                 <li>
-                    <WritingItem
+                    <BlogPost
                         title="I hate my portfolio"
                         path="https://medium.com/design-bootcamp/i-hate-my-portfolio-d9f6f1d18574"
                         date="Apr 23, 2025">
                         Today, I would like to talk about a common challenge that many designers face — creating and updating design portfolio. Portfolio is essential thing that presents your work to potential employers, and also to demonstrate your design process and how you approach different tasks. It is, in many ways, proof of your skills and professional level. This is understandable, expected, and absolutely fair.
-                    </WritingItem>
+                    </BlogPost>
                 </li>
                 <li>
-                    <WritingItem
+                    <BlogPost
                         title="Survival guide for Junior UX designers"
                         path="https://medium.com/design-bootcamp/survival-guide-for-junior-ux-designers-9f8e5e8b670"
                         date="Apr 2, 2023">
                         Getting into the world of design — is exciting and sometimes terrifide. And, of course, there are already a lot of articles on the Internet which goal to help you on your journey as a designers, but I writed another one.Not long ago, I was in your shoes and these are things that I learned as a junior designer. I hope it help newbies be prepared for a new environment, not lose themselves and not burn out in the first months.
-                    </WritingItem>
+                    </BlogPost>
                 </li>
                 <li>
-                    <WritingItem
+                    <BlogPost
                         title="6 lessons that I learned as a designer by UX-volunteering"
                         path="https://medium.com/design-bootcamp/survival-guide-for-junior-ux-designers-9f8e5e8b670"
                         date="Sep 6, 2022">
                         As a Junior UX designer, you may be wondering how you can get “real experience”. Volunteering is a great way to practice your UX skills, build your portfolio, and do something useful in the process.
                         Reflecting on my own journey, I found myself fortunate to join a volunteer project within the realm of free open-source initiatives at the outset of my career. Yet, the rewards of UX volunteering extend far beyond padding one's resume. Through this enriching experience, I've gleaned invaluable lessons that have shaped my growth as a designer.
-                    </WritingItem>
+                    </BlogPost>
                 </li>
             </ul>
             
@@ -70,23 +70,23 @@ export default function About() {
             </div>
 
             <div className="column-grid g-32">
-                <Banner
+                <Card
                     image={P3}
                     title='Revamping the First Impression: Art Exhibition Website Redesign'
                     path='/Selected_Works/Website_Redesign_Workshop'
                     imgName='Workshop'
                     company='Design spot, 2023'>
                     I led a redesign workshop dedicated to rethinking the main page of an art exhibition website. The focus was on improving visual hierarchy, refining layout structure, and enhancing user interaction to better reflect the artistic vision of the exhibition. The session combined design critique and collaborative discussion.
-                </Banner>
+                </Card>
 
-                <Banner
+                <Card
                     image={P4}
                     title='Simulating Real-world Design Process: Smart Home Mobile Application'
                     path='/Selected_Works/Workshop_for_Smart_Home'
                     imgName='Workshop'
                     company='Design spot, 2024'>
                     Led a 4-hour workshop simulating a real product design workflow. Participants worked on a mobile app for smart home control, navigating typical constraints, collaboration dynamics, and fast-paced decision-making—while focusing on usability and visual clarity.
-                </Banner>
+                </Card>
             </div>
         </section>
     </>

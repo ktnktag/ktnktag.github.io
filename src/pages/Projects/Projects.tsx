@@ -1,4 +1,4 @@
-import Banner from '../../components/Banner/Banner'
+import Card from '../../components/card/Card'
 
 import Im1 from '../../assets/webp/Projects/Projects-1.webp'
 import Im2 from '../../assets/webp/Projects/Projects-2.webp'
@@ -20,41 +20,41 @@ export default function Projects() {
 
         <section className="section alignment">
             <div className='column-grid g-32'>
-                <Banner
+                <Card
                     image={Im1}
                     title='Design System for the Leading Global Tech Company'
                     path='/'
                     imgName='Design system'
                     company='SAP Company, 2023 - 2025'>
                     Developed a new comprehensive design system and developer documentation, designed to align with the existing product design system (used externally) without duplicating it — ensuring consistency while addressing distinct needs and integrations.
-                </Banner>
+                </Card>
 
-                <Banner
+                <Card
                     image={Im3}
                     title='Redesign and Developing for Internal Platform'
                     path='/'
                     imgName='Product design'
                     company='SAP Company, 2024'>
                     Developed new features to enhance user convenience and meet evolving needs. As a Fiori expert, ensured alignment with the design system, avoiding customization and maintaining a seamless user experience.
-                </Banner>
+                </Card>
 
-                <Banner
+                <Card
                     image={Im2}
                     title='Seamless Migration from the Legacy Platform to SAP Fiori and Enhanced Features'
                     path='/'
                     imgName='Product design'
                     company='adidas, 2023'>
                     Supported the migration of the NDA web platform to a more intuitive and scalable solution, ensuring consistency with Fiori-based principles. Participated in design iterations, and UX improvements.
-                </Banner>
+                </Card>
 
-                <Banner
+                <Card
                     image={Im4}
                     title='Redesign and new Feature Development for Educational Platform'
                     path='/'
                     imgName='Product design'
                     company='Rolling Scope School, 2022'>
                     Redesigned the UX of an educational platform using an iterative approach to minimize disruption. Focused on enhancing usability while ensuring the learning process continued smoothly for users and developers.
-                </Banner>
+                </Card>
             </div>
         </section>
     </>

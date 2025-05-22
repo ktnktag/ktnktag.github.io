@@ -1,4 +1,4 @@
-import classes from './Banner.module.css'
+import classes from './Card.module.css'
 
 import { Link } from 'react-router-dom';
 import { default as Arrow } from '../../assets/svg/ui/Arrow-r.svg?react'
@@ -21,7 +21,7 @@ const isExternalLink = (str: string) : string => {
     return "";
 }
 
-export default function Banner({children, image, title, path, imgName, company} : Props) {
+export default function Card({children, image, title, path, imgName, company} : Props) {
     return(
         <article className={classes.container}>
             <Link to={path} target={isExternalLink(path)}>
