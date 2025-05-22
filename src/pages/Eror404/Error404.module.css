@@ -31,3 +31,24 @@
     left: 170px;
     bottom: 0;
 }
+
+@media screen and (max-width: 1150px) {
+
+    .img {
+        left: 39px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .img {
+        height: 90vh;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .img {
+        height: 40vh;
+        left: 0;
+    }
+}
