@@ -2,7 +2,7 @@ import './App.css'
 
 import ArrowUp from './components/UI/button/ArrowUp/ArrowUp.tsx'
 import Header from './components/header/Header.tsx'
-import Footer from './components/footer/Footer.tsx'
+import Footer from './components/Footer/Footer.tsx'
 
 import { Outlet } from 'react-router-dom'
 import { useRef, useEffect } from 'react'
