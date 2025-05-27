@@ -1,5 +1,5 @@
 .container {
-    height: 500px;
+    max-height: 500px;
     cursor: pointer;
 
     margin: 100px 0 50px;
@@ -58,6 +58,7 @@
 }
 
 .right {
+    overflow: hidden;
     background-color: var(--main-color-link);
 }
 
@@ -65,11 +66,15 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    transition: filter 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 @media (hover: hover) {
     .container:hover .img {
-        mix-blend-mode: hard-light;
+        transform: scale(1.05);
+        filter: sepia(0.2) hue-rotate(200deg);
     }
 
     .container:hover .link,

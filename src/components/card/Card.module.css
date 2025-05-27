@@ -37,9 +37,10 @@
     width: 100%;
     height: 100%;
 
-    transition: transform 0.3s ease-in-out;
     border-radius: 12px 12px 0 0;
     object-fit: cover;
+    transition: filter 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
 
 .content {
@@ -83,6 +84,7 @@
 
     a:hover .img {
         transform: scale(1.05);
+        filter: sepia(0.2) hue-rotate(200deg);
     }
 }
 

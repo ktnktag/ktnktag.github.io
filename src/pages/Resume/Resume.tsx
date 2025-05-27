@@ -27,7 +27,7 @@ export default function Resume() {
             <ul className='list text-box-large'>
                 <div className='head'>
                     <div>
-                        <Link to={'/'}><h4>EPAM Systems</h4><Arrow className='arrow'/></Link>
+                        <Link to="https://www.epam.com" target="_blank"><h4>EPAM Systems</h4><Arrow className='arrow'/></Link>
                         <p>Experience Designer</p>
                     </div>
 
@@ -48,7 +48,7 @@ export default function Resume() {
             <ul className='list text-box-large'>
                 <div className='head'>
                     <div>
-                        <Link to={'/'}><h4>The Rolling Scopes School</h4><Arrow className='arrow'/></Link>
+                        <Link to='https://rs.school' target="_blank"><h4>The Rolling Scopes School</h4><Arrow className='arrow'/></Link>
                         <p>Product Designer</p>
                     </div>
 
@@ -65,7 +65,7 @@ export default function Resume() {
             <ul className='list text-box-large'>
                 <div className='head'>
                     <div>
-                        <Link to={'/'}><h4>Itexus</h4><Arrow className='arrow'/></Link>
+                        <Link to="https://itexus.com" target="_blank"><h4>Itexus</h4><Arrow className='arrow'/></Link>
                         <p>UX/UI Designer</p>
                     </div>
 
