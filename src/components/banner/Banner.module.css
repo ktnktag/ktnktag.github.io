@@ -5,7 +5,6 @@
     margin: 100px 0 50px;
 
     display: grid;
-    flex-shrink: 1;
     grid-template-columns: 1fr 1fr;
 
     position: relative;
@@ -114,7 +113,7 @@
         height: max-content;
         margin: 80px 0 80px;
 
-        grid-template-columns: none;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
 
         overflow: hidden;

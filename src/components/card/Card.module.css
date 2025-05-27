@@ -43,7 +43,7 @@
 }
 
 .content {
-    max-height: max-content;
+    max-height: auto;
     padding-top: 20px;
 
     display: flex;

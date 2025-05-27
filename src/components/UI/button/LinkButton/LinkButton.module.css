@@ -27,19 +27,26 @@
     color: #22262F;
 }
 
+@media (hover: hover) {
 
-.bigButton:hover,
-.smallButton:hover {
-    color: #4454AE;
-    background-color: #687BE00A;
-    border: 1px solid #687BE052;
+    .bigButton:hover,
+    .smallButton:hover {
+        color: #4454AE;
+        background-color: #687BE00A;
+        border-color: #687BE052;
+    }
+
+    .smallButton:hover svg path {
+        fill: #4454AE;
+        stroke: none;
+    }
 }
 
 .bigButton:active,
 .smallButton:active {
     color: #4454AE;
     background-color: #FFF;
-    border: 1px solid #4454AE80;
+    border-color: #4454AE80;
 }
 
 @media screen and (max-width: 1150px) {

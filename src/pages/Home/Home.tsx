@@ -83,7 +83,7 @@ export default function Home() {
                 </Testimonial>
             </div>
 
-            <LinkButton path='https://www.linkedin.com/in/kto-nekto/'>Read More on LinkedIn</LinkButton>
+            <LinkButton path='https://www.linkedin.com/in/kto-nekto/details/recommendations/?detailScreenTabIndex=0'>Read More on LinkedIn</LinkButton>
         </section>
     </>
 }
