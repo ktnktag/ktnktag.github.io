@@ -1,7 +1,8 @@
 import P1 from '../../assets/webp/About/Photo1.webp'
 import P2 from '../../assets/webp/About/Photo2.webp'
-import P3 from '../../assets/webp/About/Photo4.webp'
-import P4 from '../../assets/webp/About/Photo3.webp'
+import P3 from '../../assets/webp/About/Photo3.webp'
+import P4 from '../../assets/webp/About/Photo4.webp'
+import P5 from '../../assets/webp/About/Photo5.webp'
 
 import BlogPost from "../../components/blogPost/BlogPost"
 import LinkButton from "../../components/UI/button/LinkButton/LinkButton"
@@ -19,9 +20,9 @@ export default function About() {
                 </div>
 
                 <div className="row-flex g-32">
-                    <img className="custom-img" src={P1} alt="" />
-                    <img className="custom-img" src={P2} alt="" />
-                    <img className="custom-img" src="" alt="" />
+                    <img className="custom-img" src={P1} alt="photo 1" />
+                    <img className="custom-img" src={P2} alt="photo 2" />
+                    <img className="custom-img" src={P3} alt="photo 3" />
                 </div>
             </div>
         </header>
@@ -71,7 +72,7 @@ export default function About() {
 
             <div className="column-grid g-32">
                 <Card
-                    image={P3}
+                    image={P4}
                     title='Revamping the First Impression: Art Exhibition Website Redesign'
                     path='/Selected_Works/Website_Redesign_Workshop'
                     imgName='Workshop'
@@ -80,7 +81,7 @@ export default function About() {
                 </Card>
 
                 <Card
-                    image={P4}
+                    image={P5}
                     title='Simulating Real-world Design Process: Smart Home Mobile Application'
                     path='/Selected_Works/Workshop_for_Smart_Home'
                     imgName='Workshop'
