@@ -1,27 +1,16 @@
-.header {
+main header {
     width: 100%;
     height: auto;
 
-    padding: 130px 0 120px;
-    margin-bottom: 20px;
+    padding-top: 130px;
+
+    background-color: #FFF;
+}
+
+.hat {
+    padding-bottom: 120px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
-
-    background-color: #FFF;
-}
-
-.blog-header {
-    width: 100%;
-    height: auto;
-
-    padding: 130px 0 0;
-    margin-bottom: 20px;
-
-    background-color: #FFF;
-}
-
-.blog-header>div {
-    text-align: center;
 }
 
 .blog {
@@ -30,14 +19,19 @@
     gap: 32px;
 }
 
-.blog-marg {
-    padding: 100px 0;
-}
+.blog div:first-of-type p {
+    height: 50px;
+    display: flex;
+    align-items: center;
+} 
 
-.box {
+.wrapper {
+    margin-top: 120px;
+    margin-bottom: 100px;
+
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 100px
 }
 
 .section {
@@ -65,6 +59,15 @@
 
 .text-box-large {
     max-width: 922px;
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2px;
+    margin-bottom: 60px;
 }
 
 .row-flex {
@@ -217,18 +220,19 @@ main p {
     color: var(--main-color-button);
 }
 
-main a {
+a {
     width: max-content;
     border-bottom: 1px solid transparent;
 
     display: flex;
+    font: 400 14px/16.8px 'Manrope';
 
     color: currentColor;
     transition: color 0.2s ease-in-out;
     transition: border 0.2s ease-in-out;
 }
 
-main a .arrow {
+a .arrow {
     width: 12px;
     margin-left: 4px;
 

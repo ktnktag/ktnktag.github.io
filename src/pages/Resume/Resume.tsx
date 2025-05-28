@@ -1,4 +1,4 @@
-import LinkButton from '../../components/UI/button/LinkButton/LinkButton';
+import LinkButton from '../../components/ui/button/LinkButton/LinkButton';
 
 import classes from "./Reasume.module.css";
 import { Link } from 'react-router-dom';
@@ -8,10 +8,10 @@ import { default as Arrow } from '../../assets/svg/ui/Arrow.svg?react';
 
 export default function Resume() {
     return <>
-        <header className="header">
-            <div className="box alignment g-32">
+        <header className="hat">
+            <div className="column-flex alignment g-32">
 
-                <h1 className="title">Resume <img src={Cursor} alt='cursor' className='cursor' /></h1>
+                <h1>Resume <img src={Cursor} alt='cursor' className='cursor' /></h1>
                 <p className='text-box'>As a UX designer with over 4 years of experience, I specialize in creating user-centered digital experiences that are grounded in research and designed for impact. I’ve worked across cross-functional teams to deliver intuitive interfaces, optimize user journeys, and implement scalable design systems that support long-term product growth.</p>
                 <p className='text-box'>I focus on turning user insights into actionable design solutions through UX research, usability testing, wireframing, and prototyping. I’ve collaborated with developers, product managers, and stakeholders to align business goals with user needs — from MVPs to iterative improvements.</p>
                 <ul className={classes.buttonBox}>

@@ -9,10 +9,10 @@ import Cursor from '../../assets/svg/logos/Cursor.svg'
 
 export default function Projects() {
     return <>
-        <header className="header">
-            <div className="box alignment g-32">
+        <header className="hat">
+            <div className="column-flex alignment g-32">
 
-                <h1 className="title">Past projects <img src={Cursor} alt='cursor' className='cursor' /></h1>
+                <h1>Past projects <img src={Cursor} alt='cursor' className='cursor' /></h1>
                 <p className='text-box'>See how turned ideas into reality. Dive into the stories of successful product designs that make a difference.</p>
 
             </div>
@@ -23,7 +23,7 @@ export default function Projects() {
                 <Card
                     image={Im1}
                     title='Design System for the Leading Global Tech Company'
-                    path='/'
+                    path='/design-system'
                     imgName='Design system'
                     company='SAP Company, 2023 - 2025'>
                     Developed a new comprehensive design system and developer documentation, designed to align with the existing product design system (used externally) without duplicating it — ensuring consistency while addressing distinct needs and integrations.

@@ -5,9 +5,9 @@ import Cursor from '../../assets/svg/logos/Cursor.svg'
 
 export default function SideActivity() {
     return <>
-        <header className="header">
-            <div className="box alignment g-32">
-                <h1 className="title">Side activity <img src={Cursor} alt='cursor' className='cursor' /></h1>
+        <header className="hat">
+            <div className="column-flex alignment g-32">
+                <h1>Side activity <img src={Cursor} alt='cursor' className='cursor' /></h1>
                 <p className='text-box'>See how turned ideas into reality. Dive into the stories of successful product designs that make a difference.</p>
             </div>
         </header>

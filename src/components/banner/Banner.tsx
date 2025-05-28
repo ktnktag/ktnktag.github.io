@@ -14,7 +14,7 @@ export default function Banner({img, name, path, children} : Props) {
     const navigate = useNavigate();
 
     return (
-        <section className={classes.container} onClick={() => navigate(path)}>
+        <article className={classes.container} onClick={() => navigate(path)}>
             <div className={classes.left}>
                 <div className={classes.box}>
                     
@@ -30,6 +30,6 @@ export default function Banner({img, name, path, children} : Props) {
             <div className={classes.right}>
                 <img src={img} alt={name}  className={classes.img}/>
             </div>
-        </section>
+        </article>
     )
 }

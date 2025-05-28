@@ -5,15 +5,15 @@ import P4 from '../../assets/webp/About/Photo4.webp'
 import P5 from '../../assets/webp/About/Photo5.webp'
 
 import BlogPost from "../../components/blogPost/BlogPost"
-import LinkButton from "../../components/UI/button/LinkButton/LinkButton"
+import LinkButton from "../../components/ui/button/LinkButton/LinkButton"
 import Card from '../../components/card/Card'
 
 import Cursor from '../../assets/svg/logos/Cursor.svg'
 
 export default function About() {
     return <>
-        <header className="header">
-            <div className="box alignment">
+        <header className="hat">
+            <div className="column-flex alignment g-60">
                 <div className="text-box column-flex g-32">
                     <h1>About me <img src={Cursor} alt='cursor' className='cursor'/></h1>
                     <p>I'm a UX designer passionate about building thoughtful product experiences — and equally passionate about sharing what I learn along the way. I write articles, speak at design events, and mentor growing designers. I believe that good design doesn't stop at the screen — it also shapes teams, conversations, and communities.</p>

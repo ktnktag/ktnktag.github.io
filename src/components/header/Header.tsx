@@ -6,7 +6,7 @@ import Logo from '../../assets/svg/logos/Logo.svg'
 
 export default function Header() {
     return <header className='header-menu  header-fix'>
-        <div className={`${classes.container} alignment`}>
+        <nav className={`${classes.container} alignment`}>
             <div className={classes.logo}>
                 <NavLink to='/'><img src={Logo} alt="Logo" /></NavLink>
             </div>
@@ -19,6 +19,6 @@ export default function Header() {
             </ul>
 
             <div className={classes.logo}></div>
-        </div>
+        </nav>
     </header>
 }

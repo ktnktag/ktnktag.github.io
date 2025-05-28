@@ -35,13 +35,9 @@ html {
 }
 
 main {
+  height: max-content;
   flex: 1 1 auto;
   position: relative;
-  height: max-content;
-}
-
-body.lock {
-  overflow: hidden;
 }
 
 .header-abs {
