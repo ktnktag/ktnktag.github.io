@@ -1,7 +1,7 @@
-import Card from '../../components/card/Card'
+import Card from '@components/card/Card'
 
-import Im1 from '../../assets/webp/SideActivity/SideImg1.webp'
-import Cursor from '../../assets/svg/logos/Cursor.svg'
+import Im1 from '@webp/SideActivity/SideImg1.webp'
+import Cursor from '@svg/logos/Cursor.svg'
 
 export default function SideActivity() {
     return <>

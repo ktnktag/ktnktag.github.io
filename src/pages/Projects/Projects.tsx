@@ -1,11 +1,11 @@
-import Card from '../../components/card/Card'
+import Card from '@components/card/Card'
 
-import Im1 from '../../assets/webp/Projects/Projects-1.webp'
-import Im2 from '../../assets/webp/Projects/Projects-2.webp'
-import Im3 from '../../assets/webp/Projects/Projects-3.webp'
-import Im4 from '../../assets/webp/Projects/Projects-4.webp'
+import Im1 from '@webp/Projects/Projects-1.webp'
+import Im2 from '@webp/Projects/Projects-2.webp'
+import Im3 from '@webp/Projects/Projects-3.webp'
+import Im4 from '@webp/Projects/Projects-4.webp'
 
-import Cursor from '../../assets/svg/logos/Cursor.svg'
+import Cursor from '@svg/logos/Cursor.svg'
 
 export default function Projects() {
     return <>

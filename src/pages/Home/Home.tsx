@@ -1,22 +1,22 @@
-import LinkButton from '../../components/ui/button/LinkButton/LinkButton';
-import Card from '../../components/card/Card';
-import Testimonial from '../../components/testimonial/Testimonial';
-import Banner from '../../components/banner/Banner';
+import LinkButton from '@ui/button/LinkButton/LinkButton';
+import Card from '@components/card/Card';
+import Testimonial from '@components/testimonial/Testimonial';
+import Banner from '@components/banner/Banner';
 
-import { default as In } from '../../assets/svg/socials/In.svg?react';
-import { default as Medium } from '../../assets/svg/socials/Medium.svg?react';
-import { default as Vec } from '../../assets/svg/socials/Vec.svg?react';
-import { default as Be } from '../../assets/svg/socials/Be.svg?react';
-import { default as Figma } from '../../assets/svg/socials/Figma.svg?react';
+import { default as In } from '@svg/socials/In.svg?react';
+import { default as Medium } from '@svg/socials/Medium.svg?react';
+import { default as Vec } from '@svg/socials/Vec.svg?react';
+import { default as Be } from '@svg/socials/Be.svg?react';
+import { default as Figma } from '@svg/socials/Figma.svg?react';
 
-import PersonalPhoto from '../../assets/webp/Home/PersonalPhoto.webp';
-import testimonialPhoto1 from '../../assets/jpg/Herman.jpg';
-import testimonialPhoto2 from '../../assets/jpg/Alla.jpg';
-import Im1 from '../../assets/webp/Projects/Projects-1.webp';
-import Im2 from '../../assets/webp/Projects/Projects-4.webp';
-import BannerImg from '../../assets/webp/Home/BannerImg.webp';
+import PersonalPhoto from '@webp/Home/PersonalPhoto.webp';
+import testimonialPhoto1 from '@jpg/Herman.jpg';
+import testimonialPhoto2 from '@jpg/Alla.jpg';
+import Im1 from '@webp/Projects/Projects-1.webp';
+import Im2 from '@webp/Projects/Projects-4.webp';
+import BannerImg from '@webp/Home/BannerImg.webp';
 
-import Cursor from '../../assets/svg/logos/Cursor.svg';
+import Cursor from '@svg/logos/Cursor.svg';
 
 export default function Home() {
     return <>
