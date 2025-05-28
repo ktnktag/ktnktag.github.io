@@ -1,6 +1,8 @@
 {
   "include": ["src"],
   "compilerOptions": {
+    "module": "Node16",
+    "moduleResolution": "Node16",
     "baseUrl": "./",
     "paths": {
       "@webp": ["src/assets/webp"],
