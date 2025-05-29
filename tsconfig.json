@@ -1,27 +1,8 @@
 {
-  "include": ["src"],
-  "compilerOptions": {
-    "module": "Node16",
-    "moduleResolution": "Node16",
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
-    "baseUrl": "./",
-    "paths": {
-      "@webp": ["src/assets/webp"],
-      "@webp/*": ["src/assets/webp/*"],
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" },
 
-      "@jpg": ["src/assets/jpg"],
-      "@jpg/*": ["src/assets/jpg/*"],
-
-      "@svg": ["src/assets/svg"],
-      "@svg/*": ["src/assets/svg/*"],
-
-      "@components": ["src/components"],
-      "@components/*": ["src/components/*"],
-
-      "@ui": ["src/components/ui"],
-      "@ui/*": ["src/components/ui/*"],
-    },
-    "jsx": "react-jsx",
-  }
+  ]
 }

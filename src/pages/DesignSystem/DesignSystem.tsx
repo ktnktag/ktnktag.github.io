@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 
-import { default as LinkSvh } from "@svg/ui/Link.svg?react"
-import Testimonial from "@components/testimonial/Testimonial";
+import { default as LinkSvh } from "../../assets/svg/ui/Link.svg?react"
+import Testimonial from "../../components/testimonial/Testimonial";
 
-import headerImg from "@webp/DesignSystem/Header.webp";
-import resultImg from "@webp/DesignSystem/Result.webp";
-import workProcess from "@webp/DesignSystem/WorkProcess.webp";
-import componentsImg from "@webp/DesignSystem/Components1.webp";
-import patternsImg from "@webp/DesignSystem/Result.webp";
-import figmaVariablesImg from "@webp/DesignSystem/FigmaVariables.webp";
-import standards from "@webp/DesignSystem/Standards.webp";
-import documentation from "@webp/DesignSystem/Documentation.webp";
-import designReview from "@webp/DesignSystem/DesignReview.webp"
+import headerImg from "../../assets/webp/DesignSystem/Header.webp";
+import resultImg from "../../assets/webp/DesignSystem/Result.webp";
+import workProcess from "../../assets/webp/DesignSystem/WorkProcess.webp";
+import componentsImg from "../../assets/webp/DesignSystem/Components1.webp";
+import patternsImg from "../../assets/webp/DesignSystem/Result.webp";
+import figmaVariablesImg from "../../assets/webp/DesignSystem/FigmaVariables.webp";
+import standards from "../../assets/webp/DesignSystem/Standards.webp";
+import documentation from "../../assets/webp/DesignSystem/Documentation.webp";
+import designReview from "../../assets/webp/DesignSystem/DesignReview.webp"
 
 
 export default function DesignSystem() {

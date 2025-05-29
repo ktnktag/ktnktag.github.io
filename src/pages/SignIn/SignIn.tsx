@@ -1,9 +1,9 @@
 import classes from './SignIn.module.css';
 
-import Eye from '@svg/ui/Eye.svg';
-import EyeOff from '@svg/ui/Eye-off.svg';
-import {default as Lock} from '@svg/ui/lock.svg?react';
-import {default as Return} from '@svg/ui/return.svg?react';
+import Eye from '../../assets/svg/ui/Eye.svg';
+import EyeOff from '../../assets/svg/ui/Eye-off.svg';
+import {default as Lock} from '../../assets/svg/ui/lock.svg?react';
+import {default as Return} from '../../assets/svg/ui/return.svg?react';
 
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';

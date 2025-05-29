@@ -1,14 +1,14 @@
-import P1 from '@webp/About/Photo1.webp';
-import P2 from '@webp/About/Photo2.webp';
-import P3 from '@webp/About/Photo3.webp';
-import P4 from '@webp/About/Photo4.webp';
-import P5 from '@webp/About/Photo5.webp';
+import P1 from '../../assets/webp/About/Photo1.webp';
+import P2 from '../../assets/webp/About/Photo2.webp';
+import P3 from '../../assets/webp/About/Photo3.webp';
+import P4 from '../../assets/webp/About/Photo4.webp';
+import P5 from '../../assets/webp/About/Photo5.webp';
 
-import BlogPost from "@components/blogPost/BlogPost"
-import LinkButton from "@components/ui/button/LinkButton/LinkButton"
-import Card from '@components/card/Card'
+import BlogPost from "../../components/blogPost/BlogPost"
+import LinkButton from "../../components/ui/button/LinkButton/LinkButton"
+import Card from '../../components/card/Card'
 
-import Cursor from '@svg/logos/Cursor.svg';
+import Cursor from '../../assets/svg/logos/Cursor.svg';
 
 export default function About() {
     return <>
