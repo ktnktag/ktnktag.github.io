@@ -5,7 +5,7 @@ import P4 from '../../assets/webp/About/Photo4.webp';
 import P5 from '../../assets/webp/About/Photo5.webp';
 
 import BlogPost from "../../components/blogPost/BlogPost"
-import LinkButton from "../../components/ui/button/LinkButton/LinkButton"
+import LinkButton from "../../components/UI/button/LinkButton/LinkButton"
 import Card from '../../components/card/Card'
 
 import Cursor from '../../assets/svg/logos/Cursor.svg';

@@ -1,4 +1,4 @@
-import LinkButton from '../../components/ui/button/LinkButton/LinkButton';
+import LinkButton from '../../components/UI/button/LinkButton/LinkButton';
 import Card from '../../components/card/Card';
 import Testimonial from '../../components/testimonial/Testimonial';
 import Banner from '../../components/banner/Banner';

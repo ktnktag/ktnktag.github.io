@@ -1,7 +1,7 @@
 import classes from "./Reasume.module.css";
 
 import { Link } from 'react-router-dom';
-import LinkButton from '../../components/ui/button/LinkButton/LinkButton';
+import LinkButton from '../../components/UI/button/LinkButton/LinkButton';
 
 import Cursor from '../../assets/svg/logos/Cursor.svg';
 import { default as Arrow } from '../../assets/svg/ui/Arrow.svg?react';

@@ -2,7 +2,7 @@ import classes from './Footer.module.css'
 
 import Logo from '../../assets/svg/logos/Logo.svg'
 import { Link } from 'react-router-dom'
-import LinkButton from '../ui/button/LinkButton/LinkButton'
+import LinkButton from '../UI/button/LinkButton/LinkButton'
 
 import { default as In } from '../../assets/svg/socials/In.svg?react'
 import { default as Medium } from '../../assets/svg/socials/Medium.svg?react'

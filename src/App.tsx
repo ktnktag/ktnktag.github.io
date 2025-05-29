@@ -1,6 +1,6 @@
 import './styles/App.css'
 
-import ArrowUp from './components/ui/button/ArrowUp/ArrowUp.tsx'
+import ArrowUp from './components/UI/button/ArrowUp/ArrowUp.tsx'
 import Header from './components/header/Header.tsx'
 import Footer from './components/Footer/Footer.tsx'
 
