@@ -8,18 +8,13 @@ type Props = {
 }
 
 export default function Testimonial({ children, name, img, profession }: Props) {
-    return <article className={classes.container}>
+    return <article className="testimonial">
         <div className={classes.header}>
-            {profession ?
-                <>
-                    <img src={img} alt={name} className={classes.img} />
-                    <span>
-                        <h3>{name}</h3>
-                        <p className={classes.prof}>{profession}</p>
-                    </span>
-                </> :
-                <h2>{name}</h2>
-            }
+            <img src={img} alt={name} className={classes.img} />
+            <span>
+                <h3>{name}</h3>
+                <p className={classes.prof}>{profession}</p>
+            </span>
         </div>
 
         <p className={classes.text}>{children}</p>

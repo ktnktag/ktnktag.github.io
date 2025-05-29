@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 import { default as LinkSvh } from "../../assets/svg/ui/Link.svg?react"
-import Testimonial from "../../components/testimonial/Testimonial";
 
 import headerImg from "../../assets/webp/DesignSystem/Header.webp";
 import resultImg from "../../assets/webp/DesignSystem/Result.webp";
@@ -60,11 +59,23 @@ export default function DesignSystem() {
                 <div className="blog">
                     <div><p className="eyebrow">Result</p></div>
 
-                    <div className="column-grid g-32 text-box">
-                        <Testimonial name="30+" >Reusable UI components created and documented — including inputs, buttons, checkboxes, dropdowns, and other atomic elements used across product teams.</Testimonial>
-                        <Testimonial name="20+" >Interaction patterns defined — such as forms, onboarding flows, modals, error handling, and navigation structures, combining multiple components into consistent, functional experiences.</Testimonial>
-                        <Testimonial name="4" >Visual themes implemented using design tokens: Light, Dark, High Contrast Black, and High Contrast White — providing accessibility and stylistic flexibility.</Testimonial>
-                        <Testimonial name="150+" >Design tokens implemented to ensure consistency in spacing, typography, colors, and theming — enabling flexible customization, faster updates, and developer-friendly handoff.</Testimonial>
+                    <div className="column-grid-mini g-32 text-box">
+                        <span className="testimonial">
+                            <h3>30+</h3>
+                            <p>Reusable UI components created and documented — including inputs, buttons, checkboxes, dropdowns, and other atomic elements used across product teams.</p>
+                        </span>
+                        <span className="testimonial">
+                            <h3>20+</h3>
+                            <p>Interaction patterns defined — such as forms, onboarding flows, modals, error handling, and navigation structures, combining multiple components into consistent, functional experiences.</p>
+                        </span>
+                        <span className="testimonial">
+                            <h3>4</h3>
+                            <p>Visual themes implemented using design tokens: Light, Dark, High Contrast Black, and High Contrast White — providing accessibility and stylistic flexibility.</p>
+                        </span>
+                        <span className="testimonial">
+                            <h3>150+</h3>
+                            <p>Design tokens implemented to ensure consistency in spacing, typography, colors, and theming — enabling flexible customization, faster updates, and developer-friendly handoff.</p>
+                        </span>
                     </div>
                 </div>
 

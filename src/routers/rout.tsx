@@ -8,6 +8,7 @@ import Home from "../pages/Home/Home.tsx";
 import Resume from "../pages/Resume/Resume.tsx";
 import SideActivity from "../pages/SideActivity/SideActivity.tsx";
 import DesignSystem from "../pages/DesignSystem/DesignSystem.tsx";
+import RSSchool from "../pages/RSSchool/RSSchool.tsx";
 
 import SignIn from "../pages/SignIn/SignIn.tsx";
 import Error404 from "../pages/Eror404/Error404.tsx";
@@ -23,6 +24,7 @@ const router = createHashRouter(
                 <Route path="side-activity" element={<SideActivity />} />
                 
                 <Route path="design-system" element={<DesignSystem />} />
+                <Route path="rs-school" element={<RSSchool />} />
             </Route>
 
             <Route path="/auth/sign-in" element={<SignIn />}/>

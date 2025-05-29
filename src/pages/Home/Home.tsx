@@ -58,7 +58,7 @@ export default function Home() {
                     <Card
                         image={Im2}
                         title='Redesign and new Feature Development for Educational Platform'
-                        path='/'
+                        path='/rs-school'
                         imgName='Product design'
                         company='Rolling Scope School, 2022'>
                         Redesigned the UX of an educational platform using an iterative approach to minimize disruption. Focused on enhancing usability while ensuring the learning process continued smoothly for users and developers.
