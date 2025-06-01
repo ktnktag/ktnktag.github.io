@@ -7,8 +7,10 @@ import About from "../pages/About/About.tsx";
 import Home from "../pages/Home/Home.tsx";
 import Resume from "../pages/Resume/Resume.tsx";
 import SideActivity from "../pages/SideActivity/SideActivity.tsx";
+
 import DesignSystem from "../pages/DesignSystem/DesignSystem.tsx";
 import RSSchool from "../pages/RSSchool/RSSchool.tsx";
+import Adidas from "../pages/Adidas/Adidas.tsx";
 
 import SignIn from "../pages/SignIn/SignIn.tsx";
 import Error404 from "../pages/Eror404/Error404.tsx";
@@ -25,6 +27,7 @@ const router = createHashRouter(
                 
                 <Route path="design-system" element={<DesignSystem />} />
                 <Route path="rs-school" element={<RSSchool />} />
+                <Route path="adidas" element={<Adidas />} />
             </Route>
 
             <Route path="/auth/sign-in" element={<SignIn />}/>

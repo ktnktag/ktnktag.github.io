@@ -4,7 +4,7 @@ import P3 from '../../assets/webp/About/Photo3.webp';
 import P4 from '../../assets/webp/About/Photo4.webp';
 import P5 from '../../assets/webp/About/Photo5.webp';
 
-import BlogPost from "../../components/blogPost/BlogPost"
+import BlogPost from "../../components/UI/text/blogPost/BlogPost"
 import LinkButton from "../../components/UI/button/LinkButton/LinkButton"
 import Card from '../../components/card/Card'
 

@@ -1,6 +1,6 @@
 import classes from './BlogPost.module.css'
 
-import { default as Arrow } from '../../assets/svg/ui/Arrow.svg?react'
+import { default as Arrow } from '../../../../assets/svg/ui/Arrow.svg?react'
 import { Link } from 'react-router-dom'
 
 type Props = {

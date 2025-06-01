@@ -13,18 +13,6 @@ main header {
     border-bottom-right-radius: 60px;
 }
 
-.blog {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 32px;
-}
-
-.blog div:first-of-type p {
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-
 .wrapper {
     margin-top: 120px;
     margin-bottom: 100px;
@@ -202,6 +190,7 @@ h4 {
     font: 500 20px/140% 'Manrope';
 }
 
+li,
 main p {
     color: var(--main-color-text);
     font: 400 18px/160% 'Manrope', 'rom-font';
@@ -239,10 +228,14 @@ main p {
 }
 
 .list li::before {
-    content: '.';
-    font-size: 40px;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: currentColor;
+
     position: absolute;
-    top: -20px;
+    top: 10px;
     left: -20px;
 }
 
@@ -342,6 +335,7 @@ main a:active .arrow>path {
     }
 
     h1 {
+        max-width: 875px;
         font-size: 40px;
     }
 
@@ -357,9 +351,6 @@ main a:active .arrow>path {
         font-size: 18px;
     }
 
-    h1 {
-        max-width: 875px;
-    }
     .text-box,
     .text-box-large,
     .text-box-lx2 {
@@ -395,21 +386,11 @@ main a:active .arrow>path {
         flex-wrap: wrap;
     }
 
-    .blog {
-        display: flex;
-        flex-direction: column;
-        gap: 12;
-    }
-
-    .blog div:first-of-type p {
-        height: auto;
-        display: block;
-    }
-
     h1 {
         font-size: 36px;
     }
 
+    li,
     main p {
         font-size: 16px;
     }
@@ -464,6 +445,7 @@ main a:active .arrow>path {
         font-size: 14px;
     }
 
+    li,
     main p {
         font-size: 14px;
     }

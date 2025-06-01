@@ -1,0 +1,24 @@
+.sliding {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 32px;
+}
+
+.sliding div:first-of-type p {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .sliding {
+        display: flex;
+        flex-direction: column;
+        gap: 12;
+    }
+
+    .sliding div:first-of-type p {
+        height: auto;
+        display: block;
+    }
+}
