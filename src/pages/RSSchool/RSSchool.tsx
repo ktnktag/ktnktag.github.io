@@ -16,7 +16,7 @@ export default function RSSchool() {
         <header className="blog-header">
             <div className="alignment text-center">
                 <Link to='https://app.rs.school'><LinkSvh /> https://app.rs.school</Link>
-                <h1 className="text-box-large">Revamping the user experience of a free, open-source educational platform to enhance learning while maintaining system stability</h1>
+                <h1 className="text-box-lx2">Revamping the user experience of a free, open-source educational platform to enhance learning while maintaining system stability</h1>
             </div>
             <img src={headerImg} alt="header" />
         </header>
@@ -67,7 +67,7 @@ export default function RSSchool() {
                 <div className="blog">
                     <div><p className="eyebrow">Result</p></div>
 
-                    <div className="column-flex g-32 text-box">
+                    <div className="column-grid-large g-32 text-box">
                         <span className="testimonial" >
                             <h3>3 dashboards</h3>
                             <ul className="list">
@@ -96,7 +96,7 @@ export default function RSSchool() {
                     </div>
                 </div>
 
-                <img src={resultImg} alt="resultImg" />
+                <img src={resultImg} className="img" alt="resultImg" />
 
             </section >
 
@@ -120,7 +120,7 @@ export default function RSSchool() {
                     </div>
                 </div>
 
-                <img src={researchImg} alt="researchImg" className="multiply-img" />
+                <img src={researchImg} alt="researchImg" className="multiply-img img" />
 
             </section>
 
@@ -145,7 +145,7 @@ export default function RSSchool() {
                     </div>
                 </div>
 
-                <img src={mappingImg} alt="mappingImg" />
+                <img src={mappingImg} className="img" alt="mappingImg" />
             </section>
 
             <div className="alignment">
@@ -168,7 +168,7 @@ export default function RSSchool() {
                     </div>
                 </div>
 
-                <img src={designingImg} alt="designingImg" />
+                <img src={designingImg} className="img" alt="designingImg" />
             </section>
 
             <div className="alignment"><hr className="separator" /></div>
@@ -192,8 +192,8 @@ export default function RSSchool() {
                 </div>
 
                 <div className="column-grid g-32">
-                    <img src={testingImg} style={{backgroundColor: "#ffdb1f"}} alt="testingImg" />
-                    <img src={handoffImg} alt="handoffImg" />
+                    <img src={testingImg} className="img" style={{backgroundColor: "#ffdb1f"}} alt="testingImg" />
+                    <img src={handoffImg} className="img" alt="handoffImg" />
                 </div>
             </section>
         </div >

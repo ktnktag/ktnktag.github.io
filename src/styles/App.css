@@ -61,6 +61,10 @@ main header {
     max-width: 922px;
 }
 
+.text-box-lx2 {
+    max-width: 1028px;
+}
+
 .text-center {
     display: flex;
     flex-direction: column;
@@ -101,6 +105,18 @@ main header {
     grid-auto-rows: minmax(100px, auto);
 }
 
+.column-grid-large {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+}
+
+.column-grid-large> :first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
 .g-32 {
     gap: 32px;
 }
@@ -119,6 +135,14 @@ main header {
 
 .g-60 {
     gap: 60px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 12px;
 }
 
 .custom-img {
@@ -333,8 +357,12 @@ main a:active .arrow>path {
         font-size: 18px;
     }
 
+    h1 {
+        max-width: 875px;
+    }
     .text-box,
-    .text-box-large {
+    .text-box-large,
+    .text-box-lx2 {
         max-width: 100%;
     }
 }
@@ -385,6 +413,10 @@ main a:active .arrow>path {
     main p {
         font-size: 16px;
     }
+
+    .cursor {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -401,6 +433,7 @@ main a:active .arrow>path {
         padding: 40px 0 40px;
     }
 
+    .column-grid-large,
     .column-grid-mini {
         display: flex;
         flex-wrap: wrap;
