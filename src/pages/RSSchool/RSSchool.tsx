@@ -63,8 +63,8 @@ export default function RSSchool() {
 
             <section className="alignment column-flex g-60">
                 <Sliding name="Result">
-                    <div className="column-grid-large g-32 text-box">
-                        <Result name="3 dashboards" >
+                    <div className="column-grid-mini g-32 text-box">
+                        <Result name="3 dashboards" isLarge={true}>
                             <ul className="list">
                                 <p>Dashboards for mentors, administrators, and students — providing actionable insights to improve workflow and reduce missed tasks:</p>
                                 <li>Mentors: Track pending assignments, deadlines, and student progress, reducing missed reviews by 30%.</li>

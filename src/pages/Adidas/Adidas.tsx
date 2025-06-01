@@ -68,8 +68,8 @@ export default function Adidas() {
 
             <section className="alignment column-flex g-60">
                 <Sliding name="Result">
-                    <div className="column-grid-large g-32 text-box">
-                        <Result name="100%" >
+                    <div className="column-grid-mini g-32 text-box">
+                        <Result name="100%" isLarge={true}>
                             <ul className="list">
                                 <li>alignment with SAP Fiori design guidelines, ensuring consistency, scalability, and low technical overhead</li>
                                 <li>applications delivered with handoff-ready design specifications in Figma and documented in Confluence</li>

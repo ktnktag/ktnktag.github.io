@@ -4,7 +4,7 @@
     gap: 32px;
 }
 
-.sliding div:first-of-type p {
+.title {
     height: 50px;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
         gap: 12;
     }
 
-    .sliding div:first-of-type p {
+    .title {
         height: auto;
         display: block;
     }

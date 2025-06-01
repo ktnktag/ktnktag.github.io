@@ -8,7 +8,7 @@ type Props = {
 export default function Sliding({name, children} : Props) {
     return <div className={classes.sliding}>
         <div>
-            <p className="eyebrow">{name}</p>
+            <p className={`${classes.title} eyebrow`}>{name}</p>
         </div>
         {children}
     </div>

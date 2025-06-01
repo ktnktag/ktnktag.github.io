@@ -9,12 +9,12 @@ import { default as Vec } from '../../assets/svg/socials/Vec.svg?react';
 import { default as Be } from '../../assets/svg/socials/Be.svg?react';
 import { default as Figma } from '../../assets/svg/socials/Figma.svg?react';
 
-import PersonalPhoto from '../../assets/webp/Home/PersonalPhoto.webp';
+import personalPhoto from '../../assets/webp/Home/PersonalPhoto.webp';
 import testimonialPhoto1 from '../../assets/jpg/Herman.jpg';
 import testimonialPhoto2 from '../../assets/jpg/Alla.jpg';
-import Im1 from '../../assets/webp/Projects/Projects-1.webp';
-import Im2 from '../../assets/webp/Projects/Projects-4.webp';
-import BannerImg from '../../assets/webp/Home/BannerImg.webp';
+import im1 from '../../assets/webp/Projects/Projects-2.webp';
+import im2 from '../../assets/webp/Projects/Projects-5.webp';
+import bannerImg from '../../assets/webp/Home/BannerImg.webp';
 
 import Cursor from '../../assets/svg/logos/Cursor.svg';
 
@@ -22,7 +22,7 @@ export default function Home() {
     return <>
         <header className="hat">
             <div className="column-flex alignment g-32">
-                <img src={PersonalPhoto} alt="round-img" className="round-img" />
+                <img src={personalPhoto} alt="round-img" className="round-img" />
 
                 <h1>I'm Valeria, Experience Designer from Poland, working to create exceptional user experiences. <img src={Cursor} alt='cursor' className='cursor' /></h1>
                 <p className='text-box-large'>From freelance projects to B2C and B2B product design, I've found my passion in user research, designing solutions, and testing them with real users. Ensuring that my designs solve problems and enhance lives is what truly drives me.</p>
@@ -47,7 +47,7 @@ export default function Home() {
 
                 <div className="column-grid g-32">
                     <Card
-                        image={Im1}
+                        image={im1}
                         title='Design System for the Leading Global Tech Company'
                         path='/design-system'
                         imgName='Design system'
@@ -56,7 +56,7 @@ export default function Home() {
                     </Card>
 
                     <Card
-                        image={Im2}
+                        image={im2}
                         title='Redesign and new Feature Development for Educational Platform'
                         path='/rs-school'
                         imgName='Product design'
@@ -69,7 +69,7 @@ export default function Home() {
             <Banner
                 name='Build It Better: A Step-by-Step Guide to Creating Your First Product'
                 path='/auth/sign-in'
-                img={BannerImg}>
+                img={bannerImg}>
                 This hands-on workbook walks you through every stage of product creation — from shaping your first concept to launching a functional MVP. Rooted in real-world experience, it’s designed to help you build not just faster, but smarter.
             </Banner>
 

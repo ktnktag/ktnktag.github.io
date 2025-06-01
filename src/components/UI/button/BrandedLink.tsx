@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { default as LinkSvh } from "../../../assets/svg/ui/Link.svg?react"
+import { default as LinkSvg } from "../../../assets/svg/ui/Link.svg?react"
 
 export default function BrandedLink({path} : {path: string}) {
-    return <Link to={path}><LinkSvh /> {path}</Link>
+    return <Link to={path}><LinkSvg style={{paddingRight: 4}}/> {path}</Link>
 }

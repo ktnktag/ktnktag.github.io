@@ -16,7 +16,7 @@ export default function DesignSystem() {
     return (<>
         <header className="blog-header">
             <div className="alignment text-center">
-                <BrandedLink path="https://www.sap.com/index.html"/>
+                <BrandedLink path="https://www.sap.com/index.html" />
                 <h1 className="text-box">Design System for the Leading Global Tech Company</h1>
             </div>
             <img src={headerImg} alt="header" />

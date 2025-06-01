@@ -93,16 +93,8 @@ main header {
     grid-auto-rows: minmax(100px, auto);
 }
 
-.column-grid-large {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 10px;
-}
-
-.column-grid-large> :first-child {
+.column-large {
     grid-column: 1 / span 2;
-    grid-row: 1;
 }
 
 .g-32 {
@@ -275,9 +267,8 @@ a .arrow {
 }
 
 .return path,
-a .arrow path {
+a .arrow path  {
     stroke: currentColor;
-
 }
 
 @media (hover: hover) {
@@ -288,6 +279,11 @@ a .arrow path {
     .return:hover {
         color: var(--main-color-link);
         border-bottom-color: currentColor;
+    }
+
+    a:hover svg path {
+        color: currentColor;
+        stroke: currentColor;
     }
 
     main a:hover .arrow {
@@ -414,7 +410,6 @@ main a:active .arrow>path {
         padding: 40px 0 40px;
     }
 
-    .column-grid-large,
     .column-grid-mini {
         display: flex;
         flex-wrap: wrap;
