@@ -1,28 +1,29 @@
-import P1 from '../../assets/webp/About/Photo1.webp';
-import P2 from '../../assets/webp/About/Photo2.webp';
-import P3 from '../../assets/webp/About/Photo3.webp';
-import P4 from '../../assets/webp/About/Photo4.webp';
-import P5 from '../../assets/webp/About/Photo5.webp';
+import img1 from '../assets/webp/About/Photo1.webp';
+import img2 from '../assets/webp/About/Photo2.webp';
+import img3 from '../assets/webp/About/Photo3.webp';
+import img4 from '../assets/webp/About/Photo4.webp';
+import img5 from '../assets/webp/About/Photo5.webp';
 
-import BlogPost from "../../components/UI/text/blogPost/BlogPost"
-import LinkButton from "../../components/UI/button/LinkButton/LinkButton"
-import Card from '../../components/card/Card'
+import cursor from '../assets/svg/logos/Cursor.svg';
 
-import Cursor from '../../assets/svg/logos/Cursor.svg';
+import BlogPost from "../components/UI/text/blogPost/BlogPost"
+import LinkButton from "../components/UI/button/LinkButton/LinkButton"
+import Card from '../components/card/Card'
+
 
 export default function About() {
     return <>
         <header className="hat">
             <div className="column-flex alignment g-60">
                 <div className="text-box column-flex g-32">
-                    <h1>About me <img src={Cursor} alt='cursor' className='cursor'/></h1>
+                    <h1>About me <img src={cursor} alt='cursor' className='cursor'/></h1>
                     <p>I'm a UX designer passionate about building thoughtful product experiences — and equally passionate about sharing what I learn along the way. I write articles, speak at design events, and mentor growing designers. I believe that good design doesn't stop at the screen — it also shapes teams, conversations, and communities.</p>
                 </div>
 
                 <div className="row-flex g-32">
-                    <img className="custom-img" src={P1} alt="photo 1" />
-                    <img className="custom-img" src={P2} alt="photo 2" />
-                    <img className="custom-img" src={P3} alt="photo 3" />
+                    <img className="custom-img" src={img1} alt="photo 1" />
+                    <img className="custom-img" src={img2} alt="photo 2" />
+                    <img className="custom-img" src={img3} alt="photo 3" />
                 </div>
             </div>
         </header>
@@ -72,7 +73,7 @@ export default function About() {
 
             <div className="column-grid g-32">
                 <Card
-                    image={P4}
+                    image={img4}
                     title='Revamping the First Impression: Art Exhibition Website Redesign'
                     path='/Selected_Works/Website_Redesign_Workshop'
                     imgName='Workshop'
@@ -81,7 +82,7 @@ export default function About() {
                 </Card>
 
                 <Card
-                    image={P5}
+                    image={img5}
                     title='Simulating Real-world Design Process: Smart Home Mobile Application'
                     path='/Selected_Works/Workshop_for_Smart_Home'
                     imgName='Workshop'

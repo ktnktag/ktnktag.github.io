@@ -1,11 +1,11 @@
-import img1 from '../../assets/webp/Projects/Projects-1.webp'
-import img2 from '../../assets/webp/Projects/Projects-2.webp'
-import img3 from '../../assets/webp/Projects/Projects-3.webp'
-import img4 from '../../assets/webp/Projects/Projects-4.webp'
-import img5 from '../../assets/webp/Projects/Projects-5.webp'
-import cursor from '../../assets/svg/logos/Cursor.svg'
+import img1 from '../assets/webp/Projects/Projects-1.webp'
+import img2 from '../assets/webp/Projects/Projects-2.webp'
+import img3 from '../assets/webp/Projects/Projects-3.webp'
+import img4 from '../assets/webp/Projects/Projects-4.webp'
+import img5 from '../assets/webp/Projects/Projects-5.webp'
+import cursor from '../assets/svg/logos/Cursor.svg'
 
-import Card from '../../components/card/Card'
+import Card from '../components/card/Card'
 
 const cards = [
     {
@@ -29,7 +29,7 @@ const cards = [
         imgName: "Product design",
         company: "SAP Company, 2024",
         title: "Expanding SAP's internal platform with user-centred feature design",
-        path: "/",
+        path: "/hyperspace",
         desc: "Developed new features to enhance user convenience and meet evolving needs. As a Fiori expert, ensured alignment with the design system, avoiding customization and maintaining a seamless user experience.",
     },
     {
@@ -67,7 +67,8 @@ export default function Projects() {
                             image={item.image}
                             imgName={item.imgName}
                             company={item.company}
-                            title={item.title}>
+                            title={item.title}
+                            key={item.title}>
                             {item.desc}
                         </Card>)
                 }

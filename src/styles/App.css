@@ -243,6 +243,7 @@ main p {
 
     font: 500 18px/150% 'Manrope';
     color: var(--main-color-button);
+    transition: color 0.2s ease-in-out;
 }
 
 a {
@@ -253,9 +254,12 @@ a {
     font: 400 14px/16.8px 'Manrope';
 
     color: currentColor;
-    transition: color 0.2s ease-in-out;
-    transition: border 0.2s ease-in-out;
+    transition: border 0.2s ease-in-out, color 0.2s ease-in-out;
 }
+
+/* a:visited {
+    color: var(--main-color-link-visited);
+} */
 
 a .arrow {
     width: 12px;

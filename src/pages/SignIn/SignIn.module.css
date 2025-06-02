@@ -16,71 +16,11 @@
 
 .container p {
     margin-top: 8px;
-    font: 500 13px/160% 'Manrope';
-    text-transform: uppercase;
     text-align: center;
-    color: var(--main-color-text);
 }
 
 .form {
     display: flex;
     flex-direction: column;
     gap: 24px;
-}
-
-.inputBox {
-    width: max-content;
-    height: max-content;
-
-    position: relative;
-}
-
-.icon {
-    cursor: pointer;
-
-    position: absolute;
-    top: 50%;
-    right: 20px;
-
-    transform: translate(0, -50%);
-}
-
-.input {
-    width: 380px;
-    height: 48px;
-
-    padding: 14px 56px 14px 24px;
-
-    border: 1px solid var(--main-color-input-border);
-    border-radius: 100px;
-
-    display: flex;
-    gap: 16px;
-
-    font: 400 14px/16.8px 'Manrope';
-    color: var(--main-color-text);
-    background-color: var(--main-color-input-bg);
-
-}
-
-.input::placeholder {
-    font: 400 14px/16.8px 'Manrope';
-    color: var(--main-color-input-placeholder);
-}
-
-.button {
-    width: 380px;
-    height: 48px;
-
-    padding: 12px 20px;
-    border-radius: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-
-    font: 500 16px/160% 'Manrope';
-    color: #FFF;
-    background-color: var(--main-color-button);
 }

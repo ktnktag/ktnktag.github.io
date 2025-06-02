@@ -1,14 +1,14 @@
-import headerImg from "../../assets/webp/RSSchool/Header.webp";
-import resultImg from "../../assets/webp/RSSchool/Result.webp";
-import researchImg from "../../assets/webp/RSSchool/Research.webp"
-import mappingImg from "../../assets/webp/RSSchool/Mapping.webp";
-import designingImg from "../../assets/webp/RSSchool/Designing.webp";
-import testingImg from "../../assets/webp/RSSchool/Testing.webp";
-import handoffImg from "../../assets/webp/RSSchool/Handoff.webp";
+import headerImg from "../assets/webp/RSSchool/Header.webp";
+import resultImg from "../assets/webp/RSSchool/Result.webp";
+import researchImg from "../assets/webp/RSSchool/Research.webp"
+import mappingImg from "../assets/webp/RSSchool/Mapping.webp";
+import designingImg from "../assets/webp/RSSchool/Designing.webp";
+import testingImg from "../assets/webp/RSSchool/Testing.webp";
+import handoffImg from "../assets/webp/RSSchool/Handoff.webp";
 
-import Sliding from "../../components/UI/text/sliding/Sliding";
-import Result from "../../components/UI/text/Result";
-import BrandedLink from "../../components/UI/button/BrandedLink";
+import Sliding from "../components/UI/text/sliding/Sliding";
+import Result from "../components/UI/text/Result";
+import BrandedLink from "../components/UI/button/BrandedLink";
 
 export default function RSSchool() {
     return (<>
@@ -56,10 +56,6 @@ export default function RSSchool() {
                     </div>
                 </Sliding>
             </section>
-
-            <div className="alignment">
-                <hr className="separator" />
-            </div>
 
             <section className="alignment column-flex g-60">
                 <Sliding name="Result">
@@ -170,7 +166,7 @@ export default function RSSchool() {
                 </Sliding>
 
                 <div className="column-grid g-32">
-                    <img src={testingImg} className="img" style={{ backgroundColor: "#ffdb1f" }} alt="testingImg" />
+                    <img src={testingImg} className="img" alt="testingImg" />
                     <img src={handoffImg} className="img" alt="handoffImg" />
                 </div>
             </section>

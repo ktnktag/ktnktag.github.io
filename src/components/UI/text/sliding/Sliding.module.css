@@ -5,9 +5,13 @@
 }
 
 .title {
-    height: 50px;
+    height: 56px;
     display: flex;
     align-items: center;
+}
+
+.light {
+    color: #9B9B9B;
 }
 
 @media screen and (max-width: 900px) {

@@ -20,7 +20,7 @@ export default function Error404() {
                         <p className="eyebrow">Please go back to the home page</p>
                     </span>
                 </span>
-                <p onClick={() => navigate(-1)} className="return"> <Return />Return to Projects</p>
+                <p onClick={() => navigate(-1)} className="return"> <Return />Return to Previous Page</p>
             </main>
 
             <img className={classes.img} src={erorImage} alt="eror image" />

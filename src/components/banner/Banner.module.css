@@ -66,8 +66,7 @@
     height: 100%;
     object-fit: cover;
 
-    transition: filter 0.3s ease;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease;
 }
 
 @media (hover: hover) {

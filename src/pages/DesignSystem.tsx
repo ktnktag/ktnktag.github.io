@@ -1,16 +1,16 @@
-import headerImg from "../../assets/webp/DesignSystem/Header.webp";
-import resultImg from "../../assets/webp/DesignSystem/Result.webp";
-import workProcess from "../../assets/webp/DesignSystem/WorkProcess.webp";
-import componentsImg from "../../assets/webp/DesignSystem/Components1.webp";
-import patternsImg from "../../assets/webp/DesignSystem/Result.webp";
-import figmaVariablesImg from "../../assets/webp/DesignSystem/FigmaVariables.webp";
-import standards from "../../assets/webp/DesignSystem/Standards.webp";
-import documentation from "../../assets/webp/DesignSystem/Documentation.webp";
-import designReview from "../../assets/webp/DesignSystem/DesignReview.webp"
+import headerImg from "../assets/webp/DesignSystem/Header.webp";
+import resultImg from "../assets/webp/DesignSystem/Result.webp";
+import workProcess from "../assets/webp/DesignSystem/WorkProcess.webp";
+import componentsImg from "../assets/webp/DesignSystem/Components1.webp";
+import patternsImg from "../assets/webp/DesignSystem/Patterns.webp";
+import figmaVariablesImg from "../assets/webp/DesignSystem/FigmaVariables.webp";
+import standards from "../assets/webp/DesignSystem/Standards.webp";
+import documentation from "../assets/webp/DesignSystem/Documentation.webp";
+import designReview from "../assets/webp/DesignSystem/DesignReview.webp"
 
-import Sliding from "../../components/UI/text/sliding/Sliding";
-import Result from "../../components/UI/text/Result";
-import BrandedLink from "../../components/UI/button/BrandedLink";
+import Sliding from "../components/UI/text/sliding/Sliding";
+import Result from "../components/UI/text/Result";
+import BrandedLink from "../components/UI/button/BrandedLink";
 
 export default function DesignSystem() {
     return (<>
@@ -48,10 +48,6 @@ export default function DesignSystem() {
                     </div>
                 </Sliding>
             </section>
-
-            <div className="alignment">
-                <hr className="separator" />
-            </div>
 
             <section className="alignment column-flex g-60">
                 <Sliding name="Result">
@@ -178,7 +174,7 @@ export default function DesignSystem() {
             </div>
 
             <section className="alignment column-flex g-60">
-                <Sliding name="Design Review">
+                <Sliding name="Design Review" isLight={true}>
                     <div className="column-flex g-20 text-box">
                         <h2>Final Checks & QA Workflow</h2>
                         <p>After development, I reviewed each component in Storybook to check that it matched the designs from Figma — both in visuals and behavior. If something didn’t work or look right, I logged it in GitHub and worked with developers to fix it. I retested each component after updates.</p>
@@ -194,7 +190,7 @@ export default function DesignSystem() {
             </div>
 
             <section className="alignment">
-                <Sliding name="Nowadays">
+                <Sliding name="Nowadays" isLight={true}>
                     <div className="column-flex g-20 text-box">
                         <h2>Continuous Development and Iteration</h2>
                         <p>The design system is not a static asset — it continues to evolve and expand. Regular updates are released to address emerging project needs and incorporate user feedback from designers across multiple teams. <br />

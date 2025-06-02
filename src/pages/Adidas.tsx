@@ -1,14 +1,14 @@
-import headerImg from "../../assets/webp/Adidas/Header.webp";
-import resultImg from "../../assets/webp/Adidas/Result.webp";
-import reviewingImg from "../../assets/webp/Adidas/Reviewing.webp"
-import mappingImg from "../../assets/webp/Adidas/Mapping.webp";
-import visualisingImg from "../../assets/webp/Adidas/Visualising.webp";
-import prototypingImg from "../../assets/webp/Adidas/Prototyping.webp";
-import interactionsImg from "../../assets/webp/Adidas/Interactions.webp";
+import headerImg from "../assets/webp/Adidas/Header.webp";
+import resultImg from "../assets/webp/Adidas/Result.webp";
+import reviewingImg from "../assets/webp/Adidas/Reviewing.webp"
+import mappingImg from "../assets/webp/Adidas/Mapping.webp";
+import visualisingImg from "../assets/webp/Adidas/Visualising.webp";
+import prototypingImg from "../assets/webp/Adidas/Prototyping.webp";
+import interactionsImg from "../assets/webp/Adidas/Interactions.webp";
 
-import Sliding from "../../components/UI/text/sliding/Sliding";
-import Result from "../../components/UI/text/Result";
-import BrandedLink from "../../components/UI/button/BrandedLink";
+import Sliding from "../components/UI/text/sliding/Sliding";
+import Result from "../components/UI/text/Result";
+import BrandedLink from "../components/UI/button/BrandedLink";
 
 export default function Adidas() {
     return (<>
@@ -61,10 +61,6 @@ export default function Adidas() {
                     </div>
                 </Sliding>
             </section>
-
-            <div className="alignment">
-                <hr className="separator" />
-            </div>
 
             <section className="alignment column-flex g-60">
                 <Sliding name="Result">

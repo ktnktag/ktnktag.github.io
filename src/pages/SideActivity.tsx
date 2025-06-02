@@ -1,13 +1,13 @@
-import Card from '../../components/card/Card'
+import img1 from '../assets/webp/SideActivity/SideImg1.webp';
+import cursor from '../assets/svg/logos/Cursor.svg';
 
-import Im1 from '../../assets/webp/SideActivity/SideImg1.webp'
-import Cursor from '../../assets/svg/logos/Cursor.svg'
+import Card from '../components/card/Card';
 
 export default function SideActivity() {
     return <>
         <header className="hat">
             <div className="column-flex alignment g-32">
-                <h1>Side activity <img src={Cursor} alt='cursor' className='cursor' /></h1>
+                <h1>Side activity <img src={cursor} alt='cursor' className='cursor' /></h1>
                 <p className='text-box'>See how turned ideas into reality. Dive into the stories of successful product designs that make a difference.</p>
             </div>
         </header>
@@ -15,7 +15,7 @@ export default function SideActivity() {
         <section className="section alignment">
             <div className='column-grid g-32'>
                 <Card
-                    image={Im1}
+                    image={img1}
                     title='Daily UI challege'
                     path='/'
                     imgName='UI design'
