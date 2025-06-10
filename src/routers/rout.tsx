@@ -27,7 +27,7 @@ const router = createHashRouter(
                 <Route path="resume" element={<Resume />} />
                 <Route path="side-activity" element={<SideActivity />} />
                 
-                <Route path="design-system" element={<DesignSystem />} />
+                <Route path="design-system" element={<RequireAuth><DesignSystem /></RequireAuth>} />
                 <Route path="rs-school" element={<RSSchool />} />
                 <Route path="adidas" element={<Adidas />} />
                 <Route path="hyperspace" element={ <RequireAuth><Hyperspace /></RequireAuth>} />
