@@ -97,6 +97,10 @@ main header {
     grid-column: 1 / span 2;
 }
 
+.g-12 {
+    gap: 12px;
+}
+
 .g-32 {
     gap: 32px;
 }

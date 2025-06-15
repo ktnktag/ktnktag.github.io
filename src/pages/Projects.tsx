@@ -12,9 +12,9 @@ const cards = [
         image: img1,
         imgName: "UX/UI Design",
         company: "TURBA, 2025",
-        title: "Rapid MVP Design for an Early-Stage Tech Product",
+        title: "From Demo to Product: Building an Interface for Real-Time AI Cluster Orchestration",
         path: "/",
-        desc: "Contributed to the UX design of an AI-powered platform that helps teams streamline content operations through automation. Focused on defining core user flows and structuring the MVP to support early adoption, clarity, and product scalability.",
+        desc: "Delivered scalable UX/UI for a complex AI infrastructure tool. Balanced real-time requirements, technical constraints, and speed-to-market needs through rapid prototyping and structured handoff.",
     },
     {
         image: img2,

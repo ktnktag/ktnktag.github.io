@@ -34,7 +34,9 @@ export default function SignIn() {
         return true;
     };
 
-    const handleFormSubmit = () => {
+    const handleFormSubmit = (evt: React.FormEvent<HTMLFormElement>) => {
+        evt.preventDefault();
+
         if (!validate()) {
             return null;
         }

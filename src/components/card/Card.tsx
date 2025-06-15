@@ -34,8 +34,11 @@ export default function Card({children, image, title, path, imgName, company} : 
                 </div>
 
                 <div className={classes.content}>
-                    <h3> {title} </h3>
-                    <p>{children}</p>
+                    <div className='column-flex g-12'>
+                        <h3>{title}</h3>
+                        <p>{children}</p>
+                    </div>
+
                     <p className={classes.link}>See the project <Arrow  className={classes.moveRight}/></p>
                 </div>
             </Link>

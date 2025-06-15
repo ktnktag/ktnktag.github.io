@@ -19,10 +19,9 @@ export default function Footer() {
 
                     <ul className={classes.link}>
                         <li><Link to='/projects'>Projects</Link></li>
-                        <li><Link to='/side-activity'>Side activity</Link></li>
+                        {/* <li><Link to='/side-activity'>Side activity</Link></li> */}
                         <li><Link to='/about'>About</Link></li>
                         <li><Link to='/resume'>Resume</Link></li>
-                        <li><Link to='/'>Contact</Link></li>
                     </ul>
                 </div>
 

@@ -5,7 +5,7 @@ import App from "../App.tsx";
 import Projects from "../pages/Projects.tsx";
 import About from "../pages/About.tsx";
 import Home from "../pages/Home.tsx";
-import Resume from "../pages/Resume/Resume.tsx";
+import Resume from "../pages/Resume.tsx";
 import SideActivity from "../pages/SideActivity.tsx";
 
 import DesignSystem from "../pages/DesignSystem.tsx";

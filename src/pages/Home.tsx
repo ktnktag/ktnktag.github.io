@@ -9,14 +9,14 @@ import testimonialPhoto1 from '../assets/jpg/Herman.jpg';
 import testimonialPhoto2 from '../assets/jpg/Alla.jpg';
 import im1 from '../assets/webp/Projects/Projects-2.webp';
 import im2 from '../assets/webp/Projects/Projects-5.webp';
-import bannerImg from '../assets/webp/Home/BannerImg.webp';
+// import bannerImg from '../assets/webp/Home/BannerImg.webp';
 
 import cursor from '../assets/svg/logos/Cursor.svg';
 
 import LinkButton from '../components/UI/button/LinkButton/LinkButton';
 import Card from '../components/card/Card';
 import Testimonial from '../components/testimonial/Testimonial';
-import Banner from '../components/banner/Banner';
+// import Banner from '../components/banner/Banner';
 
 export default function Home() {
     return <>
@@ -66,12 +66,12 @@ export default function Home() {
                 </div>
             </section>
 
-            <Banner
+            {/* <Banner
                 name='Build It Better: A Step-by-Step Guide to Creating Your First Product'
                 path='/sign-in'
                 img={bannerImg}>
                 This hands-on workbook walks you through every stage of product creation — from shaping your first concept to launching a functional MVP. Rooted in real-world experience, it’s designed to help you build not just faster, but smarter.
-            </Banner>
+            </Banner> */}
 
             <section className="column-flex alignment g-40">
                 <div className="text-box column-flex g-20">

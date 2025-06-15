@@ -68,17 +68,17 @@ export default function RSSchool() {
                                 <li>Students: Stay updated on assignment statuses and deadlines, decreasing late submissions by 25%.</li>
                             </ul>
                         </Result>
-                        <Result name="30+">
-                            <p>Reusable UI components created and documented — including inputs, buttons, checkboxes, dropdowns, and other atomic elements used across product teams.</p>
+                        <Result name="3 New sections">
+                            <p>New sections for task management — providing clear, structured areas for cross-checks, tests, and mentor reviews, streamlining the assessment workflow and reducing missed tasks by 30%.</p>
                         </Result>
-                        <Result name="20+">
-                            <p>Interaction patterns defined — such as forms, onboarding flows, modals, error handling, and navigation structures, combining multiple components into consistent, functional experiences.</p>
+                        <Result name="6 Widgets">
+                            <p>Student widgets added — enhancing accessibility and quick access to resources, resulting in a 20% boost in student engagement.</p>
                         </Result>
-                        <Result name="4">
-                            <p>Visual themes implemented using design tokens: Light, Dark, High Contrast Black, and High Contrast White — providing accessibility and stylistic flexibility.</p>
+                        <Result name="1 Registration ">
+                            <p>Unified registration flow for mentors and students — simplifying onboarding and ensuring data accuracy across the platform, reducing form completion errors by 15%.</p>
                         </Result>
-                        <Result name="150+">
-                            <p>Design tokens implemented to ensure consistency in spacing, typography, colors, and theming — enabling flexible customization, faster updates, and developer-friendly handoff.</p>
+                        <Result name="2 Improvements">
+                            <p>scheduling system —  with clear task availability, submission deadlines, filters for overdue assignments, and navigation — restructured the platform’s layout to simplify access for application sections.</p>
                         </Result>
                     </div>
                 </Sliding>

@@ -1,9 +1,7 @@
-import classes from "./Reasume.module.css";
+import cursor from '..//assets/svg/logos/Cursor.svg';
 
-import cursor from '../../assets/svg/logos/Cursor.svg';
-
-import LinkButton from '../../components/UI/button/LinkButton/LinkButton';
-import List from "../../components/UI/text/List";
+import LinkButton from '../components/UI/button/LinkButton/LinkButton';
+import List from "../components/UI/text/List";
 
 export default function Resume() {
     return <>
@@ -13,10 +11,9 @@ export default function Resume() {
                 <h1>Resume <img src={cursor} alt='cursor' className='cursor' /></h1>
                 <p className='text-box'>As a UX designer with over 4 years of experience, I specialize in creating user-centered digital experiences that are grounded in research and designed for impact. I’ve worked across cross-functional teams to deliver intuitive interfaces, optimize user journeys, and implement scalable design systems that support long-term product growth.</p>
                 <p className='text-box'>I focus on turning user insights into actionable design solutions through UX research, usability testing, wireframing, and prototyping. I’ve collaborated with developers, product managers, and stakeholders to align business goals with user needs — from MVPs to iterative improvements.</p>
-                <ul className={classes.buttonBox}>
-                    <LinkButton path='/'>Download Resume as PDF</LinkButton>
-                    <LinkButton path='/'>Download Resume as DOC</LinkButton>
-                </ul>
+
+                <LinkButton path='https://drive.google.com/file/d/194s2tAYmmk6hoMVCgfuB7O-hd6_za8fW/view' download>Download Resume as PDF</LinkButton>
+
             </div>
         </header>
 
