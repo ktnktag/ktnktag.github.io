@@ -146,7 +146,7 @@ export default function DesignSystem() {
                 component was managed in its own Figma file for version control
                 and clarity. This structure helped us scale efficiently across a
                 multi-designer team and ensured smooth collaboration with
-                stakeholders.{" "}
+                stakeholders.
               </p>
             </div>
           </Sliding>

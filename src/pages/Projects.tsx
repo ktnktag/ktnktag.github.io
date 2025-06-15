@@ -14,7 +14,7 @@ const cards = [
     company: "TURBA, 2025",
     title:
       "From Demo to Product: Building an Interface for Real-Time AI Cluster Orchestration",
-    path: "/",
+    path: "/turba",
     desc: "Delivered scalable UX/UI for a complex AI infrastructure tool. Balanced real-time requirements, technical constraints, and speed-to-market needs through rapid prototyping and structured handoff.",
   },
   {

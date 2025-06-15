@@ -16,6 +16,7 @@ import DesignSystem from "../pages/DesignSystem.tsx";
 import RSSchool from "../pages/RSSchool.tsx";
 import Adidas from "../pages/Adidas.tsx";
 import Hyperspace from "../pages/Hyperspace.tsx";
+import Turba from "../pages/Turba.tsx";
 
 import SignIn from "../pages/SignIn/SignIn.tsx";
 import Error404 from "../pages/Eror404/Error404.tsx";
@@ -46,6 +47,14 @@ const router = createHashRouter(
           element={
             <RequireAuth>
               <Hyperspace />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="turba"
+          element={
+            <RequireAuth>
+              <Turba />
             </RequireAuth>
           }
         />

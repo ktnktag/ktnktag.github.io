@@ -1,10 +1,10 @@
 import headerImg from "../assets/webp/Hyperspace/Header.webp";
 import resultImg from "../assets/webp/Hyperspace/Result.webp";
-import Phase1 from "../assets/webp/Hyperspace/Phase1.webp";
-import Phase2 from "../assets/webp/Hyperspace/Phase2.webp";
-import Phase3 from "../assets/webp/Hyperspace/Phase3.webp";
-import Phase5 from "../assets/webp/Hyperspace/Phase5.webp";
-import Sprint from "../assets/webp/Hyperspace/Sprint.webp";
+import phase1 from "../assets/webp/Hyperspace/Phase1.webp";
+import phase2 from "../assets/webp/Hyperspace/Phase2.webp";
+import phase3 from "../assets/webp/Hyperspace/Phase3.webp";
+import phase5 from "../assets/webp/Hyperspace/Phase5.webp";
+import sprint from "../assets/webp/Hyperspace/Sprint.webp";
 
 import Sliding from "../components/common/text/sliding/Sliding";
 import Result from "../components/common/text/Result";
@@ -130,7 +130,7 @@ export default function Hyperspace() {
         <section className="alignment column-flex g-60">
           <Sliding name="Result">
             <div className="column-grid-mini g-32 text-box">
-              <Result name="100%" isLarge={true}>
+              <Result name="100%" isLarge>
                 <ul className="list">
                   <li>
                     Alignment with SAP Fiori design guidelines in initial
@@ -142,7 +142,7 @@ export default function Hyperspace() {
                   </li>
                 </ul>
               </Result>
-              <Result name="2 new feature sections" isLarge={true}>
+              <Result name="2 new feature sections" isLarge>
                 <p>
                   Were designed from scratch and released into platform,
                   improving backlog and project workflows, enhancing usability,
@@ -184,7 +184,7 @@ export default function Hyperspace() {
             </div>
           </Sliding>
 
-          <img src={Phase1} className="img" alt="Phase1Img" />
+          <img src={phase1} className="img" alt="Phase1Img" />
         </section>
 
         <div className="alignment">
@@ -229,7 +229,7 @@ export default function Hyperspace() {
             </div>
           </Sliding>
 
-          <img src={Phase2} className="img" alt="Phase2Img" />
+          <img src={phase2} className="img" alt="Phase2Img" />
         </section>
 
         <div className="alignment">
@@ -250,7 +250,7 @@ export default function Hyperspace() {
             </div>
           </Sliding>
 
-          <img src={Phase3} className="img" alt="Phase4Img" />
+          <img src={phase3} className="img" alt="Phase4Img" />
         </section>
 
         <div className="alignment">
@@ -313,7 +313,7 @@ export default function Hyperspace() {
             </div>
           </Sliding>
 
-          <img src={Phase5} className="img" alt="Phase5Img" />
+          <img src={phase5} className="img" alt="Phase5Img" />
         </section>
 
         <div className="alignment">
@@ -321,7 +321,7 @@ export default function Hyperspace() {
         </div>
 
         <section className="alignment column-flex g-60">
-          <Sliding name="Phase 5 – Test">
+          <Sliding name="Post-Sprint Activities">
             <div className="column-flex g-20 text-box">
               <h2>Refining and Supporting Implementation</h2>
               <p>
@@ -338,7 +338,7 @@ export default function Hyperspace() {
             </div>
           </Sliding>
 
-          <img src={Sprint} className="img" alt="sprintImg" />
+          <img src={sprint} className="img" alt="sprintImg" />
 
           <Sliding>
             <ul className="list text-box">
