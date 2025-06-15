@@ -5,8 +5,6 @@ import { default as Be } from "../assets/svg/socials/Be.svg?react";
 import { default as Figma } from "../assets/svg/socials/Figma.svg?react";
 
 import personalPhoto from "../assets/webp/Home/PersonalPhoto.webp";
-import testimonialPhoto1 from "../assets/jpg/Herman.jpg";
-import testimonialPhoto2 from "../assets/jpg/Alla.jpg";
 import im1 from "../assets/webp/Projects/Projects-2.webp";
 import im2 from "../assets/webp/Projects/Projects-5.webp";
 // import bannerImg from '../assets/webp/Home/BannerImg.webp';
@@ -131,8 +129,30 @@ export default function Home() {
 
           <div className="column-grid g-32">
             <Testimonial
+              name="Anna Malysheva"
+              img="https://media.licdn.com/dms/image/v2/D4D03AQFLv2zmb-YTnw/profile-displayphoto-shrink_100_100/B4DZT2che9HYAU-/0/1739301460453?e=1755734400&v=beta&t=E-hZGHjMEdiARfpbsrqKMfleSkSCeNqPZffNHeZTmWY"
+              profession="Senior Software Engineer, 7 years in EAS | ReactJS, Node.js, AWS | GenAI"
+            >
+              I had the pleasure of working closely with Valeria on a
+              cross-functional project, and she made the collaboration between
+              design and engineering incredibly smooth.
+              <br />
+              <br />
+              She built a robust, scalable design system with clear,
+              developer-friendly documentation that made implementation
+              efficient and intuitive. On top of that, she was always proactive,
+              quick to clarify open questions, and genuinely supportive — making
+              her an ideal partner in fast-paced environments.
+              <br />
+              <br />
+              Working with Valeria meant less back-and-forth, fewer blockers,
+              and more time spent delivering quality. She’s a true force
+              multiplier for any cross-functional team. I’d jump at the chance
+              to work with her again and highly recommend her to any team.
+            </Testimonial>
+            <Testimonial
               name="Herman Bykov"
-              img={testimonialPhoto1}
+              img="https://media.licdn.com/dms/image/v2/C5103AQHhTQLJz_YyaA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516714305988?e=1755734400&v=beta&t=9HfapILK_-dtNIDaBpkAPcIb7GpOVd3lKEfUfnzytY4"
               profession="Senior Business Analyst at EPAM Systems"
             >
               I had the chance to work with Valeria during a major site-wide
@@ -153,24 +173,6 @@ export default function Home() {
               business requirements while also being feasible for the
               development team. <br />
               * Great person, easy to talk to, great to work with! <br />
-            </Testimonial>
-
-            <Testimonial
-              name="Alla Emelyanova"
-              img={testimonialPhoto2}
-              profession="UX/UI Design Lead"
-            >
-              Working alongside Lera has been a truly rewarding experience, and
-              I can wholeheartedly say that she is an exceptional designer. Lera
-              combines creativity with professionalism in a remarkable way. Her
-              keen attention to detail and understanding of client needs greatly
-              enhanced the quality of our projects.
-              <br />
-              Lera consistently brought innovative ideas to the table and
-              tackled every challenge with confidence, even under tight
-              deadlines. She excels in team settings, always receptive to
-              discussion and constructive criticism. I’m truly impressed by her
-              ability to strike a balance between aesthetics and functionality.
             </Testimonial>
           </div>
 
