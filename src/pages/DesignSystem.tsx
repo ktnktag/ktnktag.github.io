@@ -6,199 +6,358 @@ import patternsImg from "../assets/webp/DesignSystem/Patterns.webp";
 import figmaVariablesImg from "../assets/webp/DesignSystem/FigmaVariables.webp";
 import standards from "../assets/webp/DesignSystem/Standards.webp";
 import documentation from "../assets/webp/DesignSystem/Documentation.webp";
-import designReview from "../assets/webp/DesignSystem/DesignReview.webp"
+import designReview from "../assets/webp/DesignSystem/DesignReview.webp";
 
-import Sliding from "../components/UI/text/sliding/Sliding";
-import Result from "../components/UI/text/Result";
-import BrandedLink from "../components/UI/button/BrandedLink";
+import Sliding from "../components/common/text/sliding/Sliding";
+import Result from "../components/common/text/Result";
+import BrandedLink from "../components/common/button/BrandedLink";
 
 export default function DesignSystem() {
-    return (<>
-        <header className="blog-header">
-            <div className="alignment text-center">
-                <BrandedLink path="https://www.sap.com/index.html" />
-                <h1 className="text-box">Design System for the Leading Global Tech Company</h1>
-            </div>
-            <img src={headerImg} alt="header" />
-        </header>
-
-        <div className="wrapper">
-            <section className="alignment column-flex g-40">
-                <Sliding name="About the project">
-                    <div className="column-flex g-40 text-box">
-                        <span className="column-flex g-20">
-                            <h2>Overview</h2>
-                            <p>The design system project was a strategic initiative aimed at unifying visual language and interaction patterns across multiple products while maintaining scalability and adaptability. With fragmented components and inconsistent user experiences impacting product cohesion, the objective was to establish a comprehensive design framework that served as a single source of truth for all design assets.</p>
-                        </span>
-
-                        <span className="column-flex g-20">
-                            <h2>Challenge</h2>
-                            <p>Establish a scalable, consistent design system across multiple products and teams — in an environment with no centralized UI standards, minimal documentation, and growing complexity. Designers were working in silos, re-creating similar components with slight variations, which slowed down delivery and created a fragmented user experience. The challenge was to bring clarity and cohesion without disrupting ongoing product work or delaying feature releases.</p>
-                        </span>
-
-                        <span className="column-flex g-20">
-                            <h2>Approach</h2>
-                            <ul className="list">
-                                <p>The primary challenge was to create a comprehensive component library that addressed the needs of multiple projects without fragmenting the design ecosystem. This required:</p>
-                                <li>Scalability Across Projects: New components had to be designed to accommodate all current and anticipated project requirements, eliminating the need for custom, project-specific components and ensuring consistency across products.</li>
-                                <li>Total Overhaul of Existing Components: The existing components were not only inconsistent but also incompatible with the new design system structure. This necessitated a complete redesign, integrating updated interaction patterns, accessibility considerations, and design tokens for theming and customization.</li>
-                                <li>Rapid Development and Iteration: With a core structure to be delivered in just 13 weeks, the project demanded an accelerated workflow. Daily stand-ups were essential to align on requirements, review progress, incorporate feedback, approvals and creation of specifications — all in real time.</li>
-                            </ul>
-                        </span>
-                    </div>
-                </Sliding>
-            </section>
-
-            <section className="alignment column-flex g-60">
-                <Sliding name="Result">
-                    <div className="column-grid-mini g-32 text-box">
-                        <Result name="30+">
-                            <p>Reusable UI components created and documented — including inputs, buttons, checkboxes, dropdowns, and other atomic elements used across product teams.</p>
-                        </Result>
-                        <Result name="20+">
-                            <p>Interaction patterns defined — such as forms, onboarding flows, modals, error handling, and navigation structures, combining multiple components into consistent, functional experiences.</p>
-                        </Result>
-                        <Result name="4">
-                            <p>Visual themes implemented using design tokens: Light, Dark, High Contrast Black, and High Contrast White — providing accessibility and stylistic flexibility.</p>
-                        </Result>
-                        <Result name="150+">
-                            <p>Design tokens implemented to ensure consistency in spacing, typography, colors, and theming — enabling flexible customization, faster updates, and developer-friendly handoff.</p>
-                        </Result>
-                    </div>
-                </Sliding>
-
-                <img src={resultImg} alt="resultImg" />
-            </section>
-
-            <div className="alignment">
-                <hr className="separator" />
-            </div>
-
-            <section className="alignment column-flex g-60">
-                <Sliding name="Work Process">
-                    <div className="column-flex g-20 text-box">
-                        <h2>Structured Sprint Workflow</h2>
-                        <p>We organized the project into focused sprints, each covering specific sets of components, patterns, or templates. Each component was managed in its own Figma file for version control and clarity. This structure helped us scale efficiently across a multi-designer team and ensured smooth collaboration with stakeholders. </p>
-                    </div>
-                </Sliding>
-
-                <img src={workProcess} alt="workProcess" className="multiply-img" />
-
-            </section>
-
-            <div className="alignment">
-                <hr className="separator" />
-            </div>
-
-            <section className="alignment column-flex g-60">
-                <Sliding name="components & Patterns">
-                    <div className="column-flex g-20 text-box">
-                        <h2>Design System</h2>
-                        <p>We started by building atomic components like buttons, inputs, and checkboxes, then expanded into complex patterns such as forms, onboarding flows, and notifications. This step-by-step approach helped us ensure structural consistency before scaling into full user flows.</p>
-                        <p>All components were designed for flexibility — optional elements like avatars or secondary buttons were built in, making it easy to adapt without detaching or duplicating. This reduced design debt and kept the system clean.</p>
-                        <p>Responsiveness and RTL support were considered from the beginning. Components adapted across breakpoints, and layouts worked for both LTR and RTL languages, improving accessibility and global readiness.</p>
-                        <p>While maintaining consistency, we allowed thoughtful variation where needed. Patterns could be adapted for specific product needs without breaking the system, making adoption easier across teams.</p>
-                        <p>We continuously gathered feedback from other designers and developers, evolving patterns to reflect real-world use cases and improving system relevance over time.</p>
-                    </div>
-                </Sliding>
-
-                <div className="column-flex g-32">
-                    <img src={componentsImg} alt="componentsImg" />
-                    <img src={patternsImg} alt="patternsImg" />
-                </div>
-
-            </section>
-
-            <div className="alignment">
-                <hr className="separator" />
-            </div>
-
-            <section className="alignment column-flex g-60">
-                <Sliding name="Figma variables">
-                    <div className="column-flex g-20 text-box">
-                        <h2>Tokens as the Single Source of Truth</h2>
-                        <p>We defined tokens for color, typography, spacing, radii, shadows, animations, and icon sizes — covering all key visual properties in both design and code.</p>
-                        <p>Tokens served as the central reference for visual decisions — ensuring consistency, reducing ambiguity, and simplifying design-to-code translation.</p>
-
-                        <ul className="list">
-                            <p>Our system supported 4 visual themes via tokens:</p>
-                            <li>Light</li>
-                            <li>Dense</li>
-                            <li>High Contrast Black</li>
-                            <li>High Contrast White</li>
-                            <p>This allowed us to meet both branding and accessibility needs with minimal effort.</p>
-                        </ul>
-                    </div>
-                </Sliding>
-
-                <img src={figmaVariablesImg} alt="figmaVariablesImg" />
-            </section>
-
-            <div className="alignment"><hr className="separator" /></div>
-
-            <section className="alignment column-flex g-60">
-                <Sliding name="a11y standards">
-                    <div className="column-flex g-20 text-box">
-                        <h2>Implementation of Accessibility Standards</h2>
-                        <span>
-                            <p>Accessibility was a cornerstone in the creation of our new design system. To ensure our product is usable by the widest possible audience, including people with disabilities, we adhered to internationally recognized WCAG 2.2 AA standards. Throughout the development process, we employed a rigorous testing protocol.</p>
-                            <p>We utilized design plugins to verify compliance with AA contrast minimums during the design phase. Additionally, components underwent thorough testing in a test environment to ensure they met accessibility requirements before being released. This multi-layered approach ensured that accessibility considerations were integral to the design and development process, rather than an afterthought.</p>
-                        </span>
-                    </div>
-                </Sliding>
-
-                <img src={standards} alt="standards" />
-            </section>
-
-            <div className="alignment">
-                <hr className="separator" />
-            </div>
-
-            <section className="alignment column-flex g-60">
-                <Sliding name="Documentation">
-                    <div className="column-flex g-20 text-box">
-                        <h2>Living Documentation</h2>
-                        <span>
-                            <p>In our pursuit of building a robust design system, we followed a core principle:"Documentation, documentation, documentation.” Our goal was to precisely capture the life cycle of every reusable element used across SAP websites, mobile screens, and large standalone displays.</p>
-                            <p>This included thorough documentation of all components and patterns — from breadcrumbs and headers to inputs, buttons, and layouts. Each item was accompanied by detailed specifications covering structure, states, behaviors, responsive behavior, and accessibility considerations.</p>
-                            <p>By committing to structured, clear documentation, we ensured smooth collaboration between designers and developers, minimized ambiguity, and created a reliable source of truth for implementation and maintenance across platforms.</p>
-                        </span>
-                    </div>
-                </Sliding>
-
-                <img src={documentation} alt="Documentation" />
-            </section>
-
-            <div className="alignment">
-                <hr className="separator" />
-            </div>
-
-            <section className="alignment column-flex g-60">
-                <Sliding name="Design Review" isLight={true}>
-                    <div className="column-flex g-20 text-box">
-                        <h2>Final Checks & QA Workflow</h2>
-                        <p>After development, I reviewed each component in Storybook to check that it matched the designs from Figma — both in visuals and behavior. If something didn’t work or look right, I logged it in GitHub and worked with developers to fix it. I retested each component after updates.</p>
-                        <p>Once everything worked as expected, I approved the pull request and marked the component as stable — ready for use in production.</p>
-                    </div>
-                </Sliding>
-
-                <img src={designReview} alt="designReview" />
-            </section>
-
-            <div className="alignment">
-                <hr className="separator" />
-            </div>
-
-            <section className="alignment">
-                <Sliding name="Nowadays" isLight={true}>
-                    <div className="column-flex g-20 text-box">
-                        <h2>Continuous Development and Iteration</h2>
-                        <p>The design system is not a static asset — it continues to evolve and expand. Regular updates are released to address emerging project needs and incorporate user feedback from designers across multiple teams. <br />
-                            A structured feedback loop has been established to gather insights on component usability, identify gaps in patterns, and refine interactions. This ongoing analysis enables the team to prioritize necessary adjustments, implement enhancements, and maintain alignment with evolving product requirements. <br />
-                            By maintaining a continuous iteration cycle, the system remains relevant, adaptive, and capable of scaling to meet the demands of new projects and use cases.</p>
-                    </div>
-                </Sliding>
-            </section>
+  return (
+    <>
+      <header className="blog-header">
+        <div className="alignment text-center">
+          <BrandedLink path="https://www.sap.com/index.html" />
+          <h1 className="text-box">
+            Design System for the Leading Global Tech Company
+          </h1>
         </div>
-    </>)
+        <img src={headerImg} alt="header" />
+      </header>
+
+      <div className="wrapper">
+        <section className="alignment column-flex g-40">
+          <Sliding name="About the project">
+            <div className="column-flex g-40 text-box">
+              <span className="column-flex g-20">
+                <h2>Overview</h2>
+                <p>
+                  The design system project was a strategic initiative aimed at
+                  unifying visual language and interaction patterns across
+                  multiple products while maintaining scalability and
+                  adaptability. With fragmented components and inconsistent user
+                  experiences impacting product cohesion, the objective was to
+                  establish a comprehensive design framework that served as a
+                  single source of truth for all design assets.
+                </p>
+              </span>
+
+              <span className="column-flex g-20">
+                <h2>Challenge</h2>
+                <p>
+                  Establish a scalable, consistent design system across multiple
+                  products and teams — in an environment with no centralized UI
+                  standards, minimal documentation, and growing complexity.
+                  Designers were working in silos, re-creating similar
+                  components with slight variations, which slowed down delivery
+                  and created a fragmented user experience. The challenge was to
+                  bring clarity and cohesion without disrupting ongoing product
+                  work or delaying feature releases.
+                </p>
+              </span>
+
+              <span className="column-flex g-20">
+                <h2>Approach</h2>
+                <ul className="list">
+                  <p>
+                    The primary challenge was to create a comprehensive
+                    component library that addressed the needs of multiple
+                    projects without fragmenting the design ecosystem. This
+                    required:
+                  </p>
+                  <li>
+                    Scalability Across Projects: New components had to be
+                    designed to accommodate all current and anticipated project
+                    requirements, eliminating the need for custom,
+                    project-specific components and ensuring consistency across
+                    products.
+                  </li>
+                  <li>
+                    Total Overhaul of Existing Components: The existing
+                    components were not only inconsistent but also incompatible
+                    with the new design system structure. This necessitated a
+                    complete redesign, integrating updated interaction patterns,
+                    accessibility considerations, and design tokens for theming
+                    and customization.
+                  </li>
+                  <li>
+                    Rapid Development and Iteration: With a core structure to be
+                    delivered in just 13 weeks, the project demanded an
+                    accelerated workflow. Daily stand-ups were essential to
+                    align on requirements, review progress, incorporate
+                    feedback, approvals and creation of specifications — all in
+                    real time.
+                  </li>
+                </ul>
+              </span>
+            </div>
+          </Sliding>
+        </section>
+
+        <section className="alignment column-flex g-60">
+          <Sliding name="Result">
+            <div className="column-grid-mini g-32 text-box">
+              <Result name="30+">
+                <p>
+                  Reusable UI components created and documented — including
+                  inputs, buttons, checkboxes, dropdowns, and other atomic
+                  elements used across product teams.
+                </p>
+              </Result>
+              <Result name="20+">
+                <p>
+                  Interaction patterns defined — such as forms, onboarding
+                  flows, modals, error handling, and navigation structures,
+                  combining multiple components into consistent, functional
+                  experiences.
+                </p>
+              </Result>
+              <Result name="4">
+                <p>
+                  Visual themes implemented using design tokens: Light, Dark,
+                  High Contrast Black, and High Contrast White — providing
+                  accessibility and stylistic flexibility.
+                </p>
+              </Result>
+              <Result name="150+">
+                <p>
+                  Design tokens implemented to ensure consistency in spacing,
+                  typography, colors, and theming — enabling flexible
+                  customization, faster updates, and developer-friendly handoff.
+                </p>
+              </Result>
+            </div>
+          </Sliding>
+
+          <img src={resultImg} alt="resultImg" />
+        </section>
+
+        <div className="alignment">
+          <hr className="separator" />
+        </div>
+
+        <section className="alignment column-flex g-60">
+          <Sliding name="Work Process">
+            <div className="column-flex g-20 text-box">
+              <h2>Structured Sprint Workflow</h2>
+              <p>
+                We organized the project into focused sprints, each covering
+                specific sets of components, patterns, or templates. Each
+                component was managed in its own Figma file for version control
+                and clarity. This structure helped us scale efficiently across a
+                multi-designer team and ensured smooth collaboration with
+                stakeholders.{" "}
+              </p>
+            </div>
+          </Sliding>
+
+          <img src={workProcess} alt="workProcess" className="multiply-img" />
+        </section>
+
+        <div className="alignment">
+          <hr className="separator" />
+        </div>
+
+        <section className="alignment column-flex g-60">
+          <Sliding name="components & Patterns">
+            <div className="column-flex g-20 text-box">
+              <h2>Design System</h2>
+              <p>
+                We started by building atomic components like buttons, inputs,
+                and checkboxes, then expanded into complex patterns such as
+                forms, onboarding flows, and notifications. This step-by-step
+                approach helped us ensure structural consistency before scaling
+                into full user flows.
+              </p>
+              <p>
+                All components were designed for flexibility — optional elements
+                like avatars or secondary buttons were built in, making it easy
+                to adapt without detaching or duplicating. This reduced design
+                debt and kept the system clean.
+              </p>
+              <p>
+                Responsiveness and RTL support were considered from the
+                beginning. Components adapted across breakpoints, and layouts
+                worked for both LTR and RTL languages, improving accessibility
+                and global readiness.
+              </p>
+              <p>
+                While maintaining consistency, we allowed thoughtful variation
+                where needed. Patterns could be adapted for specific product
+                needs without breaking the system, making adoption easier across
+                teams.
+              </p>
+              <p>
+                We continuously gathered feedback from other designers and
+                developers, evolving patterns to reflect real-world use cases
+                and improving system relevance over time.
+              </p>
+            </div>
+          </Sliding>
+
+          <div className="column-flex g-32">
+            <img src={componentsImg} alt="componentsImg" />
+            <img src={patternsImg} alt="patternsImg" />
+          </div>
+        </section>
+
+        <div className="alignment">
+          <hr className="separator" />
+        </div>
+
+        <section className="alignment column-flex g-60">
+          <Sliding name="Figma variables">
+            <div className="column-flex g-20 text-box">
+              <h2>Tokens as the Single Source of Truth</h2>
+              <p>
+                We defined tokens for color, typography, spacing, radii,
+                shadows, animations, and icon sizes — covering all key visual
+                properties in both design and code.
+              </p>
+              <p>
+                Tokens served as the central reference for visual decisions —
+                ensuring consistency, reducing ambiguity, and simplifying
+                design-to-code translation.
+              </p>
+
+              <ul className="list">
+                <p>Our system supported 4 visual themes via tokens:</p>
+                <li>Light</li>
+                <li>Dense</li>
+                <li>High Contrast Black</li>
+                <li>High Contrast White</li>
+                <p>
+                  This allowed us to meet both branding and accessibility needs
+                  with minimal effort.
+                </p>
+              </ul>
+            </div>
+          </Sliding>
+
+          <img src={figmaVariablesImg} alt="figmaVariablesImg" />
+        </section>
+
+        <div className="alignment">
+          <hr className="separator" />
+        </div>
+
+        <section className="alignment column-flex g-60">
+          <Sliding name="a11y standards">
+            <div className="column-flex g-20 text-box">
+              <h2>Implementation of Accessibility Standards</h2>
+              <span>
+                <p>
+                  Accessibility was a cornerstone in the creation of our new
+                  design system. To ensure our product is usable by the widest
+                  possible audience, including people with disabilities, we
+                  adhered to internationally recognized WCAG 2.2 AA standards.
+                  Throughout the development process, we employed a rigorous
+                  testing protocol.
+                </p>
+                <p>
+                  We utilized design plugins to verify compliance with AA
+                  contrast minimums during the design phase. Additionally,
+                  components underwent thorough testing in a test environment to
+                  ensure they met accessibility requirements before being
+                  released. This multi-layered approach ensured that
+                  accessibility considerations were integral to the design and
+                  development process, rather than an afterthought.
+                </p>
+              </span>
+            </div>
+          </Sliding>
+
+          <img src={standards} alt="standards" />
+        </section>
+
+        <div className="alignment">
+          <hr className="separator" />
+        </div>
+
+        <section className="alignment column-flex g-60">
+          <Sliding name="Documentation">
+            <div className="column-flex g-20 text-box">
+              <h2>Living Documentation</h2>
+              <span>
+                <p>
+                  In our pursuit of building a robust design system, we followed
+                  a core principle:"Documentation, documentation,
+                  documentation.” Our goal was to precisely capture the life
+                  cycle of every reusable element used across SAP websites,
+                  mobile screens, and large standalone displays.
+                </p>
+                <p>
+                  This included thorough documentation of all components and
+                  patterns — from breadcrumbs and headers to inputs, buttons,
+                  and layouts. Each item was accompanied by detailed
+                  specifications covering structure, states, behaviors,
+                  responsive behavior, and accessibility considerations.
+                </p>
+                <p>
+                  By committing to structured, clear documentation, we ensured
+                  smooth collaboration between designers and developers,
+                  minimized ambiguity, and created a reliable source of truth
+                  for implementation and maintenance across platforms.
+                </p>
+              </span>
+            </div>
+          </Sliding>
+
+          <img src={documentation} alt="Documentation" />
+        </section>
+
+        <div className="alignment">
+          <hr className="separator" />
+        </div>
+
+        <section className="alignment column-flex g-60">
+          <Sliding name="Design Review" isLight>
+            <div className="column-flex g-20 text-box">
+              <h2>Final Checks & QA Workflow</h2>
+              <p>
+                After development, I reviewed each component in Storybook to
+                check that it matched the designs from Figma — both in visuals
+                and behavior. If something didn’t work or look right, I logged
+                it in GitHub and worked with developers to fix it. I retested
+                each component after updates.
+              </p>
+              <p>
+                Once everything worked as expected, I approved the pull request
+                and marked the component as stable — ready for use in
+                production.
+              </p>
+            </div>
+          </Sliding>
+
+          <img src={designReview} alt="designReview" />
+        </section>
+
+        <div className="alignment">
+          <hr className="separator" />
+        </div>
+
+        <section className="alignment">
+          <Sliding name="Nowadays" isLight>
+            <div className="column-flex g-20 text-box">
+              <h2>Continuous Development and Iteration</h2>
+              <p>
+                The design system is not a static asset — it continues to evolve
+                and expand. Regular updates are released to address emerging
+                project needs and incorporate user feedback from designers
+                across multiple teams. <br />
+                A structured feedback loop has been established to gather
+                insights on component usability, identify gaps in patterns, and
+                refine interactions. This ongoing analysis enables the team to
+                prioritize necessary adjustments, implement enhancements, and
+                maintain alignment with evolving product requirements. <br />
+                By maintaining a continuous iteration cycle, the system remains
+                relevant, adaptive, and capable of scaling to meet the demands
+                of new projects and use cases.
+              </p>
+            </div>
+          </Sliding>
+        </section>
+      </div>
+    </>
+  );
 }

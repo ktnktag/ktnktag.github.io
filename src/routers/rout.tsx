@@ -1,4 +1,8 @@
-import { createHashRouter, createRoutesFromElements, Route } from "react-router-dom";
+import {
+  createHashRouter,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
 
 import App from "../App.tsx";
 
@@ -18,24 +22,38 @@ import Error404 from "../pages/Eror404/Error404.tsx";
 import { RequireAuth } from "./RequireAuth.tsx";
 
 const router = createHashRouter(
-    createRoutesFromElements(
-        <Route path='/' errorElement={<Error404 />}>
-            <Route path="/" element={<App />}>
-                <Route index={true} path="/" element={<Home />} />
-                <Route path="projects" element={<Projects />} />
-                <Route path="about" element={<About />} />
-                <Route path="resume" element={<Resume />} />
-                <Route path="side-activity" element={<SideActivity />} />
-                
-                <Route path="design-system" element={<RequireAuth><DesignSystem /></RequireAuth>} />
-                <Route path="rs-school" element={<RSSchool />} />
-                <Route path="adidas" element={<Adidas />} />
-                <Route path="hyperspace" element={ <RequireAuth><Hyperspace /></RequireAuth>} />
-            </Route>
+  createRoutesFromElements(
+    <Route path="/" errorElement={<Error404 />}>
+      <Route path="/" element={<App />}>
+        <Route index={true} path="/" element={<Home />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="about" element={<About />} />
+        <Route path="resume" element={<Resume />} />
+        <Route path="side-activity" element={<SideActivity />} />
 
-            <Route path="sign-in" element={<SignIn />}/>
-        </Route>
-    )
-)
+        <Route
+          path="design-system"
+          element={
+            <RequireAuth>
+              <DesignSystem />
+            </RequireAuth>
+          }
+        />
+        <Route path="rs-school" element={<RSSchool />} />
+        <Route path="adidas" element={<Adidas />} />
+        <Route
+          path="hyperspace"
+          element={
+            <RequireAuth>
+              <Hyperspace />
+            </RequireAuth>
+          }
+        />
+      </Route>
+
+      <Route path="sign-in" element={<SignIn />} />
+    </Route>,
+  ),
+);
 
 export default router;

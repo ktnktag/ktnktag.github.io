@@ -1,5 +1,5 @@
 body {
-  background-color: #F3F3F2;
+  background-color: #f3f3f2;
 }
 
 body,
@@ -18,23 +18,23 @@ html {
   flex-direction: column;
   justify-content: space-between;
 
-  --main-color-title: #2A2A28;
-  --main-color-text: #474A59;
+  --main-color-title: #2a2a28;
+  --main-color-text: #474a59;
 
-  --main-color-link: #687BE0;
-  --main-color-link-hover: #687BE07A;
-  --main-color-link-active: #17029C;
-  --main-color-link-visited: #9062EC;
+  --main-color-link: #687be0;
+  --main-color-link-hover: #687be07a;
+  --main-color-link-active: #17029c;
+  --main-color-link-visited: #9062ec;
 
-  --main-color-card-bg: #FFFFFF3D;
-  --main-color-border: #E5E5E5;
+  --main-color-card-bg: #ffffff3d;
+  --main-color-border: #e5e5e5;
 
-  --main-color-input-bg: #FFF;
-  --main-color-input-border: #CED0DB;
-  --main-color-input-placeholder: #ACAFBF;
+  --main-color-input-bg: #fff;
+  --main-color-input-border: #ced0db;
+  --main-color-input-placeholder: #acafbf;
 
-  --main-color-button: #22262F;
-  --main-color-error: #FF4242;
+  --main-color-button: #22262f;
+  --main-color-error: #ff4242;
 }
 
 main {
@@ -62,7 +62,7 @@ main {
 }
 
 .header-menu::before {
-  content: '';
+  content: "";
   width: 100%;
   height: 75px;
 
@@ -70,13 +70,12 @@ main {
   z-index: 2;
   top: 0;
 
-  background-color: #FFF;
+  background-color: #fff;
   opacity: 60%;
   backdrop-filter: blur(10px);
 }
 
 @media screen and (max-width: 900px) {
-
   .header-menu,
   .header-menu::before {
     opacity: 0;

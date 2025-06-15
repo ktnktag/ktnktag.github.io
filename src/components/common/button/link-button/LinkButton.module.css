@@ -1,0 +1,62 @@
+.bigButton {
+  padding: 16px 20px;
+  border-radius: 40px;
+  background-color: #ffffff80;
+  border: 1px solid var(--main-color-border);
+
+  font: 500 18px/160% "Manrope";
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+
+  color: #22262f;
+}
+
+.smallButton {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 26px;
+  background-color: #ffffff80;
+  border: 1px solid var(--main-color-border);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #22262f;
+}
+
+@media (hover: hover) {
+  .bigButton:hover,
+  .smallButton:hover {
+    color: #4454ae;
+    background-color: #687be00a;
+    border-color: #687be052;
+  }
+
+  .smallButton:hover svg path {
+    fill: #4454ae;
+    stroke: none;
+  }
+}
+
+.bigButton:active,
+.smallButton:active {
+  color: #4454ae;
+  background-color: #fff;
+  border-color: #4454ae80;
+}
+
+@media screen and (max-width: 1150px) {
+  .bigButton {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .bigButton {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+}
