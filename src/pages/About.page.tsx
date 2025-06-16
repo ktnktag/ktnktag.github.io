@@ -118,7 +118,7 @@ export default function AboutPage() {
           <Card
             image={img4}
             title="Revamping the First Impression: Art Exhibition Website Redesign"
-            path="/Selected_Works/Website_Redesign_Workshop"
+            path="/art"
             imgName="Workshop"
             company="Design spot, 2023"
           >
@@ -132,7 +132,7 @@ export default function AboutPage() {
           <Card
             image={img5}
             title="Simulating Real-world Design Process: Smart Home Mobile Application"
-            path="/Selected_Works/Workshop_for_Smart_Home"
+            path="/art"
             imgName="Workshop"
             company="Design spot, 2024"
           >

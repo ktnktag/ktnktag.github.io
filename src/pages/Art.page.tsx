@@ -1,5 +1,8 @@
 import headerImg from "../assets/webp/Art/Header.webp";
-import resultImg from "../assets/webp/Art/Header.webp";
+import resultImg from "../assets/webp/Art/Result.webp";
+import resultImg1 from "../assets/webp/Art/Result1.webp";
+import resultImg2 from "../assets/webp/Art/Result2.webp";
+import resultImg3 from "../assets/webp/Art/Result3.webp";
 
 import im1 from "../assets/webp/Projects/Projects-2.webp";
 import im2 from "../assets/webp/Projects/Projects-5.webp";
@@ -15,6 +18,7 @@ export default function ArtPage() {
       title="Collaborative Redesign Workshop: Art Exhibition Homepage"
       path="https://wearecommunity.io/redizain"
       img={headerImg}
+      imgStyle="event-img"
     >
       <Sliding name="About the project">
         <div className="column-flex g-40 text-box">
@@ -103,13 +107,13 @@ export default function ArtPage() {
           </div>
         </Sliding>
 
-        <div className="column-grid-mini g-32 text-box">
-          <img src={resultImg} className="img" alt="resultImg" />
+        <div className="column-grid-mini g-32">
+          <img src={resultImg} className="img column-large" alt="resultImg" />
 
-          <div>
-            <img src={resultImg} className="img" alt="resultImg" />
-            <img src={resultImg} className="img" alt="resultImg" />
-            <img src={resultImg} className="img" alt="resultImg" />
+          <div className="column-grid-3 column-large g-32">
+            <img src={resultImg1} className="img" alt="resultImg" />
+            <img src={resultImg2} className="img" alt="resultImg" />
+            <img src={resultImg3} className="img" alt="resultImg" />
           </div>
         </div>
       </section>
@@ -120,7 +124,7 @@ export default function ArtPage() {
         <Card
           image={im1}
           title="Video of the redesign process on YouTube"
-          path="/design-system"
+          path="https://www.youtube.com/watch?v=0hOSCefcnLI"
           imgName="Video"
           company="Youtube"
         >
@@ -131,7 +135,7 @@ export default function ArtPage() {
         <Card
           image={im2}
           title="Short article About Event on LinkedIn "
-          path="/rs-school"
+          path="https://www.linkedin.com/pulse/community-workshop-minsk-lets-see-how-designspot-community/?trackingId=HJIKDn8zQgO4qvMNm9GbCg%3D%3D"
           imgName="Article"
           company="LinkedIn"
         >

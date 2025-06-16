@@ -6,6 +6,7 @@ type Props = {
   children: React.ReactNode;
   path?: string;
   style?: string;
+  imgStyle?: string,
 };
 
 export default function ProjectContainer({
@@ -14,6 +15,7 @@ export default function ProjectContainer({
   children,
   path,
   style = "text-box-lx2",
+  imgStyle = "header-img",
 }: Props) {
   return (
     <>
@@ -22,7 +24,7 @@ export default function ProjectContainer({
           {path && <BrandedLink path={path} />}
           <h1 className={style}>{title}</h1>
         </div>
-        <img src={img} className="header-img" alt="header" />
+        <img src={img} className={imgStyle} alt="header" />
       </header>
 
       <div className="alignment wrapper">{children}</div>
