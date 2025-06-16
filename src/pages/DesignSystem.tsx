@@ -10,91 +10,84 @@ import designReview from "../assets/webp/DesignSystem/DesignReview.webp";
 
 import Sliding from "../components/common/text/sliding/Sliding";
 import Result from "../components/common/text/Result";
-import BrandedLink from "../components/common/button/BrandedLink";
+import ProjectHeader from "../components/UI/project-header/ProjectHeader";
 
 export default function DesignSystem() {
   return (
     <>
-      <header className="blog-header">
-        <div className="alignment text-center">
-          <BrandedLink path="https://www.sap.com/index.html" />
-          <h1 className="text-box">
-            Design System for the Leading Global Tech Company
-          </h1>
-        </div>
-        <img src={headerImg} className="header-img" alt="header" />
-      </header>
+      <ProjectHeader
+        title="Design System for the web resources of the leading global tech company"
+        path="https://www.sap.com/index.html"
+        style="text-box-large"
+        img={headerImg}
+      />
 
-      <div className="wrapper">
-        <section className="alignment column-flex g-40">
-          <Sliding name="About the project">
-            <div className="column-flex g-40 text-box">
-              <span className="column-flex g-20">
-                <h2>Overview</h2>
-                <p>
-                  The design system project was a strategic initiative aimed at
-                  unifying visual language and interaction patterns across
-                  multiple products while maintaining scalability and
-                  adaptability. With fragmented components and inconsistent user
-                  experiences impacting product cohesion, the objective was to
-                  establish a comprehensive design framework that served as a
-                  single source of truth for all design assets.
-                </p>
-              </span>
-
-              <span className="column-flex g-20">
-                <h2>Challenge</h2>
-                <p>
-                  Establish a scalable, consistent design system across multiple
-                  products and teams — in an environment with no centralized UI
-                  standards, minimal documentation, and growing complexity.
-                  Designers were working in silos, re-creating similar
-                  components with slight variations, which slowed down delivery
-                  and created a fragmented user experience. The challenge was to
-                  bring clarity and cohesion without disrupting ongoing product
-                  work or delaying feature releases.
-                </p>
-              </span>
-
-              <span className="column-flex g-20">
-                <h2>Approach</h2>
-                <ul className="list">
-                  <p>
-                    The primary challenge was to create a comprehensive
-                    component library that addressed the needs of multiple
-                    projects without fragmenting the design ecosystem. This
-                    required:
-                  </p>
-                  <li>
-                    Scalability Across Projects: New components had to be
-                    designed to accommodate all current and anticipated project
-                    requirements, eliminating the need for custom,
-                    project-specific components and ensuring consistency across
-                    products.
-                  </li>
-                  <li>
-                    Total Overhaul of Existing Components: The existing
-                    components were not only inconsistent but also incompatible
-                    with the new design system structure. This necessitated a
-                    complete redesign, integrating updated interaction patterns,
-                    accessibility considerations, and design tokens for theming
-                    and customization.
-                  </li>
-                  <li>
-                    Rapid Development and Iteration: With a core structure to be
-                    delivered in just 13 weeks, the project demanded an
-                    accelerated workflow. Daily stand-ups were essential to
-                    align on requirements, review progress, incorporate
-                    feedback, approvals and creation of specifications — all in
-                    real time.
-                  </li>
-                </ul>
-              </span>
+      <div className="alignment wrapper">
+        <Sliding name="About the project">
+          <div className="column-flex g-40 text-box">
+            <div className="column-flex g-20">
+              <h2>Overview</h2>
+              <p>
+                The design system project was a strategic initiative aimed at
+                unifying visual language and interaction patterns across
+                multiple products while maintaining scalability and
+                adaptability. With fragmented components and inconsistent user
+                experiences impacting product cohesion, the objective was to
+                establish a comprehensive design framework that served as a
+                single source of truth for all design assets.
+              </p>
             </div>
-          </Sliding>
-        </section>
 
-        <section className="alignment column-flex g-60">
+            <div className="column-flex g-20">
+              <h2>Challenge</h2>
+              <p>
+                Establish a scalable, consistent design system across multiple
+                products and teams — in an environment with no centralized UI
+                standards, minimal documentation, and growing complexity.
+                Designers were working in silos, re-creating similar components
+                with slight variations, which slowed down delivery and created a
+                fragmented user experience. The challenge was to bring clarity
+                and cohesion without disrupting ongoing product work or delaying
+                feature releases.
+              </p>
+            </div>
+
+            <div className="column-flex g-20">
+              <h2>Approach</h2>
+              <ul className="list">
+                <p>
+                  The primary challenge was to create a comprehensive component
+                  library that addressed the needs of multiple projects without
+                  fragmenting the design ecosystem. This required:
+                </p>
+                <li>
+                  Scalability Across Projects: New components had to be designed
+                  to accommodate all current and anticipated project
+                  requirements, eliminating the need for custom,
+                  project-specific components and ensuring consistency across
+                  products.
+                </li>
+                <li>
+                  Total Overhaul of Existing Components: The existing components
+                  were not only inconsistent but also incompatible with the new
+                  design system structure. This necessitated a complete
+                  redesign, integrating updated interaction patterns,
+                  accessibility considerations, and design tokens for theming
+                  and customization.
+                </li>
+                <li>
+                  Rapid Development and Iteration: With a core structure to be
+                  delivered in just 13 weeks, the project demanded an
+                  accelerated workflow. Daily stand-ups were essential to align
+                  on requirements, review progress, incorporate feedback,
+                  approvals and creation of specifications — all in real time.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </Sliding>
+
+        <section className="column-flex g-60">
           <Sliding name="Result">
             <div className="column-grid-mini g-32 text-box">
               <Result name="30+">
@@ -132,11 +125,9 @@ export default function DesignSystem() {
           <img src={resultImg} alt="resultImg" />
         </section>
 
-        <div className="alignment">
-          <hr className="separator" />
-        </div>
+        <hr className="separator" />
 
-        <section className="alignment column-flex g-60">
+        <section className="column-flex g-60">
           <Sliding name="Work Process">
             <div className="column-flex g-20 text-box">
               <h2>Structured Sprint Workflow</h2>
@@ -154,11 +145,9 @@ export default function DesignSystem() {
           <img src={workProcess} alt="workProcess" className="multiply-img" />
         </section>
 
-        <div className="alignment">
-          <hr className="separator" />
-        </div>
+        <hr className="separator" />
 
-        <section className="alignment column-flex g-60">
+        <section className="column-flex g-60">
           <Sliding name="components & Patterns">
             <div className="column-flex g-20 text-box">
               <h2>Design System</h2>
@@ -201,11 +190,9 @@ export default function DesignSystem() {
           </div>
         </section>
 
-        <div className="alignment">
-          <hr className="separator" />
-        </div>
+        <hr className="separator" />
 
-        <section className="alignment column-flex g-60">
+        <section className="column-flex g-60">
           <Sliding name="Figma variables">
             <div className="column-flex g-20 text-box">
               <h2>Tokens as the Single Source of Truth</h2>
@@ -237,48 +224,41 @@ export default function DesignSystem() {
           <img src={figmaVariablesImg} alt="figmaVariablesImg" />
         </section>
 
-        <div className="alignment">
-          <hr className="separator" />
-        </div>
+        <hr className="separator" />
 
-        <section className="alignment column-flex g-60">
+        <section className="column-flex g-60">
           <Sliding name="a11y standards">
             <div className="column-flex g-20 text-box">
               <h2>Implementation of Accessibility Standards</h2>
-              <span>
-                <p>
-                  Accessibility was a cornerstone in the creation of our new
-                  design system. To ensure our product is usable by the widest
-                  possible audience, including people with disabilities, we
-                  adhered to internationally recognized WCAG 2.2 AA standards.
-                  Throughout the development process, we employed a rigorous
-                  testing protocol.
-                </p>
-                <p>
-                  We utilized design plugins to verify compliance with AA
-                  contrast minimums during the design phase. Additionally,
-                  components underwent thorough testing in a test environment to
-                  ensure they met accessibility requirements before being
-                  released. This multi-layered approach ensured that
-                  accessibility considerations were integral to the design and
-                  development process, rather than an afterthought.
-                </p>
-              </span>
+              <p>
+                Accessibility was a cornerstone in the creation of our new
+                design system. To ensure our product is usable by the widest
+                possible audience, including people with disabilities, we
+                adhered to internationally recognized WCAG 2.2 AA standards.
+                Throughout the development process, we employed a rigorous
+                testing protocol.
+                <br />
+                We utilized design plugins to verify compliance with AA contrast
+                minimums during the design phase. Additionally, components
+                underwent thorough testing in a test environment to ensure they
+                met accessibility requirements before being released. This
+                multi-layered approach ensured that accessibility considerations
+                were integral to the design and development process, rather than
+                an afterthought.
+              </p>
             </div>
           </Sliding>
 
           <img src={standards} alt="standards" />
         </section>
 
-        <div className="alignment">
-          <hr className="separator" />
-        </div>
+        <hr className="separator" />
 
-        <section className="alignment column-flex g-60">
+        <section className="column-flex g-60">
           <Sliding name="Documentation">
             <div className="column-flex g-20 text-box">
               <h2>Living Documentation</h2>
-              <span>
+              <div>
                 <p>
                   In our pursuit of building a robust design system, we followed
                   a core principle:"Documentation, documentation,
@@ -299,18 +279,16 @@ export default function DesignSystem() {
                   minimized ambiguity, and created a reliable source of truth
                   for implementation and maintenance across platforms.
                 </p>
-              </span>
+              </div>
             </div>
           </Sliding>
 
           <img src={documentation} alt="Documentation" />
         </section>
 
-        <div className="alignment">
-          <hr className="separator" />
-        </div>
+        <hr className="separator" />
 
-        <section className="alignment column-flex g-60">
+        <section className="column-flex g-60">
           <Sliding name="Design Review" isLight>
             <div className="column-flex g-20 text-box">
               <h2>Final Checks & QA Workflow</h2>
@@ -332,31 +310,27 @@ export default function DesignSystem() {
           <img src={designReview} alt="designReview" />
         </section>
 
-        <div className="alignment">
-          <hr className="separator" />
-        </div>
+        <hr className="separator" />
 
-        <section className="alignment">
-          <Sliding name="Nowadays" isLight>
-            <div className="column-flex g-20 text-box">
-              <h2>Continuous Development and Iteration</h2>
-              <p>
-                The design system is not a static asset — it continues to evolve
-                and expand. Regular updates are released to address emerging
-                project needs and incorporate user feedback from designers
-                across multiple teams. <br />
-                A structured feedback loop has been established to gather
-                insights on component usability, identify gaps in patterns, and
-                refine interactions. This ongoing analysis enables the team to
-                prioritize necessary adjustments, implement enhancements, and
-                maintain alignment with evolving product requirements. <br />
-                By maintaining a continuous iteration cycle, the system remains
-                relevant, adaptive, and capable of scaling to meet the demands
-                of new projects and use cases.
-              </p>
-            </div>
-          </Sliding>
-        </section>
+        <Sliding name="Nowadays" isLight>
+          <div className="column-flex g-20 text-box">
+            <h2>Continuous Development and Iteration</h2>
+            <p>
+              The design system is not a static asset — it continues to evolve
+              and expand. Regular updates are released to address emerging
+              project needs and incorporate user feedback from designers across
+              multiple teams. <br />
+              A structured feedback loop has been established to gather insights
+              on component usability, identify gaps in patterns, and refine
+              interactions. This ongoing analysis enables the team to prioritize
+              necessary adjustments, implement enhancements, and maintain
+              alignment with evolving product requirements. <br />
+              By maintaining a continuous iteration cycle, the system remains
+              relevant, adaptive, and capable of scaling to meet the demands of
+              new projects and use cases.
+            </p>
+          </div>
+        </Sliding>
       </div>
     </>
   );

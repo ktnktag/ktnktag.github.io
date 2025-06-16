@@ -22,6 +22,10 @@ main header {
   gap: 100px;
 }
 
+.wrapper.alignment {
+  margin: 120px auto 100px;
+}
+
 .section {
   padding: 100px 0 50px;
 
