@@ -70,8 +70,7 @@ export default function SignIn() {
         <Submit />
       </form>
 
-      <p onClick={() => navigate(-3)} className="return">
-        {" "}
+      <p onClick={() => navigate("/projects")} className="return">
         <Return />
         Return to Projects
       </p>

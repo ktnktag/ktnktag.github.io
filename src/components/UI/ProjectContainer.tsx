@@ -6,7 +6,7 @@ type Props = {
   children: React.ReactNode;
   path?: string;
   style?: string;
-  imgStyle?: string,
+  imgStyle?: string;
 };
 
 export default function ProjectContainer({

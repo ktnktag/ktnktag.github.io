@@ -12,16 +12,15 @@ export default function Error404() {
     <>
       <Header />
       <main className={classes.container}>
-        <span>
+        <div>
           <h1 className={classes.title}>Oooops</h1>
-          <span className={classes.text}>
+          <div className={classes.text}>
             <p className="eyebrow">Something went wrong.</p>
             <p className="eyebrow">the page you requested could no be found</p>
             <p className="eyebrow">Please go back to the home page</p>
-          </span>
-        </span>
+          </div>
+        </div>
         <p onClick={() => navigate(-1)} className="return">
-          {" "}
           <Return />
           Return to Previous Page
         </p>

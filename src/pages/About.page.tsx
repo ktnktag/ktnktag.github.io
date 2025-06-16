@@ -132,7 +132,7 @@ export default function AboutPage() {
           <Card
             image={img5}
             title="Simulating Real-world Design Process: Smart Home Mobile Application"
-            path="/art"
+            path="/smart-home"
             imgName="Workshop"
             company="Design spot, 2024"
           >

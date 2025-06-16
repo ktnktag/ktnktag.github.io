@@ -236,7 +236,7 @@ main p {
   justify-content: space-between;
 }
 
-.list .head>p {
+.list .head > p {
   text-transform: uppercase;
   font: 500 13px/160% "Manrope";
 }
@@ -306,10 +306,9 @@ a .arrow path {
 }
 
 @media (hover: hover) {
-
   main a:hover,
-  main a:hover>h3,
-  main a:hover>h4,
+  main a:hover > h3,
+  main a:hover > h4,
   .return:hover {
     color: var(--main-color-link);
     border-bottom-color: currentColor;
@@ -324,20 +323,20 @@ a .arrow path {
     transform: rotate(90deg);
   }
 
-  main a:hover .arrow>path {
+  main a:hover .arrow > path {
     stroke: var(--main-color-link);
   }
 }
 
 main a:active,
-main a:active>h3,
-main a:active>h4,
+main a:active > h3,
+main a:active > h4,
 .return:active {
   color: var(--main-color-link-active);
   border-bottom-color: currentColor;
 }
 
-main a:active .arrow>path {
+main a:active .arrow > path {
   stroke: var(--main-color-link-active);
 }
 
@@ -448,9 +447,8 @@ main a:active .arrow>path {
   }
 
   .column-grid-3 {
-    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: 1fr;
   }
 
   .custom-img {

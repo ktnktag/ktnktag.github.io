@@ -12,6 +12,7 @@ import Home from "../pages/Home.page.tsx";
 import Resume from "../pages/Resume.page.tsx";
 import SideActivity from "../pages/SideActivity.page.tsx";
 import Art from "../pages/Art.page.tsx";
+import SmartHome from "../pages/SmartHome.page.tsx";
 
 import DesignSystem from "../pages/DesignSystem.page.tsx";
 import RSSchool from "../pages/RSSchool.page.tsx";
@@ -60,6 +61,7 @@ const router = createHashRouter(
           }
         />
         <Route path="art" element={<Art />} />
+        <Route path="smart-home" element={<SmartHome />} />
       </Route>
 
       <Route path="sign-in" element={<SignIn />} />
