@@ -148,6 +148,12 @@ main header {
   mix-blend-mode: multiply;
 }
 
+.header-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
 /* TEXT */
 
 h1 {
@@ -392,6 +398,7 @@ main a:active .arrow > path {
   }
 
   h1 {
+    max-width: 100%;
     font-size: 36px;
   }
 

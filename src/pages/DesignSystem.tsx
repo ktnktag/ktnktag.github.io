@@ -22,7 +22,7 @@ export default function DesignSystem() {
             Design System for the Leading Global Tech Company
           </h1>
         </div>
-        <img src={headerImg} alt="header" />
+        <img src={headerImg} className="header-img" alt="header" />
       </header>
 
       <div className="wrapper">
