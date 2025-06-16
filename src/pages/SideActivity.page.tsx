@@ -3,7 +3,7 @@ import cursor from "../assets/svg/logos/Cursor.svg";
 
 import Card from "../components/UI/card/Card";
 
-export default function SideActivity() {
+export default function SideActivityPage() {
   return (
     <>
       <header className="hat">

@@ -3,7 +3,7 @@ import cursor from "..//assets/svg/logos/Cursor.svg";
 import LinkButton from "../components/common/button/link-button/LinkButton";
 import List from "../components/common/text/List";
 
-export default function Resume() {
+export default function ResumePage() {
   return (
     <>
       <header className="hat">

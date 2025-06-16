@@ -53,7 +53,7 @@ const cards = [
   },
 ];
 
-export default function Projects() {
+export default function ProjectsPage() {
   return (
     <>
       <header className="hat">

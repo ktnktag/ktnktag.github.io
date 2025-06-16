@@ -10,7 +10,7 @@ import BlogPost from "../components/common/text/blogPost/BlogPost";
 import LinkButton from "../components/common/button/link-button/LinkButton";
 import Card from "../components/UI/card/Card";
 
-export default function About() {
+export default function AboutPage() {
   return (
     <>
       <header className="hat">

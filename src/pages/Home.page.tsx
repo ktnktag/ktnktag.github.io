@@ -16,7 +16,7 @@ import Card from "../components/UI/card/Card";
 import Testimonial from "../components/UI/testimonial/Testimonial";
 // import Banner from '../components/banner/Banner';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <header className="hat">
