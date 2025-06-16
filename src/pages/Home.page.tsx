@@ -150,6 +150,7 @@ export default function HomePage() {
               multiplier for any cross-functional team. I’d jump at the chance
               to work with her again and highly recommend her to any team.
             </Testimonial>
+            
             <Testimonial
               name="Herman Bykov"
               img="https://media.licdn.com/dms/image/v2/C5103AQHhTQLJz_YyaA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516714305988?e=1755734400&v=beta&t=9HfapILK_-dtNIDaBpkAPcIb7GpOVd3lKEfUfnzytY4"

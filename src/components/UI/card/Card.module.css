@@ -47,6 +47,7 @@
 .content {
   max-height: auto;
   padding-top: 20px;
+  padding-bottom: 32px;
 
   display: flex;
   flex-direction: column;

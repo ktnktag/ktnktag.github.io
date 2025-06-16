@@ -17,6 +17,16 @@
   margin-top: 2px;
   text-transform: uppercase;
   font: 500 13px/160% "Manrope";
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  display: -webkit-box;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
 }
 
 .text {

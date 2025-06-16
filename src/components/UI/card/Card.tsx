@@ -12,13 +12,8 @@ interface Props {
   company?: string;
 }
 
-const isExternalLink = (str: string): string => {
-  if (str.includes("http")) {
-    return "_blank";
-  }
-
-  return "";
-};
+const isExternalLink = (str: string): string =>
+  str.includes("http") ? "_blank" : "";
 
 export default function Card({
   children,
@@ -40,11 +35,8 @@ export default function Card({
         </div>
 
         <div className={classes.content}>
-          <div className="column-flex g-12">
-            <h3>{title}</h3>
-            <p>{children}</p>
-          </div>
-
+          <h3>{title}</h3>
+          <p>{children}</p>
           <p className={classes.link}>
             See the project <Arrow className={classes.moveRight} />
           </p>

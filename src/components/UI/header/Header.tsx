@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 
 import Logo from "../../../assets/svg/logos/Logo.svg";
 
-export default function Header() {
+export default function Header({show} : {show: boolean}) {
   return (
-    <header className="header-menu  header-fix">
+    <header className={`${classes.header} ${show ? classes.show : ""}`}>
       <nav className={`${classes.container} alignment`}>
         <div className={classes.logo}>
           <NavLink to="/">

@@ -1,3 +1,32 @@
+.header {
+  width: 100%;
+  height: 75px;
+
+  z-index: 4;
+  top: 0;
+
+  backdrop-filter: blur(4px);
+  position: absolute;
+}
+
+.header.show {
+  position: fixed;
+}
+
+.header::before {
+  content: "";
+  width: 100%;
+  height: 75px;
+
+  position: absolute;
+  z-index: 2;
+  top: 0;
+
+  background-color: #fff;
+  opacity: 60%;
+  backdrop-filter: blur(10px);
+}
+
 .container {
   height: 100%;
 
@@ -36,4 +65,13 @@
 .logo {
   width: 51px;
   height: 44px;
+}
+
+@media screen and (max-width: 900px) {
+
+  .header,
+  .header::before {
+    opacity: 0;
+    backdrop-filter: none;
+  }
 }

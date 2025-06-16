@@ -26,43 +26,41 @@ import { RequireAuth } from "./RequireAuth.tsx";
 
 const router = createHashRouter(
   createRoutesFromElements(
-    <Route path="/" errorElement={<Error404 />}>
-      <Route path="/" element={<App />}>
-        <Route index path="/" element={<Home />} />
-        <Route path="projects" element={<Projects />} />
-        <Route path="about" element={<About />} />
-        <Route path="resume" element={<Resume />} />
-        <Route path="side-activity" element={<SideActivity />} />
+    <Route path="/" element={<App />} errorElement={<Error404 />}>
+      <Route index element={<Home />} />
+      <Route path="projects" element={<Projects />} />
+      <Route path="about" element={<About />} />
+      <Route path="resume" element={<Resume />} />
+      <Route path="side-activity" element={<SideActivity />} />
 
-        <Route
-          path="design-system"
-          element={
-            <RequireAuth>
-              <DesignSystem />
-            </RequireAuth>
-          }
-        />
-        <Route path="rs-school" element={<RSSchool />} />
-        <Route path="adidas" element={<Adidas />} />
-        <Route
-          path="hyperspace"
-          element={
-            <RequireAuth>
-              <Hyperspace />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="turba"
-          element={
-            <RequireAuth>
-              <Turba />
-            </RequireAuth>
-          }
-        />
-        <Route path="art" element={<Art />} />
-        <Route path="smart-home" element={<SmartHome />} />
-      </Route>
+      <Route
+        path="design-system"
+        element={
+          <RequireAuth>
+            <DesignSystem />
+          </RequireAuth>
+        }
+      />
+      <Route path="rs-school" element={<RSSchool />} />
+      <Route path="adidas" element={<Adidas />} />
+      <Route
+        path="hyperspace"
+        element={
+          <RequireAuth>
+            <Hyperspace />
+          </RequireAuth>
+        }
+      />
+      <Route
+        path="turba"
+        element={
+          <RequireAuth>
+            <Turba />
+          </RequireAuth>
+        }
+      />
+      <Route path="art" element={<Art />} />
+      <Route path="smart-home" element={<SmartHome />} />
 
       <Route path="sign-in" element={<SignIn />} />
     </Route>,
