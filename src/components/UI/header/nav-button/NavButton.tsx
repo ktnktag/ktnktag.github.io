@@ -10,7 +10,7 @@ type Props = {
 }
 
 export function NavButton({ path, name, onClick }: Props) {
-    return <li className={classes.button}>
+    return <li className={`${ classes.button} ${name === "Home" ? classes.hidden : ""}`}>
         <NavLink
             to={path}
             className={({ isActive }) => (isActive ? classes.active : "")}

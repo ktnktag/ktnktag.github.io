@@ -26,6 +26,10 @@ export default function Header({ show }: { show: boolean }) {
 
   const links = [
     {
+      path: "/",
+      name: "Home",
+    },
+    {
       path: "/projects",
       name: "Projects",
     },
@@ -42,17 +46,16 @@ export default function Header({ show }: { show: boolean }) {
   return (
     <header className={`${classes.header} ${show ? classes.show : ""}`}>
       <nav className={`${classes.container} alignment`}>
-        <div className={classes.logo}>
-          <Link to="/" onClick={closeMenu}>
-            <img src={logo} alt="logo" />
-          </Link>
-        </div>
+        <Link to="/" onClick={closeMenu} className={classes.logo}>
+          <img src={logo} alt="logo" />
+        </Link>
 
         <ul className={`${classes.menu} ${isShowMenu ? classes.menuOpen : ""}`}>
-          {links.map((item) => <NavButton key={item.name} name={item.name} path={item.path} onClick={closeMenu}/>)}
+          {links.map((item) => <NavButton key={item.name} name={item.name} path={item.path} onClick={closeMenu} />)}
         </ul>
 
         <div className={classes.burger}>
+          <span className={classes.separator}></span>
           <img src={isShowMenu ? x : burger} alt="burger" onClick={toggleMenu} />
         </div>
       </nav>

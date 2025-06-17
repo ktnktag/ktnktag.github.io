@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 
 export function useScroll() {
-    const [position, setPosition] = useState(false);
+    const [position, setPosition] = useState(true);
     const lastScroll = useRef<number>(0);
     const threshold = 20;
     const activationOffset = 320;
