@@ -2,6 +2,10 @@ body {
   background-color: #f3f3f2;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 body,
 html {
   height: 100%;

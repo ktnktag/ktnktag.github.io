@@ -6,10 +6,10 @@ import Footer from "./components/UI/footer/Footer.tsx";
 
 import { Outlet, useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { useShow } from "./useShow.ts";
+import { useScroll } from "./useScroll.ts";
 
 export default function App() {
-  const { position } = useShow()
+  const { position } = useScroll()
   const { pathname } = useLocation();
 
   useEffect(() => {

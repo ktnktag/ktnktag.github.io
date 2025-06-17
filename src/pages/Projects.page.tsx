@@ -28,7 +28,7 @@ const cards = [
   },
   {
     image: img3,
-    imgName: "Product design",
+    imgName: "ux design",
     company: "SAP Company, 2024",
     title: "Expanding SAP's internal platform with user-centred feature design",
     path: "/hyperspace",
@@ -36,7 +36,7 @@ const cards = [
   },
   {
     image: img4,
-    imgName: "Product design",
+    imgName: "ux design",
     company: "adidas, 2023",
     title:
       "Seamless Migration from the Legacy Platform to SAP Fiori and Enhanced Features",

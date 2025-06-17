@@ -1,48 +1,60 @@
 import classes from "./Header.module.css";
 
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { NavButton } from "./nav-button/NavButton";
 
-import Logo from "../../../assets/svg/logos/Logo.svg";
+import logo from "../../../assets/svg/logos/Logo.svg";
+import burger from "../../../assets/svg/ui/Burger.svg"
+import x from "../../../assets/svg/ui/XBurger.svg"
 
-export default function Header({show} : {show: boolean}) {
+export default function Header({ show }: { show: boolean }) {
+  const [isShowMenu, setIsShowMenu] = useState(false)
+
+  const toggleMenu = () => setIsShowMenu(!isShowMenu);
+  const closeMenu = () => setIsShowMenu(false);
+
+  useEffect(() => {
+    isShowMenu
+      ? document.body.classList.add("lock")
+      : document.body.classList.remove("lock")
+
+    return () => {
+      document.body.classList.remove("lock");
+    };
+  }, [isShowMenu]);
+
+  const links = [
+    {
+      path: "/projects",
+      name: "Projects",
+    },
+    {
+      path: "/about",
+      name: "About",
+    },
+    {
+      path: "/resume",
+      name: "Resume",
+    }
+  ]
+
   return (
     <header className={`${classes.header} ${show ? classes.show : ""}`}>
       <nav className={`${classes.container} alignment`}>
         <div className={classes.logo}>
-          <NavLink to="/">
-            <img src={Logo} alt="Logo" />
-          </NavLink>
+          <Link to="/" onClick={closeMenu}>
+            <img src={logo} alt="logo" />
+          </Link>
         </div>
 
-        <ul className={classes.menu}>
-          <li>
-            <NavLink
-              to="/projects"
-              className={({ isActive }) => (isActive ? classes.active : "")}
-            >
-              Projects
-            </NavLink>
-          </li>
-          {/* <li><NavLink to='/side-activity' className={({ isActive }) => isActive ? classes.active : ""}>Side activity</NavLink></li> */}
-          <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) => (isActive ? classes.active : "")}
-            >
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/resume"
-              className={({ isActive }) => (isActive ? classes.active : "")}
-            >
-              Resume
-            </NavLink>
-          </li>
+        <ul className={`${classes.menu} ${isShowMenu ? classes.menuOpen : ""}`}>
+          {links.map((item) => <NavButton key={item.name} name={item.name} path={item.path} onClick={closeMenu}/>)}
         </ul>
 
-        <div className={classes.logo}></div>
+        <div className={classes.burger}>
+          <img src={isShowMenu ? x : burger} alt="burger" onClick={toggleMenu} />
+        </div>
       </nav>
     </header>
   );

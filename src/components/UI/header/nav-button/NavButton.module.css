@@ -1,0 +1,53 @@
+.button a {
+  height: 30px;
+  display: block;
+
+  font: 400 15px/160% "Manrope";
+  letter-spacing: 0%;
+  color: var(--main-color-text);
+}
+
+@media (hover: hover) {
+  .button a:hover {
+    color: var(--main-color-link);
+  }
+}
+
+.button a.active {
+  border-bottom: 2px solid var(--main-color-link);
+}
+
+.helpers,
+.current {
+  display: none;
+}
+
+.arrow {
+  vertical-align: middle;
+  transform: rotate(90deg);
+  color: var(--main-color-input-placeholder);
+}
+
+@media screen and (max-width: 900px) {
+  .button a {
+    width: 100%;
+    padding-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--main-color-input-placeholder);
+  }
+
+  .button a.active {
+    border-bottom: 1px solid var(--main-color-input-placeholder);
+  }
+
+  .helpers {
+    display: flex;
+    gap: 20px;
+  }
+
+  .button a.active .current {
+    display: flex;
+    color: var(--main-color-link);
+  }
+}
