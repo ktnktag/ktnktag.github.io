@@ -71,6 +71,7 @@
 }
 
 @media (hover: hover) {
+
   a:hover .link,
   a:hover path {
     color: var(--main-color-title);
@@ -93,6 +94,11 @@
 @media screen and (max-width: 1150px) {
   .cover {
     height: 302px;
+  }
+
+  .caption {
+    top: 27px;
+    left: 27px;
   }
 }
 

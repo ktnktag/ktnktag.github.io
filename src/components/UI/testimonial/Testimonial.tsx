@@ -14,7 +14,7 @@ export default function Testimonial({
   profession,
 }: Props) {
   return (
-    <article className="testimonial">
+    <article className="testimonial-person">
       <div className={classes.header}>
         <img src={img} alt={name} className={classes.img} />
         <span>
