@@ -8,7 +8,7 @@ import preparationImg1 from "../assets/webps/smart-home/Preparation1.webp";
 import preparationImg2 from "../assets/webps/smart-home/Preparation2.webp";
 import preparationImg3 from "../assets/webps/smart-home/Preparation3.webp";
 
-import Sliding from "../components/common/text/sliding/Sliding";
+import SectionLayout from "../components/common/text/section-layout/SectionLayout";
 import Result from "../components/common/text/Result";
 import ProjectContainer from "../components/UI/ProjectContainer";
 
@@ -20,9 +20,8 @@ export default function SmartHomePage() {
       img={headerImg}
       imgStyle="event-img"
     >
-      <Sliding name="About the project">
-        <div className="column-flex g-40 text-box">
-          <div className="column-flex g-20">
+      <SectionLayout name="About the project">
+          <div>
             <h2>Overview</h2>
             <p>
               This event was born from feedback gathered during previous
@@ -58,7 +57,7 @@ export default function SmartHomePage() {
             </p>
           </div>
 
-          <div className="column-flex g-20">
+          <div>
             <h2>Challenge</h2>
             <ul className="list">
               <p>
@@ -93,12 +92,11 @@ export default function SmartHomePage() {
               their own calls (and mistakes).
             </p>
           </div>
-        </div>
-      </Sliding>
+      </SectionLayout>
 
-      <section className="column-flex g-60">
-        <Sliding name="Result">
-          <div className="column-grid-mini g-32 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Result">
+          <div className="grid-cols">
             <Result name="5 distinct mobile app" isLarge>
               <p>
                 concepts delivered, each representing a unique vision and
@@ -112,13 +110,13 @@ export default function SmartHomePage() {
               </p>
             </Result>
           </div>
-        </Sliding>
+        </SectionLayout>
 
-        <div className="column-grid-mini g-32">
+        <div className="grid-cols">
           <img src={resultImg1} className="img" alt="resultImg" />
           <img src={resultImg2} className="img" alt="resultImg" />
 
-          <div className="column-grid-3 column-large g-32">
+          <div className="grid-cols cols-3 grid-col-span-2">
             <img src={resultImg3} className="img" alt="resultImg" />
             <img src={resultImg4} className="img" alt="resultImg" />
             <img src={resultImg5} className="img" alt="resultImg" />
@@ -128,9 +126,9 @@ export default function SmartHomePage() {
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Preparation">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Preparation">
+          <div>
             <h2>Framing the Challenge</h2>
             <p>
               To simulate a realistic client–design team interaction, I took on
@@ -162,23 +160,23 @@ export default function SmartHomePage() {
               real project.
             </p>
           </div>
-        </Sliding>
+        </SectionLayout>
 
-        <div className="column-grid-mini g-32">
+        <div className="grid-cols">
           <img
             src={preparationImg1}
-            className="img column-large"
-            alt="preparationImg1"
+            className="img grid-col-span-2"
+            alt="preparation Img1"
           />
-          <img src={preparationImg2} className="img" alt="preparationImg2" />
-          <img src={preparationImg3} className="img" alt="preparationImg3" />
+          <img src={preparationImg2} className="img" alt="preparation Img2" />
+          <img src={preparationImg3} className="img" alt="preparation Img3" />
         </div>
       </section>
 
       <hr />
 
-      <Sliding name="reflection">
-        <div className="column-flex g-20 text-box">
+      <SectionLayout name="reflection">
+        <div>
           <h2>Personal Insight & Takeaways</h2>
           <p>
             To simulate a realistic client–design team interaction, I took on
@@ -218,7 +216,7 @@ export default function SmartHomePage() {
             independence with productivity.
           </p>
         </div>
-      </Sliding>
+      </SectionLayout>
     </ProjectContainer>
   );
 }

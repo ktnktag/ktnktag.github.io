@@ -6,7 +6,7 @@ import phase3 from "../assets/webps/hyperspace/Phase3.webp";
 import phase5 from "../assets/webps/hyperspace/Phase5.webp";
 import sprint from "../assets/webps/hyperspace/Sprint.webp";
 
-import Sliding from "../components/common/text/sliding/Sliding";
+import SectionLayout from "../components/common/text/section-layout/SectionLayout";
 import Result from "../components/common/text/Result";
 import ProjectContainer from "../components/UI/ProjectContainer";
 
@@ -16,9 +16,8 @@ export default function HyperspacePage() {
       title="Expanding SAP's internal platform with user-centred feature design"
       img={headerImg}
     >
-      <Sliding name="About the project">
-        <div className="column-flex g-40 text-box">
-          <div className="column-flex g-20">
+      <SectionLayout name="About the project">
+          <div>
             <h2>Overview</h2>
             <p>
               As part of SAP's Developer Experience Solutions team, this project
@@ -37,7 +36,7 @@ export default function HyperspacePage() {
             </p>
           </div>
 
-          <div className="column-flex g-20">
+          <div>
             <h2>Challenge</h2>
             <p>
               The project focused on introducing new functional sections into
@@ -84,7 +83,7 @@ export default function HyperspacePage() {
             </p>
           </div>
 
-          <div className="column-flex g-20">
+          <div>
             <h2>Approach</h2>
             <ul className="list">
               <li>
@@ -114,12 +113,11 @@ export default function HyperspacePage() {
               technically viable, and user-friendly.
             </p>
           </div>
-        </div>
-      </Sliding>
+      </SectionLayout>
 
-      <section className="column-flex g-60">
-        <Sliding name="Result">
-          <div className="column-grid-mini g-32 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Result">
+          <div className="grid-cols">
             <Result name="100%" isLarge>
               <ul className="list">
                 <li>
@@ -152,16 +150,16 @@ export default function HyperspacePage() {
               </p>
             </Result>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={resultImg} className="img" alt="resultImg" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Phase 1 – Map">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Phase 1 – Map">
+          <div>
             <h2>Understanding the Problem and Setting Direction</h2>
             <p>
               We began by mapping out the challenge — identifying user needs,
@@ -170,16 +168,16 @@ export default function HyperspacePage() {
               objectives for the sprint.
             </p>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={phase1} className="img" alt="Phase1Img" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Phase 2 – Sketch">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Phase 2 – Sketch">
+          <div>
             <h2>Generating Ideas and Exploring Alternatives</h2>
             <p>
               This phase focused on generating and expanding possible directions
@@ -213,16 +211,16 @@ export default function HyperspacePage() {
               </i>
             </p>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={phase2} className="img" alt="Phase2Img" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Phase 3 – Decide">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Phase 3 – Decide">
+          <div>
             <h2>Aligning on the Most Promising Direction</h2>
             <p>
               The team reviewed the top-voted ideas and collaboratively decided
@@ -231,15 +229,15 @@ export default function HyperspacePage() {
               introduce minor customizations to meet user needs.
             </p>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={phase3} className="img" alt="Phase4Img" />
       </section>
 
       <hr />
 
-      <Sliding name="Phase 4 – Prototype">
-        <div className="column-flex g-20 text-box">
+      <SectionLayout name="Phase 4 – Prototype">
+        <div>
           <h2>Building a Realistic Interaction Model</h2>
           <p>
             I was responsible for building the prototype based on the team's
@@ -256,13 +254,13 @@ export default function HyperspacePage() {
             meaningful feedback during testing.
           </p>
         </div>
-      </Sliding>
+      </SectionLayout>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Phase 5 – Test">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Phase 5 – Test">
+          <div>
             <h2>Validating the Concept Through Real User Feedback</h2>
             <ul className="list">
               <p>
@@ -288,16 +286,16 @@ export default function HyperspacePage() {
               </p>
             </ul>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={phase5} className="img" alt="Phase5Img" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Post-Sprint Activities">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Post-Sprint Activities">
+          <div>
             <h2>Refining and Supporting Implementation</h2>
             <p>
               Once the design sprint was complete, we entered the refinement and
@@ -311,12 +309,12 @@ export default function HyperspacePage() {
               into the design file using contextual annotations.
             </p>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={sprint} className="img" alt="sprintImg" />
 
-        <Sliding>
-          <ul className="list text-box">
+        <SectionLayout>
+          <ul className="list">
             <p>
               Given the complexity of the new sections, development was split
               into multiple sprints. I supported the implementation by:
@@ -336,7 +334,7 @@ export default function HyperspacePage() {
               documentation layers.
             </p>
           </ul>
-        </Sliding>
+        </SectionLayout>
       </section>
     </ProjectContainer>
   );

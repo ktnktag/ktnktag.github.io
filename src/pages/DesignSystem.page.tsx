@@ -8,7 +8,7 @@ import standards from "../assets/webps/design-system/Standards.webp";
 import documentation from "../assets/webps/design-system/Documentation.webp";
 import designReview from "../assets/webps/design-system/DesignReview.webp";
 
-import Sliding from "../components/common/text/sliding/Sliding";
+import SectionLayout from "../components/common/text/section-layout/SectionLayout";
 import Result from "../components/common/text/Result";
 import ProjectContainer from "../components/UI/ProjectContainer";
 
@@ -20,9 +20,8 @@ export default function DesignSystemPage() {
       style="text-box-large"
       img={headerImg}
     >
-      <Sliding name="About the project">
-        <div className="column-flex g-40 text-box">
-          <div className="column-flex g-20">
+      <SectionLayout name="About the project">
+          <div>
             <h2>Overview</h2>
             <p>
               The design system project was a strategic initiative aimed at
@@ -35,7 +34,7 @@ export default function DesignSystemPage() {
             </p>
           </div>
 
-          <div className="column-flex g-20">
+          <div>
             <h2>Challenge</h2>
             <p>
               Establish a scalable, consistent design system across multiple
@@ -49,7 +48,7 @@ export default function DesignSystemPage() {
             </p>
           </div>
 
-          <div className="column-flex g-20">
+          <div>
             <h2>Approach</h2>
             <ul className="list">
               <p>
@@ -79,12 +78,11 @@ export default function DesignSystemPage() {
               </li>
             </ul>
           </div>
-        </div>
-      </Sliding>
+      </SectionLayout>
 
-      <section className="column-flex g-60">
-        <Sliding name="Result">
-          <div className="column-grid-mini g-32 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Result">
+          <div className="grid-cols">
             <Result name="30+">
               <p>
                 Reusable UI components created and documented — including
@@ -114,16 +112,16 @@ export default function DesignSystemPage() {
               </p>
             </Result>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={resultImg} alt="resultImg" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Work Process">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Work Process">
+          <div>
             <h2>Structured Sprint Workflow</h2>
             <p>
               We organized the project into focused sprints, each covering
@@ -134,16 +132,16 @@ export default function DesignSystemPage() {
               stakeholders.
             </p>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={workProcess} alt="workProcess" className="multiply-img" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="components & Patterns">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="components & Patterns">
+          <div>
             <h2>Design System</h2>
             <p>
               We started by building atomic components like buttons, inputs, and
@@ -175,19 +173,19 @@ export default function DesignSystemPage() {
               improving system relevance over time.
             </p>
           </div>
-        </Sliding>
+        </SectionLayout>
 
-        <div className="column-flex g-32">
-          <img src={componentsImg} alt="componentsImg" />
-          <img src={patternsImg} alt="patternsImg" />
+        <div className="flex-column gap-32">
+          <img src={componentsImg} alt="components Img" />
+          <img src={patternsImg} alt="patterns Img" />
         </div>
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Figma variables">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Figma variables">
+          <div>
             <h2>Tokens as the Single Source of Truth</h2>
             <p>
               We defined tokens for color, typography, spacing, radii, shadows,
@@ -212,16 +210,16 @@ export default function DesignSystemPage() {
               </p>
             </ul>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={figmaVariablesImg} alt="figmaVariablesImg" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="a11y standards">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="a11y standards">
+          <div>
             <h2>Implementation of Accessibility Standards</h2>
             <p>
               Accessibility was a cornerstone in the creation of our new design
@@ -239,16 +237,16 @@ export default function DesignSystemPage() {
               an afterthought.
             </p>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={standards} alt="standards" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Documentation">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Documentation">
+          <div>
             <h2>Living Documentation</h2>
             <div>
               <p>
@@ -273,16 +271,16 @@ export default function DesignSystemPage() {
               </p>
             </div>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={documentation} alt="Documentation" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Design Review" isLight>
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Design Review" isLight>
+          <div>
             <h2>Final Checks & QA Workflow</h2>
             <p>
               After development, I reviewed each component in Storybook to check
@@ -296,15 +294,15 @@ export default function DesignSystemPage() {
               and marked the component as stable — ready for use in production.
             </p>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={designReview} alt="designReview" />
       </section>
 
       <hr />
 
-      <Sliding name="Nowadays" isLight>
-        <div className="column-flex g-20 text-box">
+      <SectionLayout name="Nowadays" isLight>
+        <div>
           <h2>Continuous Development and Iteration</h2>
           <p>
             The design system is not a static asset — it continues to evolve and
@@ -321,7 +319,7 @@ export default function DesignSystemPage() {
             new projects and use cases.
           </p>
         </div>
-      </Sliding>
+      </SectionLayout>
     </ProjectContainer>
   );
 }

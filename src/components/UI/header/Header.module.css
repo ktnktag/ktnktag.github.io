@@ -59,7 +59,6 @@
 
   display: flex;
   align-items: center;
-  cursor: pointer;
 
   opacity: 0;
   z-index: 1;
@@ -67,6 +66,8 @@
 .burger img {
   width: 20px;
   height: 20px;
+
+  cursor: pointer;
 }
 
 .divider {

@@ -6,7 +6,7 @@ import designingImg from "../assets/webps/rsschool/Designing.webp";
 import testingImg from "../assets/webps/rsschool/Testing.webp";
 import handoffImg from "../assets/webps/rsschool/Handoff.webp";
 
-import Sliding from "../components/common/text/sliding/Sliding";
+import SectionLayout from "../components/common/text/section-layout/SectionLayout";
 import Result from "../components/common/text/Result";
 import ProjectContainer from "../components/UI/ProjectContainer";
 
@@ -18,9 +18,8 @@ export default function RSSchoolPage() {
       path="https://app.rs.school"
       img={headerImg}
     >
-      <Sliding name="About the project">
-        <div className="column-flex g-40 text-box">
-          <div className="column-flex g-20">
+      <SectionLayout name="About the project">
+          <div>
             <h2>Overview</h2>
             <p>
               The RS School platform is a free educational resource aimed at
@@ -32,7 +31,7 @@ export default function RSSchoolPage() {
             </p>
           </div>
 
-          <div className="column-flex g-20">
+          <div>
             <h2>Challenge</h2>
             <ul className="list">
               <li>
@@ -72,7 +71,7 @@ export default function RSSchoolPage() {
             </ul>
           </div>
 
-          <div className="column-flex g-20">
+          <div>
             <h2>Approach</h2>
             <ul className="list">
               <li>
@@ -116,12 +115,11 @@ export default function RSSchoolPage() {
               </li>
             </ul>
           </div>
-        </div>
-      </Sliding>
+      </SectionLayout>
 
-      <section className="column-flex g-60">
-        <Sliding name="Result">
-          <div className="column-grid-mini g-32 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Result">
+          <div className="grid-cols">
             <Result name="3 dashboards" isLarge>
               <ul className="list">
                 <p>
@@ -173,16 +171,16 @@ export default function RSSchoolPage() {
               </p>
             </Result>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={resultImg} className="img" alt="resultImg" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Research and Discovery">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Research and Discovery">
+          <div>
             <h2>Understanding User Needs</h2>
             <ul className="list">
               <p>
@@ -205,16 +203,16 @@ export default function RSSchoolPage() {
               </li>
             </ul>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={researchImg} alt="researchImg" className="multiply-img img" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Data Analysis and Problem Definition">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Data Analysis and Problem Definition">
+          <div>
             <h2>Mapping the Pain Points and Current Solutions</h2>
             <ul className="list">
               <p>
@@ -240,16 +238,16 @@ export default function RSSchoolPage() {
               </li>
             </ul>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={mappingImg} className="img" alt="mappingImg" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Experience Mapping and Ideation">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Experience Mapping and Ideation">
+          <div>
             <h2>Designing Solutions Through User Flows and CJMs</h2>
             <ul className="list">
               <p>
@@ -272,16 +270,16 @@ export default function RSSchoolPage() {
               </li>
             </ul>
           </div>
-        </Sliding>
+        </SectionLayout>
 
         <img src={designingImg} className="img" alt="designingImg" />
       </section>
 
       <hr />
 
-      <section className="column-flex g-60">
-        <Sliding name="Testing and Handoff">
-          <div className="column-flex g-20 text-box">
+      <section className="section-gap">
+        <SectionLayout name="Testing and Handoff">
+          <div>
             <h2>
               Validating Prototypes and Creating Development Tasks in GitHub
             </h2>
@@ -321,9 +319,9 @@ export default function RSSchoolPage() {
               </li>
             </ul>
           </div>
-        </Sliding>
+        </SectionLayout>
 
-        <div className="column-grid g-32">
+        <div className="grid-cols">
           <img src={testingImg} className="img" alt="testingImg" />
           <img src={handoffImg} className="img" alt="handoffImg" />
         </div>
