@@ -8,8 +8,6 @@
   backdrop-filter: blur(4px);
   position: fixed;
 
-  border: 1px solid var(--main-color-border);
-
   transition: top 0.8s ease-in-out;
 }
 
@@ -29,7 +27,6 @@
   background-color: #fff;
   opacity: 60%;
   backdrop-filter: blur(10px);
-  border: 1px solid var(--main-color-border);
 }
 
 .container {

@@ -1,25 +1,22 @@
-import img1 from "../assets/webp/SideActivity/SideImg1.webp";
-import cursor from "../assets/svg/logos/Cursor.svg";
+import img1 from "../assets/webps/side-activity/SideImg1.webp";
 
+import PageHeader from "../components/UI/PageHeader";
 import Card from "../components/UI/card/Card";
 
 export default function SideActivityPage() {
   return (
     <>
-      <header className="hat">
-        <div className="column-flex alignment g-32">
-          <h1>
-            Side activity <img src={cursor} alt="cursor" className="cursor" />
-          </h1>
-          <p className="text-box">
+      <PageHeader
+        title="Side activity"
+        desc={
+          <p className="text-container">
             See how turned ideas into reality. Dive into the stories of
             successful product designs that make a difference.
           </p>
-        </div>
-      </header>
+        } />
 
-      <section className="section alignment">
-        <div className="column-grid g-32">
+      <section className="section-layout container">
+        <div className="grid-cols">
           <Card
             image={img1}
             title="Daily UI challege"

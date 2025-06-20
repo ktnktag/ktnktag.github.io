@@ -16,6 +16,8 @@ export function useScroll() {
             if (currentScroll <= 0) {
                 lastScroll.current = 0;
             }
+
+            setPosition(true);
             return;
         }
 

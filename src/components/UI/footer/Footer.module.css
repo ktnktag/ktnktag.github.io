@@ -2,18 +2,16 @@
   height: max-content;
   padding: 40px 0;
   border-top: 1px solid var(--main-color-border);
-
-  display: flex;
-  justify-content: center;
 }
 .footer > div {
   gap: 24px;
 }
 
 .menu {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .page,
@@ -40,13 +38,6 @@
 .logo {
   width: 37px;
   height: 32px;
-}
-
-.messeger {
-  height: 42px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
 }
 
 .text {

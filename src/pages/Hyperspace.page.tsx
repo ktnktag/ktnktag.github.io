@@ -1,10 +1,10 @@
-import headerImg from "../assets/webp/Hyperspace/Header.webp";
-import resultImg from "../assets/webp/Hyperspace/Result.webp";
-import phase1 from "../assets/webp/Hyperspace/Phase1.webp";
-import phase2 from "../assets/webp/Hyperspace/Phase2.webp";
-import phase3 from "../assets/webp/Hyperspace/Phase3.webp";
-import phase5 from "../assets/webp/Hyperspace/Phase5.webp";
-import sprint from "../assets/webp/Hyperspace/Sprint.webp";
+import headerImg from "../assets/webps/hyperspace/Header.webp";
+import resultImg from "../assets/webps/hyperspace/Result.webp";
+import phase1 from "../assets/webps/hyperspace/Phase1.webp";
+import phase2 from "../assets/webps/hyperspace/Phase2.webp";
+import phase3 from "../assets/webps/hyperspace/Phase3.webp";
+import phase5 from "../assets/webps/hyperspace/Phase5.webp";
+import sprint from "../assets/webps/hyperspace/Sprint.webp";
 
 import Sliding from "../components/common/text/sliding/Sliding";
 import Result from "../components/common/text/Result";

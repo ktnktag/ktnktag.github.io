@@ -45,8 +45,8 @@ export default function SignIn() {
   };
 
   return (
-    <main className={classes.container}>
-      <div>
+    <main className="abs-center">
+      <div className="text-align-center">
         <h1>Private content</h1>
         <p className="eyebrow">
           Enter passcode to continue. <br /> Contact me if you need access to
@@ -70,7 +70,7 @@ export default function SignIn() {
         <Submit />
       </form>
 
-      <p onClick={() => navigate("/projects")} className="return">
+      <p onClick={() => navigate("/projects")} className="btn-back">
         <Return />
         Return to Projects
       </p>

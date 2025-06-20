@@ -1,11 +1,11 @@
-import headerImg from "../assets/webp/Art/Header.webp";
-import resultImg from "../assets/webp/Art/Result.webp";
-import resultImg1 from "../assets/webp/Art/Result1.webp";
-import resultImg2 from "../assets/webp/Art/Result2.webp";
-import resultImg3 from "../assets/webp/Art/Result3.webp";
+import headerImg from "../assets/webps/art/Header.webp";
+import resultImg from "../assets/webps/art/Result.webp";
+import resultImg1 from "../assets/webps/art/Result1.webp";
+import resultImg2 from "../assets/webps/art/Result2.webp";
+import resultImg3 from "../assets/webps/art/Result3.webp";
 
-import im1 from "../assets/webp/Projects/Projects-2.webp";
-import im2 from "../assets/webp/Projects/Projects-5.webp";
+import im1 from "../assets/webps/projects/Projects-2.webp";
+import im2 from "../assets/webps/projects/Projects-5.webp";
 
 import Sliding from "../components/common/text/sliding/Sliding";
 import Result from "../components/common/text/Result";

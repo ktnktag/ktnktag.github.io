@@ -1,77 +1,39 @@
-import { default as In } from "../assets/svg/socials/In.svg?react";
-import { default as Medium } from "../assets/svg/socials/Medium.svg?react";
-import { default as Vec } from "../assets/svg/socials/Vec.svg?react";
-import { default as Be } from "../assets/svg/socials/Be.svg?react";
-import { default as Figma } from "../assets/svg/socials/Figma.svg?react";
+import personalPhoto from "../assets/webps/home/PersonalPhoto.webp";
+import im1 from "../assets/webps/projects/Projects-2.webp";
+import im2 from "../assets/webps/projects/Projects-5.webp";
+// import bannerImg from '../assets/webp/home/BannerImg.webp';
 
-import personalPhoto from "../assets/webp/Home/PersonalPhoto.webp";
-import im1 from "../assets/webp/Projects/Projects-2.webp";
-import im2 from "../assets/webp/Projects/Projects-5.webp";
-// import bannerImg from '../assets/webp/Home/BannerImg.webp';
-
-import cursor from "../assets/svg/logos/Cursor.svg";
-
+import SocialLinks from "../components/UI/SocialLinks";
 import LinkButton from "../components/common/button/link-button/LinkButton";
 import Card from "../components/UI/card/Card";
 import Testimonial from "../components/UI/testimonial/Testimonial";
 // import Banner from '../components/banner/Banner';
+import PageHeader from "../components/UI/PageHeader";
 
 export default function HomePage() {
   return (
     <>
-      <header className="hat">
-        <div className="column-flex alignment g-32">
-          <img src={personalPhoto} alt="round-img" className="round-img" />
+      <PageHeader
+        img={<img src={personalPhoto} alt="personal photo round" className="img-round" />}
+        title="I'm Valeria, Experience Designer from Poland, working to create
+            exceptional user experiences."
+        desc={
+          <>
+            <p className="text-container-lg">
+              From freelance projects to B2C and B2B product design, I've found my
+              passion in user research, designing solutions, and testing them with
+              real users. Ensuring that my designs solve problems and enhance
+              lives is what truly drives me.
+            </p>
 
-          <h1>
-            I'm Valeria, Experience Designer from Poland, working to create
-            exceptional user experiences.{" "}
-            <img src={cursor} alt="cursor" className="cursor" />
-          </h1>
-          <p className="text-box-large">
-            From freelance projects to B2C and B2B product design, I've found my
-            passion in user research, designing solutions, and testing them with
-            real users. Ensuring that my designs solve problems and enhance
-            lives is what truly drives me.
-          </p>
+            <SocialLinks />
+          </>}
+      />
 
-          <ul className="row-flex g-16">
-            <li>
-              <LinkButton
-                small={true}
-                path="https://www.linkedin.com/in/kto-nekto/"
-              >
-                <In />
-              </LinkButton>
-            </li>
-            <li>
-              <LinkButton small={true} path="https://medium.com/@kto.nekto">
-                <Medium />
-              </LinkButton>
-            </li>
-            <li>
-              <LinkButton small={true} path="https://dribbble.com/kto_nekto">
-                <Vec />
-              </LinkButton>
-            </li>
-            <li>
-              <LinkButton small={true} path="https://www.behance.net/kto_nekto">
-                <Be />
-              </LinkButton>
-            </li>
-            <li>
-              <LinkButton small={true} path="https://www.figma.com/@kto_nekto">
-                <Figma />
-              </LinkButton>
-            </li>
-          </ul>
-        </div>
-      </header>
-
-      <div className="wrapper">
-        <section className="column-flex alignment g-40">
-          <div className="text-boxc column-flex g-20">
-            <h2 className="subtitle">Selected projects</h2>
+      <div className="page-section container">
+        <section className="flex-column gap-40">
+          <div className="text-container flex-column gap-20">
+            <h2>Selected projects</h2>
             <p>
               Selected works representing a range of projects I've contributed
               to across different contexts and teams. This selection reflects
@@ -80,7 +42,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="column-grid g-32">
+          <div className="grid-cols">
             <Card
               image={im1}
               title="Design System for the Leading Global Tech Company"
@@ -116,9 +78,9 @@ export default function HomePage() {
                 This hands-on workbook walks you through every stage of product creation — from shaping your first concept to launching a functional MVP. Rooted in real-world experience, it’s designed to help you build not just faster, but smarter.
             </Banner> */}
 
-        <section className="column-flex alignment g-40">
-          <div className="text-box column-flex g-20">
-            <h2 className="subtitle">Testimonials</h2>
+        <section className="flex-column gap-40">
+          <div className="text-container flex-column gap-20">
+            <h2>Testimonials</h2>
             <p>
               Discover what it's like to work together — through the eyes of
               designers, product managers, and engineers I’ve collaborated with.
@@ -127,7 +89,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="column-grid g-32">
+          <div className="grid-cols">
             <Testimonial
               name="Anna Malysheva"
               img="https://media.licdn.com/dms/image/v2/D4D03AQFLv2zmb-YTnw/profile-displayphoto-shrink_100_100/B4DZT2che9HYAU-/0/1739301460453?e=1755734400&v=beta&t=E-hZGHjMEdiARfpbsrqKMfleSkSCeNqPZffNHeZTmWY"
@@ -150,7 +112,7 @@ export default function HomePage() {
               multiplier for any cross-functional team. I’d jump at the chance
               to work with her again and highly recommend her to any team.
             </Testimonial>
-            
+
             <Testimonial
               name="Herman Bykov"
               img="https://media.licdn.com/dms/image/v2/C5103AQHhTQLJz_YyaA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1516714305988?e=1755734400&v=beta&t=9HfapILK_-dtNIDaBpkAPcIb7GpOVd3lKEfUfnzytY4"

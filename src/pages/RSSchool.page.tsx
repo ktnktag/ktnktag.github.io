@@ -1,10 +1,10 @@
-import headerImg from "../assets/webp/RSSchool/Header.webp";
-import resultImg from "../assets/webp/RSSchool/Result.webp";
-import researchImg from "../assets/webp/RSSchool/Research.webp";
-import mappingImg from "../assets/webp/RSSchool/Mapping.webp";
-import designingImg from "../assets/webp/RSSchool/Designing.webp";
-import testingImg from "../assets/webp/RSSchool/Testing.webp";
-import handoffImg from "../assets/webp/RSSchool/Handoff.webp";
+import headerImg from "../assets/webps/rsschool/Header.webp";
+import resultImg from "../assets/webps/rsschool/Result.webp";
+import researchImg from "../assets/webps/rsschool/Research.webp";
+import mappingImg from "../assets/webps/rsschool/Mapping.webp";
+import designingImg from "../assets/webps/rsschool/Designing.webp";
+import testingImg from "../assets/webps/rsschool/Testing.webp";
+import handoffImg from "../assets/webps/rsschool/Handoff.webp";
 
 import Sliding from "../components/common/text/sliding/Sliding";
 import Result from "../components/common/text/Result";

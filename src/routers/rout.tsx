@@ -20,8 +20,8 @@ import Adidas from "../pages/Adidas.page.tsx";
 import Hyperspace from "../pages/Hyperspace.page.tsx";
 import Turba from "../pages/Turba.page.tsx";
 
-import SignIn from "../pages/SignIn/SignIn.page.tsx";
-import Error404 from "../pages/Eror404/Error404.page.tsx";
+import SignIn from "../pages/sign-in/SignIn.page.tsx";
+import Error404 from "../pages/eror-404/Error404.page.tsx";
 import { RequireAuth } from "./RequireAuth.tsx";
 
 const router = createHashRouter(

@@ -1,10 +1,10 @@
-import headerImg from "../assets/webp/Adidas/Header.webp";
-import resultImg from "../assets/webp/Adidas/Result.webp";
-import reviewingImg from "../assets/webp/Adidas/Reviewing.webp";
-import mappingImg from "../assets/webp/Adidas/Mapping.webp";
-import visualisingImg from "../assets/webp/Adidas/Visualising.webp";
-import prototypingImg from "../assets/webp/Adidas/Prototyping.webp";
-import interactionsImg from "../assets/webp/Adidas/Interactions.webp";
+import headerImg from "../assets/webps/adidas/Header.webp";
+import resultImg from "../assets/webps/adidas/Result.webp";
+import reviewingImg from "../assets/webps/adidas/Reviewing.webp";
+import mappingImg from "../assets/webps/adidas/Mapping.webp";
+import visualisingImg from "../assets/webps/adidas/Visualising.webp";
+import prototypingImg from "../assets/webps/adidas/Prototyping.webp";
+import interactionsImg from "../assets/webps/adidas/Interactions.webp";
 
 import Sliding from "../components/common/text/sliding/Sliding";
 import Result from "../components/common/text/Result";

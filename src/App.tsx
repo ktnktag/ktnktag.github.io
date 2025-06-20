@@ -24,7 +24,7 @@ export default function App() {
 
       <main>
         <Outlet />
-        {isSignIn() && <ArrowUp />}
+        {/* {isSignIn() && <ArrowUp />} */}
       </main>
 
       {isSignIn() && <Footer />}

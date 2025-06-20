@@ -1,9 +1,11 @@
+@import "./text.css";
+@import "./layout.css";
+
 main header {
   width: 100%;
   height: auto;
 
   padding-top: 130px;
-
   background-color: #fff;
 }
 
@@ -170,174 +172,10 @@ main header {
   object-fit: cover;
 }
 
-/* TEXT */
-
-h1 {
-  width: max-content;
-  max-width: 1060px;
-  position: relative;
-
-  color: var(--main-color-title);
-  font: 500 48px/140% "Manrope";
-  letter-spacing: -0.5px;
-  vertical-align: middle;
-}
-
 .cursor {
   position: absolute;
   top: 22px;
   right: -60px;
-}
-
-h2 {
-  color: var(--main-color-title);
-  font: 500 40px/140% "Manrope";
-  letter-spacing: -0.5px;
-  vertical-align: middle;
-}
-
-h3 {
-  color: var(--main-color-title);
-  letter-spacing: 0%;
-  font: 500 26px/140% "Manrope";
-}
-
-h4 {
-  color: var(--main-color-title);
-  letter-spacing: 0%;
-  font: 500 20px/140% "Manrope";
-}
-
-li,
-main p {
-  color: var(--main-color-text);
-  font:
-    400 18px/160% "Manrope",
-    "rom-font";
-  vertical-align: middle;
-  letter-spacing: 0%;
-}
-
-.eyebrow {
-  text-transform: uppercase;
-
-  font: 500 13px/160% "Manrope";
-  color: var(--main-color-text);
-}
-
-/* LIST */
-
-.list .head {
-  height: max-content;
-  margin-bottom: 20px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.list .head > p {
-  text-transform: uppercase;
-  font: 500 13px/160% "Manrope";
-}
-
-.list li {
-  height: max-content;
-  margin-left: 30px;
-  position: relative;
-}
-
-.list li::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background-color: currentColor;
-
-  position: absolute;
-  top: 10px;
-  left: -20px;
-}
-
-/* --- LINK AND BUTTON --- */
-.return {
-  cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  border-bottom: 1px solid transparent;
-
-  font: 500 18px/150% "Manrope";
-  color: var(--main-color-button);
-  transition: color 0.2s ease-in-out;
-}
-
-a {
-  width: max-content;
-  border-bottom: 1px solid transparent;
-
-  display: flex;
-  font: 400 14px/16.8px "Manrope";
-
-  color: currentColor;
-  transition:
-    border 0.2s ease-in-out,
-    color 0.2s ease-in-out;
-}
-
-/* a:visited {
-    color: var(--main-color-link-visited);
-} */
-
-a .arrow {
-  width: 12px;
-  margin-left: 4px;
-
-  vertical-align: middle;
-  transform: rotate(45deg);
-  transition: transform 0.2s ease-in;
-}
-
-.return path,
-a .arrow path {
-  stroke: currentColor;
-}
-
-@media (hover: hover) {
-  main a:hover,
-  main a:hover > h3,
-  main a:hover > h4,
-  .return:hover {
-    color: var(--main-color-link);
-    border-bottom-color: currentColor;
-  }
-
-  a:hover svg path {
-    color: currentColor;
-    stroke: currentColor;
-  }
-
-  main a:hover .arrow {
-    transform: rotate(90deg);
-  }
-
-  main a:hover .arrow > path {
-    stroke: var(--main-color-link);
-  }
-}
-
-main a:active,
-main a:active > h3,
-main a:active > h4,
-.return:active {
-  color: var(--main-color-link-active);
-  border-bottom-color: currentColor;
-}
-
-main a:active .arrow > path {
-  stroke: var(--main-color-link-active);
 }
 
 @media screen and (max-width: 1150px) {
@@ -360,23 +198,6 @@ main a:active .arrow > path {
 
   .cursor {
     top: 18px;
-  }
-
-  h1 {
-    max-width: 875px;
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  h3 {
-    font-size: 24px;
-  }
-
-  h4 {
-    font-size: 18px;
   }
 
   .text-box,
@@ -405,26 +226,12 @@ main a:active .arrow > path {
   }
 
   .cursor {
-    top: 16px;
+    display: none;
   }
 
   .column-grid {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  h1 {
-    max-width: 100%;
-    font-size: 36px;
-  }
-
-  li,
-  main p {
-    font-size: 16px;
-  }
-
-  .cursor {
-    display: none;
   }
 }
 
@@ -454,30 +261,5 @@ main a:active .arrow > path {
   .custom-img {
     width: 108px;
     height: 129px;
-  }
-
-  .cursor {
-    top: 6px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  h4 {
-    font-size: 14px;
-  }
-
-  li,
-  main p {
-    font-size: 14px;
   }
 }

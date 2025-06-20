@@ -1,4 +1,4 @@
-import cursor from "..//assets/svg/logos/Cursor.svg";
+import PageHeader from "../components/UI/PageHeader";
 
 import LinkButton from "../components/common/button/link-button/LinkButton";
 import List from "../components/common/text/List";
@@ -6,37 +6,35 @@ import List from "../components/common/text/List";
 export default function ResumePage() {
   return (
     <>
-      <header className="hat">
-        <div className="column-flex alignment g-32">
-          <h1>
-            Resume <img src={cursor} alt="cursor" className="cursor" />
-          </h1>
-          <p className="text-box">
-            As a UX designer with over 4 years of experience, I specialize in
-            creating user-centered digital experiences that are grounded in
-            research and designed for impact. I’ve worked across
-            cross-functional teams to deliver intuitive interfaces, optimize
-            user journeys, and implement scalable design systems that support
-            long-term product growth.
-          </p>
-          <p className="text-box">
-            I focus on turning user insights into actionable design solutions
-            through UX research, usability testing, wireframing, and
-            prototyping. I’ve collaborated with developers, product managers,
-            and stakeholders to align business goals with user needs — from MVPs
-            to iterative improvements.
-          </p>
+      <PageHeader
+        title="Resume"
+        desc={<>
+            <p className="text-container">
+              As a UX designer with over 4 years of experience, I specialize in
+              creating user-centered digital experiences that are grounded in
+              research and designed for impact. I’ve worked across
+              cross-functional teams to deliver intuitive interfaces, optimize
+              user journeys, and implement scalable design systems that support
+              long-term product growth.
+              <br /><br />
+              I focus on turning user insights into actionable design solutions
+              through UX research, usability testing, wireframing, and
+              prototyping. I’ve collaborated with developers, product managers,
+              and stakeholders to align business goals with user needs — from MVPs
+              to iterative improvements.
+            </p>
 
-          <LinkButton
-            path="https://drive.google.com/file/d/194s2tAYmmk6hoMVCgfuB7O-hd6_za8fW/view"
-            download
-          >
-            Download Resume as PDF
-          </LinkButton>
-        </div>
-      </header>
+            <LinkButton
+              path="https://drive.google.com/file/d/194s2tAYmmk6hoMVCgfuB7O-hd6_za8fW/view"
+              download
+            >
+              Download Resume as PDF
+            </LinkButton>
+          </>
+        }
+      />
 
-      <section className="section alignment g-32">
+      <section className="section-layout container gap-32">
         <h2>Experience</h2>
 
         <List
@@ -187,7 +185,7 @@ export default function ResumePage() {
         </List>
       </section>
 
-      <section className="section alignment g-32">
+      <section className="section-layout container gap-32">
         <h2>Technical skills</h2>
         <ul className="list text-box-large">
           <li>
@@ -231,7 +229,7 @@ export default function ResumePage() {
         </ul>
       </section>
 
-      <section className="section alignment g-32">
+      <section className="section-layout container gap-32">
         <h2>Core competencies</h2>
         <p className="text-box-large">
           User-Centered Design | UX Strategy | Cross-Functional Collaboration |

@@ -6,7 +6,7 @@ type Props = {
 
 export default function Result({ name, children, isLarge = false }: Props) {
   return (
-    <div className={`testimonial ${isLarge ? "column-large" : ""}`}>
+    <div className={`testimonial ${isLarge ? "grid-col-span-2" : ""}`}>
       <h3>{name}</h3>
       {children}
     </div>

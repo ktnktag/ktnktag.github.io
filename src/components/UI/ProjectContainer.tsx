@@ -14,20 +14,20 @@ export default function ProjectContainer({
   img,
   children,
   path,
-  style = "text-box-lx2",
-  imgStyle = "header-img",
+  style = "text-container-xl",
+  imgStyle = "img-header",
 }: Props) {
   return (
     <>
-      <header className="blog-header">
-        <div className="alignment text-center">
+      <header className="header-page header-content-gap">
+        <div className="container text-align-center">
           {path && <BrandedLink path={path} />}
           <h1 className={style}>{title}</h1>
         </div>
-        <img src={img} className={imgStyle} alt="header" />
+        <img src={img} className={imgStyle} alt="header img" />
       </header>
 
-      <div className="alignment wrapper">{children}</div>
+      <div className="page-section container">{children}</div>
     </>
   );
 }

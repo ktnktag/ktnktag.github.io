@@ -1,11 +1,10 @@
-import img1 from "../assets/webp/About/Photo1.webp";
-import img2 from "../assets/webp/About/Photo2.webp";
-import img3 from "../assets/webp/About/Photo3.webp";
-import img4 from "../assets/webp/About/Photo4.webp";
-import img5 from "../assets/webp/About/Photo5.webp";
+import img1 from "../assets/webps/about/Photo1.webp";
+import img2 from "../assets/webps/about/Photo2.webp";
+import img3 from "../assets/webps/about/Photo3.webp";
+import img4 from "../assets/webps/about/Photo4.webp";
+import img5 from "../assets/webps/about/Photo5.webp";
 
-import cursor from "../assets/svg/logos/Cursor.svg";
-
+import PageHeader from "../components/UI/PageHeader";
 import BlogPost from "../components/common/text/blogPost/BlogPost";
 import LinkButton from "../components/common/button/link-button/LinkButton";
 import Card from "../components/UI/card/Card";
@@ -13,32 +12,29 @@ import Card from "../components/UI/card/Card";
 export default function AboutPage() {
   return (
     <>
-      <header className="hat">
-        <div className="column-flex alignment g-60">
-          <div className="text-box column-flex g-32">
-            <h1>
-              About me <img src={cursor} alt="cursor" className="cursor" />
-            </h1>
-            <p>
-              I'm a UX designer passionate about building thoughtful product
-              experiences — and equally passionate about sharing what I learn
-              along the way. I write articles, speak at design events, and
-              mentor growing designers. I believe that good design doesn't stop
-              at the screen — it also shapes teams, conversations, and
-              communities.
-            </p>
+      <PageHeader
+        title="About me"
+        desc={
+          <p className="text-container">
+            I'm a UX designer passionate about building thoughtful product
+            experiences — and equally passionate about sharing what I learn
+            along the way. I write articles, speak at design events, and
+            mentor growing designers. I believe that good design doesn't stop
+            at the screen — it also shapes teams, conversations, and
+            communities.
+          </p>
+        }
+        content={
+          <div className="img-container">
+            <img className="img" src={img1} alt="photo 1" />
+            <img className="img" src={img2} alt="photo 2" />
+            <img className="img" src={img3} alt="photo 3" />
           </div>
+        }
+      />
 
-          <div className="row-flex g-32">
-            <img className="custom-img" src={img1} alt="photo 1" />
-            <img className="custom-img" src={img2} alt="photo 2" />
-            <img className="custom-img" src={img3} alt="photo 3" />
-          </div>
-        </div>
-      </header>
-
-      <section className="section alignment g-40">
-        <div className="text-box column-flex g-20">
+      <section className="section-layout container gap-40">
+        <div className="text-container flex-column gap-20">
           <h2>Writing</h2>
           <p>
             Here I share lessons, thoughts, and observations from my personal
@@ -48,54 +44,50 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <ul className="column-flex g-32">
-          <li>
-            <BlogPost
-              title="I hate my portfolio"
-              path="https://medium.com/design-bootcamp/i-hate-my-portfolio-d9f6f1d18574"
-              date="Apr 23, 2025"
-            >
-              Today, I would like to talk about a common challenge that many
-              designers face — creating and updating design portfolio. Portfolio
-              is essential thing that presents your work to potential employers,
-              and also to demonstrate your design process and how you approach
-              different tasks. It is, in many ways, proof of your skills and
-              professional level. This is understandable, expected, and
-              absolutely fair.
-            </BlogPost>
-          </li>
-          <li>
-            <BlogPost
-              title="Survival guide for Junior UX designers"
-              path="https://medium.com/design-bootcamp/survival-guide-for-junior-ux-designers-9f8e5e8b670"
-              date="Apr 2, 2023"
-            >
-              Getting into the world of design — is exciting and sometimes
-              terrifide. And, of course, there are already a lot of articles on
-              the Internet which goal to help you on your journey as a
-              designers, but I writed another one.Not long ago, I was in your
-              shoes and these are things that I learned as a junior designer. I
-              hope it help newbies be prepared for a new environment, not lose
-              themselves and not burn out in the first months.
-            </BlogPost>
-          </li>
-          <li>
-            <BlogPost
-              title="6 lessons that I learned as a designer by UX-volunteering"
-              path="https://medium.com/design-bootcamp/survival-guide-for-junior-ux-designers-9f8e5e8b670"
-              date="Sep 6, 2022"
-            >
-              As a Junior UX designer, you may be wondering how you can get
-              “real experience”. Volunteering is a great way to practice your UX
-              skills, build your portfolio, and do something useful in the
-              process. Reflecting on my own journey, I found myself fortunate to
-              join a volunteer project within the realm of free open-source
-              initiatives at the outset of my career. Yet, the rewards of UX
-              volunteering extend far beyond padding one's resume. Through this
-              enriching experience, I've gleaned invaluable lessons that have
-              shaped my growth as a designer.
-            </BlogPost>
-          </li>
+        <ul className="flex-column gap-32">
+          <BlogPost
+            title="I hate my portfolio"
+            path="https://medium.com/design-bootcamp/i-hate-my-portfolio-d9f6f1d18574"
+            date="Apr 23, 2025"
+          >
+            Today, I would like to talk about a common challenge that many
+            designers face — creating and updating design portfolio. Portfolio
+            is essential thing that presents your work to potential employers,
+            and also to demonstrate your design process and how you approach
+            different tasks. It is, in many ways, proof of your skills and
+            professional level. This is understandable, expected, and
+            absolutely fair.
+          </BlogPost>
+
+          <BlogPost
+            title="Survival guide for Junior UX designers"
+            path="https://medium.com/design-bootcamp/survival-guide-for-junior-ux-designers-9f8e5e8b670"
+            date="Apr 2, 2023"
+          >
+            Getting into the world of design — is exciting and sometimes
+            terrifide. And, of course, there are already a lot of articles on
+            the Internet which goal to help you on your journey as a
+            designers, but I writed another one.Not long ago, I was in your
+            shoes and these are things that I learned as a junior designer. I
+            hope it help newbies be prepared for a new environment, not lose
+            themselves and not burn out in the first months.
+          </BlogPost>
+
+          <BlogPost
+            title="6 lessons that I learned as a designer by UX-volunteering"
+            path="https://medium.com/design-bootcamp/survival-guide-for-junior-ux-designers-9f8e5e8b670"
+            date="Sep 6, 2022"
+          >
+            As a Junior UX designer, you may be wondering how you can get
+            “real experience”. Volunteering is a great way to practice your UX
+            skills, build your portfolio, and do something useful in the
+            process. Reflecting on my own journey, I found myself fortunate to
+            join a volunteer project within the realm of free open-source
+            initiatives at the outset of my career. Yet, the rewards of UX
+            volunteering extend far beyond padding one's resume. Through this
+            enriching experience, I've gleaned invaluable lessons that have
+            shaped my growth as a designer.
+          </BlogPost>
         </ul>
 
         <LinkButton path="https://medium.com/@kto.nekto">
@@ -103,8 +95,8 @@ export default function AboutPage() {
         </LinkButton>
       </section>
 
-      <section className="section alignment g-40">
-        <div className="text-box column-flex g-20">
+      <section className="section-layout container gap-40">
+        <div className="text-container flex-column gap-20">
           <h2>Speaking</h2>
           <p>
             I run talks and workshops where I share practical insights from
@@ -114,7 +106,7 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="column-grid g-32">
+        <div className="grid-cols">
           <Card
             image={img4}
             title="Revamping the First Impression: Art Exhibition Website Redesign"

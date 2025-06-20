@@ -12,7 +12,7 @@ type Props = {
 export default function List({ name, path, date, desc, children }: Props) {
   return (
     <ul className="list text-box-large">
-      <div className="head">
+      <div className="list-title">
         <div>
           <Link to={path} target="_blank">
             <h4>{name}</h4>

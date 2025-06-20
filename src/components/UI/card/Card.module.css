@@ -71,6 +71,7 @@
 }
 
 @media (hover: hover) {
+
   a:hover .link,
   a:hover path {
     color: var(--main-color-title);
@@ -104,10 +105,25 @@
   .cover {
     height: 385px;
   }
+
+  .caption {
+    top: 20px;
+    left: 20px;
+  }
+
+  .moveRight {
+    transform: translate(8px, 0);
+    -webkit-transform: translate(8px, 0);
+  }
 }
 
 @media screen and (max-width: 650px) {
   .cover {
     height: 180px;
+  }
+
+  .caption {
+    top: 16px;
+    left: 16px;
   }
 }

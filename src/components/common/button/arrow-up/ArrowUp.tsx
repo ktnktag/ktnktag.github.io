@@ -1,16 +1,16 @@
-import "./ArrowUp.css";
+import classes from "./ArrowUp.module.css";
 import { default as Arrow } from "../../../../assets/svg/ui/Arrow.svg?react";
 
 export default function ArrowUp() {
   return (
-    <div className="arrow_box">
+    <div className={classes.container}>
       <a
-        className="arrow-up"
+        className={classes.arrow}
         onClick={() => {
           window.scrollTo(0, 0);
         }}
       >
-        <Arrow className="arrow_svg" />
+        <Arrow className={classes.icon} />
       </a>
     </div>
   );

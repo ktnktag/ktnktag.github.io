@@ -1,11 +1,11 @@
-import img1 from "../assets/webp/Projects/Projects-1.webp";
-import img2 from "../assets/webp/Projects/Projects-2.webp";
-import img3 from "../assets/webp/Projects/Projects-3.webp";
-import img4 from "../assets/webp/Projects/Projects-4.webp";
-import img5 from "../assets/webp/Projects/Projects-5.webp";
-import cursor from "../assets/svg/logos/Cursor.svg";
+import img1 from "../assets/webps/projects/Projects-1.webp";
+import img2 from "../assets/webps/projects/Projects-2.webp";
+import img3 from "../assets/webps/projects/Projects-3.webp";
+import img4 from "../assets/webps/projects/Projects-4.webp";
+import img5 from "../assets/webps/projects/Projects-5.webp";
 
 import Card from "../components/UI/card/Card";
+import PageHeader from "../components/UI/PageHeader";
 
 const cards = [
   {
@@ -56,20 +56,18 @@ const cards = [
 export default function ProjectsPage() {
   return (
     <>
-      <header className="hat">
-        <div className="column-flex alignment g-32">
-          <h1>
-            Past projects <img src={cursor} alt="cursor" className="cursor" />
-          </h1>
-          <p className="text-box">
+      <PageHeader
+        title="Past projects"
+        desc={
+          <p className="text-container">
             See how turned ideas into reality. Dive into the stories of
             successful product designs that make a difference.
           </p>
-        </div>
-      </header>
+        }
+      />
 
-      <section className="section alignment">
-        <div className="column-grid g-32">
+      <section className="section-layout container">
+        <div className="grid-cols">
           {cards.map((item) => (
             <Card
               path={item.path}

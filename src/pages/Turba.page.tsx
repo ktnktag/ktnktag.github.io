@@ -1,10 +1,10 @@
-import headerImg from "../assets/webp/Turba/Header.webp";
-import resultImg1 from "../assets/webp/Turba/Result1.webp";
-import resultImg2 from "../assets/webp/Turba/Result2.webp";
-import resultImg3 from "../assets/webp/Turba/Result3.webp";
-import visionImg from "../assets/webp/Turba/Vision.webp";
-import exploratoryImg from "../assets/webp/Turba/Exploratory.webp";
-import validationImg from "../assets/webp/Turba/Validation.webp";
+import headerImg from "../assets/webps/turba/Header.webp";
+import resultImg1 from "../assets/webps/turba/Result1.webp";
+import resultImg2 from "../assets/webps/turba/Result2.webp";
+import resultImg3 from "../assets/webps/turba/Result3.webp";
+import visionImg from "../assets/webps/turba/Vision.webp";
+import exploratoryImg from "../assets/webps/turba/Exploratory.webp";
+import validationImg from "../assets/webps/turba/Validation.webp";
 
 import Sliding from "../components/common/text/sliding/Sliding";
 import Result from "../components/common/text/Result";

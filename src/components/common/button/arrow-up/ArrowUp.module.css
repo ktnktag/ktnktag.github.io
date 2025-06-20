@@ -1,4 +1,4 @@
-.arrow_box {
+.container {
   height: 100%;
   width: 50%;
   padding: 24px 0;
@@ -12,7 +12,7 @@
   right: -300px;
 }
 
-.arrow-up {
+.arrow {
   width: 36px;
   height: 36px;
 
@@ -33,17 +33,17 @@
   transition: all 0.5s ease-in-out;
 }
 
-.arrow-up.show {
+.arrow.show {
   bottom: 32px;
 }
 
-.arrow_svg {
+.icon {
   width: 12px;
   color: #9b9b9b;
 }
 
 @media (hover: hover) {
-  .arrow-up:hover {
+  .arrow:hover {
     box-shadow: 0px 0px 24px 0px #f4f4f433;
     backdrop-filter: blur(20px);
 
@@ -51,56 +51,56 @@
     border-color: #687be0b2;
   }
 
-  .arrow-up:hover > .arrow_svg {
+  .arrow:hover > .icon {
     color: #687be0b2;
   }
 }
 
-.arrow-up:active {
+.arrow:active {
   background-color: #ffffff99;
   border-color: #17029c;
 }
 
-.arrow-up:active > .arrow_svg {
+.arrow:active > .icon {
   color: #17029c;
 }
 
 @media screen and (max-width: 1320px) {
-  .arrow-up {
+  .arrow {
     right: 84px;
   }
 }
 
 @media screen and (max-width: 1050px) {
-  .arrow-up {
+  .arrow {
     right: 16px;
   }
 }
 
 @media screen and (max-width: 920px) {
-  .arrow_box {
+  .container {
     right: -100px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .arrow-up {
+  .arrow {
     right: 8px;
   }
 
-  .arrow-up.show {
+  .arrow.show {
     bottom: 16px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .arrow_box {
+  .container {
     right: -75px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .arrow_box {
+  .container {
     right: 0;
   }
 }
