@@ -14,7 +14,9 @@ export default function BlogPost({ title, path, date, children }: Props) {
   return (
     <li className={classes.container}>
       <Link to={path} className={classes.wrap}>
-        <h3>{title} <Arrow className="arrow" /></h3> 
+        <h3>
+          {title} <Arrow className="arrow" />
+        </h3>
       </Link>
       <p className={classes.date}>{date}</p>
 

@@ -119,7 +119,7 @@ export default function DesignSystemPage() {
         <img src={resultImg} alt="resultImg" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Work Process">
@@ -139,7 +139,7 @@ export default function DesignSystemPage() {
         <img src={workProcess} alt="workProcess" className="multiply-img" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="components & Patterns">
@@ -183,7 +183,7 @@ export default function DesignSystemPage() {
         </div>
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Figma variables">
@@ -217,7 +217,7 @@ export default function DesignSystemPage() {
         <img src={figmaVariablesImg} alt="figmaVariablesImg" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="a11y standards">
@@ -244,7 +244,7 @@ export default function DesignSystemPage() {
         <img src={standards} alt="standards" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Documentation">
@@ -278,7 +278,7 @@ export default function DesignSystemPage() {
         <img src={documentation} alt="Documentation" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Design Review" isLight>
@@ -301,7 +301,7 @@ export default function DesignSystemPage() {
         <img src={designReview} alt="designReview" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <Sliding name="Nowadays" isLight>
         <div className="column-flex g-20 text-box">

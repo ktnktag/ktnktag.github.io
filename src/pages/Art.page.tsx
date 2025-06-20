@@ -118,7 +118,7 @@ export default function ArtPage() {
         </div>
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <div className="column-grid g-32">
         <Card

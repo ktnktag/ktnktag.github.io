@@ -7,36 +7,35 @@ import { default as Figma } from "../../assets/svg/socials/Figma.svg?react";
 import LinkButton from "../common/button/link-button/LinkButton";
 
 export default function SocialLinks() {
-    return <nav>
-        <ul className="flex-row gap-16">
-            <li>
-                <LinkButton
-                    small
-                    path="https://www.linkedin.com/in/kto-nekto/"
-                >
-                    <In />
-                </LinkButton>
-            </li>
-            <li>
-                <LinkButton small path="https://medium.com/@kto.nekto">
-                    <Medium />
-                </LinkButton>
-            </li>
-            <li>
-                <LinkButton small path="https://dribbble.com/kto_nekto">
-                    <Vec />
-                </LinkButton>
-            </li>
-            <li>
-                <LinkButton small path="https://www.behance.net/kto_nekto">
-                    <Be />
-                </LinkButton>
-            </li>
-            <li>
-                <LinkButton small path="https://www.figma.com/@kto_nekto">
-                    <Figma />
-                </LinkButton>
-            </li>
-        </ul>
+  return (
+    <nav>
+      <ul className="flex-row gap-16">
+        <li>
+          <LinkButton small path="https://www.linkedin.com/in/kto-nekto/">
+            <In />
+          </LinkButton>
+        </li>
+        <li>
+          <LinkButton small path="https://medium.com/@kto.nekto">
+            <Medium />
+          </LinkButton>
+        </li>
+        <li>
+          <LinkButton small path="https://dribbble.com/kto_nekto">
+            <Vec />
+          </LinkButton>
+        </li>
+        <li>
+          <LinkButton small path="https://www.behance.net/kto_nekto">
+            <Be />
+          </LinkButton>
+        </li>
+        <li>
+          <LinkButton small path="https://www.figma.com/@kto_nekto">
+            <Figma />
+          </LinkButton>
+        </li>
+      </ul>
     </nav>
+  );
 }

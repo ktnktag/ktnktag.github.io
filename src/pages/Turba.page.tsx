@@ -173,7 +173,7 @@ export default function TurbaPage() {
         </div>
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Vision & Scope Alignment">
@@ -209,7 +209,7 @@ export default function TurbaPage() {
         </Sliding>
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Exploratory Wireframing">
@@ -227,7 +227,7 @@ export default function TurbaPage() {
         <img src={exploratoryImg} className="img" alt="sprintImg" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <Sliding name="Design & Prototyping">
         <div className="column-flex g-20 text-box">
@@ -253,7 +253,7 @@ export default function TurbaPage() {
         </div>
       </Sliding>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Validation & Documentation">

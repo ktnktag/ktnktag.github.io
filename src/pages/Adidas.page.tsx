@@ -172,7 +172,7 @@ export default function AdidasPage() {
         <img src={resultImg} className="img" alt="resultImg" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Understanding Scope">
@@ -212,7 +212,7 @@ export default function AdidasPage() {
         </Sliding>
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Defining User Flows">
@@ -232,7 +232,7 @@ export default function AdidasPage() {
         <img src={mappingImg} className="img" alt="mappingImg" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Visualising layout">
@@ -252,7 +252,7 @@ export default function AdidasPage() {
         <img src={visualisingImg} className="img" alt="visualisingImg" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Prototyping Interactions">

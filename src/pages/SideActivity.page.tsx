@@ -13,7 +13,8 @@ export default function SideActivityPage() {
             See how turned ideas into reality. Dive into the stories of
             successful product designs that make a difference.
           </p>
-        } />
+        }
+      />
 
       <section className="section-layout container">
         <div className="grid-cols">

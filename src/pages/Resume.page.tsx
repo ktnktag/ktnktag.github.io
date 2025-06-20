@@ -8,7 +8,8 @@ export default function ResumePage() {
     <>
       <PageHeader
         title="Resume"
-        desc={<>
+        desc={
+          <>
             <p className="text-container">
               As a UX designer with over 4 years of experience, I specialize in
               creating user-centered digital experiences that are grounded in
@@ -16,12 +17,12 @@ export default function ResumePage() {
               cross-functional teams to deliver intuitive interfaces, optimize
               user journeys, and implement scalable design systems that support
               long-term product growth.
-              <br /><br />
-              I focus on turning user insights into actionable design solutions
-              through UX research, usability testing, wireframing, and
+              <br />
+              <br />I focus on turning user insights into actionable design
+              solutions through UX research, usability testing, wireframing, and
               prototyping. I’ve collaborated with developers, product managers,
-              and stakeholders to align business goals with user needs — from MVPs
-              to iterative improvements.
+              and stakeholders to align business goals with user needs — from
+              MVPs to iterative improvements.
             </p>
 
             <LinkButton

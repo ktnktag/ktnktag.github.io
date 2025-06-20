@@ -126,7 +126,7 @@ export default function SmartHomePage() {
         </div>
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Preparation">
@@ -175,7 +175,7 @@ export default function SmartHomePage() {
         </div>
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <Sliding name="reflection">
         <div className="column-flex g-20 text-box">

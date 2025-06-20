@@ -14,20 +14,27 @@ export default function HomePage() {
   return (
     <>
       <PageHeader
-        img={<img src={personalPhoto} alt="personal photo round" className="img-round" />}
+        img={
+          <img
+            src={personalPhoto}
+            alt="personal photo round"
+            className="img-round"
+          />
+        }
         title="I'm Valeria, Experience Designer from Poland, working to create
             exceptional user experiences."
         desc={
           <>
             <p className="text-container-lg">
-              From freelance projects to B2C and B2B product design, I've found my
-              passion in user research, designing solutions, and testing them with
-              real users. Ensuring that my designs solve problems and enhance
-              lives is what truly drives me.
+              From freelance projects to B2C and B2B product design, I've found
+              my passion in user research, designing solutions, and testing them
+              with real users. Ensuring that my designs solve problems and
+              enhance lives is what truly drives me.
             </p>
 
             <SocialLinks />
-          </>}
+          </>
+        }
       />
 
       <div className="page-section container">

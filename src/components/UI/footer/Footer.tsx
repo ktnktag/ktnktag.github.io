@@ -17,14 +17,18 @@ export default function Footer() {
             </Link>
 
             <ul className={classes.link}>
-              {FOOTER_LINKS.map((link) => <li key={link.name}><Link to={link.path}>{link.name}</Link></li>)}
+              {FOOTER_LINKS.map((link) => (
+                <li key={link.name}>
+                  <Link to={link.path}>{link.name}</Link>
+                </li>
+              ))}
             </ul>
           </nav>
 
-          <SocialLinks/>
+          <SocialLinks />
         </div>
 
-        <div className="divider" />
+        <hr />
 
         <p className={classes.text}>
           © 2025 Valeria Yakovchik. All right reserved.

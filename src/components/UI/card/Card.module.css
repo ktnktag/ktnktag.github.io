@@ -71,7 +71,6 @@
 }
 
 @media (hover: hover) {
-
   a:hover .link,
   a:hover path {
     color: var(--main-color-title);

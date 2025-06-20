@@ -157,7 +157,7 @@ export default function HyperspacePage() {
         <img src={resultImg} className="img" alt="resultImg" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Phase 1 – Map">
@@ -175,7 +175,7 @@ export default function HyperspacePage() {
         <img src={phase1} className="img" alt="Phase1Img" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Phase 2 – Sketch">
@@ -218,7 +218,7 @@ export default function HyperspacePage() {
         <img src={phase2} className="img" alt="Phase2Img" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Phase 3 – Decide">
@@ -236,7 +236,7 @@ export default function HyperspacePage() {
         <img src={phase3} className="img" alt="Phase4Img" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <Sliding name="Phase 4 – Prototype">
         <div className="column-flex g-20 text-box">
@@ -258,7 +258,7 @@ export default function HyperspacePage() {
         </div>
       </Sliding>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Phase 5 – Test">
@@ -293,7 +293,7 @@ export default function HyperspacePage() {
         <img src={phase5} className="img" alt="Phase5Img" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Post-Sprint Activities">

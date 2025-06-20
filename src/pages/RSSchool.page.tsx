@@ -178,7 +178,7 @@ export default function RSSchoolPage() {
         <img src={resultImg} className="img" alt="resultImg" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Research and Discovery">
@@ -210,7 +210,7 @@ export default function RSSchoolPage() {
         <img src={researchImg} alt="researchImg" className="multiply-img img" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Data Analysis and Problem Definition">
@@ -245,7 +245,7 @@ export default function RSSchoolPage() {
         <img src={mappingImg} className="img" alt="mappingImg" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Experience Mapping and Ideation">
@@ -277,7 +277,7 @@ export default function RSSchoolPage() {
         <img src={designingImg} className="img" alt="designingImg" />
       </section>
 
-      <hr className="separator" />
+      <hr />
 
       <section className="column-flex g-60">
         <Sliding name="Testing and Handoff">

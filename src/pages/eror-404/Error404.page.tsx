@@ -10,7 +10,7 @@ export default function Error404() {
   const navigate = useNavigate();
   return (
     <>
-      <Header show/>
+      <Header show />
       <main className="abs-center">
         <div>
           <h1 className={classes.title}>Oooops</h1>

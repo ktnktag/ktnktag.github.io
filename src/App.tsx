@@ -1,6 +1,6 @@
 import "./styles/App.css";
 
-import ArrowUp from "./components/common/button/arrow-up/ArrowUp.tsx";
+// import ArrowUp from "./components/common/button/arrow-up/ArrowUp.tsx";
 import Header from "./components/UI/header/Header.tsx";
 import Footer from "./components/UI/footer/Footer.tsx";
 
@@ -9,14 +9,14 @@ import { useEffect } from "react";
 import { useScroll } from "./useScroll.ts";
 
 export default function App() {
-  const { position } = useScroll()
+  const { position } = useScroll();
   const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  const isSignIn = () => pathname != "/sign-in"
+  const isSignIn = () => pathname != "/sign-in";
 
   return (
     <>
@@ -30,4 +30,4 @@ export default function App() {
       {isSignIn() && <Footer />}
     </>
   );
-  }
+}

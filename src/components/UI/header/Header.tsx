@@ -6,11 +6,11 @@ import { NavButton } from "./nav-button/NavButton";
 import { MENU_LINKS } from "../../../routers/routes";
 
 import logo from "../../../assets/svg/logos/Logo.svg";
-import burger from "../../../assets/svg/ui/Burger.svg"
-import x from "../../../assets/svg/ui/XBurger.svg"
+import burger from "../../../assets/svg/ui/Burger.svg";
+import x from "../../../assets/svg/ui/XBurger.svg";
 
 export default function Header({ show }: { show: boolean }) {
-  const [isShowMenu, setIsShowMenu] = useState(false)
+  const [isShowMenu, setIsShowMenu] = useState(false);
 
   const toggleMenu = () => setIsShowMenu(!isShowMenu);
   const closeMenu = () => setIsShowMenu(false);
@@ -18,7 +18,7 @@ export default function Header({ show }: { show: boolean }) {
   useEffect(() => {
     isShowMenu
       ? document.body.classList.add("lock")
-      : document.body.classList.remove("lock")
+      : document.body.classList.remove("lock");
 
     return () => {
       document.body.classList.remove("lock");
@@ -33,12 +33,23 @@ export default function Header({ show }: { show: boolean }) {
         </Link>
 
         <ul className={`${classes.menu} ${isShowMenu ? classes.menuOpen : ""}`}>
-          {MENU_LINKS.map((link) => <NavButton key={link.name} name={link.name} path={link.path} onClick={closeMenu} />)}
+          {MENU_LINKS.map((link) => (
+            <NavButton
+              key={link.name}
+              name={link.name}
+              path={link.path}
+              onClick={closeMenu}
+            />
+          ))}
         </ul>
 
         <div className={classes.burger}>
-          <span className={classes.separator}></span>
-          <img src={isShowMenu ? x : burger} alt="burger" onClick={toggleMenu} />
+          <div className={classes.divider} />
+          <img
+            src={isShowMenu ? x : burger}
+            alt="burger"
+            onClick={toggleMenu}
+          />
         </div>
       </nav>
     </header>
