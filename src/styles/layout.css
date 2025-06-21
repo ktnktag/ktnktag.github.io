@@ -8,16 +8,8 @@
 
 .header-rounded {
   padding-bottom: 120px;
-  border-bottom-left-radius: 60px;
-  border-bottom-right-radius: 60px;
-}
-
-.header-content-gap {
-  gap: 60px;
-}
-
-.header-title-gap {
-  gap: 32px;
+  border-bottom-left-radius: 6%;
+  border-bottom-right-radius: 6%;
 }
 
 .abs-center {
@@ -91,6 +83,7 @@
   gap: 12px;
 }
 
+.header-title-gap,
 .gap-32 {
   gap: 32px;
 }
@@ -107,6 +100,7 @@
   gap: 40px;
 }
 
+.header-content-gap,
 .section-gap,
 .gap-60 {
   gap: 60px;
@@ -321,6 +315,7 @@ hr {
 
   .grid-cols {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
 

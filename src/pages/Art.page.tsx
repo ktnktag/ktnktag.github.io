@@ -5,7 +5,7 @@ import resultImg2 from "../assets/webps/art/Result2.webp";
 import resultImg3 from "../assets/webps/art/Result3.webp";
 
 import im1 from "../assets/webps/projects/Projects-2.webp";
-import im2 from "../assets/webps/projects/Projects-5.webp";
+import im2 from "../assets/webps/art/Card.webp";
 
 import SectionLayout from "../components/common/text/section-layout/SectionLayout";
 import Result from "../components/common/text/Result";

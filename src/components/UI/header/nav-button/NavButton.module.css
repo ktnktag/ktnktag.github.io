@@ -13,14 +13,11 @@
   }
 }
 
-.hidden {
-  display: none;
-}
-
 .button a.active {
   border-bottom: 2px solid var(--main-color-link);
 }
 
+.hidden,
 .helpers,
 .current {
   display: none;
@@ -35,7 +32,6 @@
 @media screen and (max-width: 900px) {
   .button a {
     width: 100%;
-    min-width: 360px;
     padding-bottom: 8px;
     display: flex;
     justify-content: space-between;
