@@ -21,77 +21,75 @@ export default function SmartHomePage() {
       imgStyle="event-img"
     >
       <SectionLayout name="About the project">
-          <div>
-            <h2>Overview</h2>
-            <p>
-              This event was born from feedback gathered during previous
-              workshops:{" "}
-              <strong>
-                junior designers expressed a need for greater creative freedom
-              </strong>
-              , especially around deciding which design stages to follow and how
-              to structure their own process. They felt that strict, time-bound
-              formats often limited exploration and reduced space for authentic
-              decision-making.
-            </p>
-            <p>
-              To address this, we designed a more open-ended challenge that
-              simulated a real-world design engagement — one where designers had
-              autonomy, ownership, and the responsibility to drive the process
-              themselves.
-            </p>
-            <p>
-              A total of 15 designers were divided into 5 teams, each blending
-              junior, mid-level, and senior designers. Over the course of 3
-              hours, they worked in a shared Figma file to design several key
-              screens of a Smart Home mobile app for a fictional startup.
-            </p>
-            <p>
-              As the <strong>acting stakeholder</strong>, I provided the
-              essential project context — including a mood board, color palette,
-              type system, and competitor examples — but deliberately stepped
-              back from the design process. My only role was to respond to
-              stakeholder-style questions, simulating a startup founder who’s
-              available, but not actively involved in day-to-day
-              decision-making.
-            </p>
-          </div>
+        <div>
+          <h2>Overview</h2>
+          <p>
+            This event was born from feedback gathered during previous
+            workshops:{" "}
+            <strong>
+              junior designers expressed a need for greater creative freedom
+            </strong>
+            , especially around deciding which design stages to follow and how
+            to structure their own process. They felt that strict, time-bound
+            formats often limited exploration and reduced space for authentic
+            decision-making.
+          </p>
+          <p>
+            To address this, we designed a more open-ended challenge that
+            simulated a real-world design engagement — one where designers had
+            autonomy, ownership, and the responsibility to drive the process
+            themselves.
+          </p>
+          <p>
+            A total of 15 designers were divided into 5 teams, each blending
+            junior, mid-level, and senior designers. Over the course of 3 hours,
+            they worked in a shared Figma file to design several key screens of
+            a Smart Home mobile app for a fictional startup.
+          </p>
+          <p>
+            As the <strong>acting stakeholder</strong>, I provided the essential
+            project context — including a mood board, color palette, type
+            system, and competitor examples — but deliberately stepped back from
+            the design process. My only role was to respond to stakeholder-style
+            questions, simulating a startup founder who’s available, but not
+            actively involved in day-to-day decision-making.
+          </p>
+        </div>
 
-          <div>
-            <h2>Challenge</h2>
-            <ul className="list">
-              <p>
-                This event presented a very different kind of challenge for me:
-              </p>
-              <li>
-                Play the role of the client, not the facilitator — staying
-                focused on vision, not execution
-              </li>
-              <li>
-                nswer only when asked, encouraging teams to drive their own
-                process, interpret constraints, and think critically
-              </li>
-              <li>
-                Avoid influencing decisions, even when I noticed UX issues or
-                workflow inefficiencies
-              </li>
-              <li>
-                Let teams self-regulate time, helping them learn to prioritize,
-                scope, and negotiate internally
-              </li>
-              <li>
-                Support realism: not everything is clear in real projects —
-                teams had to manage ambiguity, incomplete input, and competing
-                ideas
-              </li>
-            </ul>
+        <div>
+          <h2>Challenge</h2>
+          <ul className="list">
             <p>
-              The challenge was to strike the right balance: present but not
-              prescriptive — ensuring the experience felt authentic and
-              educational, while allowing teams to explore, debate, and make
-              their own calls (and mistakes).
+              This event presented a very different kind of challenge for me:
             </p>
-          </div>
+            <li>
+              Play the role of the client, not the facilitator — staying focused
+              on vision, not execution
+            </li>
+            <li>
+              nswer only when asked, encouraging teams to drive their own
+              process, interpret constraints, and think critically
+            </li>
+            <li>
+              Avoid influencing decisions, even when I noticed UX issues or
+              workflow inefficiencies
+            </li>
+            <li>
+              Let teams self-regulate time, helping them learn to prioritize,
+              scope, and negotiate internally
+            </li>
+            <li>
+              Support realism: not everything is clear in real projects — teams
+              had to manage ambiguity, incomplete input, and competing ideas
+            </li>
+          </ul>
+          <p>
+            The challenge was to strike the right balance: present but not
+            prescriptive — ensuring the experience felt authentic and
+            educational, while allowing teams to explore, debate, and make their
+            own calls (and mistakes).
+          </p>
+        </div>
       </SectionLayout>
 
       <section className="section-gap">

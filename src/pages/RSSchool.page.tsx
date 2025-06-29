@@ -19,102 +19,102 @@ export default function RSSchoolPage() {
       img={headerImg}
     >
       <SectionLayout name="About the project">
-          <div>
-            <h2>Overview</h2>
-            <p>
-              The RS School platform is a free educational resource aimed at
-              providing coding and development courses to aspiring developers.
-              The project involved a complete UX redesign to improve usability
-              and accessibility without disrupting ongoing learning processes.
-              Given the platform’s open-source nature, the redesign had to
-              prioritize easy-to-develop and maintain solutions.
-            </p>
-          </div>
+        <div>
+          <h2>Overview</h2>
+          <p>
+            The RS School platform is a free educational resource aimed at
+            providing coding and development courses to aspiring developers. The
+            project involved a complete UX redesign to improve usability and
+            accessibility without disrupting ongoing learning processes. Given
+            the platform’s open-source nature, the redesign had to prioritize
+            easy-to-develop and maintain solutions.
+          </p>
+        </div>
 
-          <div>
-            <h2>Challenge</h2>
-            <ul className="list">
-              <li>
-                Enhancing Mentor-Student Transparency: The platform lacked
-                effective tools for mentor-student interaction. Introducing new
-                widgets and pages was essential to provide clear visibility into
-                progress and feedback, fostering a more transparent learning
-                environment
-              </li>
-              <li>
-                Iterative Redesign Without Disruption: Given the platform's
-                active use, implementing changes risked disrupting ongoing
-                educational processes. The redesign needed to be executed in
-                phases to ensure a seamless transition without hindering current
-                learning activities
-              </li>
-              <li>
-                Resource-Constrained Development: As an open-source project, RS
-                School operated with limited development resources. This
-                necessitated the creation of solutions that were straightforward
-                to implement and maintain, ensuring sustainability without
-                compromising user experience
-              </li>
-              <li>
-                Enhancing Educational Experience: Beyond addressing existing
-                issues, the goal was to strategically improve the overall
-                learning experience. This included simplifying navigation,
-                increasing content accessibility, and enhancing user interaction
-                with the platform
-              </li>
-              <li>
-                Stakeholder Alignment: The project required harmonizing the
-                interests of various stakeholders, including educators,
-                students, and developers, to ensure the platform met their
-                expectations and needs
-              </li>
-            </ul>
-          </div>
+        <div>
+          <h2>Challenge</h2>
+          <ul className="list">
+            <li>
+              Enhancing Mentor-Student Transparency: The platform lacked
+              effective tools for mentor-student interaction. Introducing new
+              widgets and pages was essential to provide clear visibility into
+              progress and feedback, fostering a more transparent learning
+              environment
+            </li>
+            <li>
+              Iterative Redesign Without Disruption: Given the platform's active
+              use, implementing changes risked disrupting ongoing educational
+              processes. The redesign needed to be executed in phases to ensure
+              a seamless transition without hindering current learning
+              activities
+            </li>
+            <li>
+              Resource-Constrained Development: As an open-source project, RS
+              School operated with limited development resources. This
+              necessitated the creation of solutions that were straightforward
+              to implement and maintain, ensuring sustainability without
+              compromising user experience
+            </li>
+            <li>
+              Enhancing Educational Experience: Beyond addressing existing
+              issues, the goal was to strategically improve the overall learning
+              experience. This included simplifying navigation, increasing
+              content accessibility, and enhancing user interaction with the
+              platform
+            </li>
+            <li>
+              Stakeholder Alignment: The project required harmonizing the
+              interests of various stakeholders, including educators, students,
+              and developers, to ensure the platform met their expectations and
+              needs
+            </li>
+          </ul>
+        </div>
 
-          <div>
-            <h2>Approach</h2>
-            <ul className="list">
-              <li>
-                Problem Identification: Analyzed the existing platform to
-                identify common user pain points and repetitive patterns that
-                hindered the learning experience.
-              </li>
-              <li>
-                Stakeholder Collaboration: Engaged with stakeholders during
-                requirements gathering to align on core objectives, ensuring
-                that the redesign addressed both business goals and user needs.
-              </li>
-              <li>
-                User Research: Conducted comprehensive research, including user
-                interviews, surveys, and field studies, to validate assumptions
-                and prioritize design features.
-              </li>
-              <li>
-                User Flows and CJM: Mapped customer journeys and user flows to
-                visualize key touchpoints and identify areas for improvement.
-              </li>
-              <li>
-                Wireframes and Prototypes: Developed wireframes and interactive
-                prototypes using the Ant-Design system to test design concepts
-                and iterate on feedback before development.
-              </li>
-              <li>
-                Stakeholder Validation: Presented design concepts to
-                stakeholders for feedback, refining the solutions to align with
-                both business and user expectations.
-              </li>
-              <li>
-                User Testing: Conducted usability testing with a sample group to
-                gather insights and fine-tune the design, ensuring alignment
-                with user needs.
-              </li>
-              <li>
-                Development Collaboration: Worked closely with developers,
-                providing detailed task statements and supporting documentation
-                to facilitate smooth implementation and reduce miscommunication.
-              </li>
-            </ul>
-          </div>
+        <div>
+          <h2>Approach</h2>
+          <ul className="list">
+            <li>
+              Problem Identification: Analyzed the existing platform to identify
+              common user pain points and repetitive patterns that hindered the
+              learning experience.
+            </li>
+            <li>
+              Stakeholder Collaboration: Engaged with stakeholders during
+              requirements gathering to align on core objectives, ensuring that
+              the redesign addressed both business goals and user needs.
+            </li>
+            <li>
+              User Research: Conducted comprehensive research, including user
+              interviews, surveys, and field studies, to validate assumptions
+              and prioritize design features.
+            </li>
+            <li>
+              User Flows and CJM: Mapped customer journeys and user flows to
+              visualize key touchpoints and identify areas for improvement.
+            </li>
+            <li>
+              Wireframes and Prototypes: Developed wireframes and interactive
+              prototypes using the Ant-Design system to test design concepts and
+              iterate on feedback before development.
+            </li>
+            <li>
+              Stakeholder Validation: Presented design concepts to stakeholders
+              for feedback, refining the solutions to align with both business
+              and user expectations.
+            </li>
+            <li>
+              User Testing: Conducted usability testing with a sample group to
+              gather insights and fine-tune the design, ensuring alignment with
+              user needs.
+            </li>
+            <li>
+              Development Collaboration: Worked closely with developers,
+              providing detailed task statements and supporting documentation to
+              facilitate smooth implementation and reduce miscommunication.
+            </li>
+          </ul>
+        </div>
       </SectionLayout>
 
       <section className="section-gap">

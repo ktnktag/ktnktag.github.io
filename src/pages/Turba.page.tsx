@@ -23,18 +23,18 @@ export default function TurbaPage() {
           <p>
             Turba is an emerging AI infrastructure company focused on
             accelerating and simplifying how organizations deploy and manage
-            machine learning workloads at scale. Their mission is to bridge
-            the gap between raw computational power and accessible tooling —
+            machine learning workloads at scale. Their mission is to bridge the
+            gap between raw computational power and accessible tooling —
             enabling data teams to work faster, smarter, and more efficiently.
           </p>
           <p>
             The project began as a high-impact initiative to create an
             interactive demo showcasing real-time AI workload deployment on
             GPU-powered infrastructure. Initially developed for stakeholder
-            presentations and internal storytelling, the solution evolved into
-            a robust product foundation designed to support large-scale model
-            orchestration, trace simulation, and performance benchmarking —
-            all within a dynamic, scalable environment.
+            presentations and internal storytelling, the solution evolved into a
+            robust product foundation designed to support large-scale model
+            orchestration, trace simulation, and performance benchmarking — all
+            within a dynamic, scalable environment.
           </p>
         </div>
 
@@ -45,21 +45,21 @@ export default function TurbaPage() {
             four weeks to deliver an interactive demo showcasing GPU-based AI
             workload orchestration. The initial version needed to simulate
             complex infrastructure behavior in real time while remaining
-            visually polished and presentation-ready — a rare blend of
-            technical depth and storytelling clarity.
+            visually polished and presentation-ready — a rare blend of technical
+            depth and storytelling clarity.
           </p>
 
           <ul className="list">
             <p>
               Once the demo was delivered, the focus shifted to developing the
-              first working iteration of a real product. This stage introduced
-              a new set of challenges:
+              first working iteration of a real product. This stage introduced a
+              new set of challenges:
             </p>
             <li>
               The platform domain — involving GPU clusters, job traces,
-              scheduling algorithms, and model inference pipelines — was
-              highly technical and unfamiliar, demanding rapid onboarding and
-              deep contextual understanding.
+              scheduling algorithms, and model inference pipelines — was highly
+              technical and unfamiliar, demanding rapid onboarding and deep
+              contextual understanding.
             </li>
             <li>
               The first product release operated under strict time and scope
@@ -67,8 +67,8 @@ export default function TurbaPage() {
               customization.
             </li>
             <li>
-              We leveraged an open-source design system (shadcn/ui) that,
-              while helpful for speed, lacked key components needed for
+              We leveraged an open-source design system (shadcn/ui) that, while
+              helpful for speed, lacked key components needed for
               enterprise-grade complexity, forcing us to creatively extend its
               patterns without overengineering.
             </li>
@@ -86,8 +86,8 @@ export default function TurbaPage() {
 
           <p>
             This combination of urgency, technical domain complexity, and
-            limited UI infrastructure shaped every design decision in the
-            early stages of the product's evolution.
+            limited UI infrastructure shaped every design decision in the early
+            stages of the product's evolution.
           </p>
         </div>
 
@@ -95,18 +95,17 @@ export default function TurbaPage() {
           <h2>Approach</h2>
           <ul className="list">
             <p>
-              Each application followed a modular, repeatable process
-              customized to the specific domain, but grounded in consistent
-              principles: stakeholder alignment, speed of delivery, and design
-              accuracy.
+              Each application followed a modular, repeatable process customized
+              to the specific domain, but grounded in consistent principles:
+              stakeholder alignment, speed of delivery, and design accuracy.
             </p>
             <li>
               Initial analysis of legacy systems or raw business requirements
               for each application to uncover gaps and opportunities
             </li>
             <li>
-              Daily focused sessions with stakeholders and the business
-              analyst to discuss one business process at a time
+              Daily focused sessions with stakeholders and the business analyst
+              to discuss one business process at a time
             </li>
             <li>
               Rapid wireframing immediately after each session, followed by
@@ -117,8 +116,8 @@ export default function TurbaPage() {
               and validate design directions early
             </li>
             <li>
-              Design validation loops involving stakeholders, BA, and
-              developers to ensure smooth handoff and mutual understanding
+              Design validation loops involving stakeholders, BA, and developers
+              to ensure smooth handoff and mutual understanding
             </li>
             <li>
               Documentation and specifications maintained in Figma and
@@ -165,7 +164,11 @@ export default function TurbaPage() {
         </SectionLayout>
 
         <div className="grid-cols">
-          <img src={resultImg1} className="img grid-col-span-2" alt="resultImg" />
+          <img
+            src={resultImg1}
+            className="img grid-col-span-2"
+            alt="resultImg"
+          />
           <img src={resultImg2} className="img" alt="resultImg2" />
           <img src={resultImg3} className="img" alt="resultImg3" />
         </div>

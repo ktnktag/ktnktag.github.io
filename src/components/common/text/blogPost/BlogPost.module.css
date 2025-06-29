@@ -31,7 +31,8 @@
   line-clamp: 2;
 }
 
-@media screen and (max-width: 1150px) {}
+@media screen and (max-width: 1150px) {
+}
 
 @media screen and (max-width: 900px) {
   .container {

@@ -21,63 +21,62 @@ export default function DesignSystemPage() {
       img={headerImg}
     >
       <SectionLayout name="About the project">
-          <div>
-            <h2>Overview</h2>
-            <p>
-              The design system project was a strategic initiative aimed at
-              unifying visual language and interaction patterns across multiple
-              products while maintaining scalability and adaptability. With
-              fragmented components and inconsistent user experiences impacting
-              product cohesion, the objective was to establish a comprehensive
-              design framework that served as a single source of truth for all
-              design assets.
-            </p>
-          </div>
+        <div>
+          <h2>Overview</h2>
+          <p>
+            The design system project was a strategic initiative aimed at
+            unifying visual language and interaction patterns across multiple
+            products while maintaining scalability and adaptability. With
+            fragmented components and inconsistent user experiences impacting
+            product cohesion, the objective was to establish a comprehensive
+            design framework that served as a single source of truth for all
+            design assets.
+          </p>
+        </div>
 
-          <div>
-            <h2>Challenge</h2>
-            <p>
-              Establish a scalable, consistent design system across multiple
-              products and teams — in an environment with no centralized UI
-              standards, minimal documentation, and growing complexity.
-              Designers were working in silos, re-creating similar components
-              with slight variations, which slowed down delivery and created a
-              fragmented user experience. The challenge was to bring clarity and
-              cohesion without disrupting ongoing product work or delaying
-              feature releases.
-            </p>
-          </div>
+        <div>
+          <h2>Challenge</h2>
+          <p>
+            Establish a scalable, consistent design system across multiple
+            products and teams — in an environment with no centralized UI
+            standards, minimal documentation, and growing complexity. Designers
+            were working in silos, re-creating similar components with slight
+            variations, which slowed down delivery and created a fragmented user
+            experience. The challenge was to bring clarity and cohesion without
+            disrupting ongoing product work or delaying feature releases.
+          </p>
+        </div>
 
-          <div>
-            <h2>Approach</h2>
-            <ul className="list">
-              <p>
-                The primary challenge was to create a comprehensive component
-                library that addressed the needs of multiple projects without
-                fragmenting the design ecosystem. This required:
-              </p>
-              <li>
-                Scalability Across Projects: New components had to be designed
-                to accommodate all current and anticipated project requirements,
-                eliminating the need for custom, project-specific components and
-                ensuring consistency across products.
-              </li>
-              <li>
-                Total Overhaul of Existing Components: The existing components
-                were not only inconsistent but also incompatible with the new
-                design system structure. This necessitated a complete redesign,
-                integrating updated interaction patterns, accessibility
-                considerations, and design tokens for theming and customization.
-              </li>
-              <li>
-                Rapid Development and Iteration: With a core structure to be
-                delivered in just 13 weeks, the project demanded an accelerated
-                workflow. Daily stand-ups were essential to align on
-                requirements, review progress, incorporate feedback, approvals
-                and creation of specifications — all in real time.
-              </li>
-            </ul>
-          </div>
+        <div>
+          <h2>Approach</h2>
+          <ul className="list">
+            <p>
+              The primary challenge was to create a comprehensive component
+              library that addressed the needs of multiple projects without
+              fragmenting the design ecosystem. This required:
+            </p>
+            <li>
+              Scalability Across Projects: New components had to be designed to
+              accommodate all current and anticipated project requirements,
+              eliminating the need for custom, project-specific components and
+              ensuring consistency across products.
+            </li>
+            <li>
+              Total Overhaul of Existing Components: The existing components
+              were not only inconsistent but also incompatible with the new
+              design system structure. This necessitated a complete redesign,
+              integrating updated interaction patterns, accessibility
+              considerations, and design tokens for theming and customization.
+            </li>
+            <li>
+              Rapid Development and Iteration: With a core structure to be
+              delivered in just 13 weeks, the project demanded an accelerated
+              workflow. Daily stand-ups were essential to align on requirements,
+              review progress, incorporate feedback, approvals and creation of
+              specifications — all in real time.
+            </li>
+          </ul>
+        </div>
       </SectionLayout>
 
       <section className="section-gap">

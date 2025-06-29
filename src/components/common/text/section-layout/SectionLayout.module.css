@@ -15,10 +15,10 @@
 }
 
 .content {
-  gap: 40px
+  gap: 40px;
 }
 
-.content>div:not(:global(.grid-cols)) {
+.content > div:not(:global(.grid-cols)) {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -36,7 +36,7 @@
     display: block;
   }
 
-  .content>div:not(:global(.grid-cols)) {
+  .content > div:not(:global(.grid-cols)) {
     gap: 16px;
   }
 }
@@ -46,7 +46,7 @@
     gap: 24px;
   }
 
-  .content>div:not(:global(.grid-cols)) {
+  .content > div:not(:global(.grid-cols)) {
     gap: 8px;
   }
 }

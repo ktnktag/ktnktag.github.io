@@ -22,16 +22,16 @@ export default function AdidasPage() {
         <div>
           <h2>Overview</h2>
           <p>
-            As part of adidas' large-scale TRANS4RM program, this project
-            aimed to migrate and redesign a group of legacy web applications
-            into the SAP Fiori framework. These apps were part of a broader
-            strategic transformation under the “Own the Game” initiative,
-            replacing outdated platforms like SAP GUI and Bizagi with unified,
-            modern, and mobile-adaptable interfaces. <br />
+            As part of adidas' large-scale TRANS4RM program, this project aimed
+            to migrate and redesign a group of legacy web applications into the
+            SAP Fiori framework. These apps were part of a broader strategic
+            transformation under the “Own the Game” initiative, replacing
+            outdated platforms like SAP GUI and Bizagi with unified, modern, and
+            mobile-adaptable interfaces. <br />
             The primary focus was on improving usability, aligning with Fiori
-            standards, and supporting business needs across global markets —
-            all within tight time constraints and in close collaboration with
-            a cross-functional team.
+            standards, and supporting business needs across global markets — all
+            within tight time constraints and in close collaboration with a
+            cross-functional team.
           </p>
         </div>
 
@@ -49,10 +49,10 @@ export default function AdidasPage() {
           <ul className="list">
             <p>Key challenges included:</p>
             <li>
-              Navigating multiple legacy systems, each with unique
-              constraints, while migrating them to a unified SAP Fiori
-              framework — without over-customization and while preserving or
-              enhancing existing functionality.
+              Navigating multiple legacy systems, each with unique constraints,
+              while migrating them to a unified SAP Fiori framework — without
+              over-customization and while preserving or enhancing existing
+              functionality.
             </li>
             <li>
               Ensuring full alignment with the SAP Fiori design system and UX
@@ -66,8 +66,8 @@ export default function AdidasPage() {
             </li>
             <li>
               Maintaining clear, ongoing collaboration with a cross-functional
-              team of business analysts, software architects, developers, and
-              QA specialists through daily syncs and iterative feedback loops.
+              team of business analysts, software architects, developers, and QA
+              specialists through daily syncs and iterative feedback loops.
             </li>
             <li>
               Executing a sequential rollout, with limited timeframes for each
@@ -85,18 +85,17 @@ export default function AdidasPage() {
           <h2>Approach</h2>
           <ul className="list">
             <p>
-              Each application followed a modular, repeatable process
-              customized to the specific domain, but grounded in consistent
-              principles: stakeholder alignment, speed of delivery, and design
-              accuracy.
+              Each application followed a modular, repeatable process customized
+              to the specific domain, but grounded in consistent principles:
+              stakeholder alignment, speed of delivery, and design accuracy.
             </p>
             <li>
               Initial analysis of legacy systems or raw business requirements
               for each application to uncover gaps and opportunities
             </li>
             <li>
-              Daily focused sessions with stakeholders and the business
-              analyst to discuss one business process at a time
+              Daily focused sessions with stakeholders and the business analyst
+              to discuss one business process at a time
             </li>
             <li>
               Rapid wireframing immediately after each session, followed by
@@ -107,8 +106,8 @@ export default function AdidasPage() {
               and validate design directions early
             </li>
             <li>
-              Design validation loops involving stakeholders, BA, and
-              developers to ensure smooth handoff and mutual understanding
+              Design validation loops involving stakeholders, BA, and developers
+              to ensure smooth handoff and mutual understanding
             </li>
             <li>
               Documentation and specifications maintained in Figma and

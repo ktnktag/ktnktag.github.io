@@ -27,14 +27,14 @@ export default function ArtPage() {
             As part of the <strong>Design Spot community</strong> initiative,
             this hands-on workshop brought together 13 designers of varying
             seniority to collaboratively redesign the homepage of an art
-            exhibition website. The session promoted knowledge sharing,
-            creative teamwork, and real-time problem solving.
+            exhibition website. The session promoted knowledge sharing, creative
+            teamwork, and real-time problem solving.
           </p>
           <p>
-            Participants were grouped into 4 teams, combining junior,
-            mid-level, and senior designers. Over a two-hour design sprint in
-            Figma, each team analyzed the existing website and proposed a
-            redesign based on UX principles and visual storytelling.
+            Participants were grouped into 4 teams, combining junior, mid-level,
+            and senior designers. Over a two-hour design sprint in Figma, each
+            team analyzed the existing website and proposed a redesign based on
+            UX principles and visual storytelling.
           </p>
           <p>
             As a <strong>speaker and facilitator</strong>, I guided teams
@@ -47,11 +47,10 @@ export default function ArtPage() {
         <div>
           <h2>Challenge</h2>
           <p>
-            Facilitating this fast-paced design workshop presented a unique
-            set of challenges for me as a speaker. My role was to guide
-            without leading — offering structure, UX insight, and design
-            support, while allowing each team to define and defend their own
-            creative vision.
+            Facilitating this fast-paced design workshop presented a unique set
+            of challenges for me as a speaker. My role was to guide without
+            leading — offering structure, UX insight, and design support, while
+            allowing each team to define and defend their own creative vision.
           </p>
           <ul className="list">
             <p>I had to:</p>
@@ -106,7 +105,11 @@ export default function ArtPage() {
         </SectionLayout>
 
         <div className="grid-cols">
-          <img src={resultImg} className="img grid-col-span-2" alt="result img" />
+          <img
+            src={resultImg}
+            className="img grid-col-span-2"
+            alt="result img"
+          />
 
           <div className="grid-cols cols-3 grid-col-span-2">
             <img src={resultImg1} className="img" alt="result img 2" />

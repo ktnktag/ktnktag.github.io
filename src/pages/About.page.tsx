@@ -8,6 +8,7 @@ import PageHeader from "../components/UI/PageHeader";
 import BlogPost from "../components/common/text/blogPost/BlogPost";
 import LinkButton from "../components/common/button/link-button/LinkButton";
 import Card from "../components/UI/card/Card";
+import db from "../db/blog-list.json";
 
 export default function AboutPage() {
   return (
@@ -44,49 +45,16 @@ export default function AboutPage() {
         </div>
 
         <ul className="flex-column gap-32">
-          <BlogPost
-            title="I hate my portfolio"
-            path="https://medium.com/design-bootcamp/i-hate-my-portfolio-d9f6f1d18574"
-            date="Apr 23, 2025"
-          >
-            Today, I would like to talk about a common challenge that many
-            designers face — creating and updating design portfolio. Portfolio
-            is essential thing that presents your work to potential employers,
-            and also to demonstrate your design process and how you approach
-            different tasks. It is, in many ways, proof of your skills and
-            professional level. This is understandable, expected, and absolutely
-            fair.
-          </BlogPost>
-
-          <BlogPost
-            title="Survival guide for Junior UX designers"
-            path="https://medium.com/design-bootcamp/survival-guide-for-junior-ux-designers-9f8e5e8b670"
-            date="Apr 2, 2023"
-          >
-            Getting into the world of design — is exciting and sometimes
-            terrifide. And, of course, there are already a lot of articles on
-            the Internet which goal to help you on your journey as a designers,
-            but I writed another one.Not long ago, I was in your shoes and these
-            are things that I learned as a junior designer. I hope it help
-            newbies be prepared for a new environment, not lose themselves and
-            not burn out in the first months.
-          </BlogPost>
-
-          <BlogPost
-            title="6 lessons that I learned as a designer by UX-volunteering"
-            path="https://medium.com/design-bootcamp/survival-guide-for-junior-ux-designers-9f8e5e8b670"
-            date="Sep 6, 2022"
-          >
-            As a Junior UX designer, you may be wondering how you can get “real
-            experience”. Volunteering is a great way to practice your UX skills,
-            build your portfolio, and do something useful in the process.
-            Reflecting on my own journey, I found myself fortunate to join a
-            volunteer project within the realm of free open-source initiatives
-            at the outset of my career. Yet, the rewards of UX volunteering
-            extend far beyond padding one's resume. Through this enriching
-            experience, I've gleaned invaluable lessons that have shaped my
-            growth as a designer.
-          </BlogPost>
+          {db.map((item) => (
+            <BlogPost
+              key={item.title}
+              path={item.path}
+              title={item.title}
+              date={item.date}
+            >
+              {item.content}
+            </BlogPost>
+          ))}
         </ul>
 
         <LinkButton path="https://medium.com/@kto.nekto">
