@@ -1,6 +1,4 @@
 import personalPhoto from "../assets/webps/home/PersonalPhoto.webp";
-import im1 from "../assets/webps/projects/Projects-2.webp";
-import im2 from "../assets/webps/projects/Projects-5.webp";
 // import bannerImg from '../assets/webp/home/BannerImg.webp';
 
 import SocialLinks from "../components/UI/SocialLinks";
@@ -11,6 +9,7 @@ import Testimonial from "../components/UI/testimonial/Testimonial";
 import PageHeader from "../components/UI/PageHeader";
 
 import db from "../db/testimonial-list.json";
+import { cardsHome } from "../db/cards-list";
 
 export default function HomePage() {
   return (
@@ -50,31 +49,12 @@ export default function HomePage() {
         </div>
 
         <div className="grid-cols">
-          <Card
-            image={im1}
-            title="Design System for the Leading Global Tech Company"
-            path="/design-system"
-            imgName="Design system"
-            company="SAP Company, 2023 - 2025"
-          >
-            Developed a new comprehensive design system and developer
-            documentation, designed to align with the existing product design
-            system (used externally) without duplicating it — ensuring
-            consistency while addressing distinct needs and integrations.
-          </Card>
-
-          <Card
-            image={im2}
-            title="Redesign and new Feature Development for Educational Platform"
-            path="/rs-school"
-            imgName="Product design"
-            company="Rolling Scope School, 2022"
-          >
-            Redesigned the UX of an educational platform using an iterative
-            approach to minimize disruption. Focused on enhancing usability
-            while ensuring the learning process continued smoothly for users and
-            developers.
-          </Card>
+          {cardsHome.map((item) => (
+            <Card
+              card={item}
+              key={item.title}
+            />
+          ))}
         </div>
       </section>
 

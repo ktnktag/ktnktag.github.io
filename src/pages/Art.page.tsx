@@ -4,13 +4,12 @@ import resultImg1 from "../assets/webps/art/Result1.webp";
 import resultImg2 from "../assets/webps/art/Result2.webp";
 import resultImg3 from "../assets/webps/art/Result3.webp";
 
-import im1 from "../assets/webps/projects/Projects-2.webp";
-import im2 from "../assets/webps/art/Card.webp";
-
 import SectionLayout from "../components/common/text/section-layout/SectionLayout";
 import Result from "../components/common/text/Result";
 import ProjectContainer from "../components/UI/ProjectContainer";
 import Card from "../components/UI/card/Card";
+
+import { cardsArt } from "../db/cards-list";
 
 export default function ArtPage() {
   return (
@@ -122,27 +121,12 @@ export default function ArtPage() {
       <hr />
 
       <section className="grid-cols">
-        <Card
-          image={im1}
-          title="Video of the redesign process on YouTube"
-          path="https://www.youtube.com/watch?v=0hOSCefcnLI"
-          imgName="Video"
-          company="Youtube"
-        >
-          Watch the redesigning process and drop your thoughts in the comments
-          about which version you fancy the most!
-        </Card>
-
-        <Card
-          image={im2}
-          title="Short article About Event on LinkedIn "
-          path="https://www.linkedin.com/pulse/community-workshop-minsk-lets-see-how-designspot-community/?trackingId=HJIKDn8zQgO4qvMNm9GbCg%3D%3D"
-          imgName="Article"
-          company="LinkedIn"
-        >
-          On Wednesday, October 12, we tried a new community event format:
-          Website Redesign Workshop!
-        </Card>
+        {cardsArt.map((item) => (
+          <Card
+            card={item}
+            key={item.title}
+          />
+        ))}
       </section>
     </ProjectContainer>
   );

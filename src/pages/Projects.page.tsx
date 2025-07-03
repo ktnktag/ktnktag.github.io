@@ -1,57 +1,6 @@
-import img1 from "../assets/webps/projects/Projects-1.webp";
-import img2 from "../assets/webps/projects/Projects-2.webp";
-import img3 from "../assets/webps/projects/Projects-3.webp";
-import img4 from "../assets/webps/projects/Projects-4.webp";
-import img5 from "../assets/webps/projects/Projects-5.webp";
-
 import Card from "../components/UI/card/Card";
 import PageHeader from "../components/UI/PageHeader";
-
-const cards = [
-  {
-    image: img1,
-    imgName: "UX/UI Design",
-    company: "TURBA, 2025",
-    title:
-      "From Demo to Product: Building an Interface for Real-Time AI Cluster Orchestration",
-    path: "/turba",
-    desc: "Delivered scalable UX/UI for a complex AI infrastructure tool. Balanced real-time requirements, technical constraints, and speed-to-market needs through rapid prototyping and structured handoff.",
-  },
-  {
-    image: img2,
-    imgName: "Design system",
-    company: "SAP Company, 2023 - 2025",
-    title:
-      "Design System for the web resources of the leading global tech company",
-    path: "/design-system",
-    desc: "Developed a new comprehensive design system and developer documentation, designed to align with the existing product design system (used externally) without duplicating it — ensuring consistency while addressing distinct needs and integrations.",
-  },
-  {
-    image: img3,
-    imgName: "ux design",
-    company: "SAP Company, 2024",
-    title: "Expanding SAP's internal platform with user-centred feature design",
-    path: "/hyperspace",
-    desc: "Developed new features to enhance user convenience and meet evolving needs. As a Fiori expert, ensured alignment with the design system, avoiding customization and maintaining a seamless user experience.",
-  },
-  {
-    image: img4,
-    imgName: "ux design",
-    company: "adidas, 2023",
-    title:
-      "Seamless Migration from the Legacy Platform to SAP Fiori and Enhanced Features",
-    path: "/adidas",
-    desc: "Supported the migration of the NDA web platform to a more intuitive and scalable solution, ensuring consistency with Fiori-based principles. Participated in design iterations, and UX improvements.",
-  },
-  {
-    image: img5,
-    imgName: "Product design",
-    company: "Rolling Scope School, 2022",
-    title: "Redesign and new Feature Development for Educational Platform",
-    path: "/rs-school",
-    desc: "Redesigned the UX of an educational platform using an iterative approach to minimize disruption. Focused on enhancing usability while ensuring the learning process continued smoothly for users and developers.",
-  },
-];
+import { cardsProject } from "../db/cards-list";
 
 export default function ProjectsPage() {
   return (
@@ -68,17 +17,11 @@ export default function ProjectsPage() {
 
       <section className="section-layout container">
         <div className="grid-cols">
-          {cards.map((item) => (
+          {cardsProject.map((item) => (
             <Card
-              path={item.path}
-              image={item.image}
-              imgName={item.imgName}
-              company={item.company}
-              title={item.title}
+              card={item}
               key={item.title}
-            >
-              {item.desc}
-            </Card>
+            />
           ))}
         </div>
       </section>

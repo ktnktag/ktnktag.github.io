@@ -133,7 +133,7 @@ export default function DesignSystemPage() {
           </div>
         </SectionLayout>
 
-        <img src={workProcess} alt="workProcess" className="multiply-img" />
+        <img src={workProcess} alt="workProcess" className="img-multiply" />
       </section>
 
       <hr />

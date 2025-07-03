@@ -2,41 +2,32 @@ import classes from "./Card.module.css";
 
 import { Link } from "react-router-dom";
 import { default as Arrow } from "../../../assets/svg/ui/Arrow-r.svg?react";
+import { type Card } from "../../../db/cards-list";
 
 interface Props {
-  children: React.ReactNode;
-  image: string;
-  title: string;
-  path: string;
-  imgName?: string;
-  company?: string;
+  card: Card;
 }
 
 const isExternalLink = (str: string): string =>
   str.includes("http") ? "_blank" : "";
 
 export default function Card({
-  children,
-  image,
-  title,
-  path,
-  imgName,
-  company,
+  card,
 }: Props) {
   return (
     <article className={classes.container}>
-      <Link to={path} target={isExternalLink(path)}>
+      <Link to={card.path} target={isExternalLink(card.path)}>
         <div className={classes.cover}>
           <div className={classes.caption}>
-            <p>{imgName}</p>
-            <p>{company}</p>
+            <p>{card.imgName}</p>
+            <p>{card.company}</p>
           </div>
-          <img className={classes.img} src={image} alt={title} />
+          <img className={classes.img} src={card.image} alt={card.title} />
         </div>
 
         <div className={classes.content}>
-          <h3>{title}</h3>
-          <p>{children}</p>
+          <h3>{card.title}</h3>
+          <p>{card.desc}</p>
           <p className={classes.link}>
             See the project <Arrow className={classes.moveRight} />
           </p>

@@ -1,14 +1,14 @@
 import img1 from "../assets/webps/about/Photo1.webp";
 import img2 from "../assets/webps/about/Photo2.webp";
 import img3 from "../assets/webps/about/Photo3.webp";
-import img4 from "../assets/webps/about/Photo4.webp";
-import img5 from "../assets/webps/about/Photo5.webp";
 
 import PageHeader from "../components/UI/PageHeader";
 import BlogPost from "../components/common/text/blogPost/BlogPost";
 import LinkButton from "../components/common/button/link-button/LinkButton";
 import Card from "../components/UI/card/Card";
+
 import db from "../db/blog-list.json";
+import { cardsEvent } from "../db/cards-list";
 
 export default function AboutPage() {
   return (
@@ -74,33 +74,12 @@ export default function AboutPage() {
         </div>
 
         <div className="grid-cols">
-          <Card
-            image={img4}
-            title="Revamping the First Impression: Art Exhibition Website Redesign"
-            path="/art"
-            imgName="Workshop"
-            company="Design spot, 2023"
-          >
-            I led a redesign workshop dedicated to rethinking the main page of
-            an art exhibition website. The focus was on improving visual
-            hierarchy, refining layout structure, and enhancing user interaction
-            to better reflect the artistic vision of the exhibition. The session
-            combined design critique and collaborative discussion.
-          </Card>
-
-          <Card
-            image={img5}
-            title="Simulating Real-world Design Process: Smart Home Mobile Application"
-            path="/smart-home"
-            imgName="Workshop"
-            company="Design spot, 2024"
-          >
-            Led a 4-hour workshop simulating a real product design workflow.
-            Participants worked on a mobile app for smart home control,
-            navigating typical constraints, collaboration dynamics, and
-            fast-paced decision-making—while focusing on usability and visual
-            clarity.
-          </Card>
+          {cardsEvent.map((item) => (
+            <Card
+              card={item}
+              key={item.title}
+            />
+          ))}
         </div>
       </section>
     </>

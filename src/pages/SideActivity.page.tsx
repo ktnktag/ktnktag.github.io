@@ -1,7 +1,6 @@
-import img1 from "../assets/webps/side-activity/SideImg1.webp";
-
 import PageHeader from "../components/UI/PageHeader";
 import Card from "../components/UI/card/Card";
+import { cardsSideActivity } from "../db/cards-list";
 
 export default function SideActivityPage() {
   return (
@@ -18,18 +17,12 @@ export default function SideActivityPage() {
 
       <section className="section-layout container">
         <div className="grid-cols">
-          <Card
-            image={img1}
-            title="Daily UI challege"
-            path="/"
-            imgName="UI design"
-            company="Daily UI challenge, 2025"
-          >
-            Developed a new comprehensive design system and developer
-            documentation, designed to align with the existing product design
-            system (used externally) without duplicating it — ensuring
-            consistency while addressing distinct needs and integrations.
-          </Card>
+          {cardsSideActivity.map((item) => (
+            <Card
+              card={item}
+              key={item.title}
+            />
+          ))}
         </div>
       </section>
     </>
