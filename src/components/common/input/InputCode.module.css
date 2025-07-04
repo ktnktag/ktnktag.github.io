@@ -50,3 +50,23 @@
 .input.error {
   border-color: var(--main-color-error);
 }
+
+@media screen and (max-width: 1150px) {
+  .input {
+    width: 456px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .input {
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .input {
+    width: 358px;
+    height: 48px;
+  }
+}

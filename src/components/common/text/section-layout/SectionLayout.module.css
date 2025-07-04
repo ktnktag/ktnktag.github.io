@@ -1,6 +1,10 @@
 .container {
+  margin: 0 auto;
+  position: relative;
+
   display: grid;
   grid-template-columns: 180px 1fr;
+
   gap: 32px;
 }
 
@@ -18,10 +22,22 @@
   gap: 40px;
 }
 
-.content > div:not(:global(.grid-cols)) {
+.content>div:not(:global(.grid-cols)) {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+@media screen and (min-width: 1500px) {
+  .container {
+    grid-template-columns: 206px 924px 206px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    grid-template-columns: 131px 1fr;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -34,9 +50,13 @@
   .title {
     height: auto;
     display: block;
+
+    position: relative;
+    left: 0;
+    transform: translateX(0);
   }
 
-  .content > div:not(:global(.grid-cols)) {
+  .content>div:not(:global(.grid-cols)) {
     gap: 16px;
   }
 }
@@ -46,7 +66,7 @@
     gap: 24px;
   }
 
-  .content > div:not(:global(.grid-cols)) {
+  .content>div:not(:global(.grid-cols)) {
     gap: 8px;
   }
 }

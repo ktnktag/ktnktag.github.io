@@ -79,9 +79,11 @@ export default function HomePage() {
         <div className="grid-cols">
           {db.map((item) => (
             <Testimonial key={item.name} name={item.name} img={item.img}>
-              {item.content.split("\n").map((line, i) => (
-                <p key={i}>{line}</p>
-              ))}
+              <>
+                {item.content.split("\n").map((line, i) =>
+                  <p key={i + "l"}>{line}</p>
+                )}
+              </>
             </Testimonial>
           ))}
         </div>

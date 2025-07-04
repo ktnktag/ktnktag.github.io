@@ -23,7 +23,7 @@ export default function Testimonial({
         </span>
       </div>
 
-      <p className={classes.text}>{children}</p>
+      <div className={classes.text}>{children}</div>
     </article>
   );
 }
