@@ -26,7 +26,7 @@ export default function ResumePage() {
             </p>
 
             <LinkButton
-              path="https://drive.google.com/file/d/194s2tAYmmk6hoMVCgfuB7O-hd6_za8fW/view"
+              path="https://drive.google.com/file/d/10YGEUkPvcxC115MyhXjOCZdCs0le0DEn/view?usp=sharing "
               download
             >
               Download Resume as PDF
@@ -133,7 +133,7 @@ export default function ResumePage() {
           name="Itexus"
           path="https://itexus.com"
           desc="UX/UI Designer"
-          date="Mar 2022 - Feb 2023"
+          date="May 2022 - Jul 2022"
         >
           <li>
             Designed responsive mobile and web applications under the guidance
@@ -163,9 +163,8 @@ export default function ResumePage() {
 
         <List
           name="Freelance"
-          path="/"
           desc="UX/UI Designer"
-          date="Mar 2022 - Feb 2023"
+          date="Jan 2021 - Jan 2022"
         >
           <li>
             Designed end-to-end solutions for early-stage startups and small

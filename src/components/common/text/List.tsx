@@ -3,7 +3,7 @@ import { default as Arrow } from "../../../assets/svg/ui/Arrow.svg?react";
 
 type Props = {
   name: string;
-  path: string;
+  path?: string;
   date: string;
   desc: string;
   children: React.ReactNode;
@@ -14,10 +14,11 @@ export default function List({ name, path, date, desc, children }: Props) {
     <ul className="list text-box-large">
       <div className="list-title">
         <div>
-          <Link to={path} target="_blank">
+          {!!path && <Link to={path} target="_blank">
             <h4>{name}</h4>
             <Arrow className="arrow" />
-          </Link>
+          </Link>}
+          {!path && <h4>{name}</h4>}
           <p>{desc}</p>
         </div>
 
