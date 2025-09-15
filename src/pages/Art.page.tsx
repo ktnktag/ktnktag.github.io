@@ -122,10 +122,7 @@ export default function ArtPage() {
 
       <section className="grid-cols">
         {cardsArt.map((item) => (
-          <Card
-            card={item}
-            key={item.title}
-          />
+          <Card card={item} key={item.title} />
         ))}
       </section>
     </ProjectContainer>

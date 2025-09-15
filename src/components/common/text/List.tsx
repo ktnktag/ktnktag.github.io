@@ -14,10 +14,12 @@ export default function List({ name, path, date, desc, children }: Props) {
     <ul className="list text-box-large">
       <div className="list-title">
         <div>
-          {!!path && <Link to={path} target="_blank">
-            <h4>{name}</h4>
-            <Arrow className="arrow" />
-          </Link>}
+          {!!path && (
+            <Link to={path} target="_blank">
+              <h4>{name}</h4>
+              <Arrow className="arrow" />
+            </Link>
+          )}
           {!path && <h4>{name}</h4>}
           <p>{desc}</p>
         </div>

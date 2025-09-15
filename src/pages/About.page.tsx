@@ -75,10 +75,7 @@ export default function AboutPage() {
 
         <div className="grid-cols">
           {cardsEvent.map((item) => (
-            <Card
-              card={item}
-              key={item.title}
-            />
+            <Card card={item} key={item.title} />
           ))}
         </div>
       </section>

@@ -18,10 +18,7 @@ export default function ProjectsPage() {
       <section className="section-layout container">
         <div className="grid-cols">
           {cardsProject.map((item) => (
-            <Card
-              card={item}
-              key={item.title}
-            />
+            <Card card={item} key={item.title} />
           ))}
         </div>
       </section>

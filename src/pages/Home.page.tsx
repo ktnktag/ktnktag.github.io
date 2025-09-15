@@ -10,6 +10,7 @@ import PageHeader from "../components/UI/PageHeader";
 
 import db from "../db/testimonial-list.json";
 import { cardsHome } from "../db/cards-list";
+import SliderList from "../components/common/slider/Slider";
 
 export default function HomePage() {
   return (
@@ -36,6 +37,7 @@ export default function HomePage() {
             <SocialLinks />
           </>
         }
+        common={<SliderList />}
       />
       <section className="section-layout flex-column gap-40 container">
         <div className="text-container flex-column gap-20">
@@ -50,10 +52,7 @@ export default function HomePage() {
 
         <div className="grid-cols">
           {cardsHome.map((item) => (
-            <Card
-              card={item}
-              key={item.title}
-            />
+            <Card card={item} key={item.title} />
           ))}
         </div>
       </section>
@@ -78,17 +77,22 @@ export default function HomePage() {
 
         <div className="grid-cols">
           {db.map((item) => (
-            <Testimonial key={item.name} name={item.name} img={item.img} profession={item.profession}>
+            <Testimonial
+              key={item.name}
+              name={item.name}
+              img={item.img}
+              profession={item.profession}
+            >
               <>
-                {item.content.split("\n").map((line, i) =>
+                {item.content.split("\n").map((line, i) => (
                   <p key={i + "l"}>{line}</p>
-                )}
+                ))}
               </>
             </Testimonial>
           ))}
         </div>
 
-        <LinkButton path="https://www.linkedin.com/in/kto-nekto/details/recommendations/?detailScreenTabIndex=0">
+        <LinkButton path="https://www.linkedin.com/in/kto-nekto/">
           Read More on LinkedIn
         </LinkButton>
       </section>

@@ -161,11 +161,7 @@ export default function ResumePage() {
           </li>
         </List>
 
-        <List
-          name="Freelance"
-          desc="UX/UI Designer"
-          date="Jan 2021 - Jan 2022"
-        >
+        <List name="Freelance" desc="UX/UI Designer" date="Jan 2021 - Jan 2022">
           <li>
             Designed end-to-end solutions for early-stage startups and small
             teams across various industries

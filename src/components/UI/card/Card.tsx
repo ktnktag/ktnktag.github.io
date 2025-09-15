@@ -11,9 +11,7 @@ interface Props {
 const isExternalLink = (str: string): string =>
   str.includes("http") ? "_blank" : "";
 
-export default function Card({
-  card,
-}: Props) {
+export default function Card({ card }: Props) {
   return (
     <article className={classes.container}>
       <Link to={card.path} target={isExternalLink(card.path)}>

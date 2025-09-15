@@ -204,6 +204,18 @@ hr {
   height: 46px;
 }
 
+& .slick-list {
+  margin: 0 -7px;
+
+  & .slick-slide > div {
+    padding: 0 10px;
+  }
+}
+
+.slick-slider *:focus {
+  outline: none !important;
+}
+
 @media screen and (min-width: 1600px) {
   .container {
     max-width: 1600px;

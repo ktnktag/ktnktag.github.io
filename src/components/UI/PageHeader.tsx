@@ -5,9 +5,16 @@ type Props = {
   title: string;
   desc: React.ReactNode;
   content?: React.ReactNode;
+  common?: React.ReactNode;
 };
 
-export default function PageHeader({ title, desc, content, img }: Props) {
+export default function PageHeader({
+  title,
+  desc,
+  content,
+  common,
+  img,
+}: Props) {
   return (
     <header className="header-page header-rounded">
       <div className="container header-content-gap">
@@ -24,6 +31,8 @@ export default function PageHeader({ title, desc, content, img }: Props) {
 
         {content}
       </div>
+
+      {common}
     </header>
   );
 }
